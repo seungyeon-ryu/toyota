@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=750, user-scalable=no">
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+    <meta name="description" content="사이트설명">
+    <meta name="keywords" content="사이트검색키워드">
+    <meta name="author" content="Newriver">
+    <meta property="og:title" content="공유제목">
+    <meta property="og:description" content="공유설명">
+    <meta property="og:image" content="공유이미지 800x400">
+    <title>TITLE</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="../../common/css/font.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../common/css/models.css">
+    <link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../../common/css/m_prius.css">
+    <script src="../../common/modeljs/jquery-1.12.2.min.js"></script>
+    <script src="../../common/modeljs/jquery.easing.js"></script>
+    <script src="../../common/modeljs/vue.min.js"></script>
+    <script src="../../common/modeljs/jquery.bxslider.js"></script>
+    <script src="../../common/modeljs/modules.js"></script>
+    <script src="../../common/modeljs/models.js"></script>
+    <script src="../../common/modeljs/m_prius/vinyli.viSlider.js"></script>
+    <script src="../../json/urls.js"></script>
+    <script>
+        var depth1 = 90; //models
+        var depth2 = 3; //
+        var modelName = "prius";
+    </script>
+    <script>
+        $(document).ready(function () {
+            var ts;
+            var flag = false;
+            var $gnb = $('#gnb');
+            var $gnbdepth = $('#gnb > ul > li');
+            var prevScrollTop = $(window).scrollTop();
+            var nowScrollTop = $(window).scrollTop();
+
+            $(document).on('touchstart', function (e) {
+                e.stopPropagation();
+                ts = e.originalEvent.touches[0].clientY;
+            });
+
+            $(document).on('scroll touchmove', function (e) {
+                nowScrollTop = $(window).scrollTop();
+
+                if (!$('#header').hasClass('sub')) { // if main
+                    if (nowScrollTop > prevScrollTop) { // down
+                        $('#baitDown').removeClass('on');
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop <= 0) { // if top
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop < prevScrollTop) { // up
+                        $('#baitDown').addClass('on');
+                        $('#header').addClass('bg');
+                    }
+                }
+                else if ($('#wrap').hasClass('model')) {
+                    $('body').removeClass('hideHeader');
+                    $('#header').addClass('bg');
+                }
+                else { // if sub
+                    if (nowScrollTop > prevScrollTop) { // down
+                        $('body').addClass('hideHeader');
+                    }
+                    else if (nowScrollTop <= 0) { // if top
+                        $('body').removeClass('hideHeader');
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop < prevScrollTop) { // up
+                        $('body').removeClass('hideHeader');
+                        $('#header').addClass('bg');
+                    }
+                }
+                prevScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop;
+            });
+
+            $('#trgAside').on('click', function () {
+                var delay = 100;
+                if (!flag) {
+                    $('body').addClass('asideOpen').css('overflow', 'hidden');;
+
+                    flag = true;
+                } else {
+                    $('body').removeClass('asideOpen').css('overflow', 'auto');
+                    $gnbdepth.removeClass('open'); //.removeClass('on');
+                    flag = false;
+                }
+
+                $gnb.on('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                $gnbdepth.find('a').on('click', function () {
+                    $(this).closest('li').toggleClass('open');
+                });
+            });
+        });
+    </script>
+    <style>
+        #vrDiv2{
+            display: none;
+            background-color: #555;
+              -khtml-opacity: 0;
+              -moz-opacity: 0;
+              -ms-filter: alpha(opacity=0);
+              -ms-filter: progid:DXImageTransform.Microsoft.Alpha Opacity=0;
+              filter: alpha(opacity=0);
+              opacity: 0;
+
+        }
+        .fix #vrDiv2{
+            display: block;
+        }
+        #wrap.dl_index .sub_cont {
+/*                z-index: 100;*/
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap" class="model">
+
+        <header id="header" class="sub fullbg">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+            <h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+        </header>
+
+        <button type="button" id="trgAside" class="trg_aside">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+
+		<div id="gnb">
+			<div class="member">
+				<!-- <div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div> -->
+				<div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div class="bottom">
+            <div class="btn_wrap">
+                <a href="#self" class="btn_guide">이용안내</a>
+                <a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+            </div>
+        </div>
+
+        <div id="vrDiv" style="position:relative;z-index:10;" class="coverDiv"></div>
+
+        <div id="container" class="sub_cont model" style="top: 0;">
+            <div class="sub_visual bgsize" style="top: 0; background-size: cover;">
+                <article id="prius" class="contant1">
+                    <div class="cont1_intro">
+                        <div class="cont1_inner">
+                            <p class="step1_text"><img src="../../images/model_view/m_prius/image/step1_p.png" alt="" class="wt100"></p>
+                            <p class="step1_title"><img src="../../images/model_view/m_prius/image/step1_title.png" alt=""></p>
+                            <button class="go_intMovie">
+                                <img class="intro_loading" src="../../images/model_view/m_prius/image/loading.gif" alt="loading">
+                                <img class="playmovie" src="../../images/model_view/m_prius/image/step1_playBtn.png" alt="play movie">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="intro_movie">
+                        <button class="intro_mclose"><img src="../../images/model_view/m_prius/image/gal_popClose.png" alt="" class="wt100"></button>
+                        <div class="player_wrap">
+
+                            <div id="ytplayer"></div>
+
+                            <a href="#none">
+                                <img src="../../images/model_view/m_prius/image/main_popVisual1.jpg" alt="" class="wt100">
+                            </a>
+                            <div class="thurm_box">
+                                <ul>
+                                    <li class="main_pNow" data-movie="COp7F3M2rKA">
+                                        <img src="../../images/model_view/m_prius/image/keyvisual_vedio_thumbnail_01.jpg" alt=""></li>
+                                    <li data-movie="none"><img src="../../images/model_view/m_prius/image/keyvisual_vedio_thumbnail_02.jpg" alt=""></li>
+                                    <li data-movie="none">
+                                        <img src="../../images/model_view/m_prius/image/keyvisual_vedio_thumbnail_03.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="sub_wrap">
+                <div class="lnb_wrap">
+                    <h2>MODELS</h2>
+                    <div class="lnb_title">
+                        <h3>PRIUS<img src="../../images/model_view/hybridcommon/down_arrow.png" alt=""></h3>
+                        <ul>
+                            <li><a href="#none">PRIUS</a></li>
+                            <li><a href="#none">EXTERIOR</a></li>
+                            <li><a href="#none">INTERIOR</a></li>
+                            <li><a href="#none">FEATURES</a></li>
+                            <li><a href="#none">GALLERY</a></li>
+                            <li><a href="#none">SPECS & PRICE</a></li>
+                            <li class="havPdf"><a href="/download/down.aspx?filename=PRIUS_catalogue.pdf&type=manual" id="downloadpdf"
+                                    onclick="ga('send', 'event', 'Click', 'E-CATALOGUE 다운로드 : 프리우스 모바일 ');">E-CATALOGUE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="model_inner">
+
+                <article class="content2">
+                    <ul>
+
+                        <li class="ct2 ct2_1">
+                            <span class="seq only_background">
+                                <img src="../../images/model_view/m_prius/image/seq/1.jpg" class="seq_current" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/2.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/3.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/4.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/5.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/6.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/7.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/8.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/9.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/10.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/12.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/13.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/14.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/15.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/16.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/17.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/18.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/19.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/20.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/21.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/22.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/23.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/24.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/25.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/26.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/27.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/28.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/29.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/30.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/31.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/32.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/33.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/34.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/35.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/36.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/37.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/38.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/39.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/40.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/41.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/42.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/43.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/44.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/45.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/46.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/47.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/48.jpg" alt="">
+                                <img src="../../images/model_view/m_prius/image/seq/49.jpg" alt="">
+                            </span>
+                            <div class="ct2_inner">
+                                <div class="ct2layer_Box">
+                                    <p>1</p>
+                                    <h2><span class="eng">BEAUTIFUL<br>HYBRID</span></h2>
+                                </div>
+                                <div class="view_ct2Box1">
+                                    <button>내용보기 ></button>
+                                </div>
+                                <!--                        팝업내용-->
+                                <div class="ct2_popCont">
+                                    <p>1997년 세계 최초 양산형 하이브리드를 개발했던 <br>토요타의 기술력이 4세대 프리우스와 함께<br> 더욱 진화하였습니다. <br>연비 21.9km/ℓ와 압도적인
+                                        친환경 성능은 물론 <br>드라이빙이 즐겁고 디자인이 매혹적인 자동차로 <br>하이브리드의 나아갈 미래를 제시합니다.</p>
+                                </div>
+                            </div>
+                            <div class="ct2_boxDim"></div>
+                            <button class="ct2_popClose"><img src="../../images/model_view/m_prius/image/ct2_popClose.png" alt="" class="wt100"></button>
+
+                            <button class="secButton">
+                                <img src="../../images/model_view/m_prius/image/subpage_btn_start_hover.png" alt="" class="wt100">
+                            </button>
+                            <img style="position:absolute; width:20px; top:50%; left:50%;" src="../../images/model_view/m_prius/image/loading.gif"
+                                alt="" class="loading_seq">
+                        </li>
+
+                        <li class="ct2 ct2_2">
+                            <span class="only_background">
+                                <img src="../../images/model_view/m_prius/image/contantBg2_2white.jpg" class="ct2_2first seq_current" alt="">
+                                <img src="../../images/model_view/m_prius/image/contantBg2_2.jpg" class="ct2_2second" alt="">
+                            </span>
+                            <div class="ct2_inner">
+                                <div class="ct2layer_Box">
+                                    <p>2</p>
+                                    <h2>공기역학 기술과 <br>역동적인 <br>아름다움의 조화</h2>
+                                </div>
+                                <div class="view_ct2Box1">
+                                    <button>내용보기 ></button>
+                                </div>
+                                <div class="ct2_popCont">
+                                    <p>세계 최고의 공기역학 기술로 공기저항계수 0.24를 <br>실현시켰습니다.<br>저중심 설계로 차량의 역동성을 강조하였습니다. <br>첨단의 기능이 매혹적인 라인과
+                                        조화를 이루고 있습니다. </p>
+                                </div>
+                            </div>
+                            <div class="ct2_boxDim"></div>
+                            <button class="ct2_popClose"><img src="../../images/model_view/m_prius/image/ct2_popClose.png" alt="" class="wt100"></button>
+
+
+                            <div class="car_hide">
+                                <div class="car_hideHidden">
+                                    <img src="../../images/model_view/m_prius/image/subpage_image08_mask.png" alt="">
+                                </div>
+                            </div>
+
+
+
+                        </li>
+
+                        <li class="ct2 ct2_3">
+                            <span class="only_background"></span>
+                            <div class="ct2_inner">
+                                <div class="ct2layer_Box">
+                                    <p>3</p>
+                                    <h2><span class="eng">TOYOTA <br>NEW GLOBAL <br>ARCHITECTURE</span></h2>
+                                </div>
+                                <div class="view_ct2Box1">
+                                    <button>내용보기 ></button>
+                                </div>
+                                <div class="ct2_popCont">
+                                    <p>디자인, 안정성, 그리고 주행 성능까지 드라이빙의 <br>즐거움을 위해 모든 것을 처음부터 다시 설계하였습니다.<br>역동적인 드라이빙과 민첩한 핸들링, 편안한
+                                        승차감이 <br>모두 가능해졌습니다. </p>
+                                </div>
+                            </div>
+                            <div class="ct2_boxDim"></div>
+                            <button class="ct2_popClose"><img src="../../images/model_view/m_prius/image/ct2_popClose.png" alt="" class="wt100"></button>
+                        </li>
+
+                        <li class="ct2 ct2_4">
+                            <span class="only_background"></span>
+                            <div class="ct2_inner">
+                                <div class="ct2layer_Box">
+                                    <p>4</p>
+                                    <h2>프리우스의 <br>품격에 어울리는 <br>첨단 테크놀로지</h2>
+                                </div>
+                                <!--
+                                            <div class="view_ct2Box1">
+                                                <button>내용보기 ></button>
+                                            </div>
+                    -->
+                                <div class="ct2_popCont">
+                                    <p>역대 프리우스가 지켜온 인간 감각 중심의 디자인을 더욱<br>진화시켜 더 편안하면서도 더 세련된 인테리어 디자인이<br>탄생했습니다. 각종 디스플레이는 고해상도의
+                                        뛰어난 <br>시인성을 자랑하며특수 소재의 고급스러운 재질은 <br>첨단의 느낌과 따스하고 촉촉한, 인간의 온기가 공존하는 공간을 만들었습니다.</p>
+                                </div>
+                                <div class="ct2_4ImgView">
+                                    <div class="ct2_viewInner">
+                                        <img class="ct2_viewImg" src="../../images/model_view/m_prius/image/technology_01.jpg" alt="" class="wt100">
+                                        <p class="ct2_text"></p>
+                                        <div class="ct2_viewArrow">
+                                            <button class="ct2_viewPrev"><img src="../../images/model_view/m_prius/image/gal_popPrev.png" alt=""></button>
+                                            <button class="ct2_viewClose"><img src="../../images/model_view/m_prius/image/gal_popClose.png" alt=""></button>
+                                            <button class="ct2_viewNext"><img src="../../images/model_view/m_prius/image/gal_popNext.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ct2_boxDim"></div>
+                            <button class="ct2_popClose"><img src="../../images/model_view/m_prius/image/ct2_popClose.png" alt="" class="wt100"></button>
+                            <div class="view_24">
+                                <button><img src="../../images/model_view/m_prius/image/view_point.png" alt=""></button>
+                                <button><img src="../../images/model_view/m_prius/image/view_point.png" alt=""></button>
+                                <button><img src="../../images/model_view/m_prius/image/view_point.png" alt=""></button>
+                                <button><img src="../../images/model_view/m_prius/image/view_point.png" alt=""></button>
+                                <button><img src="../../images/model_view/m_prius/image/view_point.png" alt=""></button>
+                                <button><img src="../../images/model_view/m_prius/image/view_point.png" alt=""></button>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+                <article class="contant3">
+                    <div id="exterior" class="sliderWrap slideRoot">
+                        <h2 class="h2_titleW">EXTERIOR</h2>
+                    </div>
+                    <div id="interior" class="sliderWrap1 slideRoot">
+                        <h2 class="h2_titleW">INTERIOR</h2>
+                    </div>
+                    <div id="features" class="sliderWrap2 slideRoot">
+                        <h2 class="h2_titleW">FEATURES</h2>
+                    </div>
+                </article>
+                <article id="gallery" class="content4">
+                    <div class="cont4_inner">
+                        <ul>
+                            <!--
+                                    vr영상 = gl_play 클래스 추가 + style.js에 gal_arr변수 vr_link 추가
+                                    유튜브영상 바로재생 = movie_check 클래스 추가 + gal_arr변수 youtube 추가
+                                    width:50% 썸네일 = half 클래스
+                                    갤러리이미지 640 x 320사이즈 추가
+                    -->
+                            <!--
+                                        <li class="movie_check gl_play"><img src="../../images/model_view/m_prius/image/gl1.jpg" alt=""></li>
+                                        <li class="half movie_check gl_play"><img src="../../images/model_view/m_prius/image/gl14.jpg" alt=""></li>
+            -->
+                            <li class="movie_check gl_play"><img src="../../images/model_view/m_prius/image/gl1.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl2.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl3.jpg" alt=""></li>
+                            <li class="gl_play"><img src="../../images/model_view/m_prius/image/gl4.jpg" alt=""></li>
+                            <li class="half gl_play"><img src="../../images/model_view/m_prius/image/gl8.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl6.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl7.jpg" alt=""></li>
+                            <li class="half gl_play"><img src="../../images/model_view/m_prius/image/gl10.jpg" alt=""></li>
+                            <li><img src="../../images/model_view/m_prius/image/gl9.jpg" alt=""></li>
+                            <li class="half gl_play"><img src="../../images/model_view/m_prius/image/gl15.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl11.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl12.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/gl13.jpg" alt=""></li>
+                            <li class="half movie_check gl_play"><img src="../../images/model_view/m_prius/image/gl14.jpg" alt=""></li>
+                            <li class="half movie_check gl_play"><img src="../../images/model_view/m_prius/image/gl5.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl1.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl2.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl3.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl4.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl5.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl6.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl7.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl8.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl9.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl10.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl11.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl12.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl13.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl14.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl15.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl16.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl17.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl18.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl19.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl20.jpg" alt=""></li>
+                            <li class=""><img src="../../images/model_view/m_prius/image/add_gl21.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl22.jpg" alt=""></li>
+                            <li class="half"><img src="../../images/model_view/m_prius/image/add_gl23.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="colors">
+                    <div class="color_inner">
+                        <h2 class="h2_title">COLORS</h2>
+                        <p>상기 이미지는 실물과 다소 차이가 있을 수 있으며 <br>사양에 따라 색상이 다를 수 있습니다.</p>
+                    </div>
+                    <div class="color_cont">
+                        <div class="car_change">
+                            <div class="carImg">
+                                <img class="wt100" src="../../images/model_view/m_prius/image/color_1.jpg" alt="">
+                            </div>
+                            <p class="car_color">EMOTIONAL RED</p>
+                            <div class="car_colorBtn">
+                                <ul>
+                                    <li class="current">
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+                                    <li>
+                                        <span>Emotional Red</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article id="specs" class="spec">
+                    <div class="specs_inner">
+                        <h2 class="h2_title">SPECS</h2>
+                        <img class="wt100" src="../../images/model_view/m_prius/image/specs_header.png" alt="">
+                        <div class="specs_list">
+                            <ul>
+                                <li>
+                                    <h3>가격</h3>
+                                    <div class="spl_inner price">
+                                        <dl>
+                                            <dt>PRIUS E</dt>
+                                            <dd>32,700,000<span class="korean_bold">원</span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>PRIUS S</dt>
+                                            <dd>39,200,000<span class="korean_bold">원</span></dd>
+                                        </dl>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h3>제원</h3>
+                                    <div class="spl_inner">
+                                        <dl>
+                                            <dt>전장/전폭/전고</dt>
+                                            <dd>4,540mm X 1,760mm X 1,470mm</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>축거</dt>
+                                            <dd>2,700mm</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>윤거(전/후)</dt>
+                                            <dd>1,530mm / 1,540mm</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>공차 중량</dt>
+                                            <dd>1,395kg</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>차량 총 중량</dt>
+                                            <dd>1,715kg</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>엔진</h3>
+                                    <div class="spl_inner">
+                                        <dl>
+                                            <dt>명칭 / 형식</dt>
+                                            <dd>직렬 4기통 16밸브 DOHC VVT-i</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>배기량</dt>
+                                            <dd>1,798 cc</dd>
+                                        </dl>
+                                        <dl class="no_border">
+                                            <dt>최고출력</dt>
+                                            <dd></dd>
+                                        </dl>
+                                        <dl class="spl_2depth">
+                                            <dt>엔진 출력</dt>
+                                            <dd>98 PS / 5,200 rpm</dd>
+                                        </dl>
+                                        <dl class="spl_2depth">
+                                            <dt>전기모터 출력</dt>
+                                            <dd>72 PS</dd>
+                                        </dl>
+                                        <dl class="spl_2depth">
+                                            <dt>총 시스템 출력</dt>
+                                            <dd>122 PS</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>최대토크</dt>
+                                            <dd>14,5 kg.m / 3,600 rpm</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>도심/고속도로/복합연비</dt>
+                                            <dd>22.6km/ℓ,21km/ℓ,21.9km/ℓ(1등급)</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>CO<sub>2</sub> 배출량</dt>
+                                            <dd>71 g/km</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>트랜스미션</h3>
+                                    <div class="spl_inner">
+                                        <dl>
+                                            <dt>트랜스미션</dt>
+                                            <dd>무단 자동 변속기(e-CVT)</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>샤시</h3>
+                                    <div class="spl_inner">
+                                        <dl>
+                                            <dt>서스펜션(전/후)</dt>
+                                            <dd>맥퍼슨 스트릿 / 더블 위시본</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>제동장치(전/후)</dt>
+                                            <dd>벤틸레이티드 디스크 / 솔리드 디스크</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>연료탱크 용량</dt>
+                                            <dd>43 ℓ</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>구동방식</dt>
+                                            <dd>전륜구동</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>타이어</dt>
+                                            <dd>195 / 65R 15</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>승차 정원</dt>
+                                            <dd>5명</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>타이어 효율 등급</h3>
+                                    <div class="spl_inner">
+                                        <dl>
+                                            <dt>타이어</dt>
+                                            <dd>195 / 65R 15</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>타이어 제조사</dt>
+                                            <dd>BRIDGESTONE</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>회전저항계수</dt>
+                                            <dd>2</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>젖은 노면 제동력 지수</dt>
+                                            <dd>3</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="specs_bottom">
+                            <ul>
+                                <li>회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li>
+                                <li class="more_ma">젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은노면 제동성능 비율</li>
+                                <li>본 웹사이트에 수록된 사진은 실제 사양과 차이가 있을 수 있으며, 제원 및 사양은 성능 향상을 위하여 예고없이 변경될 수 있습니다.</li>
+                                <li>본 웹사이트에 표기된 연비는 표준 모드에 의한 연비로서, 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실주행연비와 차이가 있습니다.</li>
+                                <li>본 웹사이트에 수록된 제원과 성능 등 사양은 예고없이 변경될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hybrid_wrap">
+                    <div class="hybrid_inner">
+                        <h2 class="h2_titleW">SMART HYBRID</h2>
+                        <h3>하이브리드 <br><span class="korean_bold">혜택</span></h3>
+                        <p>친환경 하이브리드 차량 구매 시 <br>얻을 수 있는 각종 혜택을 확인해 보세요. <br>
+                            <!--                    <span>* 2018년 12월 31일까지 실행 예정</span>-->
+                            <span></span>
+                        </p>
+                        <div class="hybrid_list">
+                            <ul>
+                                <li>
+                                    <h4>하이브리드 감면 금액</h4>
+                                    <div class="hybrid_listLeft">
+                                        <dl>
+                                            <dt>개별소비세</dt>
+                                            <dd class="hybrid_max">최대</dd>
+                                            <dd class="hybrid_maxNum">1,000,000</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>교육세</dt>
+                                            <dd class="hybrid_max">최대</dd>
+                                            <dd class="hybrid_maxNum">300,000</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>취득세</dt>
+                                            <dd class="hybrid_max">최대</dd>
+                                            <dd class="hybrid_maxNum">1,400,000</dd>
+                                        </dl>
+                                        <!--
+                                                    <dl>
+                                                        <dt>공채</dt>
+                                                        <dd class="hybrid_max">최대</dd>
+                                                        <dd class="hybrid_maxNum">400,000</dd>
+                                                    </dl>
+            -->
+                                        <dl class="no_border">
+                                            <dt>HV구매보조금</dt>
+                                            <dd class="hybrid_max"></dd>
+                                            <dd class="hybrid_maxNum">500,000</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="hybrid_listRight">
+                                        <ul>
+                                            <li>* 개별 소비세 & 교육세: <br>차량가격에 기 반영</li>
+                                            <!--                                            <li>* 공채 : 채권할인율 20% <br>적용 시</li>-->
+                                            <li>* HV구매 보조금은 <br>프리우스, 프리우스 V에 한함</li>
+                                            <li>* 지역별 상이함</li>
+                                        </ul>
+                                    </div>
+                                    <div class="hybrid_listBottom">
+                                        <p><sup class="korean_bold">최대 </sup><span class="eng_bold">320<span class="korean_bold f18">만원
+                                                </span></span><span class="hbb_sap1 korean_bold">혜택</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>도심 혼잡 통행료</h4>
+                                    <div class="hybrid_listLeft no_margin">
+                                        <dl class="no_border">
+                                            <dt>서울지역</dt>
+                                            <dd class="hybrid_max"></dd>
+                                            <dd class="hybrid_maxNum"></dd>
+                                        </dl>
+                                        <!--
+                                                    <dl class="no_border">
+                                                        <dt>부산광안대교</dt>
+                                                        <dd class="hybrid_max"></dd>
+                                                        <dd class="hybrid_maxNum"></dd>
+                                                    </dl>
+            -->
+                                    </div>
+                                    <div class="hybrid_listRight alone">
+                                        <ul>
+                                            <li class="no_margin">* 지역별 상이함</li>
+                                        </ul>
+                                    </div>
+                                    <div class="hybrid_listBottom">
+                                        <p><sup class="korean_bold">최대 </sup><span class="eng_bold">100<span class="f18">% </span></span><span
+                                                class="hbb_sap1 korean_bold">감면</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>공영주차장 이용료</h4>
+                                    <div class="hybrid_listLeft">
+                                        <dl>
+                                            <dt>수도권 지역</dt>
+                                            <dd class="hybrid_max"></dd>
+                                            <dd class="hybrid_maxNum"></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>인천공항</dt>
+                                            <dd class="hybrid_max"></dd>
+                                            <dd class="hybrid_maxNum"></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>김포공항</dt>
+                                            <dd class="hybrid_max"></dd>
+                                            <dd class="hybrid_maxNum"></dd>
+                                        </dl>
+                                        <dl class="no_border">
+                                            <dt>김해공항</dt>
+                                            <dd class="hybrid_max"></dd>
+                                            <dd class="hybrid_maxNum"></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="hybrid_listRight alone2">
+                                        <ul>
+                                            <li>* 지역별 상이함</li>
+                                        </ul>
+                                    </div>
+                                    <div class="hybrid_listBottom">
+                                        <p><span class="eng_bold">50<span class="f18">% </span></span><span class="hbb_sap1 korean_bold">감면</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>하이브리드 <br>메인배터리<br>무상보증확대</h4>
+                                    <div class="hybrid_listRight">
+                                        <ul>
+                                            <li>* 연 1회 하이브리드 <br>시스템 점검 시</li>
+                                            <li>* 한국 토요타 자동차 판매 <br>차량 및 2015년 이후 출고 차량에 한함</li>
+                                        </ul>
+                                    </div>
+                                    <div class="hybrid_listBottom">
+                                        <p><span class="eng_bold">10</span><span class="f18 korean_bold">년/ </span><span class="eng_bold">20<span
+                                                    class="korean_bold f18">만</span><span class="eng_bold f18">km </span></span><span
+                                                class="hbb_sap1 korean_bold">연장</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="hybrid_wrap">
+                    <div class="hybrid_inner">
+                        <h2 class="h2_titleW">SMART HYBRID</h2>
+                        <h3>하이브리드 <br><span class="korean_bold">서비스</span></h3>
+                        <p>지구를 생각하는 당신에게 한국 토요타 자동차가 <br>더 특별한 서비스를 준비했습니다.<br>하이브리드만큼 스마트하고, 특별한 서비스를 만나보세요! <br>
+                            <!--                    <span>* 2018년 12월 31일까지 실행 예정</span>-->
+                            <span></span>
+                        </p>
+
+                        <div class="hybrid_survice">
+                            <ul>
+                                <li>
+                                    <div class="hbs_iconBox">
+                                        <span><img src="../../images/model_view/m_prius/image/hybrid_icon5.gif" alt="" class="wt100"></span>
+                                    </div>
+                                    <h4>하이브리드 메인배터리 <br>무상 보증 연장</h4>
+                                    <p>한국 토요타 자동차 판매 차량 및<br>2015년 이후 출고 차량에 한함<br>10년/20만km로 연장 <br>*연 1회 하이브리드 시스템 점검 시</p>
+                                </li>
+                                <li>
+                                    <div class="hbs_iconBox">
+                                        <span><img src="../../images/model_view/m_prius/image/hybrid_icon6.gif" alt="" class="wt100"></span>
+                                    </div>
+                                    <h4>하이브리드 메인배터리<br>연장 보증 프로그램</h4>
+                                    <p>보증기간(최소 5년 또는 80,000km 및 3년 또는<br>100,000km) 만료 차량의 1년 연장 보증 상품 <br><a href="file/hybird_battery_extend_care.pdf">자세히
+                                            보기 ></a> <br>* 차량 인도 후 최대 10년 또는 <br>주행거리 200,000km 이내의 차량에 한함</p>
+                                </li>
+
+                                <li>
+                                    <div class="hbs_iconBox">
+                                        <span><img src="../../images/model_view/m_prius/image/hybrid_icon7.gif" alt="" class="wt100"></span>
+                                    </div>
+                                    <h4>토요타 하이브리드 <br>점검 서비스</h4>
+                                    <p>최신 설비와 전문인력을 통한<br>맞춤형 점검 서비스 <br>* 최소 2년 무상 제공</p>
+                                </li>
+                                <li>
+                                    <div class="hbs_iconBox">
+                                        <span><img src="../../images/model_view/m_prius/image/hybrid_icon8.gif" alt="" class="wt100"></span>
+                                    </div>
+                                    <h4>정기 점검 및 소모품<br>교환 서비스 2년 무상 제공</h4>
+                                    <p>차량의 최적 상태 유지를 위한<br>특별한 혜택<br>* 점검 주기 및 대상 소모품은 별도 기준에 따름</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--                    <span class="smart_label"><img class="wt100" src="../../images/model_view/m_prius/image/smart_label.png" alt=""></span>-->
+                </article>
+            </div>
+        </div>
+        <div class="gal_pop">
+            <div class="gal_view">
+                <div class="gal_viewInner">
+        <!--           이미지-->
+                    <a href="#none">
+                        <img class="wt100" src="../../images/model_view/m_prius/image/gl1.jpg" alt="갤러리이미지">
+                        <span class="move_play"><img class="wt100" src="../../images/model_view/m_prius/image/gl_playBtn.png" alt=""></span>
+                    </a>
+        <!--            영상-->
+                    <div class="gal_movie">
+                        <a href="https://youtu.be/7t3M835G8V8"></a>
+                    </div>
+
+                </div>
+                <div class="gal_popBtn">
+                    <button class="gal_popPrev"><img src="../../images/model_view/m_prius/image/gal_popPrev.png" alt=""></button>
+                    <button class="gal_popClose gal_close"><img src="../../images/model_view/m_prius/image/gal_popClose.png" alt=""></button>
+                    <button class="gal_popNext"><img src="../../images/model_view/m_prius/image/gal_popNext.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="quickToggle">
+        <div class="eq0"></div>
+        <div class="eq1"></div>
+    </button>
+    <div id="quickmenu">
+        <div class="ie_dim"></div>
+        <ul>
+            <li class="quick q_testdrive">
+                <span>시승신청</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_01.png" alt=""></div>
+            </li>
+            <li class="quick q_showroom">
+                <span>전시장</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_02.png" alt=""></div>
+            </li>
+            <li class="quick q_benefit">
+                <span>구매혜택</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_03.png" alt=""></div>
+            </li>
+        </ul>
+        <div class="dim black"></div>
+    </div>
+</body>
+<script src="../../common/modeljs/m_prius/priusm_style.js"></script>
+<script src="../../common/modeljs/m_prius/slideData.js"></script>
+
+</html>

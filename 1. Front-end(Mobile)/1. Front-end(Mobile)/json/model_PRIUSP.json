@@ -1,0 +1,216 @@
+{"model" : { "dataList" : [{
+    "mainVisual" : "../../images/model_view/MODEL_PRIUSP/00_topVksual/topVisual.jpg",
+    "m_mainVisual" : "../../images/model_view/MODEL_PRIUSP/00_topVksual/m_topVisual.jpg",
+    "slider" : [
+        {"exterior" : [
+            {"tabmenu" : [
+                    {"title" : "exterior",
+                        "subcategory" :
+                            [{
+                            "title" : "Quad-LED 프로젝터 헤드램프",
+                            "subtitle" : "Quad-LED 프로젝터<br>헤드램프",
+                            "descript" : "헤드램프에 4개의 LED 프로젝터를 채용함으로써 샤프한 디자인을 표현하였습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/02_exterior/thurm_EXT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/EXT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/m_EXT01.jpg"
+                            },
+                            {
+                            "title" : "테일램프",
+                            "subtitle" : "테일램프",
+                            "descript" : "전면과 동일하게 선진기능 및 Fun 요소를 가미한 디자인으로 에어로 다이나믹한 디자인에 테일램프를 아이코닉하게 접목시켰습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/02_exterior/thurm_EXT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/EXT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/m_EXT02.jpg"
+                            },
+                            {
+                            "title" : "더블 버블 백 도어 윈도우",
+                            "subtitle" : "더블 버블<br>백 도어 윈도우",
+                            "descript" : "공기의 흐름을 느끼게 하는 것 같은 두개의 기둥을 가진 더블 버블 백 도어 윈도우를 백 도어 글래스로 채용했습니다. 리어 스포일러의 하단에 있는 서브 윈도우와 일체화한 디자인으로 공력 성능을 향상시킴과 동시에, 한눈에 프리우스 프라임이라 알 수 있는 인상적인 리어 뷰를 연출하였습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/02_exterior/thurm_EXT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/EXT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/m_EXT03.jpg"
+                            },
+                            {
+                            "title" : "CFRP 탄소 섬유 강화 플라스틱",
+                            "subtitle" : "CFRP<br>탄소 섬유 강화 플라스틱",
+                            "descript" : "보디 강성을 약화시키는 것 없이 경량화를 꾀하고자 백 도어에 CFRP (Carbon Fiber Reinforced Plastic) 탄소 섬유 강화 플라스틱을 채용하였습니다. F1 등의 제한된 차량의 보디에 사용되고 있는 소재는 철 또는 알루미늄과 비교해도 강성이 높고 무게가 가볍습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/02_exterior/thurm_EXT04.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/EXT04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/02_exterior/m_EXT04.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"interior" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "interior",
+                        "subcategory" :
+                            [{
+                            "title" : "ICONIC HUMAN-TECH",
+                            "subtitle" : "인체공학을 고려한<br>ICONIC HUMAN-TECH 디자인 컨셉",
+                            "descript" : "인간 중심을 지향하는 직관적 기능 배치와 디자인을 가장 세련되게 발전시켰습니다. 가장 앞선 자동차 기술인 플러그인 하이브리드 기술을 운전자가 쉽게 알 수 있게 하며 운전자가 자신의 상황을 쉽게 확인하고 필요한 것은 즉시 컨트롤 할 수 있도록  디스플레이와 모든 버튼의 위치를 고려했습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/03_interior/thurm_INT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/03_interior/INT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/03_interior/m_INT01.jpg"
+                            },
+                            {
+                            "title" : "뒷좌석 시트 폴딩",
+                            "subtitle" : "뒷좌석<br>시트 폴딩",
+                            "descript" : "뒷좌석 시트는 60:40으로 폴딩이 가능 하여 트렁크 공간을 보다 넉넉하고 쾌적하게 사용할 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/03_interior/thurm_INT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/03_interior/INT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/03_interior/m_INT02.jpg"
+                            },
+                            {
+                            "title" : "트렁크",
+                            "subtitle" : "트렁크",
+                            "descript" : "사이즈를 최대한 컴팩트하게 만든 대용량 리튬이온 배터리를 트렁크 아래에 위치하여, 충분한 트렁크 공간을 확보하였습니다. 트렁크 양 측면의 공간을 충분히 활용하면 9.5인치의 골프팩이 2개까지 적재 가능합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/03_interior/thurm_INT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/03_interior/INT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/03_interior/m_INT03.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"features" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "features",
+                        "subcategory" :
+                            [{
+                            "title" : "주행 모드 컨트롤",
+                            "subtitle" : "주행 모드 컨트롤",
+                            "descript" : "주행조건과 도로상황에 따라 고객이 원하는 최적의 모드로 주행 가능한 ‘드라이빙 모드’와 ‘하이브리드 시스템 컨트롤 모드’가 준비되어 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/04_features/thurm_FTS01.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/04_features/FTS01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/04_features/m_FTS01.jpg"
+                            },
+                            {
+                            "title" : "듀얼 모터 드라이브 시스템",
+                            "subtitle" : "듀얼 모터<br>드라이브 시스템",
+                            "descript" : "프리우스 프라임은 토요타 최초로 듀얼 모터 드라이빙 시스템을 적용하여 배터리로부터 전력을 공급하여 모터를 구동하는 것과 동시에 제너레이터를 구동시켜 주행 퍼포먼스를 높입니다. 배터리가 충분하게 충전되어 있다면, 엔진의 개입 없이 모터의 주행만으로 EV 최고 속도 최대 135km/h까지 주행이 가능합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/04_features/thurm_FTS02.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/04_features/FTS02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/04_features/m_FTS02.jpg"
+                            },
+                            {
+                            "title" : "플러그인 충전 컨트롤",
+                            "subtitle" : "플러그인<br>충전 컨트롤",
+                            "descript" : "플러그인 하이브리드 차량인 프리우스 프라임은 전기충전을 통해 연비효과를 극대화 시킬 수 있는 차량입니다. 충전구 커버를 오픈하고 충전케이블을 연결하면 아주 간단하게 충전이 가능하며, 충전구 아래에 있는 충전표시등과 차량 앞쪽에 있는 SOC(State of Charge) 표시등이 동시에 점등됩니다. 차량 앞쪽의 SOC 표시등은 충전 정도를 알려줍니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/04_features/thurm_FTS03.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/04_features/FTS03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/04_features/m_FTS03.jpg"
+                            },
+                            {
+                            "title" : "풀 컬러 헤드업<br>디스플레이",
+                            "subtitle" : "풀 컬러 헤드업<br>디스플레이",
+                            "descript" : "운전 중 때로 시선을 두지 않고도 차량의 주요 정보들을 한 눈에 확인 할 수 있는 풀 컬러 헤드업 디스플레이가 탑재되었습니다. 초점 거리가 4세대 프리우스보다 더 먼 2m로 설정되어 디스플레이를 넓게 펼침으로써, 최소 시선 이동으로 주행 정보 확인이 가능하도록 진화했습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/04_features/thurm_FTS04.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/04_features/FTS04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/04_features/m_FTS04.jpg"
+                            },
+                            {
+                            "title" : "4.2인치 컬러 TFT<br>트윈 디스플레이",
+                            "subtitle" : "4.2인치 컬러 TFT<br>트윈 디스플레이",
+                            "descript" : "첨단 이미지와 함께 한눈에 중요 주행 정보를 쉽게 이해할 수있게 해주는 4.2인치 컬러 TFT트윈 디스플레이가 적용되었습니다. 좌측에는 속도와 외기 온도 등의 기본정보를 표시하는 ‘메인 디스플레이’ 를, 우측에는 스티어링 휠 스위치로 표시를 전환할 수있는 ‘멀티 인포메이션 디스플레이’ 로 구성되었습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSP/04_features/thurm_FTS05.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSP/04_features/FTS05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSP/04_features/m_FTS05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        }
+    ],
+    "gallery" : [
+        {"dataList" : [{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/m_GLY01.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/GLY01.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/m_GLY02.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/GLY02.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/m_GLY03.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/GLY03.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/m_GLY04.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/GLY04.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/m_GLY05.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/GLY05.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/m_GLY06.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSP/05_gallery/GLY06.jpg",
+        "link" : "#"
+    }
+     ]}
+    ],
+    "colors" : [
+        {
+            "colorName" : "그레이 메탈릭",
+            "colorCode" : "#535252",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_1.jpg"
+        },
+        {
+            "colorName" : "스틸 블론드 메탈릭",
+            "colorCode" : "#beb8b8",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_2.jpg"
+        },
+        {
+            "colorName" : "실버 메탈릭",
+            "colorCode" : "#808080",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_3.jpg"
+        },
+        {
+            "colorName" : "스피리티드 아쿠아 메탈릭",
+            "colorCode" : "#498c98",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_4.jpg"
+        },
+        {
+            "colorName" : "이모셔널 레드",
+            "colorCode" : "#940e0f",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_5.jpg"
+        },
+        {
+            "colorName" : "화이트 펄 크리스탈 샤인",
+            "colorCode" : "#e9e9e1",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_6.jpg"
+        },
+        {
+            "colorName" : "슈퍼 화이트",
+            "colorCode" : "#f6f6f6",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_PRIUSP/06_colors/color_7.jpg"
+        }
+    ],
+    "specsHtml" : [
+        {
+            "type" : "PRIUS PRIME",
+            "specImg" : "../../images/model_view/MODEL_PRIUSP/07_specs/specs.jpg",
+            "modelPrice" : [
+                {"modelName" : "PRIUS PRIME", "price" : "47,700,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"><div class=\"specs_inner\"><div class=\"specs_list\"><ul><li><h3>제원</h3><div class=\"spl_inner\"><dl><dt>전장/전폭/전고</dt><dd class=\"callValue\">4,645mm X 1,760mm X 1,470mm</dd></dl><dl><dt>축거</dt><dd class=\"callValue\">2,700</dd></dl><dl><dt>윤거(전/후)</dt><dd class=\"callValue\">1,530 / 1,540</dd></dl><dl><dt>공차 중량</dt><dd class=\"callValue\">1,525kg</dd></dl><dl><dt>차량 총 중량</dt><dd class=\"callValue\">1,785kg</dd></dl></div></li><li><h3>엔진</h3><div class=\"spl_inner\"><dl><dt>명칭 / 형식</dt><dd class=\"callValue\">직렬 4기통 가솔린 엔진</dd></dl><dl><dt>배기량</dt><dd class=\"callValue\">1,798 cc</dd></dl><dl class=\"new_2depth\"><dt>최고출력</dt><dd><dl class=\"spl_2depth\"><dt>엔진출력</dt><dd class=\"callValue\">98PS/5,200rpm</dd></dl><dl class=\"spl_2depth\"><dt>전기모터출력</dt><dd class=\"callValue\">MG1 31PS, MG2 72PS</dd></dl><dl class=\"spl_2depth\"><dt>총 시스템 출력</dt><dd class=\"callValue\">122PS</dd></dl></dd></dl><dl><dt>최대토크</dt><dd class=\"callValue\">14,5kg·m / 3,600rpm</dd></dl><dl class=\"new_2depth\"><dt>도심/고속도로/복합연비</dt><dd><dl class=\"spl_2depth\"><dt>가솔린</dt><dd class=\"callValue\">23.0km/ℓ , 19.6km/ℓ , 21.4km/ℓ</dd></dl><dl class=\"spl_2depth\"><dt>전기</dt><dd class=\"callValue\">7.1km/kWh , 5.8km/kWh , 6.4km/kWh</dd></dl></dd></dl><dl><dt>CO<sub>2</sub> 배출량</dt><dd class=\"callValue\">23 g/km</dd></dl><dl><dt>1회 충전 주행거리</dt><dd class=\"callValue\">40km</dd></dl></div></li><li><h3>트랜스미션</h3><div class=\"spl_inner\"><dl><dt>트랜스미션</dt><dd class=\"callValue\">무단 자동 변속기(e-CVT)</dd></dl></div></li></ul><ul class=\"sec\"><li><h3>샤시</h3><div class=\"spl_inner\"><dl><dt>서스펜션(전/후)</dt><dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본</dd></dl><dl><dt>제동장치(전/후)</dt><dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd></dl><dl><dt>연료탱크 용량</dt><dd class=\"callValue\">43ℓ</dd></dl><dl><dt>구동방식</dt><dd class=\"callValue\">전륜구동</dd></dl><dl><dt>타이어</dt><dd class=\"callValue\">195 / 65R15 사계절 타이어</dd></dl><dl><dt>승차 정원</dt><dd class=\"callValue\">4명</dd></dl></div></li><li class=\"no_margin\"><h3>타이어 효율 등급</h3><div class=\"spl_inner\"><dl><dt>타이어</dt><dd class=\"callValue\">195 / 65R15 사계절 타이어</dd></dl><dl><dt>회전저항계수</dt><dd class=\"callValue\">2</dd></dl><dl><dt>젖은 노면 제동력 지수</dt><dd class=\"callValue\">3</dd></dl></div></li></ul><div class=\"specs_bottom\"><ul><li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은 노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul></div></div></div></div>"]
+    }]}
+}

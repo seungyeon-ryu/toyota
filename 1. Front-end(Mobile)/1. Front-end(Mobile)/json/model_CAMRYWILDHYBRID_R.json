@@ -1,0 +1,209 @@
+{"model" : { "dataList" : [{
+    "mainVisual" : "../../images/model_view/MODEL_CamryWildHybrid/main/topVisual.jpg",
+    "m_mainVisual" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_topVisual.jpg",
+    "keyVisual" : [
+
+    ],
+    "slider" : [
+        {"exterior" : [
+            {"tabmenu" : [
+                {"title" : "exterior", "dummy" : "../../images/model_view/dot-line-dummy.png",
+                    "subcategory" :
+                    [
+                        {
+                            "title" : "풀 LED 헤드램프",
+                            "subtitle" : "풀 LED 헤드램프",
+                            "descript" : "바이-빔 풀 LED 헤드램프가 적용되어 개성있는 디자인을 제공합니다. 주간 주행등은 안에서 밖으로 확장되는 느낌으로 디자인되어 정교한 깊이감과 차량의 개성을 표현합니다.<br> &lt;XLE모델 적용>",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ext01.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ext01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ext01.jpg"
+                        },
+                        {
+                            "title" : "공기역학적 디자인",
+                            "subtitle" : "공기역학적 디자인",
+                            "descript" : "효율적이고 정숙한 주행을 위해서 첨단의 에어로 다이내믹 디자인을 적용하였습니다. 차량 외부에 공기의 흐름을 최적화하는 디자인 요소를 채택하고, 라디에이터 그릴 셔터와 차량 플로어의 마감을 강화하여 더욱 효율적인 주행이 가능합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ext02.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ext02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ext02.jpg"
+                        },
+                        {
+                            "title" : "18인치 휠 & 타이어",
+                            "subtitle" : "18인치 휠 & 타이어",
+                            "descript" : "새로운 18인치 휠 디자인과 함께 낮아진 편평비의 타이어가 적용되어 개성있는 측면 디자인을 완성합니다. 또한 휠 아치 라운드 부분의 헤밍 처리와 새롭게 설계된 리어 서스펜션 가속 페달 구조로 타이어가 밖으로 돌출되는 느낌이 강조되어 더욱 다이내믹하고 강렬한 느낌을 전달합니다.<br> &lt;XLE모델 적용>",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ext03.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ext03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ext03.jpg"
+                        },
+                        {
+                            "title" : "LED 리어 콤비네이션 램프",
+                            "subtitle" : "LED 리어 콤비네이션 램프",
+                            "descript" : "LED 리어 콤비네이션 램프는 라인 발광과 점각 발광 2가지 타입의 LED 방식을 중첩시켜 깊이 있는 고급감을 전달합니다.<br> &lt;XLE모델 적용>",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ext04.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ext04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ext04.jpg"
+                        }]
+
+                }
+            ],"cut":0}
+        ]
+        },
+        {"interior" : [
+            {"tabmenu" : [
+                {
+                    "title" : "interior", "dummy" : "/image/dot-line-dummy.png",
+                    "subcategory" :
+                    [
+                        {
+                            "title" : "스티어링 휠",
+                            "subtitle" : "스티어링 휠",
+                            "descript" : "3스포크 디자인으로 컴팩트하게 설계하고 그립감이 좋은 천연 가죽을 사용하여 스티어링을 더욱 민첩하게 할 수 있습니다. <br>또한 인체공학적 레이아웃을 적용하여 3구역으로 디자인하였으며 스위치의 클릭감을 향상시켜 더욱 직관적으로 컨트롤할 수 있습니다.<br> &lt;XLE모델 적용>",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_int01.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/int01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_int01.jpg"
+                        },
+                        {
+                            "title" : "7인치 멀티 인포메이션 디스플레이",
+                            "subtitle" : "7인치 멀티 인포메이션 디스플레이",
+                            "descript" : "7인치 멀티 인포메이션 디스플레이가 적용되어 주행에 필요한 정보를 직관적으로 전달하여 운전 시 시야 분산을 줄이고 주행 상황에 집중할 수 있도록 도와줍니다. 또한 다채로운 컬러 애니메이션은 편리한 작동과 더불어 보는 즐거움도 제공합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_int03.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/int03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_int03.jpg"
+                        },
+                        {
+                            "title" : "8인치 와이드 터치 디스플레이",
+                            "subtitle" : "8인치 와이드 터치 디스플레이",
+                            "descript" : "한국형 내비게이션 시스템에 슬라이드 줌인·줌아웃 기능이 추가되어 더욱 직관적으로 컨트롤할 수 있고, 운전자의 취향에 따라 화면을 최대 4구역으로 분할하여 정보를 표시할 수 있습니다. 또한 미라캐스트 기능(안드로이드)도 지원합니다.<br> &lt;네비게이션 시스템은 XLE모델 적용>",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_int04.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/int04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_int04.jpg"
+                        },
+                        {
+                            "title" : "새틴 크롬 도금 & 타이거아이 트림",
+                            "subtitle" : "새틴 크롬 도금 & 타이거아이 트림",
+                            "descript" : "빛의 반사를 억제한 새틴 크롬 도금을 적용하여 첨단의 이미지를 강조할 뿐만 아니라, 외부로부터 반사된 빛으로 인한 주행 중 눈부심을 줄였습니다. 보석 타이거아이를 모티브로 한 우드 트림은 3개의 레이어로 다색 인쇄하고 렌즈 효과를 부여하여 보는 각도에 따라 색감이 변화하는 생동감 있는 실내 분위기를 연출합니다.<br> &lt;XLE모델 적용>",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_int05.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/int05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_int05.jpg"
+                        }
+                        ]
+                }
+            ],"cut":0}
+        ]
+        },
+        {"features" : [
+            {"tabmenu" : [
+                {
+                    "title" : "features", "dummy" : "/image/dot-line-dummy.png",
+                    "subcategory" :
+                    [
+                        {
+                            "title" : "드라이빙 모드",
+                            "subtitle" : "드라이빙 모드",
+                            "descript" : "ECO 모드, NORMAL 모드, SPORT 모드와 EV 모드가 제공되어 운전자의 성향과 주행 상황에 맞게 차량의 세팅을 변경할 수 있습니다. ",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ft01.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ft01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ft01.jpg"
+                        },
+                        {
+                            "title" : "오르간식 가속 페달",
+                            "subtitle" : "오르간식 가속 페달",
+                            "descript" : "페달을 밟을 때의 발의 이동 방향과 페달의 궤적이 같은 오르간식 가속 페달을 적용하여 쓰로틀 컨트롤을 더욱 정밀하게 할 수 있습니다. 그리고 인체공학적 설계로 발과 하체의 피로감을 줄여 장거리 주행에서도 편안하게 주행할 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ft03.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ft03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ft03.jpg"
+                        },
+                        {
+                            "title" : "서스펜션",
+                            "subtitle" : "서스펜션",
+                            "descript" : "맥퍼슨 스트럿 서스펜션이 프론트에, 고급 세단에 주로 사용되는 더블 위시본 서스펜션이 리어에 적용되었습니다. 새롭게 적용된 쇼크 업소버와 리어 서스펜션의 어퍼암, 로어암, 부싱을 최적 튜닝하여 직진 안정성과 민첩한 핸들링을 제공하고 요철이나 장애물 통과 시 전달되는 충격을 줄여 승차감을 향상시킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ft04.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ft04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ft04.jpg"
+                        },
+                        {
+                            "title" : "10 SRS 에어백",
+                            "subtitle" : "10 SRS 에어백",
+                            "descript" : "10 SRS 에어백이 장착되어 사고 발생 시 운전자와 탑승자의 부상을 최소화합니다. 승객 분류 시스템이 적용된 전면 어드밴스드 에어백과 동반석 무릎 에어백, 그리고 뒷좌석 탑승자까지 배려한 사이드 에어백 등 전 좌석에 걸쳐 사고 발생 시 에어백으로부터 보호받을 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ft05.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ft05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ft05.jpg"
+                        },
+                        {
+                            "title" : "전방위 충돌 안전 구조",
+                            "subtitle" : "전방위 충돌 안전 구조",
+                            "descript" : "충격 흡수 바디와 고강도 캐빈으로 구성된 전방위 충돌 안전 구조를 적용하여 우수한 충돌 안전성을 제공합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ft06.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ft06.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ft06.jpg"
+                        },
+                        {
+                            "title" : "오토로케이션 타입 TPWS",
+                            "subtitle" : "오토로케이션 타입 TPWS",
+                            "descript" : "각 타이어 별 공기압 이상 유무와 부족 시 그 정도를 미리 확인하여, 주행 중 타이어 장애로 인한 사고 발생을 최소화 할 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_CamryWildHybrid/main/thum_ft07.png",
+                            "orgImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/ft07.jpg",
+                            "mImage" : "../../images/model_view/MODEL_CamryWildHybrid/main/m_ft07.jpg"
+                        }]
+                }
+            ],"cut":0}
+        ]
+        }
+    ],
+    "colors" : [
+        {
+            "colorName" : "EMOTIONAL RED",
+            "colorCode" : "#cb0003",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col01.jpg"
+        },
+        {
+            "colorName" : "DARK BLUE",
+            "colorCode" : "#3d47c0",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col02.jpg"
+        },
+        {
+            "colorName" : "PLATINUM WHITE",
+            "colorCode" : "#ffffff",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col03.jpg"
+        },
+        {
+            "colorName" : "SILVER METALIC",
+            "colorCode" : "#dcdce6",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col04.jpg"
+        },
+        {
+            "colorName" : "STEEL BLONDE",
+            "colorCode" : "#a6a8a5",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col05.jpg"
+        },
+        {
+            "colorName" : "GRAPHITE METALIC",
+            "colorCode" : "#4e4037",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col06.jpg"
+        },
+        {
+            "colorName" : "BLACK",
+            "colorCode" : "#060608",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_CamryGasoline/col07.jpg"
+        }
+
+    ],
+    "specsHtml" : [
+        {
+            "type" : "CAMRY",
+            "specImg" : "../../images/model_view/MODEL_CamryWildHybrid/main/bottom_spec.jpg",
+            "modelPrice" : [
+                {"modelName" : "CAMRY HYBRID XLE", "price" : "42,200,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li> <h3>제원</h3> <div class=\"spl_inner\"> <dl> <dt>전장/전폭/전고</dt> <dd class=\"callValue\">4,880mm x 1,840mm x 1,445mm</dd> </dl><dl> <dt>축거</dt> <dd class=\"callValue\">2,825mm</dd> </dl><dl> <dt>윤거(전/후)</dt> <dd class=\"callValue\">1,580mm / 1,590mm</dd> </dl> <dl> <dt>공차 중량</dt> <dd class=\"callValue\">1,655kg</dd> </dl> <dl> <dt>차량 총 중량</dt> <dd class=\"callValue\">1,980kg</dd> </dl> </div></li><li> <h3>엔진</h3> <div class=\"spl_inner\"> <dl> <dt>명칭 / 형식</dt> <dd class=\"callValue\">직렬 4기통 가솔린 엔진</dd> </dl> <dl> <dt>배기량</dt> <dd class=\"callValue\">2,487cc</dd> </dl> <dl class=\"no_border\"> <dt>최고출력</dt> <dd></dd> </dl> <dl class=\"spl_2depth\"> <dt>엔진출력</dt> <dd class=\"callValue\">178PS / 5,700rpm</dd> </dl> <dl class=\"spl_2depth\"> <dt>전기 모터 출력</dt> <dd class=\"callValue\">120PS</dd> </dl> <dl class=\"spl_2depth\"> <dt>총 시스템 출력</dt> <dd class=\"callValue\">211PS</dd> </dl> <dl> <dt>최대토크</dt> <dd class=\"callValue\">22.5kg·m / 3,600rpm~5,200rpm</dd> </dl> <dl class=\"no_border\"> <dt>연비</dt> <dd></dd> </dl> <dl class=\"spl_2depth\"> <dt>도심</dt> <dd class=\"callValue\">17.1km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>고속도로</dt> <dd class=\"callValue\">16.2km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>복합</dt> <dd class=\"callValue\">16.7km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>등급</dt> <dd class=\"callValue\">1등급</dd> </dl> <dl> <dt>CO<sub>2</sub> 배출량</dt> <dd class=\"callValue\">95g/km</dd> </dl> </div></li><li> <h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl> <dt>트랜스미션</dt> <dd class=\"callValue\">무단 변속기(e-CVT)</dd> </dl> </div></li></ul> <ul class=\"sec\"> <li> <h3>샤시</h3> <div class=\"spl_inner\"> <dl> <dt>서스펜션(전/후)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본</dd> </dl> <dl> <dt>제동장치(전/후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd> </dl> <dl> <dt>연료탱크 용량</dt> <dd class=\"callValue\">49.3ℓ</dd> </dl> <dl> <dt>구동방식</dt> <dd class=\"callValue\">전륜구동</dd> </dl> <dl> <dt>타이어</dt> <dd class=\"callValue\">235 / 45R 18</dd> </dl> <dl> <dt>승차 정원</dt> <dd class=\"callValue\">5 명</dd> </dl> </div></li><li class=\"no_margin\"> <h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl> <dt>타이어</dt> <dd class=\"callValue\">235 / 45R18 사계절 타이어</dd> </dl> <dl> <dt>타이어 제조사</dt> <dd class=\"callValue\">BRIDGESTONE</dd> </dl> <dl> <dt>회전저항계수</dt> <dd class=\"callValue\">3</dd> </dl> <dl> <dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">3</dd> </dl> </div></li></ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul> </div></div></div></div>"
+
+    ]
+    }]}
+}

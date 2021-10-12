@@ -1,0 +1,300 @@
+{"model" : { "dataList" : [{
+    "mainVisual" : "../../images/modelView/MODEL_RAV4/00_topVksual/topVisual.jpg",
+    "m_mainVisual" : "../../images/modelView/MODEL_RAV4/00_topVksual/m_topVisual.jpg",
+    "keyVisual" : [
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "SMART REVOLUTION 당신의 생활에 스마트한 변화를",
+            "comment" : "도심에서도 교외에서도 RAV4는 언제나 스마트한 선택입니다. 파워와 우아함 모두를 갖춘 SUV RAV4는 당신으로 하여금 더 많은 곳을 가고, 더 모험하게 하고, 더 역동적으로 살게 할 것입니다.",
+            "m_img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/m_KV01.jpg",
+            "img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/KV01.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "RAV4의 스마트한 스타일은 도시의 풍경마저 아름답게 바꿉니다",
+            "comment" : "Bi-Beam LED 헤드램프와 LED 리어램프까지 이어지는 세련된 라인은 더욱 스마트해진 스타일을 완성하고, 블라인드 스팟 모니터, 후측방 경고 장치는 진화된 SUV의 가치를 제공합니다.",
+            "m_img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/m_KV02.jpg",
+            "img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/KV02.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "bottom",
+            "mPositionY" : "bottom",
+            "title" : "RAV4의 역동성과 견고함은 거친 길일수록 더욱 빛을 발합니다",
+            "comment" : "부드럽고 안정적으로 운전할 수 있고, 환경은 물론 경제적인 주행까지 생각하는 ECO MODE, 폭발적인 파워를 자랑하는 SPORT MODE를 통해 익사이팅한 드라이빙을 즐기실 수 있습니다.",
+            "m_img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/m_KV03.jpg",
+            "img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/KV03.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "bottom",
+            "mPositionY" : "bottom",
+            "title" : "Bring New Life to Every Moment",
+            "comment" : "드라이빙의 즐거움을 다시 당신에게",
+            "m_img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/m_KV04.jpg",
+            "img" : "../../images/modelView/MODEL_RAV4/01_keyVisual/KV04.jpg"
+        }
+    ],
+    "slider" : [
+        {"exterior" : [
+            {"tabmenu" : [
+                    {"title" : "exterior",
+                        "subcategory" :
+                            [{
+                            "title" : "Bi-Beam LED 헤드램프",
+                            "subtitle" : "Bi-Beam LED 헤드램프",
+                            "descript" : "Bi-Beam LED 헤드램프는 당신을 더 많은 곳으로, 더 역동적인 곳으로 이끌 것입니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/02_exterior/thurm_EXT01.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/02_exterior/EXT01.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/02_exterior/m_EXT01.jpg"
+                            },
+                            {
+                            "title" : "루프 레일",
+                            "subtitle" : "루프 레일",
+                            "descript" : "스키 캐리어, 텐트 등 다양한 종류의 짐을 적재할 수 있는 루프레일은 다양한 야외 활동에 효율적으로 이용할 수 있습니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/02_exterior/thurm_EXT02.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/02_exterior/EXT02.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/02_exterior/m_EXT02.jpg"
+                            },
+                            {
+                            "title" : "파워 백 도어 시스템",
+                            "subtitle" : "파워 백 도어 시스템<span class='subtitle_caption'>(가솔린 4WD/ 하이브리드 모델에만 적용)</span>",
+                            "descript" : "물체가 끼이는 것을 방지하는 잼 프로텍션 기능의 백 도어는 프레스 버튼 하나로 열리거나 닫히며,레벨링 메모리 기능이 적용되어 이용자의 신장에 따라 자유롭게 높이를 조절할 수 있습니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/02_exterior/thurm_EXT03.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/02_exterior/EXT03.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/02_exterior/m_EXT03.jpg"
+                            },
+                            {
+                            "title" : "전 후방 파킹 센서 & 후방 모니터",
+                            "subtitle" : "편리한 주차 보조 기능<br>전 후방 파킹 센서 & 후방 모니터",
+                            "descript" : "전 후방 파킹센서(전면4개, 후면 4개)와 후방 모니터(백가이드 포함) 시스템은 편리한 주차 보조 기능을 제공합니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/02_exterior/thurm_EXT04.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/02_exterior/EXT04.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/02_exterior/m_EXT04.jpg"
+                            },
+                            {
+                            "title" : "블라인드 스팟 모니터 & 후측방 경고 장치",
+                            "subtitle" : "안전한 운행을 돕는<br>블라인드 스팟 모니터 & 후측방 경고 장치",
+                            "descript" : "블라인드 스팟 모니터(BSM)와 후측방 경고 장치(RCTA)는 주행 중 사각지대 혹은 후진 중 후측방에서 접근하는 차량을 감지하여 보다 안전한 운행을 도와줍니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/02_exterior/thurm_EXT05.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/02_exterior/EXT05.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/02_exterior/m_EXT05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"interior" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "interior",
+                        "subcategory" :
+                            [{
+                            "title" : "스포티함과  고급스러움의 완벽한 조화 ",
+                            "subtitle" : "스포티함과  고급스러움의 완벽한 조화",
+                            "descript" : "스포티함과 고급스러움을 완벽히  공존시킨 아름다운 인테리어는 운전자에게 드라이빙의  즐거움을 배가 시킬 것입니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/03_interior/thurm_INT01.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/03_interior/INT01.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/03_interior/m_INT01.jpg"
+                            },
+                            {
+                            "title" : "넓고 쾌적한 실내공간",
+                            "subtitle" : "넓고 쾌적한 실내공간",
+                            "descript" : "탑승자를 배려하는 토요타 특유의 세심함으로 채워진 넓고 쾌적한  공간은 당신은 물론, 동승자에게도 특별한 감동을 선사할 것입니다. 특히 편리하면서도 다양하게 시트 변형이 가능하여  여러 명과의 동행도 편안하게 만듭니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/03_interior/thurm_INT02.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/03_interior/INT02.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/03_interior/m_INT02.jpg"
+                            },
+                            {
+                            "title" : "인스트루먼트 패널",
+                            "subtitle" : "인스트루먼트 패널",
+                            "descript" : "넓은 시야를 확보하고 편리한 조작에 최적화된,  대담하면서 세련된 인스트루먼트 패널의 감성이  운전을 더욱 즐겁게 합니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/03_interior/thurm_INT03.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/03_interior/INT03.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/03_interior/m_INT03.jpg"
+                            },
+                            {
+                            "title" : "뒷좌석 시트 폴딩",
+                            "subtitle" : "뒷좌석 시트 폴딩",
+                            "descript" : "뒷좌석 시트가 60:40 분할 폴딩되어 있어,  넓은 적재 공간을 확보하며 아웃도어 활동 시 다양하게  활용할 수 있습니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/03_interior/thurm_INT04.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/03_interior/INT04.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/03_interior/m_INT04.jpg"
+                            },
+                            {
+                            "title" : "SPORT 드라이빙 모드",
+                            "subtitle" : "SPORT 드라이빙 모드",
+                            "descript" : "SPORT 모드 스위치를 켜면 구불구불한 길에서의  역동적이고 흥미진진한 주행감을 즐길 수 있는  SPORT 컨트롤이 활성화됩니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/03_interior/thurm_INT05.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/03_interior/INT05.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/03_interior/m_INT05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"features" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "features",
+                        "subcategory" :
+                            [{
+                            "title" : "다이나믹 토크 컨트롤  시스템",
+                            "subtitle" : "<span class='color_black'>다이나믹 토크 컨트롤  시스템</span>",
+                            "descript" : "<span class='color_black'>이 시스템은 운전자가 의도하는 주행라인을 따라  이동할 수 있게 하며, 다양한 노면에서의 주행이 원활하도록 지원합니다.</span>",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/04_features/thurm_FTS01.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/04_features/FTS01.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/04_features/m_FTS01.jpg"
+                            },
+                            {
+                            "title" : "직렬 4기통  가솔린 엔진",
+                            "subtitle" : "직렬 4기통  가솔린 엔진",
+                            "descript" : "직렬 4기통 가솔린 엔진의 뛰어난 저속 주행성능은  고효율 연비는 물론 정숙성을 실현시켜 줍니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/04_features/thurm_FTS02.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/04_features/FTS02.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/04_features/m_FTS02.jpg"
+                            },
+                            {
+                            "title" : "경사로 밀림  방지 기능",
+                            "subtitle" : "경사로 밀림  방지 기능",
+                            "descript" : "경사로 밀림 방지 기능은 차량의 일정한 위치를 유지할 수 있게 합니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/04_features/thurm_FTS03.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/04_features/FTS03.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/04_features/m_FTS03.jpg"
+                            },
+                            {
+                            "title" : "6단 자동  변속기",
+                            "subtitle" : "6단 자동  변속기",
+                            "descript" : "고속과 저속에서 모두 강하고 부드러운 변속이 가능하며,  트랜스미션의 효율을 향상시켰습니다.  특히, 정지 후 출발 시 엔진 속도를 저감시켜 연료의 효율성을 높이고 가속 능력은 더욱 향상되었습니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/04_features/thurm_FTS04.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/04_features/FTS04.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/04_features/m_FTS04.jpg"
+                            },
+                            {
+                            "title" : "SRS 에어백",
+                            "subtitle" : "8 SRS 에어백",
+                            "descript" : "앞좌석 전면 에어백, 앞좌석 측변 에어백, 커튼 실드 에어백,  운전석 무릎 에어백, 조수석 시트 쿠션 에어백 등  총 8개의 전면 및 측면 충격으로부터  운전자와 승객을 보호합니다.",
+                            "thumbnail" : "../../images/modelView/MODEL_RAV4/04_features/thurm_FTS05.png",
+                            "orgImage" : "../../images/modelView/MODEL_RAV4/04_features/FTS05.jpg",
+                            "mImage" : "../../images/modelView/MODEL_RAV4/04_fatures/m_FTS05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        }
+    ],
+    "gallery" : [
+        {"dataList" : [{
+        "title" : "",
+        "m_img" : "../../images/modelView/MODEL_RAV4/05_gallery/m_GLY01.jpg",
+        "pc_img" : "../../images/modelView/MODEL_RAV4/05_gallery/GLY01.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/modelView/MODEL_RAV4/05_gallery/m_GLY02.jpg",
+        "pc_img" : "../../images/modelView/MODEL_RAV4/05_gallery/GLY02.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/modelView/MODEL_RAV4/05_gallery/m_GLY03.jpg",
+        "pc_img" : "../../images/modelView/MODEL_RAV4/05_gallery/GLY03.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/modelView/MODEL_RAV4/05_gallery/m_GLY04.jpg",
+        "pc_img" : "../../images/modelView/MODEL_RAV4/05_gallery/GLY04.jpg",
+        "link" : "#"
+    }
+     ]}
+    ],
+    "colors" : [
+        {
+            "colorName" : "SUPER WHITE",
+            "colorCode" : "#e8eaed",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_1.jpg"
+        },
+        {
+            "colorName" : "WHITE PEARL CRYSTAL SHINE",
+            "colorCode" : "#cbcfd1",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_2.jpg"
+        },
+        {
+            "colorName" : "SILVER METALLIC",
+            "colorCode" : "#bac2c6",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_3.jpg"
+        },
+        {
+            "colorName" : "GRAY METALLIC",
+            "colorCode" : "#525b5d",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_4.jpg"
+        },
+        {
+            "colorName" : "BLACK MICA",
+            "colorCode" : "#282f32",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_5.jpg"
+        },
+        {
+            "colorName" : "RED MICA",
+            "colorCode" : "#a02d39",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_6.jpg"
+        },
+        {
+            "colorName" : "BLACKISH AGEHA GLASS FLAKE",
+            "colorCode" : "#274558",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_7.jpg"
+        },
+        {
+            "colorName" : "BRONZE MICA METALLIC",
+            "colorCode" : "#6d655f",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_8.jpg"
+        },
+        {
+            "colorName" : "DARK BROWN METALLIC",
+            "colorCode" : "#373531",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_9.jpg"
+        },
+        {
+            "colorName" : "BLUE METALLIC",
+            "colorCode" : "#007baf",
+            "strokeOption" : false,
+            "carImg" : "../../images/modelView/MODEL_RAV4/06_colors/color_10.jpg"
+        }
+    ],
+    "specsHtml" : [
+        {
+            "type" : "TOYOTA86",
+            "specImg" : "../../images/modelView/MODEL_RAV4/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "RAV4(2WD)", "price" : "34,600,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li> <h3>제원</h3> <div class=\"spl_inner\"> <dl> <dt>전장/전폭/전고</dt> <dd class=\"callValue\">4,605mm x 1,845mm x 1,705mm</dd> </dl> <dl> <dt>축거</dt> <dd class=\"callValue\">2,660mm</dd> </dl> <dl> <dt>윤거(전/후)</dt> <dd class=\"callValue\">1,560 / 1,560</dd> </dl> <dl> <dt>공차 중량</dt> <dd class=\"callValue\">1,610kg</dd> </dl><dl> <dt>차량 총 중량</dt> <dd class=\"callValue\">1,935kg</dd> </dl> </div> </li> <li> <h3>엔진</h3> <div class=\"spl_inner\"> <dl> <dt>명칭 / 형식</dt> <dd class=\"callValue\">2.5ℓ 직렬 4기통 DOHC 듀얼 VVT-i</dd> </dl> <dl> <dt>배기량</dt> <dd class=\"callValue\">2,494cc</dd> </dl> <dl> <dt>최고출력</dt> <dd class=\"callValue\">179ps / 6,000rpm</dd> </dl> <dl> <dt>최대토크</dt> <dd class=\"callValue\">23.8kg.m / 4,100rpm</dd> </dl> <dl class=\"no_border\"> <dt>연비</dt> <dd></dd> </dl> <dl class=\"spl_2depth\"> <dt>도심</dt> <dd class=\"callValue\">8.7km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>고속도로</dt> <dd class=\"callValue\">11.1km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>복합</dt> <dd class=\"callValue\">9.6km/ℓ (4등급)</dd> </dl> <dl> <dt>CO<sub>2</sub> 배출량</dt> <dd class=\"callValue\">174g/km</dd> </dl> </div> </li> <li> <h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl> <dt>트랜스미션</dt> <dd class=\"callValue\">6단 자동 변속기</dd> </dl> </div> </li> </ul> <ul class=\"sec\"> <li> <h3>샤시</h3> <div class=\"spl_inner\"> <dl> <dt>서스펜션(전/후)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본</dd> </dl> <dl> <dt>제동장치(전/후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd> </dl> <dl> <dt>연료탱크 용량(L)</dt> <dd class=\"callValue\">60L</dd> </dl> <dl> <dt>구동방식</dt> <dd class=\"callValue\">전륜구동</dd> </dl> <dl> <dt>타이어(전/후)</dt> <dd class=\"callValue\">235 / 55R 18</dd> </dl> <dl> <dt>승차 정원</dt> <dd class=\"callValue\">5 명</dd> </dl> </div> </li> <li class=\"no_margin\"> <h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl> <dt>타이어</dt> <dd class=\"callValue\">235 / 55R 18</dd> </dl> <dl> <dt>타이어 제조사</dt> <dd class=\"callValue\">BRIDGESTONE</dd> </dl> <dl> <dt>회전저항계수</dt> <dd class=\"callValue\">3</dd> </dl> <dl> <dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">4</dd> </dl> </div> </li> </ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul> </div> </div> </div> </div>"
+        ,
+        {
+            "type" : "TOYOTA86",
+            "specImg" : "../../images/modelView/MODEL_RAV4/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "RAV4(4WD)", "price" : "39,500,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li> <h3>제원</h3> <div class=\"spl_inner\"> <dl> <dt>전장/전폭/전고</dt> <dd class=\"callValue\">4,605mm x 1,845mm x 1,705mm</dd> </dl> <dl> <dt>축거</dt> <dd class=\"callValue\">2,660mm</dd> </dl> <dl> <dt>윤거(전/후)</dt> <dd class=\"callValue\">1,560 / 1,560</dd> </dl> <dl> <dt>공차 중량</dt> <dd class=\"callValue\">1,660kg</dd></dl><dl> <dt>차량 총 중량</dt> <dd class=\"callValue\">1,985kg</dd> </dl> </div> </li> <li> <h3>엔진</h3> <div class=\"spl_inner\"> <dl> <dt>명칭 / 형식</dt> <dd class=\"callValue\">2.5ℓ 직렬 4기통 DOHC 듀얼 VVT-i</dd> </dl> <dl> <dt>배기량</dt> <dd class=\"callValue\">2,494cc</dd> </dl> <dl> <dt>최고출력</dt> <dd class=\"callValue\">179ps / 6,000rpm</dd> </dl> <dl> <dt>최대토크</dt> <dd class=\"callValue\">23.8kg.m / 4,100rpm</dd> </dl> <dl class=\"no_border\"> <dt>연비</dt> <dd></dd> </dl> <dl class=\"spl_2depth\"> <dt>도심</dt> <dd class=\"callValue\">8.4km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>고속도로</dt> <dd class=\"callValue\">10.9km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>복합</dt> <dd class=\"callValue\">9.4km/ℓ (4등급)</dd> </dl> <dl> <dt>CO<sub>2</sub> 배출량</dt> <dd class=\"callValue\">180g/km</dd> </dl> </div> </li> <li> <h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl> <dt>트랜스미션</dt> <dd class=\"callValue\">6단 자동 변속기</dd> </dl> </div> </li> </ul> <ul class=\"sec\"> <li> <h3>샤시</h3> <div class=\"spl_inner\"> <dl> <dt>서스펜션(전/후)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본</dd> </dl> <dl> <dt>제동장치(전/후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd> </dl> <dl> <dt>연료탱크 용량(L)</dt> <dd class=\"callValue\">60L</dd> </dl> <dl> <dt>구동방식</dt> <dd class=\"callValue\">4WD (All-Wheel Drive)</dd> </dl> <dl> <dt>타이어(전/후)</dt> <dd class=\"callValue\">235 / 55R 18</dd> </dl> <dl> <dt>승차 정원</dt> <dd class=\"callValue\">5 명</dd> </dl> </div> </li> <li class=\"no_margin\"> <h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl> <dt>타이어</dt> <dd class=\"callValue\">235 / 55R 18</dd> </dl> <dl> <dt>타이어 제조사</dt> <dd class=\"callValue\">BRIDGESTONE</dd> </dl> <dl> <dt>회전저항계수</dt> <dd class=\"callValue\">3</dd> </dl> <dl> <dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">4</dd> </dl> </div> </li> </ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul> </div> </div> </div> </div>"
+    ]
+    }]}
+}

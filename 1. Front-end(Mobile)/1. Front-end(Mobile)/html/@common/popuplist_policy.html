@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1100, user-scalable=yes">
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>Project AjaxPopup List</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+	<script src="../../common/js/jquery-ui.js"></script>
+</head>
+<body>
+<style>
+#popuplist {width: 500px; padding: 20px;}
+#popuplist ul {padding: 20px; background: rgba(0, 0, 0, 0.6);}
+#popuplist ul li button {display: block; width: 100%; padding: 12px; color: #ffffff; text-align: left;}
+#popuplist ul li button:hover {background: #000000;}
+</style>
+	<div id="popuplist">
+		<ul>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_models1.html');">MODELS > 시승신청 > [비회원] 신청 팝업 > 개인정보 수집 및 이용</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_models2.html');">MODELS > 시승신청 > [비회원] 신청 팝업 > 개인정보 취급 위탁</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_models3.html');">MODELS > 시승신청 > [비회원] 신청 팝업 > 개인정보 제3자 제공</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_support1.html');">SUPPORT > 문의/개선 요청 > [비회원] 신청 팝업 > 개인정보 수집 및 이용</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_support2.html');">SUPPORT > 문의/개선 요청 > [비회원] 신청 팝업 > 개인정보 제3자 제공</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_member1.html');">MEMBER > 회원가입 > [pop]개인정보 마케팅 활용 동의</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_member2.html');">MEMBER > 회원가입 > [pop]개인정보 수집 및 이용에 대한 동의</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_member3.html');">MEMBER > 회원가입 > [pop]개인정보 제3자 제공에 대한 동의</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/policy_member4.html');">MEMBER > 회원가입 > [pop]개인정보 취급 위탁에 대한 동의</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/privacy_policy.html');">설정 > [pop] 개인정보처리방침</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/termsofuse.html');">설정 > [pop] 이용약관</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/termsofuse_location.html');">설정 > [pop] 위치기반 이용약관</button></li>
+		</ul>
+	</div>
+</body>
+</html>

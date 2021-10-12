@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+    <script src="../../common/modeljs/three.min.js"></script>
+    <script src="../../common/modeljs/panolens.min.js"></script>
+    <title>VR</title>
+    <style>
+        body,html { margin:0; width:100%; height:100%;}
+    </style>
+</head>
+<body>
+<script>
+    var panorama, viewer;
+    panorama = new PANOLENS.ImagePanorama( '../../images/model_view/MODEL_CamryWildHybrid/main/inner_vr.jpg' );
+    viewer = new PANOLENS.Viewer();
+    viewer.add( panorama );
+</script><div class="panolens-container" style="width: 100%; height: 100%; background-color: rgb(0, 0, 0);"><canvas width="0" height="0" class="panolens-canvas" style="width: 0px; height: 0px; display: block;"></canvas><div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: transparent; display: none;"></div><div style="width: 100%; height: 44px; float: left; transform: translateY(-100%); background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); transition: all 0.27s ease 0s; pointer-events: none;"><span style="padding: 5px 0px; position: fixed; bottom: 100%; right: 14px; background-color: rgb(250, 250, 250); font-family: &quot;Helvetica Neue&quot;; font-size: 14px; visibility: hidden; opacity: 0; box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 12pt; border-radius: 2px; overflow: hidden; will-change: width, height, opacity; pointer-events: auto; transition: all 0.27s ease 0s; width: 200px;"><a type="item" style="display: block; padding: 10px 10px 10px 20px; text-decoration: none; cursor: pointer; pointer-events: auto; transition: all 0.27s ease 0s;">Control<span style="float: right; width: 17px; height: 17px; margin-left: 12px; background-size: cover; background-image: url(&quot;https://pchen66.github.io/Panolens/asset/icon/chevron-right.png&quot;);"></span><span style="font-size: 13px; font-weight: 300; float: right;">Touch</span></a><a type="item" style="display: block; padding: 10px 10px 10px 20px; text-decoration: none; cursor: pointer; pointer-events: auto; transition: all 0.27s ease 0s;">Mode<span style="float: right; width: 17px; height: 17px; margin-left: 12px; background-size: cover; background-image: url(&quot;https://pchen66.github.io/Panolens/asset/icon/chevron-right.png&quot;);"></span><span style="font-size: 13px; font-weight: 300; float: right;">Normal</span></a></span><span style="cursor: pointer; float: right; width: 44px; height: 100%; background-size: 60%; background-repeat: no-repeat; background-position: center center; user-select: none; position: relative; pointer-events: auto; background-image: url(&quot;https://pchen66.github.io/Panolens/asset/icon/fullscreen.png&quot;);"></span><span style="cursor: pointer; float: right; width: 44px; height: 100%; background-size: 60%; background-repeat: no-repeat; background-position: center center; user-select: none; position: relative; pointer-events: auto; background-image: url(&quot;https://pchen66.github.io/Panolens/asset/icon/setting.png&quot;); transition: all 0.27s ease 0s;"></span><span style="display: none;"><span style="cursor: pointer; float: left; width: 44px; height: 100%; background-size: 60%; background-repeat: no-repeat; background-position: center center; user-select: none; position: relative; pointer-events: auto; background-image: url(&quot;https://pchen66.github.io/Panolens/asset/icon/video-play.png&quot;);"></span><span style="cursor: pointer; float: left; width: 30%; height: 4px; background-size: 60%; background-repeat: no-repeat; background-position: center center; user-select: none; position: relative; pointer-events: auto; margin-top: 20px; background-color: rgba(188, 188, 188, 0.8);"><div style="width: 0%; height: 100%; background-color: rgb(255, 255, 255);"><div style="float: right; width: 14px; height: 14px; transform: translate(7px, -5px); border-radius: 50%; background-color: rgb(221, 221, 221);"></div></div></span></span></div></div><style id="panolens-style-addon">:-webkit-full-screen { width: 100% !important; height: 100% !important }</style>
+
+</body></html>

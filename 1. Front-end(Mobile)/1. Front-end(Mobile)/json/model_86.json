@@ -1,0 +1,340 @@
+{"model" : { "dataList" : [{
+    "mainVisual" : "../../images/model_view/MODEL_86/00_topVksual/topVisual.jpg",
+    "m_mainVisual" : "../../images/model_view/MODEL_86/00_topVksual/m_topVisual.jpg",
+    "keyVisual" : [
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "86 Makes Drivers",
+            "comment" : "드라이버와 스포츠카가 드라이빙을 통해 함께 성장하는 경험. 세상의 도로와 서킷을 하나씩 정복해 나가는 즐거움. 토요타 86은 드라이버의 손과 발이 되어 스포츠 드라이빙의 가장 중요한 순간을 함께 합니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV01.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV01.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "저중심의 완벽한 바디 디자인",
+            "comment" : "많은 사람들에게 드라이빙의 진정한 기쁨을 전해주고자 하는 바람은 완벽한 저중심 바디 디자인에 대한 영감이 되었습니다. 그 영감으로부터 탄생한 저중심의 프런트 미드십 FR 패키지는 가장 이상적인 53:47의 완벽한 전후 밸런스를 실현하며 새로운 세대의 경량 스포츠카인 토요타 86을 만들어냈습니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV02.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV02.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "bot",
+            "mPositionY" : "top",
+            "title" : "당신의 드라이빙을 진화시키는 강력한 퍼포먼스",
+            "comment" : "세계 최초 수평대향엔진과 첨단 D-4S 연료분사기술로 만들어진 가솔린  엔진은 폭발적인 가속과 페달에 대한 즉각적인 반응을 통해 토요타 86의 다이내믹하고 유니크한 드라이빙을 실현합니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV03.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV03.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "발 끝 하나로 완성되는 드라이빙",
+            "comment" : "수 많은 레이스에서 연마한 주행 경험을 토대로 스포츠카로서의 거듭된 진화를 선보여 온 토요타 86. 차체 강성을 더욱 향상 시키고 토센 LSD와 SACHS 퍼포먼스 서스펜션을 적용하여 역동적이고 스릴 있는 코너링을 가능하게 합니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV04.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV04.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "bot",
+            "mPositionY" : "top",
+            "title" : "토요타 86에 탑승하는 순간 실현되는 진정한 드라이버의 꿈",
+            "comment" : "G포스와 토크곡선, 가속 페달과 브레이크 페달의 답력, 랩 타이머 등 드라이빙을 즐기는 레이서를 위한 센터페시아를 통해 토요타 86과 당신의 즐거운 대화가 가능합니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV05.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV05.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "온 몸으로 드라이빙을 느끼고 싶은 당신을 위해 설계된 공간",
+            "comment" : "스포츠 시트로부터 직관적으로 전달되는 차량의 움직임과 함께 버킷 구조의 강화된 볼스터, 그리고 알칸타라 퍼포레이션 시트의 착좌면이 피트감을 더욱 향상 시켰습니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV06.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV06.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "bot",
+            "mPositionY" : "top",
+            "title" : "TOYOTA 86, the origins of technology",
+            "comment" : "토요타는 이미 1960년대부터 수평대향엔진과 FR 형식을 도입했습니다. 당시 컴팩트한 토요타 스포츠 800은 그 시절 기술력의 정점이었습니다. 그리고 뛰어난 무게 배분은 높은 퀄리티의 핸들링과 차량의 안정감으로 드라이버가 드라이빙을 리드할 수 있도록 만들었습니다. 이는 세대를 거쳐 오늘의 TOYOTA 86으로 이어졌고, 오늘날의 ‘드라이빙의 즐거움’을 만들어냈습니다.",
+            "m_img" : "../../images/model_view/MODEL_86/01_keyVisual/m_KV07.jpg",
+            "img" : "../../images/model_view/MODEL_86/01_keyVisual/KV07.jpg"
+        }
+    ],
+    "slider" : [
+        {"exterior" : [
+            {"tabmenu" : [
+                    {"title" : "exterior",
+                        "subcategory" :
+                            [{
+                            "title" : "에어로 다이내믹디자인",
+                            "subtitle" : "에어로 다이내믹 디자인",
+                            "descript" : "토요타의 정통 스포츠카의 멋스러움을 현대적으로 재현하고 수많은 풍동 시험을 거쳐 완성한 날렵하고 부드러운 실루엣으로 조종안정성을 극대화시킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/02_exterior/thurm_EXT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/02_exterior/EXT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/02_exterior/m_EXT01.jpg"
+                            },
+                            {
+                            "title" : "Bi-Beam LED 헤드램프",
+                            "subtitle" : "Bi-Beam LED 헤드램프",
+                            "descript" : "LED 주간주행등과 LED 방향지시등이 통합된 Bi-Beam LED 헤드램프는 하나의 램프로 상향등과 하향등 전환이 가능하며 램프 안에 86마크가 각인되어 토요타 86의 개성을 담아냈습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/02_exterior/thurm_EXT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/02_exterior/EXT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/02_exterior/m_EXT02.jpg"
+                            },
+                            {
+                            "title" : "리어 윙 스포일러",
+                            "subtitle" : "리어 윙 스포일러",
+                            "descript" : "알루미늄 소재의 윙 타입의 리어스포일러가 전체 기류를 차체 후미로 끌어 당기고 다운포스를 증가시켜 고속에서의 직선 주행은 물론 코너링 시 탁월한 접지력을 발휘합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/02_exterior/thurm_EXT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/02_exterior/EXT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/02_exterior/m_EXT03.jpg"
+                            },
+                            {
+                            "title" : "펜더 가니쉬",
+                            "subtitle" : "펜더 가니쉬",
+                            "descript" : "측면부 펜터 가니쉬에는 세련되고 스포티한 핀이 추가되어 바디 롤링을 제어합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/02_exterior/thurm_EXT04.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/02_exterior/EXT04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/02_exterior/m_EXT04.jpg"
+                            },
+                            {
+                            "title" : "LED 리어램프",
+                            "subtitle" : "LED 리어램프",
+                            "descript" : "소형 링과 LED 라인을 적용한 Full-LED로 변경되어 다양한 기능은 물론 보다 좋은 시인성으로 운전자의 안전성을 향상시킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/02_exterior/thurm_EXT05.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/02_exterior/EXT05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/02_exterior/m_EXT05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"interior" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "interior",
+                        "subcategory" :
+                            [{
+                            "title" : "스포츠 스티어링 휠",
+                            "subtitle" : "스포츠 스티어링 휠",
+                            "descript" : "스포츠 주행에 최적화된 스티어링 휠은 토요타 모델 중 가장 작은 362mm로 지름을 변경하고 최적화된 휠 그립감으로 겨드랑이가 안으로 자연스럽게 붙어 핸들링 응답성을 향상시켰습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/03_interior/thurm_INT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/03_interior/INT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/03_interior/m_INT01.jpg"
+                            },
+                            {
+                            "title" : "콤비네이션 미터",
+                            "subtitle" : "콤비네이션 미터",
+                            "descript" : "토요타 86의 계기판은 타코미터를 최고 rpm 부근인 7,000rpm이 맨 위에 오도록 변경하고, 우측 링에는 4.2인치 멀티 인포메이션 디스플레이를 통해 실시간으로 다양하고 정확한 차량 정보를 알려줍니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/03_interior/thurm_INT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/03_interior/INT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/03_interior/m_INT02.jpg"
+                            },
+                            {
+                            "title" : "멀티인포메이션 디스플레이",
+                            "subtitle" : "멀티인포메이션 디스플레이",
+                            "descript" : "G 포스와 G 궤적을 표시하여 코너링 시 드라이빙에 집중할 수 있으며,  좌우 조타각 및 가속 페달과 브레이크 페달의 답력 정보도 표시해 줍니다.  또한 랩 타이머 기능과 스톱 워치, 토크 곡선 그리고 수온계/유온계 정보도 전달합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/03_interior/thurm_INT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/03_interior/INT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/03_interior/m_INT03.jpg"
+                            },
+                            {
+                            "title" : "스포츠 시트",
+                            "subtitle" : "스포츠 시트",
+                            "descript" : "저중심 차체설계에 적합한 낮은 시트포지션으로 운전자의 신체를 확실하게 잡아줌은 물론 변속조작 및 페달조작이 용이하여 차량의 움직임을 직관적으로 느낄 수 있도록 만들어 줍니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/03_interior/thurm_INT04.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/03_interior/INT04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/03_interior/m_INT04.jpg"
+                            },
+                            {
+                            "title" : "그랜드-럭스 스웨이드 장식",
+                            "subtitle" : "그랜드-럭스 스웨이드 장식",
+                            "descript" : "인스트루먼트 패널 오너먼트와 미터 후드, 도어트림 상단에 스웨이드 질감의 그랜드-럭스 재질을 사용하여 한층 고급스러운 느낌을 전달합니다. 또한, 외부의 빛 반사를 억제하여 운전에 집중할 수 있도록 도와줍니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/03_interior/thurm_INT05.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/03_interior/INT05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/03_interior/m_INT05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"features" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "features",
+                        "subcategory" :
+                            [{
+                            "title" : "수평대향엔진 & D-4S",
+                            "subtitle" : "수평대향엔진 & D-4S",
+                            "descript" : "수평대향엔진과 첨단 연료분사 시스템 D-4S의 조합으로 만들어진 엔진은 폭발적인 가속과 페달에 대한 즉각적인 반응을 전달합니다. 첨단 D-4S 기술은 직분사와 포트분사의 장점을 결합하여  강한 압력으로 연료를 분사하고 실린더까지의 동선이 짧고 입자가 고와 실린더 속으로 고르게 퍼져  한층 더 농밀한 폭발을 일으킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/04_features/thurm_FTS01.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/04_features/FTS01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/04_features/m_FTS01.jpg"
+                            },
+                            {
+                            "title" : "6단 변속기",
+                            "subtitle" : "6단 변속기",
+                            "descript" : "스포츠카의 경쾌한 변속감을 전달하고 생동감 넘치는 드라이빙 감각을 즐길 수 있습니다.  패들 시프트(AT 사양)을 통해 민첩하고 변속이 가능합니다. 또한 MT 사양을 선택할 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/04_features/thurm_FTS02.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/04_features/FTS02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/04_features/m_FTS02.jpg"
+                            },
+                            {
+                            "title" : "서스펜션",
+                            "subtitle" : "서스펜션",
+                            "descript" : "전륜의 맥퍼슨 스트럿 서스펜션은 뛰어난 공간효율성과 가벼운 무게를 자랑하고 즉각적인 핸들링과 함께 우수한 제어성을 제공합니다. 후륜의 더블 위시본 서스펜션은 고강성을 자랑함은 물론 우수한 리어 그립으로 스포티함과 안정성을 확보해줍니다. SACHS 퍼포먼스  쇽업소버를 새롭게 적용하여 프릭션 특성과 감쇠력 특성을 개선하고 댐핑 성능을 더욱 향상 시켰습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/04_features/thurm_FTS03.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/04_features/FTS03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/04_features/m_FTS03.jpg"
+                            },
+                            {
+                            "title" : "토센 LSD",
+                            "subtitle" : "토센 LSD",
+                            "descript" : "토센 LSD는 좌우 양쪽 휠의 움직임의 변화를 최소화 시킵니다. 어떤 조작에서도 즉각적인 반응과 부드러운 토크 전달을 유지하여 당신의 모든 컨트롤을 완성시킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/04_features/thurm_FTS04.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/04_features/FTS04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/04_features/m_FTS04.jpg"
+                            },
+                            {
+                            "title" : "TRACK 모드",
+                            "subtitle" : "TRACK 모드",
+                            "descript" : "스포츠 드라이빙의 즐거움을 더 누리고자 하는 분들을 위해 VSC의 설정을 더욱 다이내믹하게 하는 TRACK모드를 신설했습니다. 서킷 주행용 모드로 한계점에서 드라이버의 컨트롤 영역을 남기면서도 스핀을 억제하는 즐거움을 맛볼 수 있습니다. 또한 TRACK모드를 사용하지 않을 경우에는 VSC의 개입으로 인한 급작스런 브레이크 제어를 억제하여 자연스러운 스포츠 드라이빙이 가능합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_86/04_features/thurm_FTS05.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/04_features/FTS05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/04_features/m_FTS05.jpg"
+                            },
+                            {
+                            "title" : "SRS 에어백",
+                            "subtitle" : "SRS 에어백",
+                            "descript" : "운전석, 조수석 및 측면 등 보다 안전한 주행 퍼포먼스를 즐길 수 있도록 SRS 에어백을 통해 안전을 확보하였습니다. (6 SRS 에어백 적용)",
+                            "thumbnail" : "../../images/model_view/MODEL_86/04_features/thurm_FTS06.png",
+                            "orgImage" : "../../images/model_view/MODEL_86/04_features/FTS06.jpg",
+                            "mImage" : "../../images/model_view/MODEL_86/04_features/m_FTS06.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        }
+    ],
+    "gallery" : [
+        {"dataList" : [{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY01.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY01.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY02.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY02.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY03.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY03.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY04.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY04.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY05.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY05.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY06.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY06.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY07.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY07.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_86/05_gallery/m_GLY08.jpg",
+        "pc_img" : "../../images/model_view/MODEL_86/05_gallery/GLY08.jpg",
+        "link" : "#"
+    }
+     ]}
+    ],
+    "colors" : [
+        {
+            "colorName" : "ICE SILVER METALLIC",
+            "colorCode" : "#dedede",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_1.jpg"
+        },
+        {
+            "colorName" : "CRYSTAL WHITE PEARL",
+            "colorCode" : "#ffffff",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_2.jpg"
+        },
+        {
+            "colorName" : "DARK GRAY METALLIC",
+            "colorCode" : "#444444",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_3.jpg"
+        },
+        {
+            "colorName" : "CRISTAL BLACK SILICA",
+            "colorCode" : "#0f0f0f",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_4.jpg"
+        },
+        {
+            "colorName" : "PURE RED",
+            "colorCode" : "#c01529",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_5.jpg"
+        },
+        {
+            "colorName" : "BRIGHT BLUE",
+            "colorCode" : "#007baf",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_8.png"
+        },
+        {
+            "colorName" : "LAPIS BLUE PEARL",
+            "colorCode" : "#00427e",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_86/06_colors/color_7.jpg"
+        }
+    ],
+    "specsHtml" : [
+        {
+            "type" : "TOYOTA86",
+            "specImg" : "../../images/model_view/MODEL_86/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "TOYOTA86 MT", "price" : "42,600,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li> <h3>제원</h3> <div class=\"spl_inner\"> <dl> <dt>전장/전폭/전고</dt> <dd class=\"callValue\">4,240mm x 1,775mm x 1,320mm</dd> </dl> <dl> <dt>공차 중량</dt> <dd class=\"callValue\">1,240kg</dd> </dl> </div></li><li> <h3>엔진</h3> <div class=\"spl_inner\"> <dl> <dt>명칭 / 형식</dt> <dd class=\"callValue\">가솔린 4기통 수평대향 / 자연흡기</dd> </dl> <dl> <dt>배기량</dt> <dd class=\"callValue\">1,998cc</dd> </dl> <dl> <dt>최고출력</dt> <dd class=\"callValue\">203ps / 7,000rpm</dd> </dl> <dl> <dt>최대토크</dt> <dd class=\"callValue\">20.9kgㆍm / 6,400 ~ 6,600rpm</dd> </dl> <dl class=\"no_border\"> <dt>연비</dt> <dd></dd> </dl> <dl class=\"spl_2depth\"> <dt>도심</dt> <dd class=\"callValue\">9.9km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>고속도로</dt> <dd class=\"callValue\">12.6km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>복합</dt> <dd class=\"callValue\">11.0km/ℓ (4등급)</dd> </dl> <dl> <dt>CO<sub>2</sub> 배출량</dt> <dd class=\"callValue\">151g/km</dd> </dl> </div></li><li> <h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl> <dt>트랜스미션</dt> <dd class=\"callValue\">6단 수동</dd> </dl> </div></li></ul> <ul class=\"sec\"> <li> <h3>샤시</h3> <div class=\"spl_inner\"> <dl> <dt>서스펜션(전/후/쇽업소버)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본 / SACHS 퍼포먼스</dd> </dl> <dl> <dt>제동장치(전/후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 벤틸레이티드 디스크</dd> </dl> <dl> <dt>연료탱크 용량(L)</dt> <dd class=\"callValue\">50L</dd> </dl> <dl> <dt>구동방식</dt> <dd class=\"callValue\">후륜구동</dd> </dl> <dl> <dt>타이어</dt> <dd class=\"callValue\">215 / 45R 17</dd> </dl> <dl> <dt>승차 정원</dt> <dd class=\"callValue\">4 명</dd> </dl> </div></li><li class=\"no_margin\"> <h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl> <dt>타이어</dt> <dd class=\"callValue\">215 / 45R 17</dd> </dl> <dl> <dt>타이어 제조사</dt> <dd class=\"callValue\">MICHELIN</dd> </dl> <dl> <dt>회전저항계수</dt> <dd class=\"callValue\">5</dd> </dl> <dl> <dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">2</dd> </dl> </div></li></ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul> </div></div></div></div>"
+        ,
+        {
+            "type" : "TOYOTA86",
+            "specImg" : "../../images/model_view/MODEL_86/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "TOYOTA86 AT", "price" : "48,000,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li> <h3>제원</h3> <div class=\"spl_inner\"> <dl> <dt>전장/전폭/전고</dt> <dd class=\"callValue\">4,240mm x 1,775mm x 1,320mm</dd> </dl> <dl> <dt>공차 중량</dt> <dd class=\"callValue\">1,280kg</dd> </dl> </div></li><li> <h3>엔진</h3> <div class=\"spl_inner\"> <dl> <dt>명칭 / 형식</dt> <dd class=\"callValue\">가솔린 4기통 수평대향 / 자연흡기</dd> </dl> <dl> <dt>배기량</dt> <dd class=\"callValue\">1,998cc</dd> </dl> <dl> <dt>최고출력</dt> <dd class=\"callValue\">203ps / 7,000rpm</dd> </dl> <dl> <dt>최대토크</dt> <dd class=\"callValue\">20.9kgㆍm / 6,400 ~ 6,600rpm</dd> </dl> <dl class=\"no_border\"> <dt>연비</dt> <dd></dd> </dl> <dl class=\"spl_2depth\"> <dt>도심</dt> <dd class=\"callValue\">9.6km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>고속도로</dt> <dd class=\"callValue\">13.4km/ℓ</dd> </dl> <dl class=\"spl_2depth\"> <dt>복합</dt> <dd class=\"callValue\">11.0km/ℓ (4등급)</dd> </dl> <dl> <dt>CO<sub>2</sub> 배출량</dt> <dd class=\"callValue\">151g/km</dd> </dl> </div></li><li> <h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl> <dt>트랜스미션</dt> <dd class=\"callValue\">6단 자동</dd> </dl> </div></li></ul> <ul class=\"sec\"> <li> <h3>샤시</h3> <div class=\"spl_inner\"> <dl> <dt>서스펜션(전/후/쇽업소버)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본 / SACHS 퍼포먼스</dd> </dl> <dl> <dt>제동장치(전/후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 벤틸레이티드 디스크</dd> </dl> <dl> <dt>연료탱크 용량(L)</dt> <dd class=\"callValue\">50L</dd> </dl> <dl> <dt>구동방식</dt> <dd class=\"callValue\">후륜구동</dd> </dl> <dl> <dt>타이어</dt> <dd class=\"callValue\">215 / 45R 17</dd> </dl> <dl> <dt>승차 정원</dt> <dd class=\"callValue\">4 명</dd> </dl> </div></li><li class=\"no_margin\"> <h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl> <dt>타이어</dt> <dd class=\"callValue\">215 / 45R 17</dd> </dl> <dl> <dt>타이어 제조사</dt> <dd class=\"callValue\">MICHELIN</dd> </dl> <dl> <dt>회전저항계수</dt> <dd class=\"callValue\">5</dd> </dl> <dl> <dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">2</dd> </dl> </div></li></ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul> </div></div></div></div>"
+    ]
+    }]}
+}

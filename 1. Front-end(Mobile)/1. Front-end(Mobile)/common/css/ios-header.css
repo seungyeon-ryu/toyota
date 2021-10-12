@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.trg_aside {margin-top: calc(constant(safe-area-inset-bottom) + 80px); margin-top: calc(env(safe-area-inset-bottom) + 80px);}
+#header {margin-top: calc(constant(safe-area-inset-bottom) + 40px); margin-top: calc(env(safe-area-inset-bottom) + 40px);}
+#wrap.model #header.sub .logo {top: 80px;}
+#wrap.model #header.sub .back {top: 80px;}
+#wrap > .sub_visualModel {top: 180px;}
+#wrap .sub_cont.model {top: 180px;}
+#wrap .sub_cont .sub_wrap.fix .lnb_wrap .lnb_title {top: 180px;}
+.tit_page {top: calc(constant(safe-area-inset-bottom) + 40px); top: calc(env(safe-area-inset-bottom) + 40px);}
+.model_list {padding-top: 180px;}
+.setting_wrap {padding-top: 180px;}
+.promotion {padding-top: 180px;}
+.full_popup .full_head {padding-top: 80px;}
+.full_popup .full_head .layer_close {top: 80px;}

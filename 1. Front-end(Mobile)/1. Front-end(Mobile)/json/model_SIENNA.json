@@ -1,0 +1,329 @@
+{"model" : { "dataList" : [{
+    "mainVisual" : "../../images/model_view/MODEL_SIENNA_2018/00_topVksual/topVisual.jpg",
+    "m_mainVisual" : "../../images/model_view/MODEL_SIENNA_2018/00_topVksual/m_topVisual.jpg",
+    "keyVisual" : [
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "PREMIUM MINIVAN",
+            "comment" : "나의 취미와 가족과의 시간, 그리고 VIP 고객 케어까지 삶의 중요한 순간들을 모두 담을 수 있는 시에나와 함께 삶이 풍성해지고 아름다워질 것입니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV01.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV01.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "bottom",
+            "mPositionY" : "top",
+            "title" : "더욱 품격 있고 차별화된 <br>BOLD &amp; MODERN <br>익스테리어 디자인",
+            "comment" : "시에나는 프리미엄 미니밴의 디자인을 한 단계 더 진화시켰습니다. <br>한층 대담하고 모던해진 디자인은 프리미엄 미니밴의 리더 이미지를 더욱 굳건히 하고, 대형 사다리꼴 범퍼를 새롭게 적용하여 브랜드 아이덴티티를 더욱 강화하였습니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV02.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV02.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "어떤 길에도 <br>주저함이 없는 퍼포먼스",
+            "comment" : "시에나의 3.5ℓ V6 듀얼 VVT-i(W) 엔진은 최고 출력 301마력을 자랑하며 한층 진화된 8단 자동 변속기의 부드러운 변속감은 다이내믹한 드라이빙은 물론 정숙성과 효율적인 연비를 구현합니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV03.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV03.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "어떤 조건에서도 <br>최적화된 주행을 선보이는 <br>액티브 토크 컨트롤 4륜 구동 시스템",
+            "comment" : "시에나의 4륜 구동 시스템은 능동적인 토크 제어를 통해 안정적인 코너링을 가능하게 하고 연료 효율성을 향상시켰습니다. <br>빗길은 물론 눈길에서도 안전한 드라이빙을 지원하는 시에나로 어떤 날씨나 계절에서도 안심하고 더 많은 즐거움을 위해 떠날 수 있습니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV04.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV04.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "당신의 꿈을 가득 <br>담을 수 있는 공간",
+            "comment" : "더 많은 기능성을 꿈꾸는 사람과 함께 할 때 시에나의 가치는 더해집니다. <br>다재다능한 편의 사양과 함께 보다 넓은 공간으로 당신에게 다양한 즐거움을 제공합니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV05.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV05.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "left",
+            "textPositionY" : "top",
+            "mPositionY" : "top",
+            "title" : "안전한 드라이빙 이전에 <br>안심할 수 있도록",
+            "comment" : "토요타의 최첨단 Toyota Safety Sense(토요타 안전 예방 기술)를 비롯하여 사각지대 감지 모니터와 후측방 경고 시스템, 8개의 SRS 에어백 시스템까지. 운전자의 안전 주행을 보조하고 사고를 예방하며, 혹시 모를 사고 시에도 피해를 최소화하였습니다.<span class='mark'><span>Toyota Safety Sense</span></span>",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV06.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV06.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "bottom",
+            "mPositionY" : "top",
+            "title" : "고급스러우면서도 여유롭고<br> 개방감이 느껴지는 인테리어",
+            "comment" : "중요한 사람과의 미팅에서부터 사랑하는 사람과의 여행까지 누구와 어디로 떠나든 그 길은 당신을 향해 있습니다.<br> 운전자에게 가장 이상적인 드라이빙 포지션을 제공함은 물론 4.2인치 멀티 인포메이션 디스플레이와 7인치 터치 스크린이 적용되고 액센트 우드 트림으로 마무리되어 럭셔리와 편안한 드라이빙 모두를 제공합니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV07.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV07.jpg"
+        },
+        {
+            "textColorClass" : "white",
+            "textPositionX" : "right",
+            "textPositionY" : "bottom",
+            "mPositionY" : "top",
+            "title" : "안락함과 편의성을 겸비한<br> 프리미엄 실내 공간",
+            "comment" : "시에나의 인테리어 공간 활용도를 높여 최상의 안락함을 제공합니다.<br> 최고급 럭셔리 세단에만 적용되는 동급 유일의 오토만 시트와 함께 리어 사이드 선쉐이드와 듀얼 파워 슬라이딩 도어 등 뒷좌석을 배려한 첨단 기능이 퍼스트 클래스에서만 느낄 수 있는 편안함과 고급스러운 분위기를 제공합니다.",
+            "m_img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/m_KV08.jpg",
+            "img" : "../../images/model_view/MODEL_SIENNA_2018/01_keyVisual/KV08.jpg"
+        }
+    ],
+    "slider" : [
+        {"exterior" : [
+            {"tabmenu" : [
+                    {"title" : "exterior",
+                        "subcategory" :
+                            [{
+                            "title" : "헤드 램프",
+                            "subtitle" : "<span>01</span>헤드 램프",
+                            "descript" : "세련된 디자인을 한층 스타일리쉬하게 만들어주는 LED 주간 주행등과 함께 날렵한 전면 이미지를 연출합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/thurm_EXT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/EXT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/m_EXT01.jpg"
+                            },
+                            {
+                            "title" : "리어 스포일러 &amp; 보조제동등",
+                            "subtitle" : "<span>02</span>리어 스포일러 &amp; <br>보조제동등",
+                            "descript" : "에어로 다이내믹 디자인이 적용된 리어스포일러는 바로 아래에 와이퍼를 두어 깔끔한 외관을 완성시켰으며, 보조제동등을 장착해 시인성을 높였습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/thurm_EXT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/EXT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/m_EXT02.jpg"
+                            },
+                            {
+                            "title" : "멀티 아웃사이드 미러",
+                            "subtitle" : "<span>03</span>멀티 아웃사이드 미러",
+                            "descript" : "아웃사이드 미러에는 열선, EC, 메모리 기능 뿐 아니라 퍼들램프, 파워 폴딩, 리버스 틸트, 방향 지시등 기능까지 탑재되어 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/thurm_EXT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/EXT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/m_EXT03.jpg"
+                            },
+                            {
+                            "title" : "파워 백도어",
+                            "subtitle" : "<span>04</span>파워 백도어",
+                            "descript" : "여성이나 노약자도 손쉽게 개폐할 수 있으며 잼 프로텍션 기능으로 물체가 끼이는 것을 방지하여 더우 안전합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/thurm_EXT04.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/EXT04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/02_exterior/m_EXT04.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"interior" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "interior",
+                        "subcategory" :
+                            [{
+                            "title" : "3열 적재공간",
+                            "subtitle" : "<span>01</span>3열 적재공간",
+                            "descript" : "3열 시트를 접거나 화물칸 밑의 수납 공간을 이용하여, 대용량 짐도 쉽게 실을 수 있어 공간 활용도가 높습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/thurm_INT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/INT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/m_INT01.jpg"
+                            },
+                            {
+                            "title" : "3 존 풀 오토 에어컨",
+                            "subtitle" : "<span>02</span>3 존 <br class='mobile_br'>풀 오토 에어컨",
+                            "descript" : "운전석, 동반석 및 뒷좌석에서 탑승자 별 취향에 맞도록 에어컨 온도 조절이 가능합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/thurm_INT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/INT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/m_INT02.jpg"
+                            },
+                            {
+                            "title" : "듀얼 선루프",
+                            "subtitle" : "<span>03</span>듀얼 선루프",
+                            "descript" : "슬라이딩 기능이 적용된 듀얼 선루프는 2, 3열까지 개방감을 향상시켜줄 뿐만 아니라 뛰어난 채광과 고급스러운 분위기를 연출합니다.(2WD 사양)",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/thurm_INT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/INT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/m_INT03.jpg"
+                            },
+                            {
+                            "title" : "오토만 시트",
+                            "subtitle" : "<span>04</span>오토만 시트",
+                            "descript" : "국내 미니밴 최초의 레그 서포트와 최상급 폴리우레탄폼을 적용하여 퍼스트 클래스의 안락함과 착좌감을 제공하며 착석 중 슬라이딩 레버로 최대 650mm까지 롱 슬라이딩 되어 승차자의 편안한 무릎 공간을 확보해줍니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/thurm_INT04.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/INT04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/m_INT04.jpg"
+                            },
+                            {
+                            "title" : "8way 파워 운전석 시트 &amp; 메모리 기능",
+                            "subtitle" : "<span>05</span>8way 파워 운전석 시트 &amp; 메모리 기능",
+                            "descript" : "최고급 가죽 소재의 8way 파워 운전석 시트를 적용하고 메모리 기능과 파워 럼버 서포트 기능을 제공합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/thurm_INT05.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/INT05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/03_interior/m_INT05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"features" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "features",
+                        "subcategory" :
+                            [{
+                            "title" : "3.5ℓ V6 듀얼 VVT-i (W) 엔진",
+                            "subtitle" : "<span>01</span>3.5ℓ V6 듀얼 VVT-i (W) 엔진",
+                            "descript" : "직분사와 포트분사의 장점을 결합한 첨단 D-4S 연료분사기술과 주행 상황에 따라 흡기 밸브의 개폐 타이밍을 조절하는 듀얼 VVT-i(W) 기술을 적용하여 최대 출력 301마력과 최적의 연비 효율을 실현합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/04_features/thurm_FTS01.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/FTS01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/m_FTS01.jpg"
+                            },
+                            {
+                            "title" : "8단 자동 변속기",
+                            "subtitle" : "<span>02</span>8단 자동 변속기",
+                            "descript" : "8단 기어비 세팅으로 탁월한 출발 가속과 정숙성 그리고 파워풀한 주행 성능을 경험할 수 있습니다. 저속 구간을 제외하고 거의 모든 영역에서 락업 컨트롤이 가능하여 지연 현상 없는 직진 응답성, 가속 성능 및 고효율의 연비를 실현합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/04_features/thurm_FTS02.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/FTS02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/m_FTS02.jpg"
+                            },
+                            {
+                            "title" : "액티브 토크 컨트롤 4륜 구동 시스템",
+                            "subtitle" : "<span>03</span>액티브 토크 컨트롤 <br>4륜 구동 시스템",
+                            "descript" : "액티브 토크 컨트롤 4륜 구동 시스템이 적용되어 주행 상황에 따라 뒷바퀴에 꼭 필요한 토크를 배분하여 안정적인 주행 성능과 연료 효율을 향상 시켰습니다. (4WD 사양)",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/04_features/thurm_FTS03.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/FTS03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/m_FTS03.jpg"
+                            },
+                            {
+                            "title" : "8 SRS 에어백 시스템",
+                            "subtitle" : "<span>04</span>8 SRS 에어백 시스템",
+                            "descript" : "듀얼 챔버 운전석 및 동반석 에어백, 시트 쿠션 동반석 에어백, 운전석 무릎 에어백, 사이드 에어백, 커튼 쉴드 에어백이 기본 적용됩니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/04_features/thurm_FTS04.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/FTS04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/m_FTS04.jpg"
+                            },
+                            {
+                            "title" : "멀티미디어 시스템",
+                            "subtitle" : "<span>05</span>멀티미디어 시스템",
+                            "descript" : "역동적이고 풍성한 사운드 제공. 고해상도 음원 데이터 재생을 지원하고, USB로 오디오와 비디오를 재생할 수 있습니다. 또한 미라캐스트 기능으로 스마트폰 컨텐츠를 즐길 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_SIENNA_2018/04_features/thurm_FTS05.png",
+                            "orgImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/FTS05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_SIENNA_2018/04_features/m_FTS05.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        }
+    ],
+    "gallery" : [
+        {"dataList" : [{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/m_GLY01.jpg",
+        "pc_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/GLY01.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/m_GLY02.jpg",
+        "pc_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/GLY02.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/m_GLY03.jpg",
+        "pc_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/GLY03.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/m_GLY04.jpg",
+        "pc_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/GLY04.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/m_GLY05.jpg",
+        "pc_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/GLY05.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/m_GLY06.jpg",
+        "pc_img" : "../../images/model_view/MODEL_SIENNA_2018/05_gallery/GLY06.jpg",
+        "link" : "#"
+    }
+     ]}
+    ],
+    "colors" : [
+        {
+            "colorName" : "실버메탈릭",
+            "colorCode" : "#d2d2d4",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_1.jpg"
+        },
+        {
+            "colorName" : "그레이 마이카 메탈릭",
+            "colorCode" : "#7d787e",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_2.jpg"
+        },
+        {
+            "colorName" : "다크 레드 마이크 메탈릭",
+            "colorCode" : "#8f1c0e",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_3.jpg"
+        },
+        {
+            "colorName" : "다크 셰리 마이카 메탈릭",
+            "colorCode" : "#938079",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_4.jpg"
+        },
+        {
+            "colorName" : "알루미나 제이드 메탈릭",
+            "colorCode" : "#5a665b",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_5.jpg"
+        },
+        {
+            "colorName" : "다크 블루 마이카 메탈릭",
+            "colorCode" : "#3a4c65",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_6.jpg"
+        },
+        {
+            "colorName" : "화이트 펄 크리스탈 샤인",
+            "colorCode" : "#f0f0eb",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_7.jpg"
+        },
+        {
+            "colorName" : "애티튜드 블랙 마이카",
+            "colorCode" : "#0c0c0c",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_SIENNA_2018/06_colors/color_8.jpg"
+        }
+    ],
+    "specsHtml" : [
+        {
+            "type" : "SIENNA",
+            "specImg" : "../../images/model_view/MODEL_SIENNA_2018/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "SIENNA 3.5 LIMITED 4WD", "price" : "56,400,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"><div class=\"specs_inner\"><div class=\"specs_list\"><ul><li><h3>제원</h3><div class=\"spl_inner\"><dl><dt>전장/전폭/전고</dt><dd class=\"callValue\">5,095mm X 1,985mm X 1,805mm</dd></dl><dl><dt>공차 중량</dt><dd class=\"callValue\">2,175kg</dd></div></li><li><h3>엔진</h3><div class=\"spl_inner\"><dl><dt>명칭 / 형식</dt><dd class=\"callValue\">3.5ℓ V6 가솔린 엔진</dd></dl><dl><dt>배기량</dt><dd class=\"callValue\">3,456 cc</dd></dl><dl class=\"no_border\"><dt>최고출력</dt><dd>301PS / 6,600rpm</dd></dl><dl><dt>최대토크</dt><dd class=\"callValue\">36.4kg·m / 4,700rpm</dd></dl><dl><dt>도심/고속도로/복합연비</dt><dd class=\"callValue\">7.2km/ℓ, 10.0km/ℓ, 8.2km/ℓ(5등급)</dd></dl><dl><dt>CO<sub>2</sub> 배출량</dt><dd class=\"callValue\">208 g/km</dd></dl></div></li><li><h3>트랜스미션</h3><div class=\"spl_inner\"><dl><dt>트랜스미션</dt><dd class=\"callValue\">8단 자동 변속기</dd></dl></div></li></ul><ul class=\"sec\"><li><h3>샤시</h3><div class=\"spl_inner\"><dl><dt>서스펜션(전/후)</dt><dd class=\"callValue\">맥퍼슨 스트럿 / 토션 빔</dd></dl><dl><dt>제동장치(전/후)</dt><dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd></dl><dl><dt>연료탱크 용량</dt><dd class=\"callValue\">79ℓ</dd></dl><dl><dt>구동방식</dt><dd class=\"callValue\">액티브 토크 컨트롤 4륜 구동</dd></dl><dl><dt>타이어</dt><dd class=\"callValue\">235 / 55R / 18 (런플랫)</dd></dl><dl><dt>승차 정원</dt><dd class=\"callValue\">7명</dd></dl></div></li><li class=\"no_margin\"><h3>타이어 효율 등급</h3><div class=\"spl_inner\"><dl><dt>타이어</dt><dd class=\"callValue\">235 / 55R / 18</dd></dl><dl><dt>타이어 제조사</dt><dd class=\"callValue\">BRIDGESTONE</dd></dl><dl><dt>회전저항계수</dt><dd class=\"callValue\">4</dd></dl><dl><dt>젖은 노면 제동력 지수</dt><dd class=\"callValue\">4</dd></dl></div></li></ul><div class=\"specs_bottom\"><ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은 노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul></div></div></div></div>",
+        {
+            "type" : "SIENNA",
+            "specImg" : "../../images/model_view/MODEL_SIENNA_2018/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "SIENNA 3.5 LIMITED 2WD", "price" : "53,700,000 원 <i>(VAT 포함)</i>"}
+            ]
+        },
+        "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li> <h3>제원</h3> <div class=\"spl_inner\"> <dl><dt>전장/전폭/전고</dt> <dd class=\"callValue\">5,095mm X 1,985mm X 1,790mm</dd> </dl> <dl><dt>공차 중량</dt> <dd class=\"callValue\">2,120kg</dd> </div></li><li> <h3>엔진</h3> <div class=\"spl_inner\"> <dl><dt>명칭 / 형식</dt> <dd class=\"callValue\">3.5ℓ V6 가솔린 엔진</dd> </dl> <dl><dt>배기량</dt> <dd class=\"callValue\">3,456 cc</dd> </dl> <dl class=\"no_border\"><dt>최고출력</dt> <dd>301PS / 6,600rpm</dd> </dl> <dl><dt>최대토크</dt> <dd class=\"callValue\">36.4kg·m / 4,700rpm</dd> </dl><dl><dt>도심/고속도로/복합연비</dt><dd class=\"callValue\">7.5km/ℓ, 10.3km/ℓ, 8.6km/ℓ(5등급)</dd></dl> <dl><dt>CO<sub>2</sub> 배출량</dt> <dd class=\"callValue\">199g/km</dd> </dl> </div></li><li> <h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl><dt>트랜스미션</dt> <dd class=\"callValue\">8단 자동 변속기</dd> </dl> </div></li></ul> <ul class=\"sec\"> <li> <h3>샤시</h3> <div class=\"spl_inner\"> <dl><dt>서스펜션(전/후)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 토션 빔</dd> </dl> <dl><dt>제동장치(전/후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd> </dl> <dl><dt>연료탱크 용량</dt> <dd class=\"callValue\">79ℓ</dd> </dl> <dl><dt>구동방식</dt> <dd class=\"callValue\">전륜구동</dd> </dl> <dl><dt>타이어</dt> <dd class=\"callValue\">235 / 55R / 18 (런플랫)</dd> </dl> <dl><dt>승차 정원</dt> <dd class=\"callValue\">7명</dd> </dl> </div></li><li class=\"no_margin\"> <h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl><dt>타이어</dt> <dd class=\"callValue\">235 / 55R / 18</dd> </dl> <dl><dt>타이어 제조사</dt> <dd class=\"callValue\">GOOD YEAR</dd> </dl> <dl><dt>회전저항계수</dt> <dd class=\"callValue\">3</dd> </dl> <dl><dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">3</dd> </dl> </div></li></ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은 노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li></ul> </div></div></div></div>"
+    ]
+    }]}
+}

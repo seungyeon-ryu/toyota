@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app" style="overflow: hidden;">
+
+		<header id="header" class="sub fullbg" style="width: 750px;">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+		<div id="gnb">
+			<div class="member">
+				<div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div>
+				<!-- <div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div> -->
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btn_wrap">
+				<a href="#self" class="btn_guide">이용안내</a>
+				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+			</div>
+		</div>
+
+		<style>
+		.young_forty {overflow: hidden; width: 750px; padding: 140px 0 0; background: #ffffff;}
+		.young_forty ol li .desc {position: relative; padding: 38px 40px 90px; font-size: 34px; line-height: 54px; letter-spacing: -0.01em; color: #000000;}
+		.young_forty ol li .desc:after {display: block; content: ""; position: absolute; top: 50px; width: 672px; height: 385px; background: url(../../images/temp/magazine/young_forty/bg_txt.png) center 0 no-repeat;}
+		.young_forty ol li .desc em {font-weight: 800;}
+		.young_forty ol li .desc.last:after {background-image: url(../../images/temp/magazine/young_forty/bg_txt2.png);}
+		.young_forty .top_wrap {margin: 120px 0 116px;}
+		.young_forty .top_wrap .btn_top {display: block; width: 90px; margin: 0 auto; padding: 107px 0 0; background: url(../../images/temp/magazine/young_forty/btn_top.jpg) 0 0 no-repeat; font-weight: 800; font-size: 28px; line-height: 1; color: #231f20; text-align: center;}
+		.young_forty .btn_wrap {width: auto; margin: 0 40px 40px;}
+		.young_forty .btn_wrap .btn_list {display: block; box-sizing: border-box; width: 670px; border: 5px solid #222222; font-weight: 700; font-size: 34px; line-height: 105px; color: #0e132a; text-align: center;}
+		</style>
+		<div id="container">
+			<div id="content" class="young_forty">
+				<div class="young_intro">
+					<img src="../../images/temp/magazine/young_forty/young_tit.jpg" alt="YOUNG FORTY LOOKS">
+					<img class="n-motion n-bottom" src="../../images/temp/magazine/young_forty/young_intro.jpg" alt="아재 탈출! 영포티 소환! 영포티, 어렵지 않아요">
+				</div>
+				<ol>
+					<li class="n-motion n-bottom">
+						<img src="../../images/temp/magazine/young_forty/young_01_01.jpg" alt="young forty 01">
+						<p class="desc" style="padding-bottom: 72px;">
+							20대 때 스타일만 고집하면 아재, 트렌디하게<br>
+							입으면서 <em>아이들과 패션으로 어울릴 줄 알면<br>
+							‘영포티’</em> 입니다. 아재 탈출을 꿈꾸는 당신을 위한<br>
+							영포티 룩 가이드. <em>많이 입어보고 느끼면서<br>
+							자신만의 스타일을 찾아 영포티 룩</em>의 달인으로<br>
+							등극해보세요!
+						</p>
+						<img src="../../images/temp/magazine/young_forty/young_01_02.jpg" alt="young forty 01">
+					</li>
+					<li class="n-motion n-bottom">
+						<img src="../../images/temp/magazine/young_forty/young_02_01.jpg" alt="young forty 02">
+						<p class="desc">
+							아이에겐 아빠가 아이돌입니다.<br>
+							아빠가 하는 대로 입는 대로 따라하고<br>
+							싶어하니까요. <em>영포티는 아이가 ‘멋짐’을<br>
+							따라하고 싶은 센스 있는 아빠입니다.</em>
+						</p>
+						<img src="../../images/temp/magazine/young_forty/young_02_02.jpg" alt="young forty 02">
+					</li>
+					<li class="n-motion n-bottom">
+						<img src="../../images/temp/magazine/young_forty/young_03_01.jpg" alt="young forty 03">
+						<p class="desc">
+							오랫동안 입지않은 옷은 잊고, <em>나의 개성과 몸에<br>
+							잘 맞으면서 트렌디한 옷으로 바꿔보세요.</em><br>
+							비싸지 않아도 좋습니다. <em>영포티에게 중요한 건<br>
+							센스</em>니까요.
+						</p>
+						<img src="../../images/temp/magazine/young_forty/young_03_02.jpg" alt="young forty 03">
+					</li>
+					<li class="n-motion n-bottom">
+						<img src="../../images/temp/magazine/young_forty/young_04_01.jpg" alt="young forty 04">
+						<p class="desc last">
+							패션으로 가족 사랑이 더 깊어지기도 하지요.<br>
+							이번 <em>주말에는 아이와 똑같은 옷을 입고 운동을<br>
+							해보세요.</em> 영포티는 옷 잘 입는 멋진 아빠랍니다.
+						</p>
+						<img src="../../images/temp/magazine/young_forty/young_04_02.jpg" alt="young forty 04">
+					</li>
+				</ol>
+				<div class="top_wrap n-motion n-bottom">
+					<button type="button" id="btnTop" class="btn_top">TOP</button>
+				</div>
+				<div class="btn_wrap n-motion n-bottom">
+					<a href="/toyota/life/list.do" class="btn_list">목록보기</a>
+				</div>
+			</div>
+        </div><!-- id : container -->
+        <script>
+			$('#btnTop').on('click', function(){
+				$('html, body').animate({scrollTop : 0}, 600);
+			});
+        </script>
+    </div><!-- id : wrap -->
+</body>
+</html>

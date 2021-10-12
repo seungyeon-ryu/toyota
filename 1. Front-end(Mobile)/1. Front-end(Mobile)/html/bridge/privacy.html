@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<title>TOYOTA BRIDGE</title>
+
+	<script src="./jquery-3.2.1.min.js"></script>
+</head>
+<body style="font-size: x-large;">
+	<style>
+	@font-face {
+		font-family: NanumSquare;
+		font-style: normal;
+		font-weight: 400;
+		src: url('NanumSquare400.woff') format('woff');
+	}
+
+	@font-face {
+		font-family: NanumSquare;
+		font-style: normal;
+		font-weight: 700;
+		src: url('NanumSquare700.woff') format('woff');
+	}
+
+	a, address, area, article, aside, audio, b, body, br, button, canvas,
+	caption, cite, code, col, colgroup, dd, del, div, dl, dt, em, embed, fieldset,
+	figcaption, figure, footer, form, frame, frameset, h1, h2, h3, h4, h5,
+	h6, head, header, hr, html, i, iframe, img, ins, input, label, legend, li,
+	link, map, meta, nav, object, ol, p, pre, q, rp, rt, ruby, s, script,
+	section, select, source, span, strong, style, sub, summary, sup, table,
+	tbody, td,textarea, tfoot, th, thead, time, title, tr, u, ul, video {margin: 0; padding: 0; font-family: inherit; font-style: normal; font-weight: inherit; font-size: inherit; line-height: inherit; text-decoration: inherit; color: inherit; vertical-align: top; outline: none;}
+
+	html		{width: 100%; height: 100%;}
+	body		{overflow: auto; position: relative; width: 100%; height: 100%; font-family: NanumSquare, sans-serif; font-weight: 400; font-size: 26px; line-height: 1.5; color: #000000; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-size-adjust: 100%; -webkit-print-color-adjust: exact; -webkit-overflow-scrolling: touch; scroll-behavior: smooth;}
+	button		{border: none; background: none; border-radius: 0; cursor: pointer; -webkit-appearance: none; appearance: none;}
+	ul,ol,li	{list-style: none;}
+
+	.privacy_head {margin: 0 40px; padding: 53px 0 0;}
+	.privacy_head .title {font-weight: 700; font-size: 46px; line-height: 60px; color: #222222;}
+	.privacy_head .desc {margin: 23px 0 0; border-top: 1px solid #dedede; padding: 35px 0 55px; font-size: 26px; line-height: 36px; color: #666666;}
+	.privacy_body {padding: 30px 40px 40px;}
+
+	.privacy_policy > li {border-top: 1px solid #dedede;}
+	.privacy_policy > li > .tit {display: block; width: 100%; position: relative; padding: 24px 0 24px 52px; font-weight: 700; font-size: 30px; line-height: 40px; color: #222222; text-align: left;}
+	.privacy_policy > li > .tit .sort {position: absolute; top: 26px; left: 0;}
+	.privacy_policy > li > .tit:before {display: block; content: ""; position: absolute; top: 50%; right: 0; width: 22px; height: 2px; background: #666666; transform: rotate(-45deg) translateY(-50%); transition: all .3s;}
+	.privacy_policy > li > .tit:after {display: block; content: ""; position: absolute; top: 50%; right: 16px; width: 22px; height: 2px; background: #666666; transform: rotate(45deg) translateY(-50%); transition: all .3s;}
+	.privacy_policy > li > .desc_wrap {overflow: hidden; max-height: 0; font-size: 26px; line-height: 36px; color: #666666; transition: all .3s;}
+
+	.privacy_policy > li.on > .tit:before {right: 14px; background: #c58032;}
+	.privacy_policy > li.on > .tit:after {right: 0; background: #c58032;}
+	.privacy_policy > li.on .desc_wrap {max-height: 10000px; margin: 0 0 -7px; padding: 0 0 60px;}
+	.privacy_policy > li.on:last-child .desc_wrap {padding: 0 0 30px;}
+	.privacy_policy > li.on.middle .desc_wrap {padding: 0 0 60px;}
+
+	.privacy_policy > li .policy_list1 {margin: 50px 0 0;}
+	.privacy_policy > li .policy_list1 > li {margin: 50px 0 0;}
+	.privacy_policy > li .policy_list1 > li:first-child {margin: 0;}
+	.privacy_policy > li .policy_list1 > li > .tit {margin: 0 0 30px; font-weight: 700; font-size: 28px; color: #555555;}
+	.privacy_policy > li .policy_list1 > li > .cont .desc {font-size: 26px; line-height: 36px; color: #666666;}
+
+	.privacy_policy > li .policy_list2 {margin: 30px 0 0;}
+	.privacy_policy > li .policy_list2:first-child {margin: 0;}
+	.privacy_policy > li .policy_list2 dt {margin: 0 0 16px; font-size: 26px; line-height: 36px; color: #c87211;}
+	.privacy_policy > li .policy_list2 dd {margin: 13px 0 0; font-size: 24px; line-height: 34px; color: #666666;}
+	.privacy_policy > li .policy_list2 dd:nth-of-type(1) {margin: 0;}
+	.privacy_policy > li .policy_list2 dd div {margin: 4px 0 0;}
+
+	.privacy_policy > li .policy_list3 > li {margin: 28px 0 0;}
+	.privacy_policy > li .policy_list3 > li:first-child {margin: 0;}
+	.privacy_policy > li .policy_list3 > li > .tit {font-size: 24px; line-height: 34px; color: #666666;}
+	.privacy_policy > li .policy_list3 > li > .desc {margin: 13px 0 0; font-size: 24px; line-height: 34px; color: #666666;}
+
+	.privacy_policy > li .policy_list4 {}
+	.privacy_policy > li .policy_list4 > li {margin: 14px 0 0; font-size: 26px; line-height: 36px; color: #666666;}
+	.privacy_policy > li .policy_list4 > li:first-child {margin: 0;}
+
+	.privacy_policy > li .policy_list5 {margin: 30px 0 0;}
+	.privacy_policy > li .policy_list5 dt {margin: 0 0 14px; font-size: 24px; line-height: 34px; color: #c87211;}
+	.privacy_policy > li .policy_list5 dd {margin: 14px 0 0; font-size: 24px; line-height: 34px; color: #666666;}
+	.privacy_policy > li .policy_list5 dd:nth-of-type(1) {margin: 0;}
+	.privacy_policy > li .policy_list5 .desc {font-size: 24px; line-height: 34px; color: #666666;}
+	.privacy_policy > li .policy_list5 .desc em {color: #c87211;}
+
+	.privacy_policy > li .policy_list6 > li {margin: 12px 0 0;}
+	.privacy_policy > li .policy_list6 > li:first-child {margin: 0;}
+	.privacy_policy > li .policy_list6 > li > .tit {margin: 0 0 12px; font-size: 24px; line-height: 36px; color: #666666;}
+	.privacy_policy > li .policy_list6 > li > .desc {font-size: 24px; line-height: 36px; color: #666666;}
+
+	.privacy_policy > li .policy_list7 > li {margin: 28px 0 0;}
+	.privacy_policy > li .policy_list7 > li:first-child {margin: 0;}
+	.privacy_policy > li .policy_list7 > li .tit {font-size: 26px; line-height: 36px; color: #666666;}
+	.privacy_policy > li .policy_list7 > li .desc {margin: 20px 0 0; font-size: 24px; line-height: 34px; color: #666666;}
+
+	.privacy_policy > li .policy_list8 {margin: 30px 0 0;}
+	.privacy_policy > li .policy_list8 > li {margin: 14px 0 0; font-size: 26px; line-height: 36px; color: #666666;}
+	.privacy_policy > li .policy_list8 > li:first-child {margin: 0;}
+
+	.privacy_policy > li .policy_list9 {margin: 20px 0 0; padding: 0 0 16px;}
+	.privacy_policy > li .policy_list9 > li {margin: 14px 0 0; font-size: 24px; line-height: 34px; color: #666666;}
+	.privacy_policy > li .policy_list9 > li:first-child {margin: 0;}
+
+	.privacy_policy > li > .desc_wrap .tbl_area {margin: 35px 0 0;}
+	</style>
+	<div class="privacy">
+		<div class="privacy_head">
+			<h1 class="title">개인정보 처리방침</h1>
+			<p class="desc">
+				한국토요타자동차(주)(이하 “회사”)는 “개인정보보호법<br>
+				제30조”에 따라 정보주체의 개인정보를 보호하고 이와<br>
+				관련한 고충을 신속하고 원활하게 처리할 수 있도록<br>
+				하기 위하여 다음과 같이 개인정보 처리지침을 수립&middot;<br>
+				공개합니다.
+			</p>
+		</div>
+		<div class="privacy_body">
+			<ol class="privacy_policy">
+				<li class="on">
+					<button type="button" class="tit"><span class="sort">가.</span>처리하는 개인정보 항목/처리목적/<br>수집방법/보유 및 이용기간</button>
+					<div class="desc_wrap">
+						<div class="desc">
+							회사는 다음의 목적을 위하여 개인정보를 처리합니다.<br>
+							처리하고 있는 개인정보는 다음의 목적 이외의 용도로는<br>
+							이용되지 않으며, 이용 목적이 변경되는 경우에는<br>
+							개인정보 보호법 제18조에 따라 별도의 동의를 받는 등<br>
+							필요한 조치를 이행할 예정입니다.
+						</div>
+						<ol class="policy_list1">
+							<li>
+								<div class="tit">1. 차량구매고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 성명, 휴대폰번호, 관심차종, 주민등록번호</dd>
+										<dd>- (선택) 주소, 팩스번호, 이메일, 결혼여부, 성별, 결혼기념일</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>- 계약 관련 문의 및 요청사항 처리</dd>
+										<dd>- 차량등록대행, 차량의 인도 및 수령, 하이패스 등록대행,<br>설문조사, 품질향상을 위한 정보확인</dd>
+										<dd>- 리콜관련업무, 차량점검 및 보증수리를 포함한 각종 차량<br>수리 서비스, 긴급출동서비스, 사고조사, 고객 질의/불만<br>처리</dd>
+										<dd>- 고객서비스(각종 부가서비스 포함), 전화/이메일/SMS<br>등을 통한 신상품, 이벤트, 캠페인 정보 안내, 판촉활동</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>정보주체로부터 직접 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>해당 정보를 제공받은 날로부터 10년</dd>
+										<dd>(만약 본인의 삭제 요청 시 관련 법령에 따라 보관해야 할<br>정보를 제외하고 즉시 삭제함)</dd>
+										<dd>관련 법령은 아래의 [관련법령] 내용을 참고.</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit">2. 정비서비스 고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 성명, 휴대폰번호, 관심차종</dd>
+										<dd>- (선택) 주소, 팩스번호, 이메일, 결혼여부, 성별, 결혼기념일</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>- 차량정비서비스, 신상품 및 이벤트/캠페인 정보 안내</dd>
+										<dd>- 설문조사, 각종 마케팅활동(지원 프로그램 등) 및 각종<br>홍보, 판촉활동</dd>
+										<dd>- 품질향상을 위한 정보확인, 리콜 관련 업무</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>정보주체로부터 직접 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>해당 정보를 제공받은 날로부터 10년
+											<div>(만약 본인의 삭제 요청 시 관련 법령에 따라 보관해야 할<br>정보를 제외하고 즉시 삭제함)</div>
+										</dd>
+										<dd>관련 법령은 아래의 [관련법령] 내용을 참고.</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit">3. 가망 고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 성명, 휴대폰번호</dd>
+										<dd>- (선택) 생년월일, 직업, 주소, 이메일, 현 보유차종, 관심차종</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>- 시승서비스, 안내(이메일, 전화, DM/SMS발송 등), 이벤트<br>경품 제공/배송, 행사진행, 이벤트 참여 기회 제공</dd>
+										<dd>- 각종 마케팅활동 및 각종 홍보, 판촉활동</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>정보주체로부터 직접 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>해당 정보를 제공받은 날로부터 1년</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit">4. 시승/상담 신청 고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 성명, 휴대폰 번호, 이메일</dd>
+										<dd>- (선택) 거주지, 신청 경로</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>시승 및 상담 서비스 제공</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>홈페이지, 모바일 어플리케이션 시승신청 메뉴를<br>통하여 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>홈페이지, 모바일 어플리케이션 시승 신청 요청 후<br>1개월 후 삭제</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit">5. 1:1 문의, 문의/개선 요청 고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 성명, 휴대폰 번호, 이메일, 차종 보유 여부, 문의<br>분류, 접수 내용</dd>
+										<dd>- (선택) 사진 첨부</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>고객 문의 응대</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>홈페이지 고객문의 메뉴, 모바일 어플리케이션<br>1:1 문의 메뉴, 문의/개선 요청 메뉴를 통하여 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>고객문의 요청 등록 후 1개월 후 삭제</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit">6. 모바일 어플리케이션 회원 고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 아이디(이메일), 비밀번호, 이름, 생년월일, 휴대폰<br>번호, 차대번호, 차량번호, 차종, 차량등록일, 보증 만료일,<br>정비이력, 서비스 쿠폰 내역</dd>
+										<dd>- (선택) 직업, 취미, 좋아하는 차량 종류, 거주지역</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>회원제 서비스 이용에 따른 본인 확인을 통한 고객 관리</dd>
+										<dd>회원제 서비스: 서비스센터 예약, 시승 예약, 1:1 문의 접수,<br>내 차 관리 서비스 등 모바일 어플리케이션 서비스 이행을<br>위한 서비스 제공</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>모바일 어플리케이션 회원가입 메뉴를 통하여 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>정보 주체가 앱 회원 탈퇴 시까지</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit">7. 정비서비스 예약 요청 고객</div>
+								<div class="cont">
+									<dl class="policy_list2">
+										<dt>처리하는 개인정보항목</dt>
+										<dd>- (필수) 차대번호, 이름, 휴대폰번호, 점검항목</dd>
+										<dd>- (선택) 요청사항, 차량 사진</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>처리 목적</dt>
+										<dd>서비스센터 정비 예약</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>수집 방법</dt>
+										<dd>모바일 어플리케이션 서비스센터 예약하기 메뉴를<br>통하여 수집</dd>
+									</dl>
+									<dl class="policy_list2">
+										<dt>보유 및 이용기간</dt>
+										<dd>해당 정보를 제공받은 날로부터 10년
+											<div>(만약 본인의 삭제 요청 시 관련 법령에 따라 보관해야 할<br>정보를 제외하고 즉시 삭제함)</div>
+										</dd>
+										<dd>관련 법령은 아래의 [관련법령] 내용을 참고</dd>
+									</dl>
+								</div>
+							</li>
+							<li>
+								<div class="tit" style="margin: 0 0 18px;">[관련법령]</div>
+								<div class="cont">
+									<div class="desc">
+										관련 법령의 규정에 의하여 보존할 의무가 있는 경우,<br>
+										회사는 고객의 개인정보를 보관합니다. 이 경우 회사는<br>
+										보관하는 정보를 그 보관의 목적으로만 이용하며 보존<br>
+										기간은 다음과 같습니다.
+									</div>
+									<ol class="policy_list3">
+										<li>
+											<div class="tit">(1) 회사의 상업장부와 영업에 관한 중요서류 및 전표 등에<br>관련된 정보 :</div>
+											<div class="desc">- 중요 서류 : 10년 / 전표 : 5년</div>
+										</li>
+										<li>
+											<div class="tit">(2) 모든 거래에 관한 장부 및 증빙서류와 관련된 정보 :</div>
+											<div class="desc">- 국세기본법, 법인세법 : 5년</div>
+										</li>
+										<li>
+											<div class="tit">(3) 계약 또는 청약철회 등에 관한 기록, 대금결제 및<br>재화 등의 공급에 관한 기록 :</div>
+											<div class="desc">- 전자상거래 등에서의 소비자보호에 관한 법률 : 5년</div>
+										</li>
+										<li>
+											<div class="tit">(4) 소비자의 불만 또는 분쟁처리에 관한 기록 :</div>
+											<div class="desc">- 전자상거래 등에서의 소비자보호에 관한 법률 : 3년</div>
+										</li>
+										<li>
+											<div class="tit">(5) 장부와 교부한 세금계산서 또는 영수증 :</div>
+											<div class="desc">- 부가가치세법 : 5년</div>
+										</li>
+									</ol>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">나.</span>개인정보의 제3자 제공</button>
+					<div class="desc_wrap">
+						<div class="desc">
+							회사는 정보주체의 개인정보를 명시한 범위 내에서만<br>
+							처리하며, 정보주체의 동의를 받거나 법률의 관련 규정<br>
+							등에 해당하는 경우에만 제3자에게 제공합니다.
+						</div>
+						<div class="tbl_area">
+							<table class="tbl_type1">
+								<colgroup>
+									<col style="width: 198px;">
+									<col style="width: auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>제공받는 자</th>
+										<td>토요타 파이낸셜 서비스 코리아</td>
+									</tr>
+									<tr>
+										<th>
+											제공받는 자의<br>
+											개인정보 이용<br>
+											목적
+										</th>
+										<td>
+											그룹계열사 공동, 고객프로그램<br>
+											진행 및 공동, 프로모션진행
+										</td>
+									</tr>
+									<tr>
+										<th>
+											제공하는<br>
+											개인정보 항목
+										</th>
+										<td>
+											성명, 차대번호, 금융정보 (할부,<br>
+											리스, 현금 여부 및 금융사정보)
+										</td>
+									</tr>
+									<tr>
+										<th>
+											제공받는 자의<br>
+											보유 이용기간
+										</th>
+										<td>
+											해당 정보를 제공받은 날로부터<br>
+											1년(만약 본인의 삭제 요청 시<br>
+											관계법령에 따라 보관해야 할<br>
+											정보를 제외하고 즉시 삭제함)
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="tbl_type1">
+								<colgroup>
+									<col style="width: 198px;">
+									<col style="width: auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>제공받는 자</th>
+										<td>국토교통부</td>
+									</tr>
+									<tr>
+										<th>
+											제공받는 자의<br>
+											개인정보 이용<br>
+											목적
+										</th>
+										<td>자동차 제작증 전송</td>
+									</tr>
+									<tr>
+										<th>
+											제공하는<br>
+											개인정보 항목
+										</th>
+										<td>성명, 주민등록번호, 주소, 차대번호</td>
+									</tr>
+									<tr>
+										<th>
+											제공받는 자의<br>
+											보유 이용기간
+										</th>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="tbl_type1">
+								<colgroup>
+									<col style="width: 198px;">
+									<col style="width: auto;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>제공받는 자</th>
+										<td>
+											㈜엘앤티모터스, ㈜효성토요타,<br>
+											㈜베스트토요타, ㈜광장오토모티브,<br>
+											㈜토요타 동일모터스,<br>
+											㈜더프리미엄효성, ㈜중부모터스,<br>
+											㈜토요타와이엠
+										</td>
+									</tr>
+									<tr>
+										<th>제공받는 자의<br>개인정보 이용<br>목적</th>
+										<td>
+											시승신청, 서비스센터 예약 고객에<br>
+											대한 서비스 제공
+										</td>
+									</tr>
+									<tr>
+										<th>제공하는<br>개인정보 항목</th>
+										<td>
+											성명, 연락처, 이메일, 성별, 연령,<br>
+											거주지, 차대번호
+										</td>
+									</tr>
+									<tr>
+										<th>제공받는 자의<br>보유 이용기간</th>
+										<td>
+											시승 및 서비스 예약 제공 완료 후<br>
+											삭제
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">다.</span>개인정보처리의 위탁</button>
+					<div class="desc_wrap">
+						<div class="cont">
+							<ol class="policy_list3">
+								<li>
+									1. 회사는 원활한 개인정보 업무처리를 위하여 다음과
+									같이 개인정보 처리업무를 위탁하고 있습니다.
+									<div class="tbl_area">
+										<table class="tbl_type2">
+											<colgroup>
+												<col style="width: 246px;">
+												<col style="width: auto;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>위탁받는 자</th>
+													<th>위탁받는 업무의 내용</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														덴츠코리아<br>
+														(재위탁 :<br>
+														아이소바코리아)
+													</td>
+													<td>
+														토요타 홈페이지 운영/유지<br>
+														보수, 이벤트/프로모션 진행<br>
+														(SNS채널 운영)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														디자인피버<br>
+														(재위탁 :<br>
+														KT클라우드)
+													</td>
+													<td>
+														렉서스 홈페이지 운영/유지<br>
+														보수, 공식인증중고차<br>
+														홈페이지 운영, 이벤트/프로<br>
+														모션 진행(SNS 채널 운영)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														기앤티<br>
+														(재위탁 : 루트업)
+													</td>
+													<td>
+														렉서스 프리미엄 멤버쉽<br>
+														서비스 운영 및 시스템 유지<br>
+														보수
+													</td>
+												</tr>
+												<tr>
+													<td>
+														프리몬<br>
+														(재위탁 : 뉴리버)
+													</td>
+													<td>
+														토요타 모바일 어플리케이션<br>
+														운영/유지보수
+													</td>
+												</tr>
+												<tr>
+													<td>
+														한국후지쯔<br>
+														(재위탁 :<br>
+														SE파트너즈,<br>
+														해든이포텍)
+													</td>
+													<td>
+														내부 업무 시스템 운영/유지<br>
+														보수
+													</td>
+												</tr>
+												<tr>
+													<td>인포서치</td>
+													<td>고객 만족도 조사</td>
+												</tr>
+												<tr>
+													<td>컨슈머인사이트</td>
+													<td>고객 만족도 조사</td>
+												</tr>
+												<tr>
+													<td>한국코퍼레이션</td>
+													<td>고객 만족도 조사</td>
+												</tr>
+												<tr>
+													<td>마스터카</td>
+													<td>
+														사고 접수 및 긴급출동 서비스<br>
+														지원
+													</td>
+												</tr>
+												<tr>
+													<td>Bellus</td>
+													<td>자선골프 행사 운영</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li>
+									2. 회사는 위탁계약 체결 시 개인정보 보호법 제25조에<br>
+									따라 위탁업무 수행목적 외 개인정보 처리금지, 기술적<br>
+									관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리,<br>
+									감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에<br>
+									명시하고, 수탁사가 개인정보를 안전하게 처리하는지를<br>
+									감독하고 있습니다.
+								</li>
+								<li>
+									3. 위탁업무의 내용이나 수탁자가 변경될 경우 지체 없이<br>
+									본 개인정보 처리방침을 통하여 공개하도록 하겠습니다.
+								</li>
+							</ol>
+						</div>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">라.</span>정보주체와 법정대리인의 권리&middot;의무<br>및 행사방법</button>
+					<div class="desc_wrap">
+						<ol class="policy_list4">
+							<li>
+								1. 정보주체는 회사를 대상으로 언제든지 개인정보<br>
+								열람&middot;정정&middot;삭제&middot;처리정지 요구 등의 권리를 행사할 수 있습니다.
+							</li>
+							<li>
+								2. 제1항의 권리 행사는 아래의 연락처를 통해 하실 수
+								있으며, 회사는 요청에 대해 지체 없이 조치하겠습니다.
+								<dl class="policy_list5">
+									<dt>정보주체의 개인정보 열람, 정정, 삭제, 처리정지 요구 연락처</dt>
+									<dd>- 관리 부서: 고객상담부</dd>
+									<dd>- 연락처 : 080-525-8255 / privacy@toyotamotor.co.kr</dd>
+								</dl>
+							</li>
+							<li class="mt30">
+								3. 제1항에 따른 권리 행사는 정보주체의<br>
+								법정대리인이나 위임을 받은 자 등 대리인을 통하여<br>
+								하실 수 있습니다. 이 경우 ”개인정보 보호법 시행규칙<br>
+								별지 제11호 서식“에 따른 위임장을 제출하셔야 합니다.
+							</li>
+							<li>
+								4. 개인정보 열람 및 처리정지 요구는 ”개인정보보호법<br>
+								제35조 제5항, 제37조 제2항“ 에 의하여 정보주체의<br>
+								권리가 일부 제한 될 수 있습니다.
+							</li>
+							<li>
+								5. 개인정보의 정정 및 삭제 요구는 다른 법령에서 그<br>
+								개인정보가 수집 대상으로 명시되어 있는 경우에는 그<br>
+								삭제를 요구할 수 없습니다.
+							</li>
+							<li>
+								6. 회사는 정보주체 권리에 따른 열람의 요구,<br>
+								정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를<br>
+								한 자가 본인이거나 정당한 대리인인지를 확인합니다.
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">마.</span>개인정보의 파기</button>
+					<div class="desc_wrap">
+						<ol class="policy_list4">
+							<li>
+								1. 회사는 개인정보 보유기간의 경과, 처리목적 달성 등<br>
+								개인정보가 불필요하게 되었을 때에는 지체 없이 해당<br>
+								개인정보를 파기합니다.
+							</li>
+							<li>
+								2. 정보 주체로부터 동의 받은 개인정보 보유기간이<br>
+								경과하거나 처리목적이 달성되었음 에도 불구하고 다른<br>
+								법령에 따라 개인정보를 계속 보존하여야 하는<br>
+								경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로<br>
+								옮기거나 보관장소를 달리하여 보존합니다.
+							</li>
+							<li>
+								3. 개인정보 파기의 절차 및 방법은 다음과 같습니다.
+								<ol class="policy_list6 mt20">
+									<li>
+										<div class="tit">(1) 파기절차</div>
+										<div class="desc">
+											회사는 파기 사유가 발생한 개인정보를 선정하고, 개인정보<br>
+											보호책임자의 승인을 받아 개인정보를 파기합니다.
+										</div>
+									</li>
+									<li>
+										<div class="tit">(2) 파기방법</div>
+										<div class="desc">
+											회사는 전자적 파일 형태로 기록·저장된 개인정보는<br>
+											기록을 재생할 수 없도록 파기하며, 종이 문서에 기록&middot;저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.
+										</div>
+									</li>
+								</ol>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">바.</span>개인정보의 안전성 확보조치</button>
+					<div class="desc_wrap">
+						<p class="desc">
+							회사는 개인정보의 안전성 확보를 위해 다음과 같은<br>
+							조치를 취하고 있습니다.
+						</p>
+						<ol class="policy_list7 mt30">
+							<li>
+								<div class="tit">1. 내부관리계획의 수립 및 시행</div>
+								<div class="desc">
+									회사는 ‘개인정보의 안전성 확보조치 기준’ 및 ‘개인정보의<br>
+									기술적·관리적 보호조치 기준’에 의거하여 내부관리계획을<br>
+									수립 및 시행합니다.
+								</div>
+							</li>
+							<li>
+								<div class="tit">2. 개인정보취급자 지정의 최소화 및 교육</div>
+								<div class="desc">
+									개인정보취급자의 지정을 최소화하고 정기적인 교육을<br>
+									시행하고 있습니다.
+								</div>
+							</li>
+							<li>
+								<div class="tit">3. 개인정보에 대한 접근 제한</div>
+								<div class="desc">
+									개인정보를 처리하는 데이터베이스시스템에 대한<br>
+									접근권한의 부여, 변경, 말소를 통하여 개인정보에 대한<br>
+									접근을 통제하고, 침입차단시스템과 침입방지시스템을<br>
+									이용하여 외부로부터의 무단 접근을 통제하고 있습니다.
+								</div>
+							</li>
+							<li>
+								<div class="tit">4. 접속기록의 보관 및 위변조 방지</div>
+								<div class="desc">
+									개인정보처리시스템에 접속한 기록(웹 로그, 요약정보 등)을<br>
+									최소 6개월 이상 보관, 관리하고 있습니다.
+								</div>
+							</li>
+							<li>
+								<div class="tit">5. 개인정보의 암호화</div>
+								<div class="desc">
+									이용자의 개인정보는 암호화 되어 저장 및 관리되고<br>
+									있습니다. 또한 중요한 데이터는 저장 및 전송 시 암호화하여<br>
+									사용하는 등의 별도 보안기능을 사용하고 있습니다.
+								</div>
+							</li>
+							<li>
+								<div class="tit">6. 해킹 등에 대비한 기술적 대책</div>
+								<div class="desc">
+									진흥원은 해킹이나 컴퓨터 바이러스 등에 의한 개인정보<br>
+									유출 및 훼손을 막기 위하여 보안프로그램을 설치하고<br>
+									주기적인 갱신·점검을 하며 외부로부터 접근이 통제된<br>
+									구역에 시스템을 설치하고 기술적, 물리적으로 감시 및<br>
+									차단하고 있습니다.
+								</div>
+							</li>
+							<li>
+								<div class="tit">7. 비인가자에 대한 출입 통제</div>
+								<div class="desc">
+									개인정보를 보관하고 있는 개인정보시스템의 물리적 보관<br>
+									장소를 별도로 두고 이에 대해 출입통제 절차를 수립,<br>
+									운영하고 있습니다.
+								</div>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">사.</span>개인정보 자동 수집 장치의 설치&middot;운영<br>및 거부에 관한 사항</button>
+					<div class="desc_wrap">
+						<ol class="policy_list4">
+							<li>
+								1. 회사는 이용자에게 개별적인 맞춤서비스를<br>
+								제공하기 위해 이용정보를 저장하고 수시로 불러오는<br>
+								‘쿠키(cookie)’를 사용합니다.
+							</li>
+							<li>
+								2. 쿠키는 웹사이트를 운영하는데 이용되는 서버<br>
+								(http)가 이용자의 컴퓨터브라우저에게 보내는 소량의<br>
+								정보이며 이용자들의 PC 컴퓨터내의 하드디스크에<br>
+								저장되기도 합니다.
+								<ul class="policy_list6" style="margin: 18px 0 0;">
+									<li>
+										<div class="desc">
+											- 쿠키의 사용목적: 이용자가 방문한 각 서비스와<br>
+											웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안<br>
+											접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을<br>
+											위해 사용됩니다.
+										</div>
+									</li>
+									<li>
+										<div class="desc">
+											- 쿠키의 설치∙운영 및 거부 : 웹브라우저 상단의 도구&gt;<br>
+											인터넷 옵션>개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을<br>
+											거부 할 수 있습니다
+										</div>
+									</li>
+									<li>
+										<div class="desc">
+											- 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이<br>
+											발생할 수 있습니다.
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">아.</span>개인정보 보호책임자</button>
+					<div class="desc_wrap">
+						<ol class="policy_list4">
+							<li>
+								1. 회사는 개인정보 처리에 관한 업무를 총괄해서<br>
+								책임지고, 개인정보 처리와 관련한 정보주체의 불만<br>
+								처리 및 피해구제 등을 위하여 아래와 같이 개인정보<br>
+								보호책임자를 지정하고 있습니다.
+								<dl class="policy_list5">
+									<dt>개인정보 보호책임자</dt>
+									<dd>- 성명: 정해양</dd>
+									<dd>- 직위: 상무</dd>
+									<dd>- 연락처: 080-525-8255, privacy@toyotamotor.co.kr</dd>
+								</dl>
+								<dl class="policy_list5">
+									<dt>개인정보 보호 담당부서</dt>
+									<dd>- 부서명 : 대외협력 정보서비스부</dd>
+									<dd>- 연락처: 080-525-8255, privacy@toyotamotor.co.kr</dd>
+								</dl>
+							</li>
+							<li class="mt30">
+								2. 정보주체는 회사의 서비스(또는 사업)을<br>
+								이용하시면서 발생한 모든 개인정보 보호 관련 문의,<br>
+								불만처리, 피해구제 등에 관한 사항을 개인정보 보호<br>
+								책임자 및 담당부서로 문의하실 수 있습니다. 회사는<br>
+								정보주체의 문의에 대해 지체 없이 답변 및 처리해<br>
+								드리겠습니다.
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">자.</span>개인정보 열람청구</button>
+					<div class="desc_wrap">
+						<ol class="policy_list4">
+							<li>
+								정보주체는 “개인정보 보호법 제35조” 및 “정보통신망<br>
+								이용촉진 및 정보보호 등에 관한 법률 제30조” 에 따른<br>
+								개인정보의 열람 청구를 아래의 부서에 할 수 있습니다.<br>
+								회사는 정보주체의 개인정보 열람청구가 신속하게
+								처리되도록 노력하겠습니다.
+								<dl class="policy_list5">
+									<dt>개인정보 열람청구 접수&middot;처리 부서</dt>
+									<dd>- 부서명 : 고객상담부</dd>
+									<dd>- 연락처: 080-525-8255, privacy@toyotamotor.co.kr</dd>
+								</dl>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">차.</span>권익침해 구제방법</button>
+					<div class="desc_wrap">
+						<ol class="policy_list4">
+							<li>
+								정보주체는 아래의 기관에 대해 개인정보 침해에 대한<br>
+								피해구제, 상담 등을 문의하실 수 있습니다.
+							</li>
+							<li style="margin: 28px 0 0;">
+								아래의 기관은 회사와는 별개의 기관으로서, 회사의<br>
+								자체적인 개인정보 불만처리, 피해구제 결과에 만족하지<br>
+								못하시거나 보다 자세한 도움이 필요하시면 문의하여<br>
+								주시기 바랍니다.
+								<dl class="policy_list5">
+									<dt>개인정보 침해신고센터 (한국인터넷진흥원 운영)</dt>
+									<dd>- 소관업무: 개인정보 침해사실 신고, 상담 신청 </dd>
+									<dd>- 홈페이지: privacy.kisa.or.kr</dd>
+									<dd>- 전화: (국번없이) 118 </dd>
+									<dd>
+										- 주소: (58324) 전남 나주시 진흥길 9(빛가람동 301-2)<br>
+										3층 개인정보침해신고센터
+									</dd>
+								</dl>
+								<dl class="policy_list5">
+									<dt>개인정보 분쟁조정위원회</dt>
+									<dd>
+										- 소관업무: 개인정보 분쟁조정신청, 집단분쟁조정<br>
+										(민사적 해결)
+									</dd>
+									<dd>- 홈페이지: www.kopico.go.kr</dd>
+									<dd>- 전화: (국번없이) 1833-6972</dd>
+									<dd>
+										- 주소: (03171)서울특별시 종로구 세종대로 209 정부서울<br>
+										청사 4층
+									</dd>
+								</dl>
+								<dl class="policy_list5">
+									<div class="desc">
+										<em>대검찰청 사이버범죄수사단</em> : 02-3480-3573<br>
+										(<a href="http://www.spo.go.kr">www.spo.go.kr</a>)
+									</div>
+								</dl>
+								<dl class="policy_list5">
+									<div class="desc">
+										<em>경찰청 사이버안전국</em> : 182<br>
+										(<a href="http://cyberbureau.police.go.kr">http://cyberbureau.police.go.kr</a>)
+									</div>
+								</dl>
+							</li>
+						</ol>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="tit"><span class="sort">카.</span>영상정보처리기기 설치&middot;운영</button>
+					<div class="desc_wrap">
+						<p class="dsec">
+							회사는 아래와 같이 영상정보처리기기를<br>
+							설치&middot;운영하고 있습니다
+						</p>
+						<ol class="policy_list8">
+							<li>
+								1. 영상정보처리기기 설치근거·목적 : 시설안전 및 화재<br>
+								예방
+							</li>
+							<li>
+								2. 설치 대수, 설치 위치 및 촬영범위
+								<ul class="policy_list9">
+									<li>- 설치 대수 : 14대 (본사 12대, 트레이닝센터 2대)</li>
+									<li>
+										- 설치 위치 및 촬영 범위 : 본사 사무실(각 출입구, 접견실 및<br>
+										서버실 등) 및 트레이닝센터 사무실 (각 출입구)
+									</li>
+								</ul>
+							</li>
+							<li>
+								3. 관리책임자, 담당부서 및 영상정보에 대한 접근<br>
+								권한자 :
+								<ul class="policy_list9 pb10">
+									<li>관리책임자 : 최태영 부장</li>
+									<li>담당부서 : 대외협력 정보서비스부 </li>
+								</ul>
+								<ul class="policy_list9">
+									<li>접근권한자 : 김인애 사원</li>
+									<li>담당부서 : 대외협력 정보서비스부 </li>
+								</ul>
+							</li>
+							<li>
+								4. 영상정보 촬영시간, 보관기간, 보관장소, 처리방법
+								<ul class="policy_list9">
+									<li>- 촬영시간 : 24시간 촬영</li>
+									<li>- 보관기간 : 촬영일로부터 180일</li>
+									<li>- 보관장소 : 본사 사무실에 보관 처리</li>
+								</ul>
+							</li>
+							<li>
+								5. 영상정보 확인 방법 및 장소 : 관리책임자에 요구<br>
+								(대외협력.정보서비스부)
+							</li>
+							<li>
+								6. 정보주체의 영상정보 열람 등 요구에 대한 조치 :<br>
+								개인영상정보 열람·존재확인 청구서로 신청하여야<br>
+								하며, 정보주체 자신이 촬영된 경우 또는 명백히 정보<br>
+								주체의 생명·신체·재산 이익을 위해 필요한 경우에<br>
+								한해 열람을 허용함
+							</li>
+							<li>
+								7. 영상정보 보호를 위한 기술적·관리적·물리적 조치 :<br>
+								내부관리계획 수립, 접근통제 및 접근권한 제한, 영상<br>
+								정보의 안전한 저장·전송기술 적용, 처리기록 보관 및<br>
+								위·변조 방지조치, 보관시설 마련 및 잠금장치 설치 등
+							</li>
+						</ol>
+					</div>
+				</li>
+
+				<li>
+					<button type="button" class="tit"><span class="sort">타.</span>개인정보 처리방침 변경</button>
+					<div class="desc_wrap">
+						<p class="dsec">
+							이 개인정보 처리방침은 2018년 3월 28일 부터<br>
+							적용됩니다. 이전 개인정보 처리방침은 아래에서<br>
+							확인하실 수 있습니다.
+						</p>
+						<ol class="policy_list8">
+							<li>
+								개인정보처리방침 개정버전 번호: v1.8
+								<ul class="policy_list9 pb0">
+									<li>- 버전 v1.7 (2018.07.06~2019.03.27 적용) </li>
+									<li>- 버전 v1.6 (2015.08.18~2018.07.05 적용) </li>
+									<li>- 버전 v1.5 (2014.10.25~2015.08.17 적용) </li>
+									<li>- 버전 v1.4 (2014.02.05~2014.10.24 적용) </li>
+									<li>- 버전 v1.3 (2013.01.16~2014.02.04 적용)</li>
+									<li>- 버전 v1.2 (2011.02.07~2013.01.15 적용) </li>
+									<li>- 버전 v1.1 (2010.06.18~2011.02.06 적용) </li>
+									<li>- 버전 v1.0 (2009.07.01~2010.06.17 적용) </li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<script>
+		var listClick = function(list){
+			var list = $(list);
+			list.on('click', function(){
+				$(this).closest('li').toggleClass('on');
+			})
+		}
+		listClick('.privacy_policy > li > button');
+	</script>
+</body>
+</html>

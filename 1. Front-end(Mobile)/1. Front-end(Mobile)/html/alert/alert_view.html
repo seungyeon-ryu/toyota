@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app" class="type2">
+
+		<header id="header" class="sub">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+
+		<div id="gnb">
+			<div class="member">
+				<div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div>
+				<!-- <div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div> -->
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btn_wrap">
+				<a href="#self" class="btn_guide">이용안내</a>
+				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+			</div>
+		</div>
+
+		<div id="container">
+			<div id="content" class="alert">
+                <h2 class="tit_page">알림</h2>
+                <div class="alert_wrap">
+                    <div class="notice">최근 30일 이내 알림 내역만 확인하실 수 있습니다.</div>
+                    <ul class="alert_list">
+                        <li class="last">
+                            <div class="date">2018-11-11</div>
+                            <ul class="list">
+                                <li>
+                                    <a href="#self" class="box new"><!-- [D] 새 알림일 시 .new 추가 -->
+                                        <div class="tit">정비 알림</div>
+                                        <p class="desc">
+                                            홍길동 고객님, 대표 차량의 타이어 위치 정비 시기가 지났습니다.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#self" class="box">
+                                        <div class="tit">SC 알림</div>
+                                        <p class="desc">
+                                            홍길동 고객님의 나만의 SC가 변경되었습니다.
+                                        </p>
+                                        <div class="sc"><span class="branch">토요타 강남</span> 김리버</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="date">2018-11-10</div>
+                            <ul class="list">
+                                <li>
+                                    <a href="#self" class="box">
+                                        <div class="tit">SC 알림</div>
+                                        <p class="desc">
+                                            홍길동 고객님의 나만의 SC가 변경되었습니다.
+                                        </p>
+                                        <div class="sc"><span class="branch">토요타 강남</span> 김리버</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="first">
+                            <div class="date">2018-10-30</div>
+                            <ul class="list">
+                                <li>
+                                    <a href="#self" class="box btn_view"><!-- [D] 이미지 포함된 게시글은 .btn_view 추가 -->
+                                        <div class="tit">이벤트</div>
+                                        <p class="desc">
+                                            토요타, 추석맞이 고객감사 서비스 캠페인! (~9/22)
+                                        </p>
+                                        <div class="cont"><!-- [D] 이미지 포함된 게시글은 .cont 추가 -->
+                                            <img src="../../images/alert/alert_ex.jpg" alt="토요타 겨울 서비스 캠페인">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                $('.btn_view').on('click', function(){
+                    $(this).find('.cont').slideToggle(600);
+                })
+            </script>
+		</div><!-- id : container -->
+
+	</div><!-- id : wrap -->
+</body>
+</html>

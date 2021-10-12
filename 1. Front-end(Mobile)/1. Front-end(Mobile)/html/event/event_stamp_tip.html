@@ -1,0 +1,84 @@
+<style>
+.stamp_popup {overflow-y: auto; position: relative; z-index: 1000; width: 690px; max-height: 90vh; margin: 0 auto; border-radius: 20px;}
+.stamp_popup .btn_close {position: absolute; top: 0; right: 0; box-sizing: content-box; width: 40px; height: 40px; padding: 30px; background: url(../../images/temp/event/stamp/close_event.png) center center no-repeat;}
+.stamp_popup .stamp_pop_top {border-radius: 20px 20px 0 0; padding: 60px 40px 150px; background: #1a2d57;}
+.stamp_popup .stamp_pop_top .desc {margin: 19px 0 0; font-size: 26px; line-height: 38px; color: #ffffff;}
+.stamp_popup .stamp_pop_top .desc em {font-weight: 400; color: #ffffff;}
+.stamp_popup .stamp_pop_info {border-radius: 0 0 20px 20px; padding: 0 40px 50px; background: #0d1f43;}
+.stamp_popup .stamp_pop_info .img {border-radius: 18px; box-shadow: 0px 5px 27px 0px rgba(15, 21, 34, 0.38);}
+.stamp_popup .stamp_pop_info .img img {margin: -111px 0 0;}
+.stamp_popup .stamp_pop_info .info_wrap {margin: 60px 0 0;}
+.stamp_popup .stamp_pop_info .info_wrap .tit_area {border-bottom: 2px solid #2c3b5a; padding: 0 0 25px; font-size: 0;}
+.stamp_popup .stamp_pop_info .info_wrap .tit_area .sort {display: inline-block; border-radius: 10px; padding: 12px 14px 8px; background: #c42d6b; font-weight: 700; font-size: 32px; line-height: 1; color: #ffffff;}
+.stamp_popup .stamp_pop_info .info_wrap .tit_area .cont {display: inline-block; margin: 0 0 0 15px; font-weight: 700; font-size: 32px; line-height: 52px; color: #ffffff;}
+.stamp_popup .stamp_pop_info .info_wrap .tit_area .cont .sub {color: #788aaf;}
+.stamp_popup .stamp_pop_info .info_wrap .info {overflow: hidden; margin: 19px 0 0;}
+.stamp_popup .stamp_pop_info .info_wrap .info ol {float: left;}
+.stamp_popup .stamp_pop_info .info_wrap .info ol li {position: relative; box-sizing: border-box; margin: 14px 0 0; padding: 0 0 0 55px; font-family: Toyota; font-size: 28px; line-height: 35px; color: #ffffff;}
+.stamp_popup .stamp_pop_info .info_wrap .info ol li .num {position: absolute; top: 0; left: 0; width: 55px; font-weight: 700; color: #c42d6b;}
+.stamp_popup .stamp_pop_info .info_wrap .info ol li:nth-child(1) {margin: 0;}
+.stamp_popup .stamp_pop_info .info_wrap .info ol:nth-child(odd) {width: 325px;}
+.stamp_popup .stamp_pop_info .info_wrap .info ol:nth-child(even) {width: 285px;}
+.stamp_popup .stamp_pop_info .info_wrap .info2 {margin: 14px 0 0; font-size: 26px; line-height: 38px; color: #788aaf;}
+.stamp_popup .stamp_pop_info .info_wrap .in_showroom {padding: 29px 0 0;}
+.stamp_popup .stamp_pop_info .info_wrap .in_showroom .txt {font-size: 26px; line-height: 38px; color: #ffffff;}
+.stamp_popup .stamp_pop_info .info_wrap .in_showroom .target {margin: 24px -5px 0; border-radius: 10px; padding: 24px 30px; background: #1a2d57;}
+.stamp_popup .stamp_pop_info .info_wrap .in_showroom .target dt {font-weight: 700; font-size: 26px; line-height: 38px; color: #ffffff;}
+.stamp_popup .stamp_pop_info .info_wrap .in_showroom .target dd {margin: 11px 0 0; font-size: 26px; line-height: 38px; color: #788aaf;}
+.stamp_popup .stamp_pop_info .info_wrap .btn_area {margin: 40px 0 0; text-align: center;}
+.stamp_popup .stamp_pop_info .info_wrap .btn_area a {display: inline-block; border-radius: 53px; box-shadow: 3px 8px 18px 0px rgba(15, 21, 34, 0.23);}
+</style>
+<div class="stamp_popup">
+    <button type="button" class="btn_close" layer="close"></button>
+    <div class="stamp_pop_top">
+        <img src="../../images/temp/event/stamp/stamp_tit_tip.png" alt="스탬프 모으기 꿀팁">
+        <p class="desc">QR코드 위치 확인으로 빠르게 스탬프를 모아보세요!</p>
+    </div>
+    <div class="stamp_pop_info">
+        <div class="img"><img src="../../images/temp/event/stamp/stamp_tip.jpg" alt="QR코드 위치 지도"></div>
+        <div class="info_wrap">
+            <div class="tit_area">
+                <div class="sort">in 모터쇼</div><div class="cont">QR코드 위치 <span class="sub">(11개)</span></div>
+            </div>
+            <div class="info">
+                <ol>
+                    <li><span class="num">1.</span>RAV4</li>
+                    <li><span class="num">3.</span>GR - SUPRA</li>
+                    <li><span class="num">5.</span>AVALON HYBRID</li>
+                    <li><span class="num">7.</span>CAMRY</li>
+                    <li><span class="num">9.</span>PRIUS PRIME</li>
+                    <li><span class="num">11.</span>TOYOTA 86</li>
+                </ol>
+                <ol>
+                    <li><span class="num">2.</span>RAV4 HY</li>
+                    <li><span class="num">4.</span>CAMRY HYBRID</li>
+                    <li><span class="num">6.</span>SIENNA</li>
+                    <li><span class="num">8.</span>PRIUS C</li>
+                    <li><span class="num">10.</span>PRIUS MIRROR<br>SCREEN</li>
+                </ol>
+            </div>
+            <div class="tit_area mt60 pb20">
+                <div class="sort">in 쇼룸</div><div class="cont">QR코드 <span class="sub">(4개)</span></div>
+                <div class="info2">
+                    나머지 4개의 QR코드는 쇼룸에서 확인하실 수 있습니다.
+                </div>
+            </div>
+            <div class="in_showroom">
+                <p class="txt">
+                    QR코드 이벤트는 수도권(서울/경기/인천) 모든 토요타<br>
+                    전시장에서 진행됩니다.
+                </p>
+                <dl class="target">
+                    <dt>대상 전시장 : 총 11개</dt>
+                    <dd>
+                        강남, 강동, 서초, 강서, 평촌, 용산, 동대문, 일산, 인천,<br>
+                        분당, 수원
+                    </dd>
+                </dl>
+            </div>
+            <div class="btn_area">
+                <a href="#self"><img src="../../images/temp/event/stamp/btn_showroom.png" alt="쇼룸 안내"></a>
+            </div>
+        </div>
+    </div>
+</div>

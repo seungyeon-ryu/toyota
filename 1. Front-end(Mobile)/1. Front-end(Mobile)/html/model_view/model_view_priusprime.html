@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=750, user-scalable=no">
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+    <meta name="description" content="사이트설명">
+    <meta name="keywords" content="사이트검색키워드">
+    <meta name="author" content="Newriver">
+    <meta property="og:title" content="공유제목">
+    <meta property="og:description" content="공유설명">
+    <meta property="og:image" content="공유이미지 800x400">
+    <title>TITLE</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+    <link rel="stylesheet" href="../../common/css/font.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../common/css/models.css">
+    <link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+    <script src="../../common/modeljs/jquery-1.12.2.min.js"></script>
+    <script src="../../common/modeljs/jquery.easing.js"></script>
+    <script src="../../common/modeljs/vue.min.js"></script>
+    <script src="../../common/modeljs/vinyli.viCardLayout.js"></script>
+    <script src="../../common/modeljs/vinyli.viSlider.js"></script>
+    <script src="../../common/modeljs/vinyli.viSlider_video.js"></script>
+    <script src="../../common/modeljs/vinyli.viSlider2.js"></script>
+    <script src="../../common/modeljs/jquery.bxslider.js"></script>
+    <script src="../../common/modeljs/modules.js"></script>
+    <script src="../../common/modeljs/models.js"></script>
+    <script src="../../json/urls.js"></script>
+    <script>
+        var depth1 = 1; //models
+        var depth2 = 10; //
+        var modelName = "PRIUSPRIME";
+    </script>
+    <script>
+        $(document).ready(function () {
+            var ts;
+            var flag = false;
+            var $gnb = $('#gnb');
+            var $gnbdepth = $('#gnb > ul > li');
+            var prevScrollTop = $(window).scrollTop();
+            var nowScrollTop = $(window).scrollTop();
+
+            $(document).on('touchstart', function (e) {
+                e.stopPropagation();
+                ts = e.originalEvent.touches[0].clientY;
+            });
+
+            $(document).on('scroll touchmove', function (e) {
+                nowScrollTop = $(window).scrollTop();
+
+                if (!$('#header').hasClass('sub')) { // if main
+                    if (nowScrollTop > prevScrollTop) { // down
+                        $('#baitDown').removeClass('on');
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop <= 0) { // if top
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop < prevScrollTop) { // up
+                        $('#baitDown').addClass('on');
+                        $('#header').addClass('bg');
+                    }
+                }
+                else if ($('#wrap').hasClass('model')) {
+                    $('body').removeClass('hideHeader');
+                    $('#header').addClass('bg');
+                }
+                else { // if sub
+                    if (nowScrollTop > prevScrollTop) { // down
+                        $('body').addClass('hideHeader');
+                    }
+                    else if (nowScrollTop <= 0) { // if top
+                        $('body').removeClass('hideHeader');
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop < prevScrollTop) { // up
+                        $('body').removeClass('hideHeader');
+                        $('#header').addClass('bg');
+                    }
+                }
+                prevScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop;
+            });
+
+            $('#trgAside').on('click', function () {
+                var delay = 100;
+                if (!flag) {
+                    $('body').addClass('asideOpen').css('overflow', 'hidden');;
+
+                    flag = true;
+                } else {
+                    $('body').removeClass('asideOpen').css('overflow', 'auto');
+                    $gnbdepth.removeClass('open'); //.removeClass('on');
+                    flag = false;
+                }
+
+                $gnb.on('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                $gnbdepth.find('a').on('click', function () {
+                    $(this).closest('li').toggleClass('open');
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="wrap" class="model">
+
+        <header id="header" class="sub fullbg">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+            <h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+        </header>
+
+        <button type="button" id="trgAside" class="trg_aside">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+
+		<div id="gnb">
+			<div class="member">
+				<!-- <div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div> -->
+				<div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btn_wrap">
+				<a href="#self" class="btn_guide">이용안내</a>
+				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+			</div>
+		</div>
+
+        <div class="sub_visualModel" style="z-index:1;">
+			<div class="sub_video priusprime"><div class="video-play video-cover"></div><video id="visualVideo" muted autoplay loop><source src="../../images/model_view/MODEL_PRIUSP/file/priusprime_cf_final.mp4" type="video/mp4"></video></div>
+        </div>
+      <div id="container" class="sub_cont model priusprime" style="display:none;">
+            <div class="sub_wrap">
+                <div class="lnb_wrap">
+                    <h2>MODELS</h2>
+                    <div class="lnb_title">
+                        <h3>모델<img src="../../images/model_view/hybridcommon/down_arrow.png" alt=""></h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model_inner">
+                <div id="model" class="model_text"></div>
+
+				<div class="model_new_text">
+					<div class="kv-0">
+						<div class="title">새로움은 <br class="mobile_br">더 큰 새로움으로 이어진다</div>
+						<div class="desc pc_hide">주중에는 전기 에너지만으로 도심 주행이 가능하고, 주말에는 전기 모터와 가솔린 엔진을 사용하여 장거리 여행이 가능합니다.<br>가솔린 엔진을 전혀 사용하지 않는 도시에서의 생활, 친구와 가족과 새로운 모험을 떠나는 자연과 함께하는 생활로<br>프리우스 프라임과 함께 하는 삶이 더욱 즐겁고 풍요로워 집니다.</div>
+						<div class="caution pc_hide">본 이미지에 적용된 옵션은 참조용이므로, 국내 적용된 사양과 다를 수 있습니다</div>
+						<div class="kv-img"><div class="icon"></div></div>
+					</div>
+					<div class="kv-1">
+						<div class="left">
+							<div class="title">New Range,<br>New Life</div>
+							<div class="desc">더 진보적이고, 더 친환경적 <br class="mobile_br">이며, 드라이빙이 즐거운 <br>최첨단 플러그인 하이브리드, <br class="mobile_br">프리우스 프라임과 함께 <br>지금까지 없었던 완전히 <br class="mobile_br">새로운 삶의 즐거움을 <br>경험할 수 있습니다.</div>
+							<div class="highlight"><span>최대 40km EV RANGE</span></div>
+						</div>
+						<div class="right">
+							<div class="title">주중에는 <br class="mobile_br">전기 에너지만으로 <br class="mobile_br">도심 주행 가능</div>
+							<div class="desc">8.8kWh 대용량 리튬이온 <br class="mobile_br">배터리에 전기에너지를 충전하여 가솔린 엔진을 전혀 <br class="mobile_br">사용하지 않는 도시에서의 <br class="mobile_br">생활이 가능합니다.</div>
+						</div>
+						<div class="kv-img"><div class="icon"></div></div>
+					</div>
+					<div class="kv-2">
+						<div class="bottom">
+							<div class="per-wrap">
+								<div class="highlight"><span>최대 960km TOTAL DRIVING RANGE</span></div>
+							</div>
+						</div>
+						<div class="kv-img"></div>
+					</div>
+					<div class="kv-3">
+						<div class="kv-img"></div>
+					</div>
+					<div class="kv-4">
+						<div class="left">
+							<div class="title">PLUG-IN  <br class="mobile_br">HYBRID, <br>PLUG-IN  <br class="mobile_br">LIFE</div>
+							<div class="caution pc_hide">*위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.<br>*총 주행 거리는 ‘1회 충전 주행 거리 + 복합 연비 X 연료 탱크 용량’으로 계산되었습니다. </div>
+						</div>
+						<div class="right">
+							<div class="title">주말에는 전기 모터와 <br>가솔린 엔진을 사용하여 <br>장거리 여행이 가능 </div>
+							<div class="desc">친구와 가족과 새로운 <br class="mobile_br">모험을 떠나는 자연과 함께 <br class="mobile_br">하는 생활로 <br class="pc_br">삶이 더욱 <br class="mobile_br">즐겁고 풍요로워 집니다.</div>
+						</div>
+						<div class="bottom">
+							<div class="per-wrap">
+								<div class="highlight"><span>2 ELECTRIC MOTORS 135km/h EV MODE MAXMUM SPEED</span></div>
+							</div>
+						</div>
+						<div class="kv-img">
+							<div class="info_zoom">
+								<div class="item_zoom zoom_0">
+									<button type="button" class="btn_zoom"><span>고효율 1.8L 엔진</span></button>
+									<div class="item">
+										<div class="item-wrap">
+											<div>고효율 1.8L 엔진</div>
+											<p>최대 열효율 40%로 고연비에 공헌합니다</p>
+										</div>
+									</div>
+								</div>
+								<div class="item_zoom zoom_1">
+									<button type="button" class="btn_zoom"><span>하이브리드 트랜스액슬</span></button>
+									<div class="item">
+										<div class="item-wrap">
+											<div>하이브리드 트랜스액슬</div>
+											<p>듀얼 모터 드라이브 시스템과 전동 오일 펌프를 <br class="mobile_br">적용하여 EV 주행 성능을 <br class="pc_br">향상시킵니다.</p>
+										</div>
+									</div>
+								</div>
+								<div class="item_zoom zoom_2">
+									<button type="button" class="btn_zoom"><span>파워 컨트롤 유닛</span></button>
+									<div class="item">
+										<div class="item-wrap">
+											<div>파워 컨트롤 유닛</div>
+											<p>승압 컨버터 출력의 향상으로 EV 주행 성능을 향상시킵니다</p>
+										</div>
+									</div>
+								</div>
+								<div class="item_zoom zoom_3">
+									<button type="button" class="btn_zoom"><span>히트 펌프 오토 에어컨</span></button>
+									<div class="item">
+										<div class="item-wrap">
+											<div>히트 펌프 오토 에어컨</div>
+											<p>세계 최초의 가스 인젝션 기능이 들어간 히트 펌프 <br class="mobile_br">오토 에어컨을 채용하여 <br class="pc_br">EV 주행 성능을 향상시킵니다</p>
+										</div>
+									</div>
+								</div>
+								<div class="item_zoom zoom_4">
+									<button type="button" class="btn_zoom"><span>충전 시스템</span></button>
+									<div class="item">
+										<div class="item-wrap">
+											<div>충전 시스템</div>
+											<p>소형 및 고성능화로 충전 효율이 향상되어 충전시간이 <br class="mobile_br">단축됩니다. <br class="pc_br">220V 16A로 약 2시간 30분이면 <br class="mobile_br">충전 가능합니다.</p>
+										</div>
+									</div>
+								</div>
+								<div class="item_zoom zoom_5">
+									<button type="button" class="btn_zoom"><span>8.8kWh 대용량 리튬 이온 배터리</span></button>
+									<div class="item">
+										<div class="item-wrap">
+											<div>8.8kWh 대용량 리튬 이온 배터리</div>
+											<p>리튬 이온 배터리 용량을 향상시켜 EV 주행 거리 최대 40km 및 <br class="pc_br">EV 최고속도 135km/h까지 주행이 가능합니다.</p>
+										</div>
+									</div>
+								</div>
+								<script>
+									$('.info_zoom').find('.btn_zoom').on('click', function(ev) {
+										if ($(this).is('.active')) {
+											$(this).removeClass('active').parent().removeClass('current').siblings().removeClass('current').find('.btn_zoom').removeClass('active');
+										} else {
+											$(this).addClass('active').parent().addClass('current').siblings().removeClass('current').find('.btn_zoom').removeClass('active');
+										}
+									});
+								</script>
+							</div>
+						</div>
+					</div>
+					<div class="kv-5">
+						<div class="title">전기 에너지와 함께 하는 드라이빙의 즐거움</div>
+						<div class="desc">플러그인 하이브리드 차량인 프리우스 프라임은 <br class="mobile_br">전기 충전을 통해 연비 효과를 극대화시킬 수 있습니다.<br>충전구 커버를 오픈하고 충전 케이블을 연결하면 <br class="mobile_br">아주 간단하게 충전이 가능합니다.</div>
+						<div class="left toggle-itm current">
+							<div class="highlight">
+								<div class="txt"><span>가정용 전기</span> 충전속도</div>
+								<div class="time">
+									<div class="h">4<span>시간</span></div>
+									<div class="mark">:</div>
+									<div class="m">30<span>분</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="right toggle-itm">
+							<div class="highlight">
+								<div class="txt"><span>전용 충전기</span> 충전속도</div>
+								<div class="time">
+									<div class="h">2<span>시간</span></div>
+									<div class="mark">:</div>
+									<div class="m">30<span>분</span></div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="toggle btn-0 current" data-type=".left"><span>가정용 전기 충전</span></button>
+						<button type="button" class="toggle btn-1" data-type=".right"><span>전용 충전기 충전</span></button>
+						<script>
+							$('.kv-5').find('.toggle').on('click', function(ev) {
+								ev.preventDefault();
+								var toggleParent = $('.kv-5');
+
+								if (!$(this).is('.current')) {
+
+									$(this).addClass('current').siblings('.toggle').removeClass('current');
+									$('.kv-5').find($(this).data().type).addClass('current').siblings('.toggle-itm').removeClass('current');
+
+								} else {
+									return;
+								}
+							});
+						</script>
+					</div>
+					<div class="kv-6">
+						<div class="title">시선을 사로잡는 강렬한 디자인</div>
+						<div class="desc">토요타의 디자인 컨셉인 킨 룩(Keen디자인은 TNGA(Toyota New Global Architecture) 플랫폼으로 낮아진 무게 중심과 더불어 더욱 다이내믹하고 선진화된 플러그인 하이브리드를 표현합니다.</div>
+						<div class="kv-img"><div class="icon"></div></div>
+					</div>
+				</div>
+
+                <div id="exterior" class="model_slide type_right">
+                    <h3>EXTERIOR</h3>
+                </div>
+
+                <div id="interior" class="model_slide type_right">
+                    <h3>INTERIOR</h3>
+                </div>
+
+                <div id="features" class="model_slide type_right">
+                    <h3>FEATURES</h3>
+                </div>
+
+                <div id="video" class="model_comType1 model_video">
+                    <div class="model_comInner">
+                        <h3>VIDEO</h3>
+						<p>이미지 클릭 시 영상 전체화면 보기</p>
+                    </div>
+					<div class="video-item">
+						<div class="video-play play-2"><img src="../../images/model_view/MODEL_PRIUSP/img/video_thumb_2.jpg" alt="" /></div>
+						<video id="videoItem2" class="conVideo"><source src="../../images/model_view/MODEL_PRIUSP/file/priusprime_movie_20170517_1.mp4" type="video/mp4"></video>
+					</div>
+					<div class="video-item">
+						<div class="video-play play-1"><img src="../../images/model_view/MODEL_PRIUSP/img/video_thumb_1.jpg" alt="" /></div>
+						<video id="videoItem1" class="conVideo"><source src="../../images/model_view/MODEL_PRIUSP/file/0516_TOYOTA_timelapse.mp4" type="video/mp4"></video>
+					</div>
+                </div>
+
+                <div id="gallery" class="model_slide model_gallery">
+                    <h3>GALLERY</h3>
+                    <div class="gallery_cont">
+                    </div>
+                    <div class="main_slider">
+						<ul>
+						</ul>
+					</div>
+                </div>
+
+                <div id="colors" class="model_comType1 model_colors">
+                    <div class="model_comInner colors_header">
+                        <h3>COLORS</h3>
+                    </div>
+                    <div class="car">
+                        <div class="car_img">
+                            <img alt="" class="eq0 change">
+                            <img alt="" class="eq1 change">
+                            <img alt="" class="default">
+                        </div>
+                        <div class="car_listBox">
+                            <p></p>
+                            <ul>
+                            </ul>
+                            <span>* 상기 이미지는 실물과 다소 차이가 있을 수 있으며 <br>사양에 따라 색상이 다를 수 있습니다.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="specs" class="model_comType1 model_specs">
+                    <div class="model_comInner specs_header">
+                        <div class="specs_headerInner">
+                            <h3>SPECS & PRICE</h3>
+                            <div class="model_tab">
+                                <ul>
+
+                                </ul>
+                            </div>
+                           <ul class="prices">
+
+                            </ul>
+                        </div>
+                        <div class="sh_img">
+                            <img alt="">
+                        </div>
+                    </div>
+                </div>
+
+				<div id="smartHybridCommon">
+					<div class="hybrid_mo">
+						<article class="hybrid_wrap">
+							<div class="hybrid_inner">
+								<h2 class="h2_titleW">SMART HYBRID</h2>
+								<h3>하이브리드 <br><span class="korean_bold">혜택</span></h3>
+								<p>친환경 하이브리드 차량 구매 시 <br>얻을 수 있는 각종 혜택을 확인해 보세요. <br>
+									<span></span>
+								</p>
+								<div class="hybrid_list">
+									<ul>
+										<li class="nth-1">
+											<h4>플러그인-하이브리드 구매보조금</h4>
+											<div class="hybrid_listLeft">
+												<dl>
+													<dt>플러그인<br>하이브리드<br>구매보조금</dt>
+													<dd class="hybrid_max">최대</dd>
+													<dd class="hybrid_maxNum">5,000,000</dd>
+												</dl>
+											</div>
+											<div class="hybrid_listRight">
+												<ul>
+													<li>* 지역별 상이함</li>
+												</ul>
+											</div>
+											<div class="hybrid_listBottom">
+												<p><sup class="korean_bold">최대 </sup><span class="eng_bold">500<span class="korean_bold f18">만원 </span></span><span class="hbb_sap1 korean_bold">혜택</span></p>
+											</div>
+										</li>
+										<li class="nth-2">
+											<h4>하이브리드 감면 금액</h4>
+											<div class="hybrid_listLeft">
+												<dl>
+													<dt>개별소비세</dt>
+													<dd class="hybrid_max">최대</dd>
+													<dd class="hybrid_maxNum">1,000,000</dd>
+												</dl>
+												<dl>
+													<dt>교육세</dt>
+													<dd class="hybrid_max">최대</dd>
+													<dd class="hybrid_maxNum">300,000</dd>
+												</dl>
+												<dl>
+													<dt>취득세</dt>
+													<dd class="hybrid_max">최대</dd>
+													<dd class="hybrid_maxNum">1,400,000</dd>
+												</dl>
+												<dl>
+													<dt>공채할인시</dt>
+													<dd class="hybrid_max">최대</dd>
+													<dd class="hybrid_maxNum">400,000</dd>
+												</dl>
+											</div>
+											<div class="hybrid_listRight">
+												<ul>
+													<li>* 개별 소비세 & 교육세: <br>차량가격에 기 반영</li>
+													<li>* 지역별 상이함</li>
+												</ul>
+											</div>
+											<div class="hybrid_listBottom">
+												<p><sup class="korean_bold">최대 </sup><span class="eng_bold">310<span class="korean_bold f18">만원 </span></span><span class="hbb_sap1 korean_bold">혜택</span></p>
+											</div>
+										</li>
+										<li class="nth-3">
+											<h4>도심 혼잡 통행료</h4>
+											<div class="hybrid_listLeft">
+												<dl class="no_border">
+													<dt>서울지역</dt>
+													<dd class="hybrid_max"></dd>
+													<dd class="hybrid_maxNum"></dd>
+												</dl>
+											</div>
+											<div class="hybrid_listRight">
+												<ul>
+													<li class="no_margin">* 지역별 상이함</li>
+												</ul>
+											</div>
+											<div class="hybrid_listBottom">
+												<p><sup class="korean_bold">최대 </sup><span class="eng_bold">100<span class="f18">% </span></span><span class="hbb_sap1 korean_bold">감면</span></p>
+											</div>
+										</li>
+										<li class="nth-4">
+											<h4>공영주차장 이용료</h4>
+											<div class="hybrid_listLeft">
+												<dl>
+													<dt>수도권 지역</dt>
+													<dd class="hybrid_max"></dd>
+													<dd class="hybrid_maxNum"></dd>
+												</dl>
+												<dl>
+													<dt>인천공항</dt>
+													<dd class="hybrid_max"></dd>
+													<dd class="hybrid_maxNum"></dd>
+												</dl>
+												<dl>
+													<dt>김포공항</dt>
+													<dd class="hybrid_max"></dd>
+													<dd class="hybrid_maxNum"></dd>
+												</dl>
+												<dl class="no_border">
+													<dt>김해공항</dt>
+													<dd class="hybrid_max"></dd>
+													<dd class="hybrid_maxNum"></dd>
+												</dl>
+											</div>
+											<div class="hybrid_listRight">
+												<ul>
+													<li>* 지역별 상이함</li>
+												</ul>
+											</div>
+											<div class="hybrid_listBottom">
+												<p><span class="eng_bold">50<span class="f18">% </span></span><span class="hbb_sap1 korean_bold">감면</span></p>
+											</div>
+										</li>
+										<li class="nth-5">
+											<h4>하이브리드 <br>메인배터리<br>무상보증확대</h4>
+											<div class="hybrid_listRight">
+												<ul>
+													<li>* 연 1회 하이브리드 <br>시스템 점검 시</li>
+													<li>* 한국토요타자동차 판매 <br>차량에 한함</li>
+												</ul>
+											</div>
+											<div class="hybrid_listBottom">
+												<p><span class="eng_bold">10</span><span class="f18 korean_bold">년/ </span><span class="eng_bold">20<span class="korean_bold f18">만</span><span class="eng_bold f18">km </span></span><span class="hbb_sap1 korean_bold">연장</span></p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+						<article class="hybrid_wrap">
+							<div class="hybrid_inner">
+								<h2 class="h2_titleW">SMART HYBRID</h2>
+								<h3>하이브리드 <br><span class="korean_bold">서비스</span></h3>
+								<p>지구를 생각하는 당신에게 한국 토요타 자동차가 <br>더 특별한 서비스를 준비했습니다.<br>하이브리드만큼 스마트하고, 특별한 서비스를 만나보세요! <br>
+									<span>* 2018년 12월 31일까지 실행 예정</span>
+								</p>
+
+								<div class="hybrid_survice">
+									<ul>
+										<li class="nth-1">
+											<div class="hbs_iconBox">
+												<span><img src="../../images/model_view/m_prius/image/hybrid_icon5.gif" alt="" class="wt100"></span>
+											</div>
+											<h4>하이브리드 메인배터리 <br>무상 보증 연장</h4>
+											<p>한국 토요타 자동차 판매 차량 및<br>2015년 이후 출고 차량에 한함<br>10년/20만km로 연장 <br>*연 1회 하이브리드 시스템 점검 시</p>
+										</li>
+										<!-- li class="nth-2">
+											<div class="hbs_iconBox">
+												<span><img src="../../images/model_view/m_prius/image/hybrid_icon6.gif" alt="" class="wt100"></span>
+											</div>
+											<h4>하이브리드 메인배터리<br>연장 보증 프로그램</h4>
+											<p>보증기간(최소 5년 또는 80,000km 및 3년 또는<br>100,000km) 만료 차량의 1년 연장 보증 상품 <br><a href="file/hybird_battery_extend_care.pdf">자세히 보기 ></a> <br>* 차량 인도 후 최대 10년 또는 <br>주행거리 200,000km 이내의 차량에 한함</p>
+										</li -->
+										<li class="nth-3">
+											<div class="hbs_iconBox">
+												<span><img src="../../images/model_view/m_prius/image/hybrid_icon7.gif" alt="" class="wt100"></span>
+											</div>
+											<h4>토요타 하이브리드 <br>점검 서비스</h4>
+											<p>최신 설비와 전문인력을 통한<br>맞춤형 점검 서비스 <br>* 최소 2년 무상 제공</p>
+										</li>
+										<li class="nth-4">
+											<div class="hbs_iconBox">
+												<span><img src="../../images/model_view/m_prius/image/hybrid_icon8.gif" alt="" class="wt100"></span>
+											</div>
+											<h4>정기 점검 및 소모품<br>교환 서비스 2년 무상 제공</h4>
+											<p>차량의 최적 상태 유지를 위한<br>특별한 혜택<br>* 점검 주기 및 대상 소모품은 별도 기준에 따름</p>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</article>
+					</div>
+				</div>
+            </div>
+        </div>
+        <button id="quickToggle">
+			<div class="eq0"></div>
+			<div class="eq1"></div>
+		</button>
+		<div id="quickmenu">
+			<div class="ie_dim"></div>
+			<ul>
+				<li class="quick q_testdrive">
+					<span>시승신청</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_01.png" alt=""></div>
+				</li>
+				<li class="quick q_showroom">
+					<span>전시장</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_02.png" alt=""></div>
+				</li>
+				<li class="quick q_benefit">
+					<span>구매혜택</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_03.png" alt=""></div>
+				</li>
+			</ul>
+			<div class="dim black"></div>
+		</div>
+	<style>
+		.layer-gallery {position:fixed; left:0; top:80px; right:0; bottom:0; background:rgba(0,0,0,0.9); z-index:90000;}
+		.layer-gallery-wrap {width:100%; height:100%;}
+		.layer-gallery-content {position:relative; width:100%; height:100%; padding:20px; box-sizing:border-box; text-align:center; font-size:0;}
+		.layer-gallery-content:after {content:''; display:inline-block; width:0; height:100%; vertical-align:middle;}
+		.layer-gallery-content video {display:inline-block; height:100%; vertical-align:middle;}
+		.layer-gallery-content img {max-width:100%; max-height:100%; vertical-align:middle;}
+		.layer-gallery-control {display:inline-block;}
+		.layer-gallery-play {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.4) url('../../images/model_view/drone/con2-dream-video-icon.png') 50% 50% no-repeat; cursor:pointer; z-index:50;}
+		.layer-gallery-play span {position:absolute; left:-500px; width:0; height:0; overflow:hidden;}
+		.layer-gallery-prev {position:absolute; left:0; top:50%; width:60px; height:80px; margin-top:-40px; background:url('../../images/model_view/motor_show/btn_gallery_img_left.jpg') 0 0 no-repeat; cursor:pointer; z-index:100;}
+		.layer-gallery-prev span {position:absolute; left:-500px; width:0; height:0; overflow:hidden;}
+		.layer-gallery-next {position:absolute; right:0; top:50%; width:60px; height:80px; margin-top:-40px; background:url('../../images/model_view/motor_show/btn_gallery_img_right.jpg') 0 0 no-repeat; cursor:pointer; z-index:100;}
+		.layer-gallery-next span {position:absolute; left:-500px; width:0; height:0; overflow:hidden;}
+		@media screen and (max-width: 960px) {
+			.layer-gallery {position:fixed; left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.9); z-index:90000;}
+			.layer-gallery-wrap {position:relative; font-size:0; padding:0; overflow-y:auto;}
+			.layer-gallery-wrap:after {content:''; display:inline-block; width:0; height:100%; vertical-align:middle;}
+			.layer-gallery-content {display:inline-block; position:relative; width:100%; height:auto; padding:20px 0; font-size:0; vertical-align:middle;}
+			.layer-gallery-content:after {display:none;}
+			.layer-gallery-content video {display:inline-block; width:100%; vertical-align:middle;}
+			.layer-gallery-content img {max-width:100%; vertical-align:middle;}
+			.layer-gallery-control {position:relative; display:inline-block; width:100%; margin:15px 0 0 0; text-align:center; vertical-align:middle; z-index:100;}
+			.layer-gallery-play {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.4) url('../../images/model_view/drone/con2-dream-video-icon.png') 50% 50% no-repeat; background-size:40px auto; cursor:pointer; z-index:50;}
+			.layer-gallery-prev {display:inline-block; position:static; width:30px; height:30px; margin:0 37px; background:url('../../images/model_view/motor_show/btn_gallery_img_left_m.png') 0 0 no-repeat; background-size:100% auto; cursor:pointer; z-index:100;}
+			.layer-gallery-next {display:inline-block; position:static; width:30px; height:30px; margin:0 37px; background:url('../../images/model_view/motor_show/btn_gallery_img_right_m.png') 0 0 no-repeat; background-size:100% auto; cursor:pointer; z-index:100;}
+			.layer-gallery-close {display:inline-block; position:static; width:60px; height:60px; margin:20px auto 0; background:url('../../images/model_view/MODEL_PRIUSP/img/btn_closeGallery_Img_m.png') 0 0 no-repeat; background-size:100% auto; cursor:pointer; z-index:100;}
+		}
+	</style>
+
+	<script type="text/javascript">
+	//<![CDATA[
+
+		var contentVideo = false;
+
+		$(document).ready(function() {
+			$('#visualVideo > source').attr('src', '../../images/model_view/MODEL_PRIUSP/file/priusprime_cf_final.mp4');
+			$('#visualVideo')[0].load();
+			$('#visualVideo')[0].pause();
+			$('.video-play.video-cover').css({width:'', height:'', display:'block'});
+
+			$(window).on('scroll', function(ev) {
+				var scrollVal = $(this).scrollTop();
+
+				if (scrollVal == 0 && !contentVideo) {
+					if ($('#visualVideo')[0].paused || $('#visualVideo')[0].currentTime > 14) {
+						if (commonjs.isMobile()) {
+							return;
+						}
+						$('#visualVideo')[0].play();
+					}
+				}
+			});
+
+			$('.video-cover').on('click', function(ev) {
+
+				$('video').each(function(i) {
+					$(this)[0].pause();
+				});
+
+				var movTarget = $(this);
+				var html = '';
+
+				if (movTarget.length > 0) {
+					html += '<div class="layer-main">';
+					html += '<div class="layer-main-wrap">';
+					html += '<div class="layer-main-content">';
+					html += '<div class="yt-layer-wrap"><iframe width="750" height="100%" src="https://www.youtube.com/embed/26-L_bMJnbE?autoplay=1&rel=0&wmode=transparent&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+					html += '<div class="layer-main-control">';
+					html += '<button type="button" class="layer-main-close"><span>닫기</span></button>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div>';
+				}
+
+				var $galleryMov = $(html);
+
+				$galleryMov.find('.layer-main-close').on('click', function(ev) {
+					$galleryMov.remove();
+				});
+
+				if ($('.layer-main').length > 0) {
+					$('.layer-main').remove();
+					$('#wrap').after($galleryMov);
+				} else {
+					$('#wrap').after($galleryMov);
+				}
+			});
+
+			$('.model_video').find('.video-play').on('click', function(ev) {
+				var _this = $(this);
+				var videoEle = $(this).siblings('video')[0];
+				var videoObj = $(this).siblings('video');
+
+				if (_this.is('.play-1')) {
+					// return;
+				}
+
+				videoObj.off('click').attr('controls','');
+				$('.model_video').find('.video-item').off();
+
+				contentVideo = true;
+
+				$('video').each(function(i) {
+					$(this)[0].pause();
+				});
+
+				var movTarget = $(this);
+				var html = '';
+
+				if (movTarget.length > 0) {
+					html += '<div class="layer-gallery">';
+					html += '<div class="layer-gallery-wrap">';
+					html += '<div class="layer-gallery-content">';
+					html += '<!-- video autoplay controls id="galleryVideo"><source src="" type="video/mp4"></video -->';
+					html += '<!-- button type="button" class="layer-gallery-play"><span>재생</span></button -->';
+					html += '<div class="layer-gallery-control">';
+					html += '<button type="button" class="layer-gallery-close"><span>닫기</span></button>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div>';
+				}
+
+				var $galleryMov = $(html);
+
+				$galleryMov.find('.layer-gallery-content').prepend(videoEle);
+
+				videoEle.muted = false;
+				videoEle.play();
+
+				$galleryMov.find('.layer-gallery-close').on('click', function(ev) {
+					videoEle.currentTime = 0;
+					videoEle.pause();
+					_this.after(videoObj).closest('.model_video').find('.video-item').on('mouseenter', videoMouseOver).on('mouseleave', videoMouseOut);
+
+					videoObj.off('click').on('click', function(ev){
+						$(this).parent().find('.video-play').trigger('click');
+					}).css('display','none').removeAttr('controls').siblings('.video-play').css('display','');
+
+					$galleryMov.remove();
+
+					contentVideo = false;
+				});
+
+				if ($('.layer-gallery').length > 0) {
+					$('.layer-gallery').remove();
+					$('#wrap').after($galleryMov);
+				} else {
+					$('#wrap').after($galleryMov);
+				}
+
+				/*
+				if (commonjs.isMobile()) {
+					if (videoEle.paused) {
+						videoEle.play();
+					} else {
+						videoEle.pause();
+					}
+				} else {
+					if (videoEle.paused) {
+						videoEle.currentTime = 0;
+						videoEle.play();
+						if (document.fullscreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled || document.mozFullScreenEnabled) {
+							if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement && !document.mozFullScreenElement) {
+								if (videoEle.requestFullscreen) {
+									videoEle.requestFullscreen();
+								} else if (videoEle.webkitRequestFullscreen) {
+									videoEle.webkitRequestFullscreen();
+								} else if (videoEle.msRequestFullscreen) {
+									videoEle.msRequestFullscreen();
+								} else if (videoEle.mozRequestFullScreen) {
+									videoEle.mozRequestFullScreen();
+								}
+							} else {
+								if (document.exitFullscreen) {
+									document.exitFullscreen();
+								} else if (document.webkitExitFullscreen) {
+									document.webkitExitFullscreen();
+								} else if (document.msExitFullscreen) {
+									document.msExitFullscreen();
+								} else if (document.mozCancelFullScreen) {
+									document.mozCancelFullScreen();
+								}
+							}
+						}
+					} else {
+						videoEle.pause();
+					}
+				}
+				*/
+			}).end().find('.video-item').on('mouseenter', videoMouseOver).on('mouseleave', videoMouseOut);
+
+			$('video').on('play', function(ev) {
+				//$(this).css('display','').siblings('.video-play').css('display','none');
+			}).on('pause', function(ev) {
+				$(this).css('display','').siblings('.video-play').css('display','');
+			}).on('click', function(ev) {
+			});
+
+			$('video.conVideo').on('ended', function(ev) {
+				contentVideo = false;
+			});
+
+			$('#visualVideo').on('click', function(ev) {
+				ev.preventDefault();
+
+				var movTarget = $(this);
+				var html = '';
+
+				if (movTarget.length > 0) {
+					html += '<div class="layer-main">';
+					html += '<div class="layer-main-wrap">';
+					html += '<div class="layer-main-content">';
+					html += '<div class="yt-layer-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/26-L_bMJnbE?autoplay=1&rel=0&wmode=transparent&showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+					html += '<div class="layer-main-control">';
+					html += '<button type="button" class="layer-main-close"><span>닫기</span></button>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div>';
+					html += '</div>';
+				}
+
+				var $galleryMov = $(html);
+
+				$galleryMov.find('.layer-main-close').on('click', function(ev) {
+					$galleryMov.remove();
+				});
+
+				if ($('.layer-main').length > 0) {
+					$('.layer-main').remove();
+					$('#wrap').after($galleryMov);
+				} else {
+					$('#wrap').after($galleryMov);
+				}
+			});
+
+
+
+		});
+
+		function videoMouseOver(ev) {
+			var _this = $(ev.currentTarget).find('.video-play');
+			var videoEle = _this.siblings('video')[0];
+			var videoObj = _this.siblings('video');
+
+			if (_this.is('.play-1')) {
+				// return;
+			}
+
+			contentVideo = true;
+
+			$('video').each(function(i) {
+				$(this)[0].pause();
+			});
+
+			videoObj.on('click', function(ev){
+				$(this).parent().find('.video-play').trigger('click');
+			});
+
+			videoEle.muted = true;
+			videoEle.play();
+		}
+
+		function videoMouseOut(ev) {
+			var _this = $(ev.currentTarget).find('.video-play');
+			var videoEle = _this.siblings('video')[0];
+			var videoObj = _this.siblings('video');
+
+			if (_this.is('.play-1')) {
+				// return;
+			}
+
+			contentVideo = true;
+
+			$('video').each(function(i) {
+				$(this)[0].pause();
+			});
+
+			videoObj.on('click', function(ev){
+				$(this).parent().find('.video-play').trigger('click');
+			});
+
+			videoEle.muted = true;
+			videoEle.currentTime = 0;
+			videoEle.pause();
+		}
+
+	//]]>
+	</script>
+
+    </div>
+</body>
+
+</html>

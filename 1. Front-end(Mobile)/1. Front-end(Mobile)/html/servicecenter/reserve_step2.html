@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app" class="type2">
+
+		<header id="header" class="sub">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+		<div id="gnb">
+			<div class="member">
+				<div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div>
+				<!-- <div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div> -->
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btn_wrap">
+				<a href="#self" class="btn_guide">이용안내</a>
+				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+			</div>
+		</div>
+
+		<div id="container">
+
+			<div id="content" class="input reserve type2">
+                <div class="intro">
+                    <h2 class="tit_page">예약하기</h2>
+                    <div class="hgroup2">
+                        <h3 class="tit">예약 신청</h3>
+                    </div>
+                    <div class="steps">
+                        <ol>
+                            <li>
+                                <div class="num">1</div>
+                                <div class="txt">센터&amp;일정</div>
+                            </li>
+                            <li class="curr">
+                                <div class="num">2</div>
+                                <div class="txt">예약 신청</div>
+                            </li>
+                            <li>
+                                <div class="num">3</div>
+                                <div class="txt">예약 완료</div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="model_box mt20">
+						<div class="car">
+							<div class="tit">AVALON HYBRID</div>
+							<div class="num">23어1234</div>
+						</div>
+                        <div class="info">
+                            <dl>
+                                <dt>차량번호</dt>
+                                <dd>23어1234</dd>
+                            </dl>
+                            <dl>
+                                <dt>예약 센터</dt>
+                                <dd>강서 서비스센터</dd>
+                            </dl>
+                            <dl>
+                                <dt>예약 희망 일시</dt>
+                                <dd>2018-11-08(목) 10:00</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_area pt70 pb80">
+                    <div class="hgroup3 mb40">
+                        <h4 class="tit">필수항목</h4>
+                    </div>
+                    <div class="user_info">
+                        <div class="type">점검 항목</div>
+                        <div class="chk_wrap">
+                            <label for="agree1" class="chk">
+                                <input id="agree1" type="checkbox">
+                                <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle class="ico_bg" cx="24" cy="24" r="24"></circle>
+                                    <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"></polyline>
+                                </svg>
+                                <span>정기점검 (FMS, PSP)</span>
+                            </label>
+                            <label for="agree2" class="chk">
+                                <input id="agree2" type="checkbox">
+                                <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle class="ico_bg" cx="24" cy="24" r="24"></circle>
+                                    <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"></polyline>
+                                </svg>
+                                <span>일반수리 (부품교환)</span>
+                            </label>
+                            <label for="agree3" class="chk">
+                                <input id="agree3" type="checkbox">
+                                <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle class="ico_bg" cx="24" cy="24" r="24"></circle>
+                                    <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"></polyline>
+                                </svg>
+                                <span>엔진오일 & 필터 교환</span>
+                            </label>
+                            <label for="agree4" class="chk">
+                                <input id="agree4" type="checkbox">
+                                <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle class="ico_bg" cx="24" cy="24" r="24"></circle>
+                                    <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"></polyline>
+                                </svg>
+                                <span>판금&middot;도장(사고) 수리</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_area type2 choose" style="padding-bottom: 270px;">
+                    <div class="hgroup3 mb40">
+                        <h4 class="tit">선택항목</h4>
+                    </div>
+                    <div class="user_info">
+                        <div class="type">요청 사항</div>
+                        <div class="box">
+                            <textarea placeholder="상세 요청사항을 입력하세요."></textarea>
+                        </div>
+                    </div>
+                    <div class="user_info">
+                        <div class="type">차량 사진</div>
+                        <div class="upload_file">
+							<ul>
+								<li>
+									<div class="plus" style="background-image: url(../../images/main/arvr.jpg);"></div>
+									<a href="#self" class="del"></a>
+								</li>
+								<li>
+									<div class="plus" style="background-image: url(../../images/main/arvr.jpg);"></div>
+									<a href="#self" class="del"></a>
+								</li>
+								<li><div class="plus"></div></li>
+								<li><div class="plus"></div></li>
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./reserve_step3.html" class="btn120 arr c1">예약하기</a>
+		</div><!-- id : container -->
+		<script>
+			// [D] 시연용
+			$(document).ready(function(){
+				$('input').on('focus', function(){
+					var inputLength = $('input').length;
+					for (var i = 0; i < inputLength; i++){
+						if (!$('input')[0].value == '' || !$('input')[1].value == '' || !$('input')[2].value == '' || !$('input')[3].value == '') {
+							$('.btn120').removeClass('c1').addClass('c2');
+						}
+					}
+				});
+			});
+		</script>
+	</div><!-- id : wrap -->
+</body>
+</html>

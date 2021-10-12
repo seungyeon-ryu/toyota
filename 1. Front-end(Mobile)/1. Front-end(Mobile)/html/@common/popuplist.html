@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1100, user-scalable=yes">
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>Project AjaxPopup List</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+	<script src="../../common/js/jquery-ui.js"></script>
+</head>
+<body>
+<style>
+#popuplist {width: 500px; padding: 20px;}
+#popuplist ul {padding: 20px; background: rgba(0, 0, 0, 0.6);}
+#popuplist ul li button {display: block; width: 100%; padding: 12px; color: #ffffff; text-align: left;}
+#popuplist ul li button:hover {background: #000000;}
+</style>
+	<div id="popuplist">
+		<ul>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/main.html');">메인 팝업</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/alert_type1.html', {backgroundClose : false});">알림 (버튼 1개)</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/alert_type2.html');">알림 (버튼 2개)</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/alert_update.html');">업데이트</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/mileage.html');">MY CAR > 주행거리 수정</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/mileage_updated.html');">MY CAR > 주행거리 수정 (이전 업데이트 있는 경우)</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/choose_car.html');">MY CAR > 대표 차량 선택</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/car_number.html');">MY CAR > 차대번호 확인 방법</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/saving_register_tune_select.html');">MY CAR > 정비 항목 선택</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/repair_form.html');">MY CAR > 정비명세서</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/alert_approach.html');">알림 > 앱 접근 권한 안내</button></li>
+			<li><button type="button" onclick="newriver.ajaxpopup.open('../@popup/alert_setting.html');">알림 > TOYOTA 알림 설정 안내</button></li>
+		</ul>
+	</div>
+</body>
+</html>

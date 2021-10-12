@@ -1,0 +1,283 @@
+{
+  "model": {
+    "dataList": [
+      {
+        "mainVisual": "../../images/modelView/MODEL_AvalonHybrid/topVisual.jpg",
+        "m_mainVisual": "../../images/modelView/MODEL_AvalonHybrid/m_topVisual.jpg",
+        "slider2" : [
+          {"exterior" : [
+            {"tabmenu" : [
+              {"title" : "exterior",
+                "subcategory" :
+                [{
+                  "title" : "대담함을 강조한 전면 디자인",
+                  "subtitle" : "대담함을 강조한 전면 디자인",
+                  "descript" : "대형 프론트 그릴을 통해 과감함과 품격을 담아내었으며<br class='pc_br'> 공기역학적 성능과 보행자 보호를 고려한<br class='pc_br'> 언더 그릴은 저중심 설계와 스포티한 디자인으로<br class='pc_br'> 아발론 하이브리드의 대담한 자태를 표현합니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/exterior/thurm_EXT01.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/EXT01.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/m_EXT01.png"
+                },
+                {
+                  "title" : "LED 헤드램프 ",
+                  "subtitle" : "LED 헤드램프 ",
+                  "descript" : "샤프하고 슬림한 LED 헤드램프는 <br class='pc_br'>독보적인 존재감을 나타내며, 모듈형 베젤을 적용하여 <br class='pc_br'>선진 기술을 표현하였습니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/exterior/thurm_EXT02.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/EXT02.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/m_EXT02.png"
+                },
+                {
+                  "title" : "역동성을 극대화한 측면 디자인",
+                  "subtitle" : "역동성을 극대화한 측면 디자인",
+                  "descript" : "다이내믹한 캐릭터 라인을 포함한 모든 디테일에서 대담함이 살아 있으며, <br class='pc_br'>풀 사이즈 세단의 롱 바디는 아발론 하이브리드만의 품격과 고급감을 <br class='pc_br'>동시에 느끼게 합니다. ",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/exterior/thurm_EXT03.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/EXT03.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/m_EXT03.png"
+                },
+                {
+                  "title" : "모던하고 과감한 후면 디자인",
+                  "subtitle" : "모던하고 과감한 후면 디자인",
+                  "descript" : "와이드한 스탠스와 조각 같은 상단 표면, <br class='pc_br'>팽팽한 범퍼 표면이 위아래로 교차하며, <br class='pc_br'>세련되면서도 품격있는 풀 사이즈 세단의 가치를 보여주고, <br class='pc_br'>역동적인 이미지를 만들어 냅니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/exterior/thurm_EXT04.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/EXT04.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/m_EXT04.png"
+                },
+                {
+                  "title" : "LED 리어 컴비네이션 램프",
+                  "subtitle" : "LED 리어 컴비네이션 램프",
+                  "descript" : "입체감 있는 LED 리어 컴비네이션 램프는 <br class='pc_br'>슬림한 3차원 형상을 통해 세련됨을 강조했습니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/exterior/thurm_EXT05.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/EXT05.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/exterior/m_EXT05.png"
+                }]
+              }
+            ]}
+          ]
+          },
+          {"interior" : [
+            {"tabmenu" : [
+              {
+                "title" : "interior",
+                "subcategory" :
+                [{
+                  "title" : "높은 개방감과 넓은 시인성",
+                  "subtitle" : "높은 개방감과 넓은 시인성",
+                  "descript" : "좌측에서 우측으로 수평축을 강조한 센터페시아는 <br class='pc_br'>운전자로 하여금 높은 개방감과 넓은 시인성을 제공하며, <br class='pc_br'>인스트루먼트 패널의 레이아웃은 운전석과 동반석을 명확하게 구분하여 <br class='pc_br'>상호 독립적인 공간을 제공합니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/interior/thurm_INT01.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/INT01.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/m_INT01.png"
+                },
+                {
+                  "title" : "9인치 터치스크린 디스플레이",
+                  "subtitle" : "9인치 터치스크린 디스플레이",
+                  "descript" : "새로운 멀티미디어 기능이 추가된 9인치 터치스크린 디스플레이는 <br class='pc_br'>직관적이고 사용하기 쉽도록 설계되었습니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/interior/thurm_INT02.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/INT02.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/m_INT02.png"
+                },
+                {
+                  "title" : "3 스포크 스티어링 휠",
+                  "subtitle" : "3 스포크 스티어링 휠",
+                  "descript" : "천연가죽이 적용된 스포티한 3 스포크 스티어링 휠은<br class='pc_br'> 높은 수준의 그립감과 편리함을 제공하며, <br class='pc_br'>세틴 도금 몰딩이 가죽과 결합되어 고급감을 실현합니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/interior/thurm_INT03.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/INT03.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/m_INT03.png"
+                },
+                {
+                  "title" : "하이그로시 센터페시아",
+                  "subtitle" : "하이그로시 센터페시아",
+                  "descript" : "센터페시아는 고광택의 블랙 하이그로시 재질로<br class='pc_br'> 고급스러움을 표현하였고, 실제로 떠있는 것처럼 보이는 <br class='pc_br'>플로팅 센서 스택을 적용하여<br class='pc_br'>미래 지향적이면서도 우아함을 제공합니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/interior/thurm_INT04.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/INT04.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/m_INT04.png"
+                },
+                {
+                  "title" : "넓어진 공간과 개방성",
+                  "subtitle" : "넓어진 공간과 개방성",
+                  "descript" : "시트 포지션과 스티어링 휠 각도를 낮춰<br class='pc_br'> 앞, 뒷좌석 모두 공간을 충분히 확보하고 <br class='pc_br'>운전자에게 최적화된 설계로 <br class='pc_br'>개선된 운전 시야를 확보했습니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/interior/thurm_INT05.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/INT05.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/interior/m_INT05.png"
+                }]
+              }
+            ]}
+          ]
+          },
+          {"features" : [
+            {"tabmenu" : [
+              {
+                "title" : "features",
+                "subcategory" :
+                [
+                  {
+                  "title" : "스마트폰 무선충전 시스템",
+                  "subtitle" : "스마트폰 무선충전 시스템",
+                  "descript" : "충전패드 위에 스마트폰을 올려놓기만 하면 자동으로 충전이 됩니다.<br class='pc_br'> 선 연결이 필요 없어 실내를 보다 깔끔하게 유지할 수 있고,<br class='pc_br'> 번거로움 없는 쾌적한 충전 환경을 제공합니다.<br> * 해당 기능은 휴대폰에 무선 충전 기능이 내장된 경우 작동됩니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/features/thurm_FTS01.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/features/FTS01.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/features/m_FTS01.png"
+                },
+                {
+                  "title" : "드라이브 모드 셀렉터",
+                  "subtitle" : "드라이브 모드 셀렉터",
+                  "descript" : "최대 연료 효율을 제공하는 Eco 모드,<br class='pc_br'> 편안한 운전을 제공하는 Normal 모드,<br class='pc_br'> 스포티한 드라이빙을 가능하게 하는 Sport 모드를 통해<br class='pc_br'> 운전자의 기호에 맞게 다양한 주행의 즐거움을<br class='pc_br'> 만끽할 수 있습니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/features/thurm_FTS02.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/features/FTS02.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/features/m_FTS02.png"
+                },
+                {
+                  "title" : "10개의 SRS 에어백",
+                  "subtitle" : "10개의 SRS 에어백",
+                  "descript" : "충돌 안전구조 및 시트벨트 작동과 함께<br class='pc_br'> 10개의 SRS에어백이 장착되어<br class='pc_br'> 사고가 발생하는 경우에도<br class='pc_br'> 탑승자의 부상을 최소화해줍니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/features/thurm_FTS03.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/features/FTS03.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/features/m_FTS03.png"
+                },
+                {
+                  "title" : "향상된 차체 강성",
+                  "subtitle" : "향상된 차체 강성",
+                  "descript" : "가벼우면서 강도 높은 차체를 구현하여<br class='pc_br'> 민첩한 핸들링과 우수한 주행 성능, 연비 개선을<br class='pc_br'> 실현하였습니다.",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/features/thurm_FTS04.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/features/FTS04.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/features/m_FTS04.png"
+                },
+                {
+                  "title" : "사각지대 감지 모니터,<br class='pc_br'> 후측방 경고 시스템",
+                  "subtitle" : "사각지대 감지 모니터(BSM),<br class='pc_br'> 후측방 경고 시스템(RCTA)",
+                  "descript" : "사각지대 감지 모니터(BSM) 및 후측방 경고 시스템(RCTA)과 같은 안전사양을 기본 장착하였습니다. 차선 변경 시 레이더가 아웃사이드 미러의 사각지대에 차량을 감지하면 미러에 경고등을 점멸하여 운전자에게 경고해줍니다. 또한 후진 시 레이더가 후방의 사각지대로 접근하는 차량을 감지하면 경고음과 사이드 미러에 경고등을 점멸하여 위험을 알려줍니다. ",
+                  "textPositionX": "left",
+                  "thumbnail" : "../../images/modelView/MODEL_AvalonHybrid/features/thurm_FTS05.png",
+                  "orgImage" : "../../images/modelView/MODEL_AvalonHybrid/features/FTS05.png",
+                  "mImage" : "../../images/modelView/MODEL_AvalonHybrid/features/m_FTS05.png"
+                }
+                ]
+              }
+            ]}
+          ]
+          }
+        ],
+        "gallery2" : [
+          {"dataList" : [{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY01.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL01.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY02.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL02.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY03.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL03.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY04.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL04.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY05.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL05.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY06.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL06.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY07.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL07.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY08.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL08.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/m_GLY09.png",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/GL09.png",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_001.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_001.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_002.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_002.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_003.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_003.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_004.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_004.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_005.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_005.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_006.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_006.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_007.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_007.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_008.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_008.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_009.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_009.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_010.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_010.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_011.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_011.jpg",
+            "link" : "#"
+          },{
+            "title" : "",
+            "m_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/MO_012.jpg",
+            "pc_img" : "../../images/modelView/MODEL_AvalonHybrid/gallery/PC_012.jpg",
+            "link" : "#"
+          }
+          ]}
+        ],
+        "specsHtml2": [
+          {
+            "type": "AVALON HYBRID",
+            "specImg": "../../images/modelView/MODEL_AvalonHybrid/specA_avalon.png",
+            "modelPrice": [
+              {
+                "modelName": "AVALON HYBRID",
+                "price": "46,600,000원(VAT 포함)"
+              }
+            ]
+          },
+          "<div class=\"specs\"> <div class=\"specs_inner\"> <div class=\"specs_list\"> <ul> <li><h3>제원</h3> <div class=\"spl_inner\"> <dl> <dt>전장 X 전폭 X 전고 (mm)</dt> <dd class=\"callValue\">4,975 X 1,850 X 1,435</dd> </dl> <dl> <dt>축거 (mm)</dt> <dd class=\"callValue\">2,870</dd> </dl> <dl> <dt>윤거(전 / 후) (mm)</dt> <dd class=\"callValue\">1,590 / 1,600</dd> </dl> <dl> <dt>공차 중량 (kg)</dt> <dd class=\"callValue\">1,660</dd> </dl> <dl> <dt>차량 총 중량 (kg)</dt> <dd class=\"callValue\">1,985</dd> </dl> </div> </li> <li><h3>엔진</h3> <div class=\"spl_inner\"> <dl> <dt>명칭 / 형식</dt> <dd class=\"callValue\">직렬 4기통 가솔린 엔진 (D-4S)</dd> </dl> <dl> <dt>배기량 (cc)</dt> <dd class=\"callValue\">2,487</dd> </dl> <dl> <dt>최고출력 (ps / rpm)</dt> <dd class=\"callValue\"> 1) 엔진출력 (ps / rpm) : 178 / 5,700 <br> 2) 전기모터 출력 (ps) : 120 <br> 3) 총 시스템 출력 (ps) : 218 </dd> </dl> <dl> <dt>최대토크 (kg·m / rpm)</dt> <dd class=\"callValue\">22.5/3,600-5,200</dd> </dl> <dl><dt>도심 / 고속도로 / 복합연비 (km/ℓ)</dt> <dd class=\"callValue\">16.7 / 16.4 / 16.6 (1등급)</dd> </dl> <dl> <dt>CO<sub>2</sub> 배출량 (g / km)</dt> <dd class=\"callValue\">96</dd> </dl> </div> </li> <li><h3>트랜스미션</h3> <div class=\"spl_inner\"> <dl> <dt>변속기</dt> <dd class=\"callValue\">무단 변속기 (eCVT)</dd> </dl> </div> </li> </ul> <ul class=\"sec\"> <li><h3>섀시</h3> <div class=\"spl_inner\"> <dl> <dt>서스펜션(전 / 후)</dt> <dd class=\"callValue\">맥퍼슨 스트럿 / 더블 위시본</dd> </dl> <dl> <dt>브레이크 (전 / 후)</dt> <dd class=\"callValue\">벤틸레이티드 디스크 / 솔리드 디스크</dd> </dl> <dl> <dt>연료 탱크 용량(ℓ)</dt> <dd class=\"callValue\">49.3</dd> </dl> <dl> <dt>구동방식</dt> <dd class=\"callValue\">전륜구동</dd> </dl> <dl> <dt>휠 & 타이어</dt> <dd class=\"callValue\">235 / 45R18</dd> </dl> <dl> <dt>승차 정원(명)</dt> <dd class=\"callValue\">5</dd> </dl> </div> </li> <li class=\"no_margin\"><h3>타이어 효율 등급</h3> <div class=\"spl_inner\"> <dl> <dt>타이어</dt> <dd class=\"callValue\">235 / 45R18 사계절 타이어</dd> </dl> <dl> <dt>타이어 제조사</dt> <dd class=\"callValue\">BRIDGESTONE</dd> </dl> <dl> <dt>회전저항계수</dt> <dd class=\"callValue\">3</dd> </dl> <dl> <dt>젖은 노면 제동력 지수</dt> <dd class=\"callValue\">3</dd> </dl> </div> </li> </ul> <div class=\"specs_bottom\"> <ul> <li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li> <li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은 노면 제동성능 비율</li> <li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li> <li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li> <li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li> <li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다.</li> </ul> </div> </div> </div> </div>"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app">
+
+		<header id="header" class="sub">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+
+		<div id="gnb">
+			<div class="member">
+				<div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div>
+				<!-- <div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div> -->
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="btn_wrap">
+                <a href="#self" class="btn_guide">이용안내</a>
+                <a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+            </div>
+        </div>
+
+        <style>
+            .event_survey .survey_top {padding: 238px 40px 60px; background: #1c1a1d url(../../images/temp/event/survey/survey_bg.jpg) 0 0 no-repeat;}
+            .event_survey .survey_top .survey_intro {padding: 0 0 33px;}
+            .event_survey .survey_top .survey_intro .sort {font-family: Toyota; font-weight: 700; font-size: 30px; color: #ff462d;}
+            .event_survey .survey_top .survey_intro .tit {font-weight: 700; font-size: 46px; color: #ffffff;}
+            .event_survey .survey_top .survey_intro .desc {margin: 32px 0 0; font-size: 28px; line-height: 40px; color: #90929e;}
+            .event_survey .survey_top .survey_q > li {border-top: 3px solid #bec2d6; padding: 80px 0;}
+            .event_survey .survey_top .survey_q > li:first-child {border: none;}
+            .event_survey .survey_top .survey_q > li .num {font-family: Toyota; font-weight: 700; font-size: 26px; line-height: 1; color: #ff462d;}
+            .event_survey .survey_top .survey_q > li > .tit {margin: 25px 0 52px; font-size: 36px; line-height: 50px; color: #ffffff;}
+            .event_survey .survey_top .survey_q > li > .tit em {font-weight: 400; color: #ed4c3a;}
+            .event_survey .survey_bot {padding: 60px 40px 240px; background: #28252d;}
+            .event_survey .survey_bot .survey_info > li {border-top: 2px solid #37353e; padding: 50px 0;}
+            .event_survey .survey_bot .survey_info > li:first-child {border: none; padding-top: 0;}
+            .event_survey .survey_bot .survey_info > li:last-child {padding-bottom: 0;}
+            .event_survey .survey_bot .survey_info > li > .tit {margin: 0 0 40px; font-weight: 700; font-size: 36px; line-height: 1; color: #ffffff;}
+
+            .event_survey label.rdo {padding: 0 0 0 68px;}
+            .event_survey label.rdo span,
+            .event_survey label.chk span {font-size: 28px; line-height: 48px; color: #9aa0b9; transition: all .3s;}
+            .event_survey label.rdo input:checked ~ span,
+            .event_survey label.chk input:checked ~ span {color: #ffffff;}
+            .event_survey .survey_type1 > li {margin: 30px 0 0;}
+            .event_survey .survey_type1 > li:first-child {margin: 0;}
+            .event_survey .survey_type2 {overflow: hidden; margin: -30px 0 0;}
+            .event_survey .survey_type2 > li {float: left; width: 325px; margin: 30px 0 0;}
+            .event_survey .survey_type2 > li:nth-child(odd) {width: 345px;}
+            .event_survey + .btn120 {position: fixed; bottom: 0; left: 50%; width: 750px; margin: 0 0 0 -375px;}
+        </style>
+
+		<div id="container">
+			<div id="content" class="event_survey">
+                <div class="survey_top">
+                    <div class="survey_intro">
+                        <div class="sort n-motion n-bottom">2019 SEOUL MOTOR SHOW</div>
+                        <div class="tit n-motion n-bottom n-delay1">토요타 전시관 방문을 환영합니다</div>
+                        <p class="desc n-motion n-bottom n-delay2">
+                            아래 설문에 대한 귀하의 의견은 토요타 브랜드의<br>
+                            더 나은 모습을 위해 소중한 자료로 사용됩니다
+                        </p>
+                    </div>
+                    <ol class="survey_q">
+                        <li class="n-motion n-bottom">
+                            <div class="num">01</div>
+                            <div class="tit">
+                                토요타 전시관에 전시되어 있는<br>
+                                다음 차량(모델) 중 관심이 가는 차량(모델)을<br>
+                                <em>모두 선택해</em> 주시기 바랍니다.
+                            </div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label for="q01_01" class="chk">
+                                        <input id="q01_01" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>캠리 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_02" class="chk">
+                                        <input id="q01_02" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>프리우스</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_03" class="chk">
+                                        <input id="q01_03" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>프리우스 프라임</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_04" class="chk">
+                                        <input id="q01_04" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>프리우스C</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_05" class="chk">
+                                        <input id="q01_05" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>아발론 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_06" class="chk">
+                                        <input id="q01_06" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>시에나</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_07" class="chk">
+                                        <input id="q01_07" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>RAV4</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_08" class="chk">
+                                        <input id="q01_08" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>RAV4 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_09" class="chk">
+                                        <input id="q01_09" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>토요타86</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q01_10" class="chk">
+                                        <input id="q01_10" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>수프라</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">02</div>
+                            <div class="tit">
+                                1번에서 선택하신 차량(모델) 중에서<br>
+                                가장 관심이 가는  차량(모델)을 <em>하나만<br>
+                                선택해</em> 주시기 바랍니다.
+                            </div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q02_01">
+                                        <input type="radio" id="q02_01" name="q02">
+                                        <span class="tit">캠리 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_02">
+                                        <input type="radio" id="q02_02" name="q02">
+                                        <span class="tit">프리우스</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_03">
+                                        <input type="radio" id="q02_03" name="q02">
+                                        <span class="tit">프리우스 프라임</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_04">
+                                        <input type="radio" id="q02_04" name="q02">
+                                        <span class="tit">프리우스C</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_05">
+                                        <input type="radio" id="q02_05" name="q02">
+                                        <span class="tit">아발론 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_06">
+                                        <input type="radio" id="q02_06" name="q02">
+                                        <span class="tit">시에나</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_07">
+                                        <input type="radio" id="q02_07" name="q02">
+                                        <span class="tit">RAV4</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_08">
+                                        <input type="radio" id="q02_08" name="q02">
+                                        <span class="tit">RAV4 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_09">
+                                        <input type="radio" id="q02_09" name="q02">
+                                        <span class="tit">토요타86</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q02_10">
+                                        <input type="radio" id="q02_10" name="q02">
+                                        <span class="tit">수프라</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">03</div>
+                            <div class="tit">
+                                토요타 전시관 정가운데에 전시되어 있는<br>
+                                <em style="font-family: Toyota;">‘RAV4’</em> 또는 <em style="font-family: Toyota, NanumSquare;">‘RAV4 하이브리드’</em>를<br>
+                                보셨습니까?
+                            </div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q03_01">
+                                        <input type="radio" id="q03_01" name="q03">
+                                        <span class="tit">보았다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q03_02">
+                                        <input type="radio" id="q03_02" name="q03">
+                                        <span class="tit">아직 보지 못했다</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">04</div>
+                            <div class="tit">
+                                전시되어 있는 ‘RAV4’ 또는<br>
+                                ‘RAV4 하이브리드’에서 느껴지는 이미지를<br>
+                                <em>모두 선택해</em> 주시기 바랍니다.
+                            </div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label for="q04_01" class="chk">
+                                        <input id="q04_01" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>과감한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_02" class="chk">
+                                        <input id="q04_02" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>세련된</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_03" class="chk">
+                                        <input id="q04_03" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>스포티한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_04" class="chk">
+                                        <input id="q04_04" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>다이나믹한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_05" class="chk">
+                                        <input id="q04_05" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>개성있는</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_06" class="chk">
+                                        <input id="q04_06" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>앞선</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_07" class="chk">
+                                        <input id="q04_07" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>고급스러운</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_08" class="chk">
+                                        <input id="q04_08" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>트렌디한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_09" class="chk">
+                                        <input id="q04_09" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>부드러운</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_10" class="chk">
+                                        <input id="q04_10" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>첨단의</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_11" class="chk">
+                                        <input id="q04_11" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>젊은</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_12" class="chk">
+                                        <input id="q04_12" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>스타일리쉬한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_13" class="chk">
+                                        <input id="q04_13" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>품격있는</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_14" class="chk">
+                                        <input id="q04_14" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>남성적인</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q04_15" class="chk">
+                                        <input id="q04_15" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>터프한</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">05</div>
+                            <div class="tit">
+                                전시되어 있는 <em style="font-family: Toyota;">‘RAV4’</em> 또는<br>
+                                <em style="font-family: Toyota, NanumSquare;">‘RAV4 하이브리드’</em>의 디자인이 얼마나<br>
+                                마음에 드십니까?
+                            </div>
+                            <ul class="survey_type1">
+                                <li>
+                                    <label class="rdo" for="q05_01">
+                                        <input type="radio" id="q05_01" name="q05">
+                                        <span class="tit">전혀 마음에 들지 않는다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q05_02">
+                                        <input type="radio" id="q05_02" name="q05">
+                                        <span class="tit">마음에 들지 않는다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q05_03">
+                                        <input type="radio" id="q05_03" name="q05">
+                                        <span class="tit">보통이다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q05_04">
+                                        <input type="radio" id="q05_04" name="q05">
+                                        <span class="tit">마음에 든다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q05_05">
+                                        <input type="radio" id="q05_05" name="q05">
+                                        <span class="tit">매우 마음에 든다</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">06</div>
+                            <div class="tit">
+                                귀하께서 향후 차량 구입 시,<br>
+                                <em style="font-family: Toyota;">‘RAV4’</em> 또는 <em style="font-family: Toyota, NanumSquare;">‘RAV4 하이브리드’</em>를 얼마나<br>
+                                구입 고려하시겠습니까?
+                            </div>
+                            <ul class="survey_type1">
+                                <li>
+                                    <label class="rdo" for="q06_01">
+                                        <input type="radio" id="q06_01" name="q06">
+                                        <span class="tit">고려하지 않을 것이다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q06_02">
+                                        <input type="radio" id="q06_02" name="q06">
+                                        <span class="tit">보통이다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q06_03">
+                                        <input type="radio" id="q06_03" name="q06">
+                                        <span class="tit">고려할 것이다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q06_04">
+                                        <input type="radio" id="q06_04" name="q06">
+                                        <span class="tit">반드시 고려할 것이다</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">07</div>
+                            <div class="tit">
+                                토요타 전시관에는 관람객을 대상으로<br>
+                                다양한 체험 프로그램을 진행하고 있습니다.<br>
+                                다음 중 귀하께서 체험하신 프로그램을<br>
+                                <em>모두 선택해</em> 주시기 바랍니다.
+                            </div>
+                            <ul class="survey_type1">
+                                <li>
+                                    <label for="q07_01" class="chk">
+                                        <input id="q07_01" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>ENJOY 도슨트 투어 (가이드 프로그램)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q07_02" class="chk">
+                                        <input id="q07_02" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>Play with Color (증강현실 체험)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q07_03" class="chk">
+                                        <input id="q07_03" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>VR 어트렉션 체험</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q07_04" class="chk">
+                                        <input id="q07_04" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>인스타그램 인증샷 이벤트</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q07_05" class="chk">
+                                        <input id="q07_05" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>프로그램을 체험하지 않음</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">08</div>
+                            <div class="tit">
+                                오늘 관람하신 토요타 전시관과<br>
+                                <em style="font-family: Toyota;">‘ENJOY YOUR STYLE’</em>이라는 토요타<br>
+                                브랜드의 메시지가 어느 정도 어울린다고<br>
+                                생각하십니까?
+                            </div>
+                            <ul class="survey_type1">
+                                <li>
+                                    <label class="rdo" for="q08_01">
+                                        <input type="radio" id="q08_01" name="q08">
+                                        <span class="tit">전혀 어울리지 않는다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q08_02">
+                                        <input type="radio" id="q08_02" name="q08">
+                                        <span class="tit">어울리지 않는다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q08_03">
+                                        <input type="radio" id="q08_03" name="q08">
+                                        <span class="tit">보통이다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q08_04">
+                                        <input type="radio" id="q08_04" name="q08">
+                                        <span class="tit">잘 어울린다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q08_05">
+                                        <input type="radio" id="q08_05" name="q08">
+                                        <span class="tit">매우 잘 어울린다</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">09</div>
+                            <div class="tit">
+                                토요타 브랜드 메시지<br>
+                                <span style="font-family: Toyota;">‘ENJOY YOUR STYLE’</span>에서 느껴지는<br>
+                                이미지를 <em>모두 선택해</em> 주시기 바랍니다.
+                            </div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label for="q09_01" class="chk">
+                                        <input id="q09_01" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>역동적인</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_02" class="chk">
+                                        <input id="q09_02" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>개성있는</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_03" class="chk">
+                                        <input id="q09_03" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>합리적인</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_04" class="chk">
+                                        <input id="q09_04" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>즐거운</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_05" class="chk">
+                                        <input id="q09_05" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>스타일리쉬한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_06" class="chk">
+                                        <input id="q09_06" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>세련된</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_07" class="chk">
+                                        <input id="q09_07" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>이성적인</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_08" class="chk">
+                                        <input id="q09_08" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>친근한</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_09" class="chk">
+                                        <input id="q09_09" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>앞선</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_10" class="chk">
+                                        <input id="q09_10" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>조화로운</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_11" class="chk">
+                                        <input id="q09_11" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>젊은</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_12" class="chk">
+                                        <input id="q09_12" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>다채로운</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_13" class="chk">
+                                        <input id="q09_13" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>실용적인</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_14" class="chk">
+                                        <input id="q09_14" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>주도적인</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q09_15" class="chk">
+                                        <input id="q09_15" type="checkbox">
+                                        <svg class="svg_commchk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                            <circle class="ico_bg" cx="24" cy="24" r="24"/>
+                                            <polyline class="ico_chk" points="12.42 22.58 21.04 31.2 35.54 14.62"/>
+                                        </svg>
+                                        <span>유연한</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="n-motion n-bottom">
+                            <div class="num">10</div>
+                            <div class="tit">
+                                오늘 토요타 전시관 방문을 통해 토요타<br>
+                                브랜드가 <em>모바일 어플리케이션을 출시했다는<br>
+                                사실</em>에 대해 알게 되셨습니까?
+                            </div>
+                            <ul class="survey_type1">
+                                <li>
+                                    <label class="rdo" for="q10_01">
+                                        <input type="radio" id="q10_01" name="q10">
+                                        <span class="tit">알게 되었고 휴대폰에 다운로드했다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q10_02">
+                                        <input type="radio" id="q10_02" name="q10">
+                                        <span class="tit">알게 되었지만 다운로드하지 않았다</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q10_03">
+                                        <input type="radio" id="q10_03" name="q10">
+                                        <span class="tit">아직 몰랐다</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="survey_bot">
+                    <ul class="survey_info">
+                        <li>
+                            <div class="tit">성별</div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q11_01">
+                                        <input type="radio" id="q11_01" name="q11">
+                                        <span class="tit">남성</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q11_02">
+                                        <input type="radio" id="q11_02" name="q11">
+                                        <span class="tit">여성</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="tit">결혼 여부</div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q12_01">
+                                        <input type="radio" id="q12_01" name="q12">
+                                        <span class="tit">미혼</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q12_02">
+                                        <input type="radio" id="q12_02" name="q12">
+                                        <span class="tit">기혼</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="tit">연령대</div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q13_01">
+                                        <input type="radio" id="q13_01" name="q13">
+                                        <span class="tit">20대</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q13_02">
+                                        <input type="radio" id="q13_02" name="q13">
+                                        <span class="tit">30대</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q13_03">
+                                        <input type="radio" id="q13_03" name="q13">
+                                        <span class="tit">40대</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q13_04">
+                                        <input type="radio" id="q13_04" name="q13">
+                                        <span class="tit">50대</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q13_05">
+                                        <input type="radio" id="q13_05" name="q13">
+                                        <span class="tit">60대</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q13_06">
+                                        <input type="radio" id="q13_06" name="q13">
+                                        <span class="tit">70대 이상</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="tit">거주 지역</div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q14_01">
+                                        <input type="radio" id="q14_01" name="q14">
+                                        <span class="tit">서울</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_02">
+                                        <input type="radio" id="q14_02" name="q14">
+                                        <span class="tit">경기</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_03">
+                                        <input type="radio" id="q14_03" name="q14">
+                                        <span class="tit">인천</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_04">
+                                        <input type="radio" id="q14_04" name="q14">
+                                        <span class="tit">부산/대구/경남/경북</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_05">
+                                        <input type="radio" id="q14_05" name="q14">
+                                        <span class="tit">광주/전남/전북</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_06">
+                                        <input type="radio" id="q14_06" name="q14">
+                                        <span class="tit">대전/충남/충북</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_07">
+                                        <input type="radio" id="q14_07" name="q14">
+                                        <span class="tit">강원</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q14_08">
+                                        <input type="radio" id="q14_08" name="q14">
+                                        <span class="tit">제주</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="tit">보유차 엔진타입</div>
+                            <ul class="survey_type2">
+                                <li>
+                                    <label class="rdo" for="q15_01">
+                                        <input type="radio" id="q15_01" name="q15">
+                                        <span class="tit">가솔린</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q15_02">
+                                        <input type="radio" id="q15_02" name="q15">
+                                        <span class="tit">디젤</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q15_03">
+                                        <input type="radio" id="q15_03" name="q15">
+                                        <span class="tit">하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q15_04">
+                                        <input type="radio" id="q15_04" name="q15">
+                                        <span class="tit">플러그인 하이브리드</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q15_05">
+                                        <input type="radio" id="q15_05" name="q15">
+                                        <span class="tit">전기차</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q15_06">
+                                        <input type="radio" id="q15_06" name="q15">
+                                        <span class="tit">LPG</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="rdo" for="q15_07">
+                                        <input type="radio" id="q15_07" name="q15">
+                                        <span class="tit">현재 보유 차량 없음</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#self" id="submitCheck" class="btn120 c4" onclick="newriver.ajaxpopup.open('./survey_pop_conp.html')">제출하기</a><!-- [D] 필수조건 충족 시 .c4 -> .c5 -->
+        </div><!-- id : container -->
+    </div><!-- id : wrap -->
+</body>
+</html>

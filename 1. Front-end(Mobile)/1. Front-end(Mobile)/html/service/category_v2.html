@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv=“content-language” content=“ko”>
+		<meta name="viewport" content="width=750, user-scalable=no, viewport-fit=cover"/>
+		<title>TOYOTA</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../../common/css/font.css">
+		<link rel="stylesheet" href="../../common/css/reset.css">
+		<link rel="stylesheet" href="../../common/css/slick.css">
+		<link rel="stylesheet" href="../../common/css/common.css">
+		<link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+		<link rel="stylesheet" id="iosCss">
+
+		<script>
+			var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+			var ratio = window.devicePixelRatio || 1;
+			var screen = {
+				width : window.screen.width * ratio,
+				height : window.screen.height * ratio
+			};
+			var iosCss;
+			if (iOS && screen.width == 1125 && screen.height === 2436 || iOS && screen.width == 828 && screen.height === 1792 || iOS && screen.width == 1242 && screen.height === 2688) {
+				iosCss = '/resources/web/common/css/ios-header.css?201910112';
+				document.getElementById('iosCss').setAttribute('href', iosCss);
+			}
+
+			var appVersion 	= '1.6.6';
+			var uagent 		= navigator.userAgent.toLowerCase();
+			var platform 	= navigator.platform.toLowerCase();
+			var isIOS 	  	= false;
+			var isAndroid 	= false;
+			var isPC 	  	= false;
+			var osType		= '';
+
+			if (navigator.platform) {
+				if (!/(win16|win32|win64|mac)/.test(platform)) {
+					isPC = false;
+
+					if(/(iphone|ipad|ipod)/.test(uagent) > 0) {
+						appVersion = '1.6.6';
+						osType = 'I';
+						isIOS = true;
+						isAndroid = false;
+					}
+
+					else {
+						appVersion = '1.6.6';
+						osType = 'A';
+						isIOS = false;
+						isAndroid = true;
+					}
+
+				} else {
+					isPC = true;
+					isIOS = false;
+					isAndroid = false;
+				}
+			}
+
+			var interval = null;
+		</script>
+
+		<!-- public -->
+		<script src="../../common/js/jquery-3.2.1.min.js"></script>
+		<script src="../../common/js/jquery.cookie.js"></script>
+		<script src="../../common/js/mobile-detect.min.js"></script>
+		<script src="../../common/js/slick.js"></script>
+		<script src="../../common/js/jquery-ui.js"></script>
+		<script src="/../../common/js/bodyScrollLock.js"></script>
+
+		<!-- dev -->
+		<script src="../../common/js/slick.js"></script>
+		<script src="../../common/js/wScratchPad.js"></script>
+		<script src="../../common/js/common.js"></script>
+		<script src="../../common/js/front.js"></script>
+
+		<!-- favicon -->
+		<link rel="shorcut icon" type="image/x-icon" href="/resources/common/images/icons/toyota_16.ico">
+		<!-- loader -->
+		<script type="text/javascript">
+			const appValid = uagent.indexOf('uniwebview') > -1 ? true : false;
+			const newAppVersion = $.cookie('appVersion');
+			newriver.loaderAction();
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135932530-2"></script>
+		<script type="text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-135932530-2');
+		</script>
+	</head>
+	<body>
+		<div id="app" class="background-bk">
+			<header id="header" class="sub opacity-bg">
+		<a href="javascript:history.back();" class="back">뒤로가기</a>
+			<h1 class="logo"><a href="/main.do"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+	
+	<form id="retForm" name="retForm" method="post">
+		<input type="hidden" id="returnUrl" name="returnUrl" value="">
+	</form><button type="button" id="trgAside" class="trg_aside">
+		<span class="bar1"></span>
+		<span class="bar2"></span>
+		<span class="bar3"></span>
+	</button>
+	<div id="gnb">
+		<div class="member">
+			<div class="login">
+				<div class="txt">
+					<p><span class="name">홍길동</span>님</p>
+					<p class="ft">MILEAGE <span class="mileage">30,000</span> <small>p</small></p>
+				</div>
+				<a href="../alert/alert_view.html" class="btn_alert on"></a>
+				<a href="../setting/setting_ios.html" class="btn_setting"></a>
+			</div>
+			<!--				 <div class="logout">-->
+			<!--					<div class="btn_wrap">-->
+			<!--						<a href="../member/login.html" class="login-btn c1" >로그인</a>-->
+			<!--						<a href="../member/join_chk.html" class="member-btn c1" >회원가입</a>-->
+			<!--					</div>-->
+			<!--					<a href="../setting/setting.html" class="btn_setting"></a>-->
+			<!--				</div>-->
+		</div>
+		<ul>
+			<li>
+				<a href="#self">TOYOTA</a>
+				<ul class="depth2">
+					<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+					<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Contents</a>
+				<ul class="depth2">
+					<li><a href="">트래블로그</a></li>
+					<li><a href="">라이프 스타일</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Models</a>
+				<ul class="depth2">
+					<li><a href="../models/model_list.html">차량 정보</a></li>
+					<li><a href="../models/drive_guide.html">시승 신청</a></li>
+					<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+					<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+				</ul>
+			</li>
+			<!-- 실서버 -->
+			<li>
+				<a href="javascript:void(0);">Service</a>
+				<ul class="depth2">
+					<li><a href="/service/center/list.do">서비스센터 예약</a></li>
+					<li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
+					<li><a href="/service/product/category.do">서비스 상품</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Support</a>
+				<ul class="depth2">
+					<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+					<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+					<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Event / Coupon</a>
+				<ul class="depth2">
+					<li><a href="../event/event_list.html">이벤트</a></li>
+					<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">My Car</a>
+				<ul class="depth2">
+					<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+					<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+					<li><a href="../mycar/saving_history.html">차계부</a></li>
+					<!-- 실서버 -->
+					<li class="appArea"><a href="/auth/sign.do?returnUrl=/drivinglog">운행 일지</a></li>
+					<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">My shopping</a>
+				<ul class="depth2">
+					<li><a href="#self">#1</a></li>
+					<li><a href="#self">#2</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self" class="ft-red">Mileage</a>
+				<ul class="depth2">
+					<li><a href="#self">#1</a></li>
+					<li><a href="#self">#2</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!--
+		<div class="utils">
+			<ul>
+				<li>
+					<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+				</li>
+				<li>
+					<a href="../sample/find_gasstation.html">주유소 찾기</a>
+				</li>
+			</ul>
+		</div>-->
+	</div>
+	<div class="bottom">
+		<div class="btn_wrap">
+			<!-- <a href="tel:080-525-8255" class="btn_guide">고객센터</a> -->
+			<a href="/mycar/sc/info.do" class="btn_guide">나만의SC</a>
+			<a href="/support/sos/info.do" class="btn_sos">SOS 긴급출동</a>
+		</div>
+	</div><div id="container">
+		<div id="content" class="service"> 
+			<h2 class="tit_page">서비스상품</h2>
+			<div class="oil_list">
+				<ul>
+					<li>
+						<a href="/service/product/view.do?idx=18">
+						<div class="tit n-motion n-left">
+								<span class="tt">Smart Maintenance Service Package</span>
+								<span class="tt">(SMS 패키지)</span>
+							</div>
+							<div class="img n-motion n-right">
+								<img style="width: 330px" src="../../images/new/layer1.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">
+							</div>
+						</a>						
+					</li>
+					<li>
+						<a href="/service/product/view.do?idx=1">
+						<div class="tit n-motion n-left">
+								<span class="tt">타이어(Tire)</span>
+							</div>
+							<div class="img n-motion n-right">
+								<img style="width: 361px" src="../../images/new/tire.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">
+							</div>
+						</a>						
+					</li>
+					<li>
+						<a href="/service/product/list.do?srchProduct_type=13803">
+						<div class="tit n-motion n-left">
+								<span class="tt">오일(Oil)</span>
+							</div>
+							<div class="img n-motion n-right">
+								<img style="width: 163px; margin-left: 90px;" src="../../images/new/oil.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">
+							</div>
+						</a>						
+					</li>
+<!--					<li>-->
+<!--						<a href="/service/product/list.do?srchProduct_type=13804">-->
+<!--						<div class="tit n-motion n-left">-->
+<!--								<span class="tt">Filter</span>-->
+<!--								<span class="ts">필터</span>-->
+<!--							</div>                                -->
+<!--							<div class="img n-motion n-right">-->
+<!--								<img src="/resources/web/images/service/category_p4.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">-->
+<!--							</div>-->
+<!--						</a>						-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<a href="/service/product/list.do?srchProduct_type=13805">-->
+<!--						<div class="tit n-motion n-left">-->
+<!--								<span class="tt">Battery</span>-->
+<!--								<span class="ts">배터리</span>-->
+<!--							</div>                                -->
+<!--							<div class="img n-motion n-right">-->
+<!--								<img src="/resources/web/images/service/category_p5.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">-->
+<!--							</div>-->
+<!--						</a>						-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<a href="/service/product/list.do?srchProduct_type=13806">-->
+<!--						<div class="tit n-motion n-left">-->
+<!--								<span class="tt">Toyota Accessories</span>-->
+<!--								<span class="ts">차량 액세서리</span>-->
+<!--							</div>                                -->
+<!--							<div class="img n-motion n-right">-->
+<!--								<img src="/resources/web/images/service/category_p6.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">-->
+<!--							</div>-->
+<!--						</a>						-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<a href="/service/product/list.do?srchProduct_type=13807">-->
+<!--						<div class="tit n-motion n-left">-->
+<!--								<span class="tt">Others</span>-->
+<!--								<span class="ts">기타</span>-->
+<!--							</div>                                -->
+<!--							<div class="img n-motion n-right">-->
+<!--								<img src="/resources/web/images/service/category_p7.png" alt="AVALON HYBRID" onerror="src='/resources/web/images/noimg/nomodel.jpg'">-->
+<!--							</div>-->
+<!--						</a>						-->
+<!--					</li>-->
+					</ul>
+			</div>
+		</div>
+	</div>
+	<div id="loaderDim" style="display:none;">
+	            <div id="loader">
+					<img class="on" src="/resources/web/images/common/loading_01.png">
+					<img src="/resources/web/images/common/loading_02.png">
+					<img src="/resources/web/images/common/loading_03.png">
+					<img src="/resources/web/images/common/loading_04.png">
+					<img src="/resources/web/images/common/loading_05.png">
+					<img src="/resources/web/images/common/loading_06.png">
+					<img src="/resources/web/images/common/loading_07.png">
+	            </div>
+	        </div>
+		</div>
+
+		<script type="text/javascript">
+			var referrerPage = document.referrer;
+			if(referrerPage.indexOf('/auth/sign.do') > -1) {
+				$('#header .back').attr('href', '/main.do');
+			}
+
+			if(!appValid) {
+				$('.appArea').remove();
+			}
+		</script>
+	</body>
+</html>

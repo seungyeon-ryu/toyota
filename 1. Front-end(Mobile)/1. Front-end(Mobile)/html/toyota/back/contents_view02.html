@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app" class="contents_view">
+
+		<header id="header" class="sub fullbg">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+		<div id="gnb">
+			<div class="member">
+				<div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div>
+				<!-- <div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div> -->
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btn_wrap">
+				<a href="#self" class="btn_guide">이용안내</a>
+				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+			</div>
+		</div>
+
+		<div id="container">
+			<div id="content">
+                <div class="contents_wrap">
+					<img src="../../images/toyota/contents_view01.jpg" alt="">
+					<div id="sltCon" class="slt_con">
+						<span class="view">Bar<img src="../../images/toyota/arr_slt_con.png" alt=""></span>
+						<ul>
+							<li><a href="./contents_view01.html">Cafe</a></li>
+							<li><a href="./contents_view02.html">Bar</a></li>
+						</ul>
+					</div>
+					<img src="../../images/toyota/contents_bar01.jpg" alt="">
+					<div class="contents_slider">
+						<div><img src="../../images/toyota/contents_bar_01_01.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_01_02.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_01_03.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_01_04.png" alt=""></div>
+					</div>
+					<img src="../../images/toyota/contents_bar02.jpg" alt="">
+					<div class="contents_slider">
+						<div><img src="../../images/toyota/contents_bar_02_01.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_02_02.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_02_03.png" alt=""></div>
+					</div>
+					<img src="../../images/toyota/contents_bar03.jpg" alt="">
+					<div class="contents_slider" style="padding-bottom: 157px;">
+						<div><img src="../../images/toyota/contents_bar_03_01.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_03_02.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_03_03.png" alt=""></div>
+						<div><img src="../../images/toyota/contents_bar_03_04.png" alt=""></div>
+					</div>
+                </div>
+			</div>
+        </div><!-- id : container -->
+        <script>
+			newriver.slider.contentsSlider();
+
+			$(document).ready(function(){
+				var sltCon = $('#sltCon');
+				var sltConTop = $('#sltCon').offset().top;
+
+				var prevScrollTop = $(window).scrollTop();
+				var nowScrollTop = $(window).scrollTop();
+
+				$(document).on('touchstart', function (e){
+					e.stopPropagation();
+				});
+
+				$(document).on('scroll touchmove', function(e){
+					nowScrollTop = $(window).scrollTop();
+
+					if(nowScrollTop > sltConTop){
+						sltCon.addClass('fixed');
+					} else if (nowScrollTop < sltConTop - 80){
+						sltCon.removeClass('fixed');
+					}
+				});
+
+				var srchFlag = true;
+
+				function openTrg(){
+					sltCon.addClass('on');
+					srchFlag = false;
+				}
+
+				function closeTrg(){
+					sltCon.removeClass('on');
+					srchFlag = true;
+				}
+
+				sltCon.on('click', function(){
+					openTrg();
+				});
+
+				$(document).on('touchstart click', function(e){
+					if(!srchFlag) {
+						if(!$(e.target).closest('#sltCon').length){
+							closeTrg();
+						}
+					}
+				});
+			});
+        </script>
+    </div><!-- id : wrap -->
+</body>
+</html>

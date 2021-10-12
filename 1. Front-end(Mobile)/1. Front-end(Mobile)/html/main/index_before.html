@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/velocity.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app" class="fix">
+
+		<header id="header">
+			<h1 class="logo"><a href="./index_after.html"><img src="../../images/common/logo.png" alt=""></a></h1>
+			<a href="./index_after.html" class="after"></a><!-- 삭제 -->
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+		<div id="gnb">
+			<div class="member">
+				<!-- <div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div> -->
+				<div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="btn_wrap">
+				<a href="#self" class="btn_guide">이용안내</a>
+				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+			</div>
+		</div>
+
+		<div id="main" class="logout">
+			<div class="visual_wrap">
+				<div id="mainVisual" class="visual">
+					<div class="promo stop" style="background-image: url(../../images/main/mainvisual03_02.jpg);">
+						<div class="txtbox">
+							<h2 class="tit">
+								<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+								<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+							</h2>
+							<div class="desc">
+								<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+								<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+							</div>
+							<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+						</div>
+						<div class="indicator m-motion n-bottom">
+							<button type="button" class="slick_prev"></button>
+							<div class="slider-progress">
+								<span class="progress"></span>
+							</div>
+							<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+							<button type="button" class="slick_next"></button>
+						</div>
+					</div>
+					<div class="promo">
+						<img class="img" src="../../images/main/mainvisual01.jpg" alt="">
+						<div class="txtbox">
+							<h2 class="tit">
+								<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+								<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+							</h2>
+							<div class="desc">
+								<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+								<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+							</div>
+							<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+						</div>
+						<div class="indicator m-motion n-bottom">
+							<button type="button" class="slick_prev"></button>
+							<div class="slider-progress">
+								<span class="progress"></span>
+							</div>
+							<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+							<button type="button" class="slick_next"></button>
+						</div>
+					</div>
+					<div class="promo">
+						<img class="img" src="../../images/main/mainvisual02.jpg" alt="">
+						<div class="txtbox">
+							<h2 class="tit">
+								<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+								<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+							</h2>
+							<div class="desc">
+								<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+								<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+							</div>
+							<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+						</div>
+						<div class="indicator">
+							<button type="button" class="slick_prev"></button>
+							<div class="slider-progress">
+								<span class="progress"></span>
+							</div>
+							<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+							<button type="button" class="slick_next"></button>
+						</div>
+					</div>
+				</div>
+				<div id="baitDown" class="bait on">
+					<img class="arr" src="../../images/main/bait.png" alt="스크롤다운">
+				</div>
+			</div>
+			<div class="cont_wrap">
+				<section class="location n-motion n-bottom">
+					<div class="position">
+						<div class="address n-motion n-bottom"><span>서울시 강남구 논현동</span><button type="button" class="btn_refresh"></button></div>
+						<div class="weather n-motion n-bottom n-delay1">
+							<span class="hit">13</span>
+							<span class="dust">미세먼지 농도 : 나쁨</span>
+						</div>
+						<div class="line n-motion n-motion n-bottom n-delay3"></div>
+					</div>
+					<div class="exhibition n-motion n-bottom n-delay6" style="background-image: url(../../images/main/exhibition_gangnam.jpg);">
+						<div class="txtbox">
+							<div class="type">가까운 전시장</div>
+							<div class="tit">토요타 강남</div>
+							<div class="time">영업시간  09:00 ~ 18:00</div>
+						</div>
+						<div class="btn_wrap mt50">
+							<div class="fl_c">
+								<a href="../models/drive_guide.html" class="btn70 c1" style="width: 188px;">시승신청</a>
+								<a href="tel:010-6541-1552" class="btn70 c1 ml50" style="width: 188px;">전화문의</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="life_area">
+					<div class="life">
+						<div class="sectit n-motion n-bottom">LIFE STYLE</div>
+						<div class="life_slider n-motion n-bottom n-delay2">
+							<a href="../toyota/contents_view01.html">
+								<img src="../../images/main/life_slider01.jpg" alt="">
+								<div class="txtbox">
+									<div class="tit">
+										<div class="n-motion n-bottom n-delay1">어서 와,</div>
+										<div class="n-motion n-bottom n-delay3">송리단길은 처음이지?</div>
+									</div>
+									<div class="date n-motion n-bottom n-delay5">2019.02.22</div>
+								</div>
+							</a>
+							<a href="../toyota/contents_view03.html">
+								<img src="../../images/main/life_slider02.jpg" alt="">
+								<div class="txtbox">
+									<div class="tit">
+										<div class="n-motion n-bottom n-delay1">내안에 너있다</div>
+										<div class="n-motion n-bottom n-delay3">KIDULT</div>
+									</div>
+									<div class="date n-motion n-bottom n-delay5">2019.02.22</div>
+								</div>
+							</a>
+							<!-- <a href="#self">
+								<img src="../../images/main/life_slider03.jpg" alt="">
+								<div class="txtbox">
+									<div class="tit">
+										<div class="n-motion n-bottom n-delay1">문화적 만족감을 높여주는</div>
+										<div class="n-motion n-bottom n-delay3">LIFE STYLE SHOP</div>
+									</div>
+									<div class="date n-motion n-bottom n-delay5">2019.01.08</div>
+								</div>
+							</a> -->
+						</div>
+					</div>
+				</section>
+				<section class="large_area arvr n-motion n-bottom">
+					<a href="uniwebview://message?action=0">
+						<img src="../../images/main/arvr.jpg" alt="">
+						<div class="txtbox">
+							<div class="subtit n-motion n-bottom n-delay2">ENJOY YOUR STYLE</div>
+							<div class="tit">
+								<div class="n-motion n-bottom n-delay2">AR / VR</div>
+							</div>
+						</div>
+					</a>
+				</section>
+				<section class="inner">
+					<a class="event n-motion n-bottom" href="../event/event_view.html" style="background-image: url(../../images/main/main_event.jpg)">
+						<div class="txtbox">
+							<div class="type n-motion n-bottom n-delay1">EVENT</div>
+							<div class="tit n-motion n-bottom n-delay2">
+								<div>TOYOTA TIRE SPECIAL EVENT</div>
+							</div>
+							<div class="date n-motion n-bottom n-delay3">2018.11.21</div>
+						</div>
+					</a>
+					<a class="news n-motion n-bottom" href="../toyota/notice_view.html">
+						<div class="txtbox">
+							<div class="type n-motion n-bottom n-delay1">NEWS</div>
+							<div class="tit">
+								<div class="n-motion n-bottom n-delay2">MAKE YOUR PRIME TIME</div>
+								<div class="n-motion n-bottom n-delay3">in Jeju 당첨자 발표</div>
+							</div>
+							<div class="date n-motion n-bottom n-delay4">2018.11.21</div>
+						</div>
+					</a>
+				</section>
+				<section class="large_area n-motion n-bottom">
+					<a href="../models/model_list.html">
+						<img src="../../images/main/models.jpg" alt="">
+						<div class="txtbox">
+							<div class="subtit n-motion n-bottom">EXPLORE YOUR TOYOTA</div>
+							<div class="tit">
+								<div class="n-motion n-bottom">MODELS</div>
+							</div>
+						</div>
+					</a>
+				</section>
+				<section class="customer">
+					<div class="sectit n-motion n-bottom">CUSTOMER CENTER</div>
+					<ul>
+						<li class="n-motion n-bottom n-delay1"><a href="../servicecenter/reserve_step1.html">서비스센터 예약</a></li>
+						<li class="n-motion n-bottom n-delay2"><a href="../mycar/mysc.html">나만의 SC</a></li>
+						<li class="n-motion n-bottom n-delay3"><a href="../support/sos.html">SOS 긴급출동</a></li>
+					</ul>
+				</section>
+			</div>
+		</div><!-- id : main -->
+
+		<script>
+			var $bar = $('#main .slider-progress .progress');
+			newriver.slider.mainVisual();
+			newriver.slider.lifeSlider();
+
+			$(document).ready(function(){
+				$('#mainVisual .slick-current').addClass('mv-start');
+				$('.mv-start .m-motion').each(function(index, item){
+					setTimeout(function(){
+						$(item).addClass('m-active');
+					}, index * 120);
+				});
+
+				var currVisual			=		$('.mv-start .promo .img');
+				var currVisualLeft		=		- (currVisual.outerWidth() - $('#app').outerWidth());
+
+				if(currVisual.length){
+					currVisual.velocity({
+						translateZ : 0,
+						translateX : currVisualLeft
+					}, {
+						duration : 15500,
+						easing: 'linear'
+					});
+				}
+
+				$bar.velocity({
+					width : '100%'
+				}, {
+					duration : 15000,
+					easing: 'linear'
+				});
+			});
+		</script>
+
+	</div><!-- id : wrap -->
+</body>
+</html>

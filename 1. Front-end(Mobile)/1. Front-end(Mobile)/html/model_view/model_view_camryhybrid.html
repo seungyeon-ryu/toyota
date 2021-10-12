@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<link rel="stylesheet" href="../../common/css/models.css">
+	<link rel="stylesheet" href="../../common/css/models_a.css">
+	<link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+    <script src="../../json/urls.js"></script>
+	<script src="../../common/modeljs/jquery-1.12.2.min.js"></script>
+	<script src="../../common/modeljs/jquery.easing.js"></script>
+    <script src="../../common/modeljs/jquery.bxslider.js"></script>
+    <script src="../../common/modeljs/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../common/modeljs/jquery.jPrintArea.js"></script>
+    <script src="../../common/modeljs/jquery.rwdImageMaps.min.js"></script>
+    <script src="../../common/modeljs/oxizen.js"></script>
+    <script src="../../common/modeljs/icoo-0.2.js"></script>
+    <script src="../../common/modeljs/icoo.popup-0.2.js"></script>
+	<script src="../../common/modeljs/vinyli.viCardLayout.js"></script>
+	<script src="../../common/modeljs/vinyli.viSlider.js"></script>
+	<script src="../../common/modeljs/vinyli.viSlider_video.js"></script>
+	<script src="../../common/modeljs/vinyli.viSlider2.js"></script>
+	<script src="../../common/modeljs/modules.js"></script>
+    <script>
+        $(document).ready(function(){
+            var ts;
+            var flag = false;
+            var $gnb = $('#gnb');
+            var $gnbdepth = $('#gnb > ul > li');
+            var prevScrollTop = $(window).scrollTop();
+            var nowScrollTop = $(window).scrollTop();
+
+            $(document).on('touchstart', function (e) {
+                e.stopPropagation();
+                ts = e.originalEvent.touches[0].clientY;
+            });
+
+            $(document).on('scroll touchmove', function (e) {
+                nowScrollTop = $(window).scrollTop();
+
+                if (!$('#header').hasClass('sub')) { // if main
+                    if (nowScrollTop > prevScrollTop) { // down
+                        $('#baitDown').removeClass('on');
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop <= 0) { // if top
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop < prevScrollTop) { // up
+                        $('#baitDown').addClass('on');
+                        $('#header').addClass('bg');
+                    }
+                }
+                else if ($('#wrap').hasClass('model')) {
+                    $('body').removeClass('hideHeader');
+                    $('#header').addClass('bg');
+                }
+                else { // if sub
+                    if (nowScrollTop > prevScrollTop) { // down
+                        $('body').addClass('hideHeader');
+                    }
+                    else if (nowScrollTop <= 0) { // if top
+                        $('body').removeClass('hideHeader');
+                        $('#header').removeClass('bg');
+                    }
+                    else if (nowScrollTop < prevScrollTop) { // up
+                        $('body').removeClass('hideHeader');
+                        $('#header').addClass('bg');
+                    }
+                }
+                prevScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop;
+            });
+
+            $('#trgAside').on('click', function () {
+                var delay = 100;
+                if (!flag) {
+                    $('body').addClass('asideOpen').css('overflow', 'hidden');;
+
+                    flag = true;
+                } else {
+                    $('body').removeClass('asideOpen').css('overflow', 'auto');
+                    $gnbdepth.removeClass('open'); //.removeClass('on');
+                    flag = false;
+                }
+
+                $gnb.on('click', function (e) {
+                    e.stopPropagation();
+                });
+
+                $gnbdepth.find('a').on('click', function () {
+                    $(this).closest('li').toggleClass('open');
+                });
+            });
+        });
+    </script>
+    <script>
+        var depth1 = 1; //models
+        var depth2 = 13; //
+        var modelName = "CAMRYWILDHYBRID_R";
+    </script>
+    <style type="text/css">
+        @media (max-width:320px) {
+            html { font-size:12px; }
+        }
+        #vrDiv { cursor:pointer; z-index:-1 !important; }
+        .sub_visualModel { z-index:1 !important; cursor:pointer; }
+        .sub_visualModel.first_img {background:url('../../images/model_view/MODEL_CamryWildHybrid/main/camry_hv_visual_mobile.jpg') 50% 50% no-repeat !important; background-size:cover !important;}
+        #pseudo { height: calc(100vh - 80px); background:black;}
+        #vrDiv + #pseudo { display:none; }
+        #model { height:0; min-height:0; overflow:hidden; }
+        #model-x li { background:black;  height:100vh;}
+        .model_text ul li div { display:none; }
+        .model_text { min-height:2300px; }
+        #event2 { position:relative;}
+        #vars { position:fixed;left:50%;top:0;width:750px;height: calc(100% - 210px); margin: 0 0 0 -375px; box-sizing:border-box; }
+
+        .only-pc { display:none !important; }
+
+        .page1 { background:url("../../images/model_view/MODEL_CamryWildHybrid/main/m_kv01.jpg") center no-repeat; background-size:cover; }
+        .page1 .cover { background:url("../../images/model_view/MODEL_CamryWildHybrid/main/m_kv01_cover.jpg") center no-repeat; background-size:cover; width:100%; height:100%;  }
+
+        .cpage {position:relative;  color:#fff;}
+
+        .fel {display:none;}
+        .fpage { width:100%; height:100%; left:0; position:absolute; }
+        .tx { position:absolute; left:0; top:0;  color:#fff; }
+        .tx * { word-break:keep-all; }
+        .tx .dim { background:rgba(0, 0, 0, 0.8); position:absolute;left:0; top:0; width:100%; height:100%; display:none; }
+        .tx .dim .close { width:60px; position:absolute; left:50%; bottom:150px; margin-left:-30px; }
+        .tx .cont { position:relative; padding:48px 1.5rem 0; }
+        .tx h2 { font-family: Toyota; font-weight: 700; font-size:0.8rem; color:#eb091d; letter-spacing:2px; }
+        .tx h3 { font-family: Toyota; font-size:2.2rem; line-height:1; margin-top:0.3rem; }
+        .tx h4 { font-family: NanumSquare; font-size:30px; margin-top:0.8rem; }
+        .tx h5 { font-family: NanumSquare; font-size:0.6rem; line-height:1.5;  margin-top:1.5rem; }
+        .tx h5 span { display:inline-block; border-bottom:1px solid white; font-size: 26px;}
+        .tx s { width:16px; height:2px; background:#eb091d; display:none; margin-top:2rem; }
+        .tx p { font-family: NanumSquare; display:none; margin-top:2rem; font-size: 26px; color:#999999; line-height:1.4; }
+        .tx .tnga-close { display:none; width:60px; position:absolute; right:20px; bottom:100px; }
+
+        .tx.show-detail { width:100%; height:100%; box-sizing:border-box; }
+        .tx.show-detail .dim { display:block;}
+        .tx.show-detail h5 { display:none;}
+        .tx.show-detail s { display:inline-block;}
+        .tx.show-detail p { display:block;}
+        .tx.show-detail .tnga-close { display:block; }
+
+        .event2 { position:absolute; width:100%; background:black;  }
+        .event2 .bg { display:block; width:100%; }
+
+
+        .page2 .vis { margin-top:18rem; }
+        .page2 .vis img { width:100%; display:block; }
+        .page2 .tx p img { display:block; margin-top:2rem; width:50%;}
+        .page2 .tx .dim .close { display:none; }
+
+        .page3 {  }
+        .page3 .cbg { width:100%; display:block;}
+        .page3 .vis { position:absolute; top:18rem; left:50%; margin-left:-375px; }
+        .page3 .vis .iseq { display:block; width:750px; }
+        .page3 .vis .info { position: absolute; top: -90px; left:50%; width:500px;  margin-left: -250px;}
+        .page3 .tx { text-align:center; width:100%; }
+
+        .page4 { min-height:1000px; background:black; }
+        .page4 .cbg { width:100%; display:block;}
+        .page4 .vis { padding-top:90px; position:absolute; top:0; width:100%; }
+        .page4 .iseq { margin: 0 auto; display:none; width: 650px;}
+        .page4 .iseq.on { display:block; }
+        .page4 ul { width:700px; position:absolute; left:50%; bottom:50px; margin-left:-350px; font-size:24px; text-align:center;}
+        .page4 ul li { width:25%; float:left; position:relative; opacity:0.5; cursor:pointer;}
+        .page4 ul li:before { content:''; display:inline-block; width:10px; height:10px; border-radius:5px; background:#fff; position:absolute; left:50%; top:-25px; transition:all 0.3s; transform: translate(-50%, 0);}
+        .page4 ul li.on { opacity:1; }
+        .page4 ul li.on:before { width:30px; height:10px;}
+        .page4 .cont p span { display:none; font-size:26px;}
+        .page4 .cont p span em { display:block; margin: 0 0 15px; color:white; font-size: 30px; font-style:normal; }
+        .page4 .cont p span i { display:block; color:#666; font-style:normal; }
+        .page4 .cont p span.on { display:block;}
+        .page4 .cont p img { bottom:2rem; width:50%;}
+        .page4 .tx .dim .close { bottom:30px;}
+
+        .page5 { }
+        .page5 .cbg { width:100%; display:block;}
+        .page5 .ttl { position:absolute;padding:3rem 1.5rem; left:0; top:0; }
+        .page5 .ttl h3 { font-family: Toyota; font-size:2.2rem; line-height:1; margin-top:0.3rem; }
+        .page5 .ttl p { font-family:NanumSquare; font-size:26px; margin-top:0.8rem; color:#999999; }
+        .page5 ul { width:600px; position:absolute; left:50%; margin-left:-300px; }
+        .page5 ul li { width:85px; height: 50px; float:left; position:relative; text-align:center; cursor:pointer; }
+        .page5 ul li:before { content:''; display:inline-block; width:50px; height:50px; border-radius:25px; background:red; }
+        .page5 ul li.on:after { content:''; display:block; width:6px; height:6px; border-radius:3px; position:absolute; top: 50%; left:50%; margin: -3px 0 0 -3px; background:white; }
+        .page5 ul li p { position:absolute; left: 50%; font-size: 24px; line-height: 1.2; text-align:center; display:none; transform: translate(-50%, 0);}
+        .page5 ul li.on p { display:block; }
+        /* 'white','silver','black','red','steel','graphite','blue' */
+        .page5 ul li:nth-child(3):before { background:black; border:1px solid #434343; box-sizing:border-box; }
+        .page5 ul li:nth-child(7):before { background:#1b3162; }
+        .page5 ul li:nth-child(6):before { background:#4d4037; }
+        .page5 ul li:nth-child(4):before { background:#a62a2c; }
+        .page5 ul li:nth-child(5):before { background:#aaadb4; }
+        .page5 ul li:nth-child(2):before { background:#a6a8a5; }
+        .page5 ul li:nth-child(1):before { background:#fff; }
+        .page5 ul li:nth-child(1).on:after { background:black; }
+        .page5 .vr { width:100%; position:absolute; overflow:hidden;}
+        .page5 .vr .body { width:120%; position:absolute; left:-10%; top:15%; }
+        .page5 .vr .plus { background:url("../../images/model_view/MODEL_CamryWildHybrid/main/plus.png") no-repeat; background-size:contain; width:60px;height:60px; position:absolute; cursor:pointer; }
+        .page5 .vr.lock .plus { display:none !important; }
+        .page5 .vr .plus.light { top:33%; left:4%; }
+        .page5 .vr .plus.wheel { top:49%; left:48%; }
+        .page5 .vr .plus.door { top:40%; left:59%; }
+        .page5 .int { width:100%; height: 650px; position:absolute; right: 0; left:0; top:260px; display:none; }
+        .page5 .int iframe { width:100%; height:650px; border:0; }
+        .page5 .int .close { width:60px; position:absolute; right:20px; top:20px; }
+
+        #gallery .gallery_cont img { width:100%; }
+        #gallery .main_slider { padding-top:0; }
+        #gallery .main_slider ul { width:100%; position:absolute; bottom: 50px; height:235px; left:50%; margin-left:-175px; zoom:0.5; }
+        #gallery .main_slider li { position:absolute; top:0; width: 350px; opacity:0.3; cursor:pointer; }
+        #gallery .main_slider li img {width: 100%;}
+        #gallery .main_slider ul.i1 li.i1 { opacity:1 }
+        #gallery .main_slider ul.i2 li.i2 { opacity:1 }
+        #gallery .main_slider ul.i3 li.i3 { opacity:1 }
+        #gallery .main_slider ul.i4 li.i4 { opacity:1 }
+        #gallery .main_slider ul.i5 li.i5 { opacity:1 }
+        #gallery .main_slider ul.i6 li.i6 { opacity:1 }
+        #gallery .main_slider ul.i7 li.i7 { opacity:1 }
+        #gallery .main_slider ul.i8 li.i8 { opacity:1 }
+        #gallery .main_slider ul.i9 li.i9 { opacity:1 }
+        #gallery .main_slider ul.i10 li.i10 { opacity:1 }
+        #gallery .main_slider ul.i11 li.i11 { opacity:1 }
+        #gallery .main_slider ul.i12 li.i12 { opacity:1 }
+        #gallery .main_slider ul.i13 li.i13 { opacity:1 }
+        #gallery .main_slider ul.i14 li.i14 { opacity:1 }
+        #gallery .main_slider ul.i15 li.i15 { opacity:1 }
+        #gallery .main_slider ul.i16 li.i16 { opacity:1 }
+        #gallery .main_slider ul.i17 li.i17 { opacity:1 }
+        #gallery .main_slider ul.i18 li.i18 { opacity:1 }
+        #gallery .main_slider ul.i19 li.i19 { opacity:1 }
+
+        .go-event { position:fixed; right:0; top:50px; z-index:300; cursor:pointer; }
+        .go-event img { width:200px; }
+        .go-event a { position:absolute; width:75%; height:80%; left:10%; bottom:10%; }
+
+        a, .close { cursor:pointer; }
+
+        .gallery_arrow_left { top:50%; left:20px; position:absolute; cursor:pointer; margin-top:-30px; height:60px;  }
+        .gallery_arrow_right { top:50%; right:20px; position:absolute; cursor:pointer; margin-top:-30px;  height:60px;  }
+        .videoIndex { top:50%; left:10px; position:absolute; display:none; z-index:201; cursor:pointer; margin-top:-20px; height:40px; }
+        .videoIndex+.videoIndex { left:auto; right:10px; }
+        .videoIndex.on { opacity:1; }
+
+        .custom-pop { position:absolute; left:-10000px; top:0; width:100%; z-index:9999 }
+        .custom-pop .bg {position:fixed; width:100%; height:100%; background:black; opacity:.8; filter:alpha(opacity=50); left:-10000px; top:0; z-index:9999 }
+        .custom-pop .popup { z-index:10000 }
+
+        .pc-prize { display:none; }
+        .pc-prize.show { display:block; }
+
+        @media (min-width:960px) {
+			.sub_visualModel.first_img {background:url('../../images/model_view/MODEL_CamryWildHybrid/main/camry_hv_visual.jpg') 50% 50% no-repeat !important; background-size:cover !important;}
+
+            #pseudo { height: calc(100vh - 140px)}
+            .only-mobile { display:none !important; }
+            .only-pc { display:block !important; }
+
+            .page1 { background:url("../../images/model_view/MODEL_CamryWildHybrid/main/kv01.jpg") center; background-size:cover; }
+            .page1 .cover { background:url("../../images/model_view/MODEL_CamryWildHybrid/main/kv01_cover.jpg") center; background-size:cover; width:100%; height:100%;  }
+
+            .tx {  }
+            .tx .cont { position:relative; padding:100px 120px; }
+            .tx h2 { font-size:26px; }
+            .tx h3 { font-size:65px; line-height:1; margin-top:0.3rem; }
+            .tx h5 { display:none; }
+            .tx s { width:28px; height:4px; display:inline-block; margin-top:25px; }
+            .tx p img { margin-top:2rem; width:50%;}
+
+            .tx.show-detail .dim { display:none;}
+            .tx.show-detail .tnga-close { display:none;}
+
+            .event2 { background:black url("../../images/model_view/MODEL_CamryWildHybrid/event2/bg-pc2.jpg") center no-repeat; height:990px; }
+            .event2-body { width:1000px; left:50%; margin-left:-500px; position:absolute; top:0; }
+            .event2-body .btn { width:320px; height:133px; top:636px; background:url("../../images/model_view/MODEL_CamryWildHybrid/clear.gif"); position:absolute; cursor:pointer; }
+            .event2-body .btn-1 { left:0; }
+            .event2-body .btn-1:hover { background:url("../../images/model_view/MODEL_CamryWildHybrid/event2/pc-over-1.jpg");  }
+            .event2-body .btn-2 { left:336px; }
+            .event2-body .btn-2:hover { background:url("../../images/model_view/MODEL_CamryWildHybrid/event2/pc-over-2.jpg");  }
+            .event2-body .btn-3 { left:672px; }
+            .event2-body .btn-3:hover { background:url("../../images/model_view/MODEL_CamryWildHybrid/event2/pc-over-3.jpg");  }
+
+            .page2 { background:url("../../images/model_view/MODEL_CamryWildHybrid/main/page2_bg.jpg") center no-repeat; }
+            .page2 .vis { margin-top:0; padding-left:350px; }
+            .page2 .vis img { margin:250px auto 0; width:auto; }
+            .page2 .tx { margin-top:calc(50vh - 500px)}
+            .page2 .vis { margin-top:calc(50vh - 500px)}
+
+            .page3 { background:black url("../../images/model_view/MODEL_CamryWildHybrid/main/page3_bg.png") center top no-repeat;  height:1300px; }
+            .page3 .vis { top:384px; left:0; margin:0; width:100%; }
+            .page3 .vis .iseq { margin:0 auto; width:auto; }
+
+            .page4 { background:black;}
+            .page4 .light-bg { padding-right:650px; position:absolute; width:100%; box-sizing:border-box; }
+            .page4 .light-bg:before {content:''; display:block; background:url("../../images/model_view/MODEL_CamryWildHybrid/main/page4_bg.jpg") center bottom no-repeat; width:100%; height:1000px; }
+
+            .page4 .iseq { margin: 0 auto; zoom:1; display:none;}
+            .page4 .iseq.on { display:block; }
+            .page4 .left { position:absolute; width:100%; padding-right:605px; box-sizing:border-box; top:790px;}
+            .page4 ul { width:640px; position:relative; margin: 0 auto; font-size:1.2rem; text-align:center; left:0; top:0;}
+            .page4 ul li { width:25%; float:left; position:relative; opacity:0.5;}
+            .page4 ul li.on { opacity:1; }
+            .page4 ul li.on:before { width:14px; height:4px; border-radius:2px; margin-left:-7px; }
+
+            .page4 .cont p span { display:none; font-size:18px;}
+            .page4 .cont p span i { margin-top:15px; }
+            .page4 .cont p span.on { display:block; }
+            .page4 .cont p img { position:absolute; top:600px; width:auto;}
+
+            .page5 { background:black url("../../images/model_view/MODEL_CamryWildHybrid/main/page5_bg.jpg") center  top no-repeat;  height:1300px; }
+            .page5 .ttl { position:absolute; padding:100px 120px; left:0; top:0; }
+            .page5 .ttl h3 { font-size:50px; }
+            .page5 .ttl s {  background:#eb091d;  width:28px; height:4px; display:inline-block; margin-top:25px; }
+            .page5 .ttl p { font-size:18px; line-height:1.5; }
+            .page5 ul { width:378px; margin-left:-169px; }
+            .page5 ul li { width:54px; }
+            .page5 .vr { top:-50px !important; height:auto; overflow:visible; left:50%; margin-left:-960px;}
+            .page5 .vr .body { width:auto; position:absolute; left:330px; top:220px; }
+            .page5 .vr .plus { width:50px;height:50px; }
+            .page5 .vr .plus.light { top:510px; left:470px; }
+            .page5 .vr .plus.wheel { top:660px; left:940px; }
+            .page5 .vr .plus.door { top:550px; left:1060px; }
+
+
+            #gallery .main_slider ul { zoom:1; }
+
+            .go-event { top:100px; }
+            .go-event img { width:auto; }
+
+            .custom-pop.pc .popup { position:relative; top:100px; margin-left:auto; margin-right:auto; }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="model">
+
+        <header id="header" class="sub fullbg">
+                <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+                <h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+        </header>
+
+        <button type="button" id="trgAside" class="trg_aside">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+
+		<div id="gnb">
+			<div class="member">
+				<!-- <div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div> -->
+				<div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <div class="bottom">
+            <div class="btn_wrap">
+                <a href="#self" class="btn_guide">이용안내</a>
+                <a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+            </div>
+        </div>
+
+        <!-- <div id="pseudo"></div> -->
+
+        <div class="sub_visualModel first_img">
+            <img class="videoIndex videoIndexPrev" src="../../images/model_view/MODEL_CamryWildHybrid/main/top-mov-left.png">
+            <img class="videoIndex videoIndexNext" src="../../images/model_view/MODEL_CamryWildHybrid/main/top-mov-right.png">
+            <iframe width="100%" height="100%" id="intro" style="display:none;" src="https://www.youtube.com/embed/IozXseU8MKQ?rel=0&amp;controls=0&amp;showinfo=0&amp;wmode=transparent&amp;enablejsapi=1&amp;playsinline=1" frameborder="0" allowfullscreen style="position:absolute;top:-2000px;"></iframe>
+        </div>
+        <div id="container" class="sub_cont model">
+            <div class="sub_wrap">
+                <div class="lnb_wrap">
+                    <h2>MODELS</h2>
+                    <div class="lnb_title">
+                        <h3>모델<img src="../../images/model_view/hybridcommon/down_arrow.png" alt=""></h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="model_inner" style="background: none;">
+                <div id="model" class="model_text">
+                    <ul></ul>
+                </div>
+                <div id="model-x">
+                    <ul>
+                        <li> </li>
+                        <li> </li>
+                        <li id="event2"> </li>
+                        <li> </li>
+                        <li> </li>
+                    </ul>
+                </div>
+                <div id="vars">
+                    <div class="fpage fel page1" data-s="-1,3" data-p="2,3" data-t="0,-100%">
+                        <div class="fpage fel cover" data-s="-1,2"  data-p="1,2" data-a="1,0"></div>
+                        <img class="only-mobile" src="../../images/model_view/MODEL_CamryWildHybrid/main/m_page1-title.png" @ltwh="60,200,519,129">
+                        <div class="btn-o" @ltwh="25%,25%,50%,50%"></div>
+                    </div>
+                    <div class="fpage fel page2" data-s="2,6" data-p="2,3" data-t="100%,0">
+                        <div class="vis">
+                            <img class="fel chimg" data-s="2,6" data-p="3,4" data-x="0,32" src="../../images/model_view/MODEL_CamryWildHybrid/main/tnga3_m/00000.png">
+                            <!--<img class="fel chimg" src="../../images/model_view/MODEL_CamryWildHybrid/main/tnga3/00032.png">-->
+                        </div>
+                        <div class="tx">
+                            <div class="dim">
+                                <img src="../../images/model_view/hybridcommon/mobile_text_toggle_x.png" class="close" onclick="$(this.parentNode.parentNode).removeClass('show-detail')">
+                            </div>
+                            <div class="cont">
+                                <h2>01</h2>
+                                <h3>Toyota<br>New Global<br>Architecture</h3>
+                                <h4>혁신적인 변화 TNGA 플랫폼</h4>
+                                <h5><span onclick="$(this.parentNode.parentNode.parentNode).addClass('show-detail')">내용보기 ></span></h5>
+                                <s></s>
+                                <p>
+                                    저중심 설계로 더욱 민첩한 드라이빙부터 관능적이고 매혹적인 디자인, 그리고 뛰어난 안전 시스템과 새롭게 개발된 파워트레인까지 이전에는 경험하지 못했던 새로운 차원의 즐거움을 선사합니다.
+                                    <img src="../../images/model_view/MODEL_CamryWildHybrid/main/tnga.png"/>
+                                </p>
+                            </div>
+                            <img src="../../images/model_view/hybridcommon/mobile_text_toggle_x.png" class="tnga-close" onclick="$('.page2 .tx').removeClass('show-detail')">
+                        </div>
+                    </div>
+                </div>
+                <div class="cpage page3">
+                    <img src="../../images/model_view/MODEL_CamryWildHybrid/main/m_page3_bg.jpg" alt="" class="cbg only-mobile">
+                    <div class="vis">
+                        <img class="iseq" data-pc="../../images/model_view/MODEL_CamryWildHybrid/main/hybrid/" data-m="../../images/model_view/MODEL_CamryWildHybrid/main/hybrid_m/" data-len="24">
+                        <img src="../../images/model_view/MODEL_CamryWildHybrid/main/m_page3_info.png" alt="" class="only-mobile info">
+                    </div>
+                    <div class="tx">
+                        <div class="dim">
+                            <img src="../../images/model_view/hybridcommon/mobile_text_toggle_x.png" class="close" onclick="$(this.parentNode.parentNode).removeClass('show-detail')">
+                        </div>
+                        <div class="cont">
+                            <h2>02</h2>
+                            <h3>Toyota<br class="only-mobile"> Hybrid System</h3>
+                            <h4>강력하고 혁신적인 하이브리드 시스템</h4>
+                            <h5><span onclick="$(this.parentNode.parentNode.parentNode).addClass('show-detail')">내용보기 ></span></h5>
+                            <s></s>
+                            <p>
+                                2.5ℓ 다이내믹 포스 엔진과 2개의 전기 모터의 조화로 강력한 가속력과 고효율의 연비를 구현하였습니다.<br>
+                                토요타의 No.1 하이브리드 기술력을 바탕으로 소형화ㆍ경량화를 실현한 신형 하이브리드 시스템이<br class="pc_br">
+                                역동적인 퍼포먼스와 최고 수준의 친환경성을 모두 실현하며 하이브리드의 전례 없는 변화를 완성합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpage page4">
+                    <img src="../../images/model_view/MODEL_CamryWildHybrid/main/m_page4_bg.jpg" alt="" class="cbg only-mobile">
+                    <div class="light-bg"></div>
+                    <div class="left">
+                        <ul>
+                            <li class="on">
+                                차선 이탈 경고<br>
+                                (LDA)
+                            </li>
+                            <li>
+                                다이내믹 레이더<br>
+                                크루즈 컨트롤<br>
+                                (DRCC)
+                            </li>
+                            <li>
+                                긴급 제동<br>
+                                보조 시스템<br>
+                                (PCS)
+                            </li>
+                            <li>
+                                오토매틱 하이빔<br>
+                                (AHB)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vis">
+                        <img class="iseq on"
+                                data-pc="../../images/model_view/MODEL_CamryWildHybrid/main/lda/"
+                                data-m="../../images/model_view/MODEL_CamryWildHybrid/main/lda_m/"
+                                data-len="56">
+                        <img class="iseq"
+                                data-pc="../../images/model_view/MODEL_CamryWildHybrid/main/drcc/"
+                                data-m="../../images/model_view/MODEL_CamryWildHybrid/main/drcc_m/"
+                                data-len="32">
+                        <img class="iseq"
+                                data-pc="../../images/model_view/MODEL_CamryWildHybrid/main/pcs/"
+                                data-m="../../images/model_view/MODEL_CamryWildHybrid/main/pcs_m/"
+                                data-len="48">
+                        <img class="iseq"
+                                data-pc="../../images/model_view/MODEL_CamryWildHybrid/main/ahb/"
+                                data-m="../../images/model_view/MODEL_CamryWildHybrid/main/ahb_m/"
+                                data-len="36">
+                    </div>
+                    <div class="tx">
+                        <div class="dim">
+                            <img src="../../images/model_view/hybridcommon/mobile_text_toggle_x.png" class="close" onclick="$(this.parentNode.parentNode).removeClass('show-detail')">
+                        </div>
+                        <div class="cont">
+                            <h2>03</h2>
+                            <h3>Toyota<br>Safety Sense</h3>
+                            <h4>토요타 안전 예방 기술</h4>
+                            <h5><span onclick="$(this.parentNode.parentNode.parentNode).addClass('show-detail')">내용보기 ></span></h5>
+                            <p>
+                                <span class="on">
+                                    <em>차선이탈 경고(Lane Departure Alert)</em>
+                                    차선이탈 경고는 시스템이 주행 차선을 이탈할 가능성이 있다고 판단하면 차선이탈 경고를 활성화합니다. <br class="pc_br">
+                                    또한 의도치 않은 차선이탈을 방지하기 위한 일정 수준의 스티어링 보조를 지원합니다.
+                                </span>
+                                <span>
+                                    <em>다이내믹 레이더 크루즈 컨트롤(Dynamic Radar Cruise Control)</em>
+                                    다이내믹 레이더 크루즈 컨트롤은 차량의 전방에 장착된 밀리미터 웨이브 레이더를 통해 선행 차량의 차속을 감지하고 이에 맞는 주행 속도를 자동으로 유지시킵니다. <br class="pc_br">
+                                    또한 선행 차량이 사라지면 초기 설정한 주행 속도로 자연스러운 증속 및 감속을 하는 등 보다 편리한 주행을 보조합니다.
+                                </span>
+                                <span>
+                                    <em>긴급 제동 보조 시스템(Pre-Collision System)</em>
+                                    긴급 제동 보조 시스템은 밀리미터 웨이브 레이더 및 카메라를 통해 전방에 있는 차량을 감지합니다. <br class="pc_br">
+                                    이 후 시스템이 충돌 가능성이 높거나 사고 발생을 피하기 어렵다고 판단하면 운전자에게 이를 경고하고 필요 시 제동력을 개입하여 브레이크 작동을 보조합니다. <br class="pc_br">
+                                    <i>* 제동력은 최대 약 15km/h 수준으로 작동됩니다.</i>
+                                </span>
+                                <span>
+                                    <em>오토매틱 하이빔(Automatic High Beam)</em>
+                                    오토매틱 하이빔은 전면 윈드 실드 상단에 부착되어 있는 카메라를 통해 전방의 불빛을 감지하여 주행 상황에 맞는 상향등 점등을 자동으로 조절 합니다. <br class="pc_br">
+                                    운전자는 주행 시 직접 상향등을 점등할 필요가 없어 보다 편리한 야간 주행이 가능하며 보행자는 야간에 접근 중인 차량을 미리 확인할 수 있습니다. <br class="pc_br">
+                                    이를 통해 운전자와 보행자 모두가 안전한 야간 이동이 가능하도록 돕습니다.
+                                </span>
+                                <img src="../../images/model_view/MODEL_CamryWildHybrid/main/tss.png"/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cpage page5">
+                    <img src="../../images/model_view/MODEL_CamryWildHybrid/main/m_page5_bg.jpg" alt="" class="cbg only-mobile">
+                    <div class="ttl">
+                        <h3>360˚ VR</h3>
+                        <s></s>
+                        <p>캠리를 좌우로 드래그하고 + 버튼을 클릭해 <br>
+                            전례 없이 달라진 캠리를 경험해보세요.</p>
+                    </div>
+                    <div class="vr" @wht="100%,800,240">
+                        <img draggable="false" class="body">
+                        <div class="plus light"></div>
+                        <div class="plus door"></div>
+                        <div class="plus wheel"></div>
+                    </div>
+                    <div class="int">
+                        <iframe src="./vr.html" width="750" frameborder="0" allowfullscreen scrolling="no"></iframe>
+                        <img src="../../images/model_view/hybridcommon/mobile_text_toggle_x.png" alt="" class="close">
+                    </div>
+                    <ul @t="800">
+                        <li class="on"><p>PLATINUM WHITE PEARL MICA</p></li>
+                        <li><p>SILVER METALLIC</p></li>
+                        <li><p>ATTITUDE BLACK MICA</p></li>
+                        <li><p>EMOTIONAL RED 2</p></li>
+                        <li><p>STEEL BLONDE METALLIC</p></li>
+                        <li><p>GRAPHITE METALLIC</p></li>
+                        <li><p>DARK BLUE MICA METALLIC <br>&lt;LE 미적용></p></li>
+                    </ul>
+                </div>
+                <div id="exterior" class="model_slide type_bottom">
+                    <h3>EXTERIOR</h3>
+                </div>
+
+                <div id="interior" class="model_slide type_bottom">
+                    <h3>INTERIOR</h3>
+                </div>
+
+                <div id="features" class="model_slide type_bottom">
+                    <h3>FEATURES</h3>
+                </div>
+
+                <div id="gallery" class="model_slide model_gallery">
+                    <h3>GALLERY</h3>
+                    <div class="gallery_cont">
+                        <img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/m/3.jpg" alt="">
+                    </div>
+                    <div class="gallery_arrow">
+                        <img src="../../images/model_view/MODEL_CamryWildHybrid/main/top-mov-left.png" alt="" class="gallery_arrow_left">
+                        <img src="../../images/model_view/MODEL_CamryWildHybrid/main/top-mov-right.png" alt="" class="gallery_arrow_right">
+                    </div>
+                    <div class="main_slider">
+                        <ul class="i1">
+                            <li class="i1"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb3.jpg" alt=""></li>
+                            <li class="i2"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb5.jpg" alt=""></li>
+                            <li class="i3"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb7.jpg" alt=""></li>
+                            <li class="i4"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb8.jpg" alt=""></li>
+                            <li class="i5"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb10.jpg" alt=""></li>
+                            <li class="i6"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb11.jpg" alt=""></li>
+                            <li class="i7"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb13.jpg" alt=""></li>
+                            <li class="i8"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb14.jpg" alt=""></li>
+                            <li class="i9"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb15.jpg" alt=""></li>
+                            <li class="i10"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb16.jpg" alt=""></li>
+                            <li class="i11"><img src="../../images/model_view/MODEL_CamryWildHybrid/main/gallery/thumb17.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="specs" class="model_comType1 model_specs">
+                    <div class="model_comInner specs_header">
+                        <div class="specs_headerInner">
+                            <h3>SPECS & PRICE</h3>
+                            <div class="model_tab">
+                                <ul></ul>
+                            </div>
+                            <ul class="prices"></ul>
+                        </div>
+                        <div class="sh_img">
+                            <img alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="smartHybridCommon">
+                    <div class="hybrid_mo">
+                        <article class="hybrid_wrap">
+                            <div class="hybrid_inner">
+                                <h2 class="h2_titleW">SMART HYBRID</h2>
+                                <h3>하이브리드 <br><span class="korean_bold">혜택</span></h3>
+                                <p>친환경 하이브리드 차량 구매 시 <br>얻을 수 있는 각종 혜택을 확인해 보세요. <br>
+                                    <span></span>
+                                </p>
+                                <div class="hybrid_list">
+                                    <ul>
+                                        <li class="nth-2">
+                                            <h4>하이브리드 감면 금액</h4>
+                                            <div class="hybrid_listLeft">
+                                                <dl>
+                                                    <dt>개별소비세</dt>
+                                                    <dd class="hybrid_max">최대</dd>
+                                                    <dd class="hybrid_maxNum">1,000,000</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>교육세</dt>
+                                                    <dd class="hybrid_max">최대</dd>
+                                                    <dd class="hybrid_maxNum">300,000</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>취득세</dt>
+                                                    <dd class="hybrid_max">최대</dd>
+                                                    <dd class="hybrid_maxNum">1,400,000</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>공채할인시</dt>
+                                                    <dd class="hybrid_max">최대</dd>
+                                                    <dd class="hybrid_maxNum">400,000</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="hybrid_listRight">
+                                                <ul>
+                                                    <li>* 개별 소비세 & 교육세: <br>차량가격에 기 반영</li>
+                                                    <li>* 지역별 상이함</li>
+                                                </ul>
+                                            </div>
+                                            <div class="hybrid_listBottom">
+                                                <p><sup class="korean_bold">최대 </sup><span class="eng_bold">310<span class="korean_bold f18">만원 </span></span><span class="hbb_sap1 korean_bold">혜택</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="nth-3">
+                                            <h4>도심 혼잡 통행료</h4>
+                                            <div class="hybrid_listLeft">
+                                                <dl class="no_border">
+                                                    <dt>서울지역</dt>
+                                                    <dd class="hybrid_max"></dd>
+                                                    <dd class="hybrid_maxNum"></dd>
+                                                </dl>
+                                            </div>
+                                            <div class="hybrid_listRight">
+                                                <ul>
+                                                    <li class="no_margin">* 지역별 상이함</li>
+                                                </ul>
+                                            </div>
+                                            <div class="hybrid_listBottom">
+                                                <p><sup class="korean_bold">최대 </sup><span class="eng_bold">100<span class="f18">% </span></span><span class="hbb_sap1 korean_bold">감면</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="nth-4">
+                                            <h4>공영주차장 이용료</h4>
+                                            <div class="hybrid_listLeft">
+                                                <dl>
+                                                    <dt>수도권 지역</dt>
+                                                    <dd class="hybrid_max"></dd>
+                                                    <dd class="hybrid_maxNum"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>인천공항</dt>
+                                                    <dd class="hybrid_max"></dd>
+                                                    <dd class="hybrid_maxNum"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>김포공항</dt>
+                                                    <dd class="hybrid_max"></dd>
+                                                    <dd class="hybrid_maxNum"></dd>
+                                                </dl>
+                                                <dl class="no_border">
+                                                    <dt>김해공항</dt>
+                                                    <dd class="hybrid_max"></dd>
+                                                    <dd class="hybrid_maxNum"></dd>
+                                                </dl>
+                                            </div>
+                                            <div class="hybrid_listRight">
+                                                <ul>
+                                                    <li>* 지역별 상이함</li>
+                                                </ul>
+                                            </div>
+                                            <div class="hybrid_listBottom">
+                                                <p><span class="eng_bold">50<span class="f18">% </span></span><span class="hbb_sap1 korean_bold">감면</span></p>
+                                            </div>
+                                        </li>
+                                        <li class="nth-5">
+                                            <h4>하이브리드 <br>메인배터리<br>무상보증확대</h4>
+                                            <div class="hybrid_listRight">
+                                                <ul>
+                                                    <li>* 연 1회 하이브리드 <br>시스템 점검 시</li>
+                                                    <li>* 한국 토요타 자동차 판매 <br>차량 및 2015년 이후 출고 차량에 한함</li>
+                                                </ul>
+                                            </div>
+                                            <div class="hybrid_listBottom">
+                                                <p><span class="eng_bold">10</span><span class="f18 korean_bold">년/ </span><span class="eng_bold">20<span class="korean_bold f18">만</span><span class="eng_bold f18">km </span></span><span class="hbb_sap1 korean_bold">연장</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="hybrid_wrap">
+                            <div class="hybrid_inner">
+                                <h2 class="h2_titleW">SMART HYBRID</h2>
+                                <h3>하이브리드 <br><span class="korean_bold">서비스</span></h3>
+                                <p>지구를 생각하는 당신에게 한국 토요타 자동차가 <br>더 특별한 서비스를 준비했습니다.<br>하이브리드만큼 스마트하고, 특별한 서비스를 만나보세요! <br>
+                                    <span>* 2018년 12월 31일까지 실행 예정</span>
+                                </p>
+
+                                <div class="hybrid_survice">
+                                    <ul>
+                                        <li class="nth-1">
+                                            <div class="hbs_iconBox">
+                                                <span><img src="../../images/model_view/m_prius/image/hybrid_icon5.gif" alt="" class="wt100"></span>
+                                            </div>
+                                            <h4>하이브리드 메인배터리 <br>무상 보증 연장</h4>
+                                            <p>한국 토요타 자동차 판매 차량 및<br>2015년 이후 출고 차량에 한함<br>10년/20만km로 연장 <br>*연 1회 하이브리드 시스템 점검 시</p>
+                                        </li>
+                                        <!-- li class="nth-2">
+                                            <div class="hbs_iconBox">
+                                                <span><img src="../../images/model_view/m_prius/image/hybrid_icon6.gif" alt="" class="wt100"></span>
+                                            </div>
+                                            <h4>하이브리드 메인배터리<br>연장 보증 프로그램</h4>
+                                            <p>보증기간(최소 5년 또는 80,000km 및 3년 또는<br>100,000km) 만료 차량의 1년 연장 보증 상품 <br><a href="file/hybird_battery_extend_care.pdf">자세히 보기 ></a> <br>* 차량 인도 후 최대 10년 또는 <br>주행거리 200,000km 이내의 차량에 한함</p>
+                                        </li -->
+                                        <li class="nth-3">
+                                            <div class="hbs_iconBox">
+                                                <span><img src="../../images/model_view/m_prius/image/hybrid_icon7.gif" alt="" class="wt100"></span>
+                                            </div>
+                                            <h4>토요타 하이브리드 <br>점검 서비스</h4>
+                                            <p>최신 설비와 전문인력을 통한<br>맞춤형 점검 서비스 <br>* 최소 2년 무상 제공</p>
+                                        </li>
+                                        <li class="nth-4">
+                                            <div class="hbs_iconBox">
+                                                <span><img src="../../images/model_view/m_prius/image/hybrid_icon8.gif" alt="" class="wt100"></span>
+                                            </div>
+                                            <h4>정기 점검 및 소모품<br>교환 서비스 2년 무상 제공</h4>
+                                            <p>차량의 최적 상태 유지를 위한<br>특별한 혜택<br>* 점검 주기 및 대상 소모품은 별도 기준에 따름</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <iframe frameborder="0" style="position:absolute; left:-2000px; width:1px; height:1px;" name="submitFrame"></iframe>
+            </div>
+            <form action="https://camry.wenow.kr/api/" method="post" name="snsform" target="submitFrame">
+                <input type="hidden" name="A" value="7">
+                <input type="hidden" name="SNS">
+                <input type="hidden" name="callback" value="https://www.toyota.co.kr/event/170920/callback.aspx">
+                <input type="hidden" name="axs" value="snsComplete">
+            </form>
+        </div>
+    </div>
+
+    <button id="quickToggle">
+        <div class="eq0"></div>
+        <div class="eq1"></div>
+    </button>
+    <div id="quickmenu">
+        <div class="ie_dim"></div>
+        <ul>
+            <li class="quick q_testdrive">
+                <span>시승신청</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_01.png" alt=""></div>
+            </li>
+            <li class="quick q_showroom">
+                <span>전시장</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_02.png" alt=""></div>
+            </li>
+            <li class="quick q_benefit">
+                <span>구매혜택</span><div class="icon"><img src="../../images/model_view/hybridcommon/quick_btn_03.png" alt=""></div>
+            </li>
+        </ul>
+        <div class="dim black"></div>
+    </div>
+
+
+    <script src="../../common/modeljs/camryWildHybrid/main.js"></script>
+    <script src="../../common/modeljs/models.js"></script>
+    <script>
+        ox.POS();
+
+        var slider, pick = 0, purchase, counts, pickName = ['B','C','N','W','P'];
+
+        function benefitPop() {
+            Pop.open('benefit-pop',function(pop){
+                pop.content.find('.checkbox').click(function(){
+                    $(this).toggleClass('on');
+                });
+                $(window).resize();
+            });
+        }
+
+        function applyPop(type) {
+            alert('이벤트가 종료되었습니다');
+            return;
+            Pop.open('apply-pop',function(pop){
+                pop.content.addClass(type);
+                if( type == 'purchase' ){
+                    purchase = 1;
+                    pop.content.find('.ttl').addClass(type);
+                } else {
+                    purchase = 2;
+                    pop.content.find('.ttl').addClass("pick-" + pick);
+                }
+                $(window).resize();
+            });
+        }
+
+        function selectVote(n){
+            $('#event .vote .content').show();
+            $('#event .vote .select').hide();
+            pick = n;
+            $('.requestNum').text(counts[pickName[pick]+"B"]);
+            $('.voteNum').text(counts[pickName[pick]+"P"]);
+            var track_base = window.innerWidth < 960 ? 9578 : 9535;
+            TRACK(track_base + n*3);
+            slider = $('#event .vote .content .slides:visible').bxSlider({startSlide:pick = n,
+                onSlideBefore: function(el,o,n) {
+                    pick = n;
+                    TRACK(track_base + n*3);
+                    $('.requestNum').text(counts[pickName[pick]+"B"]);
+                    $('.voteNum').text(counts[pickName[pick]+"P"]);
+                }
+            });
+        }
+
+        function openVote() {
+            $('#event .vote').show();
+            $('#event .cont').hide();
+            $('#event .vote .select').show();
+            $('#event .vote .content').hide();
+        }
+
+        function closeVote() {
+            if(slider) slider.destroySlider();
+            Pop.closeAll();
+            $('#event .cont').show();
+            $('#event .vote').hide();
+        }
+
+        function openPostCode(){
+            Pop.open('addr-pop',function(pop){
+                new daum.Postcode({
+                    oncomplete: function(data) {
+                        document.applyForm.ZIPCODE.value = data.zonecode;
+                        document.applyForm.ADDR1.value = data.address;
+                        document.applyForm.ADDR2.focus();
+
+                        Pop.close();
+                    },
+                    width : '100%',
+                    height : '100%',
+                    maxSuggestItems : 5
+                }).embed(pop.content.find('.addr-layer')[0]);
+            });
+
+        }
+
+        function apply() {
+            var t, f = document.applyForm;
+            f.SNS.value = pending_sns.join();
+            f.VIDEO.value = ['보디가드','복싱','포토그래퍼'][now_share_idx];
+            f.callback.value = location.protocol+"//"+location.host+"/event/170920/callback.aspx";
+
+            if (t = ox.VAL(f)) {
+                if (t == 'NM') alert('이름을 입력해 주세요');
+                else if (t == 'AGE') alert('나이를 확인해주세요');
+                else if (t.match(/CEL/)) alert('연락처를 확인해주세요');
+                else if (t.match(/(ADDR|ZIPCODE)/)) alert('주소를 확인해주세요');
+                return;
+            }
+
+            if( ox.F2O(f).AGREE != '1'){
+                alert("개인정보 수집 및 처리방침에 동의해주세요");
+                return;
+            }
+            f.submit();
+
+        }
+
+
+        $('#event .pc .select a').hover(function(){
+            $(this).find('.on').css('opacity',1);
+        },function(){
+            $(this).find('.on').css('opacity',0);
+        });
+
+        function kitPop() {
+            Pop.open('kit-pop',function(pop){
+                pop.content.find('.cont').addClass("kit-" + pick);
+            });
+        }
+
+        function videoComplete() {
+            TRACK(9990,9998);
+            Pop.close();
+            Pop.open('video-complete');
+        }
+
+        function pickComplete(result) {
+            if (result == -1) {
+                alert('이미 구매신청을 하셨습니다');
+                Pop.close();
+                return;
+            }
+            if( $('.popup.apply .ttl').is('.purchase') ){
+                Pop.close();
+                Pop.open('purchase-pop',function(pop){
+                    pop.content.find('.ttl').addClass("pick-" + pick);
+                });
+                TRACK(9552,9595);
+                HL_PL('www.toyota.co.kr/event_purchase.html');
+            } else {
+                Pop.close();
+                Pop.open('pick-pop');
+                TRACK(9560,9623);
+                HL_PL('www.toyota.co.kr/event_vote.html');
+            }
+        }
+
+        function openVideo(idx) {
+            pending_sns = [];
+            $(".applyAfterShare").hide();
+            var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+            var sec =  (window.innerWidth < 960) ? 'mobile' : 'pc';
+            var pop = $(".custom-pop."+sec).css({left:0}).find('.popup').css({'margin-top':scrollTop});
+            $(".custom-pop."+sec+" .bg").css({left:0});
+            now_share_idx = idx-1;
+            if (window.innerWidth < 960) {
+                pop.find('.video-name').attr('src','../../images/model_view/MODEL_CamryWildHybrid/event2/m-video-title'+idx+'.jpg');
+                mshare_player.loadVideoById(share_video_ids[now_share_idx]);
+            } else {
+                pop.find('.video-name').attr('src','../../images/model_view/MODEL_CamryWildHybrid/event2/video-title'+idx+'.png');
+                pshare_player.loadVideoById(share_video_ids[now_share_idx]);
+            }
+        }
+
+        function customPopHide() {
+            $('.custom-pop').css({left:-10000}).find(".bg").css({left:-10000});
+            mshare_player.pauseVideo();
+            pshare_player.pauseVideo();
+        }
+
+        function open_video_info(){
+            $(".applyAfterShare").show();
+        }
+
+        function openApplyPop() {
+            if (pending_sns.length ==0) {
+                alert('먼저 공유를 해주세요');
+                return;
+            }
+            customPopHide();
+            Pop.open('apply-pop',function(pop){
+                $(window).resize();
+            });
+            TRACK(9987+now_share_idx,9995+now_share_idx);
+        }
+
+        function openVideoPrize() {
+            Pop.open('video-prize',function(pop){
+                $(window).resize();
+            });
+        }
+
+        $('.prizeBtn').hover(function(){
+            $(".pc-prize").addClass('show');
+        },function(){
+            $(".pc-prize").removeClass('show');
+        });
+
+        function mplay_toggle() {
+            if (mshare_player.getPlayerState() == 1) {
+                mshare_player.pauseVideo();
+            } else {
+                mshare_player.playVideo();
+            }
+        }
+
+        function pplay_toggle() {
+            if (pshare_player.getPlayerState() == 1) {
+                pshare_player.pauseVideo();
+            } else {
+                pshare_player.playVideo();
+            }
+        }
+
+
+        if (location.hash == '#event') $('.go-event').hide();
+
+    </script>
+
+
+</body>
+
+
+</html>

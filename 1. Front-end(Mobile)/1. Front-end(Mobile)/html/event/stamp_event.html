@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+	<div id="app">
+
+		<header id="header" class="sub fullbg">
+            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+
+		<div id="gnb">
+			<div class="member">
+				<div class="login">
+					<div class="txt">
+						<span class="name">홍길동</span> 님<br>
+						즐거운 하루 되세요!
+					</div>
+					<a href="../alert/alert_view.html" class="btn_alert on"></a>
+					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+				</div>
+				<!-- <div class="logout">
+					<div class="txt">로그인이 필요합니다</div>
+					<div class="btn_wrap">
+						<a href="../member/login.html" class="btn60 c1" style="width: 210px;">로그인</a>
+						<a href="../member/join_chk.html" class="btn60 c1" style="width: 210px;">회원가입</a>
+					</div>
+					<a href="../setting/setting.html" class="btn_setting"></a>
+				</div> -->
+			</div>
+			<ul>
+				<li>
+					<a href="#self">TOYOTA</a>
+					<ul class="depth2">
+						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Models</a>
+					<ul class="depth2">
+						<li><a href="../models/model_list.html">차량 정보</a></li>
+						<li><a href="../models/drive_guide.html">시승 신청</a></li>
+						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Service Center</a>
+					<ul class="depth2">
+						<li><a href="../servicecenter/reserve_step1.html">예약하기</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Support</a>
+					<ul class="depth2">
+						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">Event / Coupon</a>
+					<ul class="depth2">
+						<li><a href="../event/event_list.html">이벤트</a></li>
+						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#self">My Car</a>
+					<ul class="depth2">
+						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+						<li><a href="../mycar/saving_history.html">차계부</a></li>
+						<!-- <li><a href="#self">운행 일지</a></li> -->
+						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="utils">
+				<ul>
+					<li>
+						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
+					</li>
+					<li>
+						<a href="../sample/find_gasstation.html">주유소 찾기</a>
+					</li>
+				</ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="btn_wrap">
+                <a href="#self" class="btn_guide">이용안내</a>
+                <a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+            </div>
+        </div>
+
+        <style>
+        .event_stamp {padding: 140px 0 0; background: #0e1d3c;}
+        .event_stamp .top_area {position: relative;}
+        .event_stamp .top_area .txt {position: absolute; right: 0; bottom: 65px; left: 0; text-align: center; font-size: 0;}
+        .event_stamp .top_area .txt dt {display: inline-block; border-radius: 24px; padding: 0 16px; background: #1c2f57; font-size: 24px; line-height: 48px; letter-spacing: -0.025em; color: #bcc6db;}
+        .event_stamp .top_area .txt dd {display: inline-block; margin: 0 0 0 10px; font-size: 24px; line-height: 48px; letter-spacing: -0.025em; color: #788aaf;}
+
+        .event_stamp .txt_area {position: relative; margin: 0 20px 58px;}
+        .event_stamp .txt_area .desc {margin: 22px 0 0; font-size: 26px; letter-spacing: -0.05em; color: #788aaf;}
+        .event_stamp .txt_area .desc em {font-weight: 400; color: #ffffff;}
+
+        .event_stamp .stamp_how {padding: 80px 20px 86px; background: #122650;}
+        .event_stamp .stamp_how .info {margin: 46px 0 0; box-shadow: 5px 5px 76px 0px rgba(15, 21, 34, 0.13);}
+        .event_stamp .stamp_how .info .box {padding: 54px 0 58px 238px; background: #133a60 url(../../images/temp/event/stamp/stamp_bg01.jpg) 40px center no-repeat; font-size: 30px; line-height: 40px; letter-spacing: -0.025em; color: #b8c2e0; text-align: left;}
+        .event_stamp .stamp_how .info .box:last-child {background: #a51c4a url(../../images/temp/event/stamp/stamp_bg02.jpg) 40px center no-repeat; color: #e0b8c5;}
+        .event_stamp .stamp_how .info .box em {font-weight: 700; color: #ffffff;}
+        .event_stamp .stamp_how .btn_area {margin: 50px 0 0; padding: 0 0 76px; box-shadow: 10px 14px 40px 0px rgba(15, 23, 47, 0.27); background: url(../../images/temp/event/stamp/bg_btn.jpg) 0 0 no-repeat; text-align: center;}
+        .event_stamp .stamp_how .btn_area .btn_qr {display: inline-block; border-radius: 56px;}
+        .event_stamp .stamp_mine {padding: 85px 20px 94px; background: #1a2d57;}
+        .event_stamp .stamp_mine .btn_tip {display: block; position: absolute; top: -5px; right: -40px;}
+        .event_stamp .stamp_mine .received {margin: 0 0 10px; border-radius: 10px; background: #0d1f43 url(../../images/temp/event/stamp/bg_receive.png) 232px center no-repeat; font-weight: 700; font-size: 30px; line-height: 100px; letter-spacing: -0.05em; color: #ffffff; text-indent: 284px;}
+        .event_stamp .stamp_mine .chk_wrap {border-radius: 10px; background: #0d1f43;}
+        .event_stamp .stamp_mine .chk_wrap .bar_area {padding: 47px 40px 46px;}
+        .event_stamp .stamp_mine .chk_wrap .bar_area .txt {margin: 0 10px 23px; font-size: 30px; color: #ffffff;}
+        .event_stamp .stamp_mine .chk_wrap .bar_area .txt em {font-weight: 700; color: #d6376c;}
+        .event_stamp .stamp_mine .chk_wrap .bar_area .bar_inner {padding: 38px 91px 37px 90px; background: url(../../images/temp/event/stamp/stamp_bar.png) 0 0 no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .bar_area .bar_inner .progress_bar {height: 12px; border-radius: 6px; background: #d55f3a; box-shadow: inset -3px -4px 10px 0px rgba(168, 46, 33, 1);}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area {/*border-top: 2px solid #1a2d57;*/ border-radius: 10px; padding: 42px 34px 0 38px; background: url(../../images/temp/event/stamp/stamp_bg.gif) 0 0 no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul {overflow: hidden;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li {float: left; height: 256px; margin: 0 0 0 17px;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(5n+1) {margin-left: 0;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li button {display: block; width: 114px; height: 114px;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li .txt {margin: 17px 0 0; font-family: Toyota; font-size: 23px; line-height: 26px; color: #58647c; text-align: center;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(1) button {background: url(../../images/temp/event/stamp/stamp_base1.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(2) button {background: url(../../images/temp/event/stamp/stamp_base2.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(3) button {background: url(../../images/temp/event/stamp/stamp_base3.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(4) button {background: url(../../images/temp/event/stamp/stamp_base4.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(5) button {background: url(../../images/temp/event/stamp/stamp_base5.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(6) button {background: url(../../images/temp/event/stamp/stamp_base6.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(7) button {background: url(../../images/temp/event/stamp/stamp_base7.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(8) button {background: url(../../images/temp/event/stamp/stamp_base8.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(9) button {background: url(../../images/temp/event/stamp/stamp_base9.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(10) button {background: url(../../images/temp/event/stamp/stamp_base10.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(11) button {background: url(../../images/temp/event/stamp/stamp_base11.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(12) button {background: url(../../images/temp/event/stamp/stamp_base12.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(13) button {background: url(../../images/temp/event/stamp/stamp_base13.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(14) button {background: url(../../images/temp/event/stamp/stamp_base14.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li:nth-child(15) button {background: url(../../images/temp/event/stamp/stamp_base15.png) center center no-repeat;}
+
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done .txt {color: #ffffff;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(1) button {background: url(../../images/temp/event/stamp/stamp_chk1.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(2) button {background: url(../../images/temp/event/stamp/stamp_chk2.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(3) button {background: url(../../images/temp/event/stamp/stamp_chk3.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(4) button {background: url(../../images/temp/event/stamp/stamp_chk4.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(5) button {background: url(../../images/temp/event/stamp/stamp_chk5.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(6) button {background: url(../../images/temp/event/stamp/stamp_chk6.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(7) button {background: url(../../images/temp/event/stamp/stamp_chk7.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(8) button {background: url(../../images/temp/event/stamp/stamp_chk8.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(9) button {background: url(../../images/temp/event/stamp/stamp_chk9.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(10) button {background: url(../../images/temp/event/stamp/stamp_chk10.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(11) button {background: url(../../images/temp/event/stamp/stamp_chk11.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(12) button {background: url(../../images/temp/event/stamp/stamp_chk12.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(13) button {background: url(../../images/temp/event/stamp/stamp_chk13.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(14) button {background: url(../../images/temp/event/stamp/stamp_chk14.png) center center no-repeat;}
+        .event_stamp .stamp_mine .chk_wrap .stamp_area ul li.done:nth-child(15) button {background: url(../../images/temp/event/stamp/stamp_chk15.png) center center no-repeat;}
+        </style>
+
+		<div id="container">
+			<div id="content" class="event_stamp">
+                <div class="top_area">
+                    <img src="../../images/temp/event/stamp/stamp_head.jpg" alt="스탬프 적립 이벤트 2019년 3월 28일 ~ 4월 10일">
+                    <dl class="txt">
+                        <dt>경품 교환</dt>
+                        <dd>인포메이션 데스크 또는 쇼룸 리셉션</dd>
+                    </dl>
+                </div>
+                <div class="stamp_how">
+                    <div class="txt_area">
+                        <img src="../../images/temp/event/stamp/stamp_tit01.png" alt="01 참여방법">
+                    </div>
+                    <div class="info">
+                        <div class="box">
+                            토요타 전시 차종 10개 및 프리우스<br>
+                            미러스크린에서<br>
+                            <em>스탬프 3개</em> 획득 가능!
+                        </div>
+                        <div class="box">
+                            쇼룸 내 2개 차종에 부착된<br>
+                            QR코드를 통해각각 2개씩<br>
+                            <em>총 4개</em> 스탬프 획득 가능!
+                        </div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#self" class="btn_qr"><img src="../../images/temp/event/stamp/btn_qr.png" alt="QR코드 찍으러 가기"></a>
+                    </div>
+                </div>
+                <div class="stamp_mine">
+                    <div class="txt_area">
+                        <img src="../../images/temp/event/stamp/stamp_tit02.png" alt="02 나의 스탬프">
+                        <p class="desc"><em>꿀팁 확인으로 누구보다 빠르게 스탬프 획득!</em></p>
+                        <button type="button" class="btn_tip" onclick="newriver.ajaxpopup.open('../event/event_stamp_tip.html')"><img src="../../images/temp/event/stamp/btn_tip.png" alt="꿀팁"></button>
+                    </div>
+                    <div class="received">
+                        경품 획득 완료!
+                    </div>
+                    <div class="chk_wrap">
+                        <!-- <div class="bar_area">
+                            <p class="txt">경품 획득까지 <em>14개</em> 남았습니다!</p>
+                            <div class="bar_inner"><div id="progressBar" class="progress_bar" style="width: 50%;"></div></div>
+                        </div> -->
+                        <div id="stampAraa" class="stamp_area"><!-- [D] 스탬프 찍으면 li에 .on 추가 -->
+                            <ul>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">RAV4</div></li>
+                                <li class="done"><button type="button" class="btn_chk"></button><div class="txt">RAV4<br>HY</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">GR -<br>SUPRA</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">CAMRY<br>HYBRID</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">AVALON<br>HYBRID</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">SIENNA</div></li>
+                                <li class="done"><button type="button" class="btn_chk"></button><div class="txt">CAMRY</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">PRIUS C</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">PRIUS<br>PRIME</div></li>
+                                <li class="done"><button type="button" class="btn_chk"></button><div class="txt">PRIUS<br>MIRROR<br>SCREEN</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">TOYOTA<br>86</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">SHOW<br>ROOM</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">SHOW<br>ROOM</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">SHOW<br>ROOM</div></li>
+                                <li><button type="button" class="btn_chk"></button><div class="txt">SHOW<br>ROOM</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // [D] 15개 스탬프 획득 완료 시
+                $(window).on('load', function(){
+                    // 모터쇼 획득 완료
+                    // newriver.ajaxpopup.open('../event/event_stamp_motorshow.html', {backgroundClose: false});
+
+                    // 완료
+                    // newriver.ajaxpopup.open('../event/event_stamp_comp.html', {backgroundClose: false});
+
+                    // 스태프 확인용
+                    // newriver.ajaxpopup.open('../event/event_stamp_staff.html');
+
+                    // 경품 교환 완료
+                    // newriver.ajaxpopup.open('../event/event_stamp_got.html');
+                });
+
+                // 스탬프 클릭 시 액션
+                $('#stampAraa ul li').on('click', function(){
+                    if ($(this).hasClass('done')) {
+                        newriver.ajaxpopup.open('../event/event_stamp_already.html');
+                    } else {
+                        newriver.ajaxpopup.open('../event/event_stamp_done.html');
+                    }
+                    $(this).addClass('done');
+                });
+            </script>
+        </div><!-- id : container -->
+    </div><!-- id : wrap -->
+</body>
+</html>

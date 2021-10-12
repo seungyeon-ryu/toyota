@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<title>TOYOTA BRIDGE</title>
+
+	<script type="text/javascript">
+		var loc = location.href;
+		var s   = loc.indexOf("=") + 1;
+		var url   = loc.substring(s, loc.length);
+		var param = "";
+
+		var timer;
+		var closeTimer,
+			current,
+			isNewChrome;
+
+		var uagent 	  = navigator.userAgent.toLowerCase();
+		var platform  = navigator.platform.toLowerCase();
+		var isIOS 	  = false;
+		var isAndroid = false;
+		var isPC 	  = false;
+
+		if (navigator.platform) {
+			if (!/(win16|win32|win64|mac)/.test(platform)) {
+				isPC = false;
+
+				if(/(iphone|ipad|ipod)/.test(uagent) > 0) {
+					isIOS = true;
+					isAndroid = false;
+				}
+
+				else {
+					isIOS = false;
+					isAndroid = true;
+				}
+
+			} else {
+				isPC = true;
+				isIOS = false;
+				isAndroid = false;
+			}
+		}
+
+		var osVersion = (function() {
+			var versionStr = '',
+				versionNum = 0;
+
+			if(isAndroid) {
+				versionStr = uagent.match(/Android\s+([\d\.]+)/i)[0];
+				versionStr = versionStr.replace('Android ', '');
+
+			} else if(isIOS) {
+				versionStr = uagent.match(/OS\s+([\d\_]+)/i)[0];
+				versionStr = versionStr.replace(/_/g, '.');
+				versionStr = versionStr.replace(/OS\s/i, '');
+
+			}
+
+			if(versionStr.length) {
+				versionStr = versionStr.replace(/\./g, '');
+
+				while(versionStr.length < 3) {
+					versionStr += '0';
+				}
+
+				versionNum = parseInt(versionStr, 10);
+			}
+
+			return versionNum;
+		})();
+
+		/*
+		console.log('navigator', navigator);
+		console.log('uagent', uagent);
+		console.log('isIOS', isIOS);
+		console.log('isAndroid', isAndroid);
+		console.log('isPC', isPC);
+		console.log('loc', loc);
+		console.log('url', url);
+		console.log('osVersion', osVersion);
+		console.log('platform', platform);
+		*/
+
+		function onload() {
+			var mobileFlag = isPC ? false : true;
+			var mobileFlag = true;
+			if(mobileFlag) {
+				checkApplicationInstall();
+			}
+		}
+
+		function runApp_ios() {
+			var ios_appstoreUrl = 'https://itunes.apple.com/us/app/%EA%B3%A8%ED%95%91/id1041893328?mt=8';
+			var ios_app_Url = 'toyotaarvr://openAppUrl/url?url='+url;
+			var clickedAt = +new Date;
+
+			var appCheckTimer = setTimeout(function () {
+				if (+new Date - clickedAt < 800) {
+					//location.href = ios_appstoreUrl;
+					alert('앱을 설치해주세요!!!');
+				}
+			}, 500);
+
+			location.href = ios_app_Url;
+		}
+
+		function checkApplicationInstall(){
+			if(isIOS){
+				runApp_ios();
+			}
+			else{
+				var uagent = navigator.userAgent.toLowerCase(),
+					   tmp = uagent.match(/chrome\/[0-9]./);
+
+				if (tmp) {
+					try {
+						tmp = tmp[0].split('/')[1];
+						if (parseInt(tmp, 10) >= 25) {
+							isNewChrome = true;
+						}
+					} catch(e) {}
+				}
+
+				current = new Date().getTime();
+
+				if (!isNewChrome) {
+					timer = window.setTimeout("checkApplicationInstall_callback()", 1500);
+					//document.getElementById("frameArea").innerHTML = "<iframe id='checkframe' src='gzgolping://openAppUrl?url=" + url + "' width='0' height='0'></iframe>";
+					document.getElementById("frameArea").innerHTML = "<iframe id='checkframe' src='toyotaarvr://openAppUrl/url?url='" + url + "' width='0' height='0'></iframe>";
+				}
+				else {
+					//location.href = 'intent://openAppUrl?url='+url+'#Intent;scheme=gzgolping;package=com.golfzon.golping;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.golfzon.golping;end';
+					//location.href = 'intent://openAppUrl?url=/evncou/custom/stampEvent.do?seq=15#Intent;scheme=toyotaarvr;package=com.yo.toyota;end';
+					location.href = 'toyotaarvr://openAppUrl/url?url='+url+'#Intent;scheme=toyotaarvr;package=com.yo.toyota;end';
+
+					if (parseInt(tmp, 10) < 30) {
+						setTimeout(function() { history.go(-1);}, 500);
+					}
+				}
+
+			}
+		}
+
+		function checkApplicationInstall_callback(){
+			clearTimeout(timer);
+			if (new Date().getTime() - current > 2000){
+				history.go(-1);
+				return;
+			}
+
+			var iframe = document.getElementById("checkframe"),
+				for_android_app_installed = true;
+
+			try{
+			   if (isAndroid && iframe.contentDocument == undefined) {
+				   for_android_app_installed = false;
+				   alert('앱을 설치하세요!!');
+				   //location.replace("market://details?id=com.golfzon.golping");
+			   }
+			}
+			catch(e){
+				alert("Catch Exception - " + e.message);
+			}
+
+			setTimeout(function() {
+				if (isAndroid) {
+					if (for_android_app_installed) {
+						history.go(-1);
+					} else {
+						history.go(-2);
+					}
+				} else {
+					if(osVersion < 900) {
+						history.go(-1);
+					}
+				}
+			}, 500);
+
+		}
+
+	</script>
+</head>
+<body onload="onload();" style="font-size: x-large;">
+	<style>
+	html {width: 100%; height: 100%; margin: 0;}
+	body {width: 750px; height: 100%; margin: 0;}
+	#bridge {display: table; width: 100%; height: 100%; background: url(/stamp_bridge_bg.jpg) center center / cover no-repeat; text-align: center;}
+	#bridge .bridge_img {display: table-cell; vertical-align: middle;}
+	</style>
+	<div id="bridge">
+		<div class="bridge_img">
+			<img src="/stamp_bridge_img.png" alt="스탬프 적립 이벤트">
+		</div>
+	</div>
+</body>
+</html>

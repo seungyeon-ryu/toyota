@@ -1,0 +1,247 @@
+{"model" : { "dataList" : [{
+    "mainVisual" : "../../images/model_view/MODEL_PRIUSC/00_topVksual/yum_topVisual.jpg",
+    "m_mainVisual" : "../../images/model_view/MODEL_PRIUSC/00_topVksual/yum_topVisual_m.jpg",
+    "slider" : [
+        {"exterior" : [
+            {"tabmenu" : [
+                    {"title" : "exterior",
+                        "subcategory" :
+                            [{
+                            "title" : "리어 콤비네이션 램프",
+                            "subtitle" : "<span>01</span>리어 콤비네이션 <br class='mobile_br'>램프",
+                            "descript" : "리어 스포일러에서부터 수직으로 떨어지는 디자인에 LED 램프가 더해져 컴팩트하면서도 넓고 여유로운 인상을 전달합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/02_exterior/thurm_EXT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/EXT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/m_EXT01.jpg"
+                            },
+                            {
+                            "title" : "주간 주행등",
+                            "subtitle" : "<span>02</span>주간 주행등",
+                            "descript" : "휠 아치에서 범퍼 하단을 거쳐 후드로 연결되어 대담함과 함께 볼륨감 있는 디자인을 완성시킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/02_exterior/thurm_EXT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/EXT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/m_EXT02.jpg"
+                            },
+                            {
+                            "title" : "헤드램프",
+                            "subtitle" : "<span>03</span>헤드램프",
+                            "descript" : "끝이 뾰족한 타원형 디자인에 블랙 베젤을 가미하여 시선을 압도하는 강렬하고 세련된 첫 인상을 전달합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/02_exterior/thurm_EXT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/EXT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/m_EXT03.jpg"
+                            },
+                            {
+                            "title" : "리어 스포일러",
+                            "subtitle" : "<span>04</span>리어 스포일러",
+                            "descript" : "공기 역학 성능을 강화시켜 공기의 흐름을 강조한 리어 스포일러가 공기 저항계수를 0.28cd까지 낮추어 연비 효율은 물론 역동적인 퍼포먼스에 기여합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/02_exterior/thurm_EXT04.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/EXT04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/02_exterior/m_EXT04.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"interior" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "interior",
+                        "subcategory" :
+                            [{
+                            "title" : "트렁크 공간",
+                            "subtitle" : "<span>01</span>트렁크<br> 공간",
+                            "descript" : "하이브리드 배터리를 뒷자석 시트 하단으로 배치하여 공간 효율성을 높였으며, 뒷좌석 폴딩이 가능하여 다양한 상황에 여유있게 활용할 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/03_interior/thurm_INT01.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/03_interior/INT01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/03_interior/m_INT01.jpg"
+                            },
+                            {
+                            "title" : "60:40 시트 폴딩",
+                            "subtitle" : "<span>02</span>60:40<br> 시트 폴딩",
+                            "descript" : "뒷좌석 시트는 60:40 폴딩이 가능하여 뒷좌석 공간까지 적재 공간으로 여유 있게 활용할 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/03_interior/thurm_INT02.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/03_interior/INT02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/03_interior/m_INT02.jpg"
+                            },
+                            {
+                            "title" : "수납공간",
+                            "subtitle" : "<span>03</span>수납공간",
+                            "descript" : "다양한 수납공간을 배치하여 운전자 뿐 아니라 동승자에게도 편리하고 실용적인 공간을 제공합니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/03_interior/thurm_INT03.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/03_interior/INT03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/03_interior/m_INT03.jpg"
+                            }]
+                    }
+                ]}
+            ]
+        },
+        {"features" : [
+                {"tabmenu" : [
+                    {
+                        "title" : "features",
+                        "subcategory" :
+                            [{
+                            "title" : "하이브리드 배터리팩",
+                            "subtitle" : "<span>01</span>하이브리드<br>배터리팩",
+                            "descript" : "도심형 하이브리드카 차체에 최적화된 배터리팩으로 크기를 최소화시켜 배터리를 경량화하였습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/04_features/thurm_FTS01.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/04_features/FTS01.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/04_features/m_FTS01.jpg"
+                            },
+                            {
+                            "title" : "서스펜션",
+                            "subtitle" : "<span>02</span>서스펜션",
+                            "descript" : "전륜에는 맥퍼슨 스트럿 타입의 서스펜션이, 후륜에는 토션빔 타입의 서스펜션이 장착되어 실내 공간을 최대한 활용함과 동시에 진동을 최소화하여 부드럽고 안락한 승차감을 제공하는 컴팩트한 차체에 적합한 서스펜션 구조로 설계되었습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/04_features/thurm_FTS02.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/04_features/FTS02.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/04_features/m_FTS02.jpg"
+                            },
+                            {
+                            "title" : "하이브리드 시스템",
+                            "subtitle" : "<span>03</span>하이브리드<br>시스템",
+                            "descript" : "프리우스C에는 시스템 총 출력 101px의 컴팩트한 차체에 적합한 하이브리드 시스템이 장착되었습니다.  냉각 EGR시스템을 채택하여 연비 향상을 실현하고 전기식 워터 펌프 적용으로 연비와 우수한 난방 성능을 자랑하며 각 부분의 기계적 마찰이 감소되어 연료 효율을 향상시킵니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/04_features/thurm_FTS03.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/04_features/FTS03.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/04_features/m_FTS03.jpg"
+                            },
+                            {
+                            "title" : "드라이빙 모드",
+                            "subtitle" : "<span>04</span>EV/ECO 모드",
+                            "descript" : "프리우스C의 하이브리드 시스템은 2가지 드라이빙 모드를 제공합니다. ECO모드는 연비 효율을 향상 시키며 친환경 주행을 가능케 하고 전기모터로만 운행되는 EV모드로 편안한 주행을 즐길 수 있습니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/04_features/thurm_FTS04.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/04_features/FTS04.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/04_features/m_FTS04.jpg"
+                            },
+                            {
+                            "title" : "9개 SRS 에어백",
+                            "subtitle" : "<span>05</span>9개<br>SRS 에어백",
+                            "descript" : "앞좌석 쿠션 에어백 및 운전석 무릎 에어백을 포함한 총 9개의 SRS 에어백이 탑재되어 충돌이 발생했을 경우 운전자와 동승자의 피해를 줄여줍니다.",
+                            "thumbnail" : "../../images/model_view/MODEL_PRIUSC/04_features/thurm_FTS05.png",
+                            "orgImage" : "../../images/model_view/MODEL_PRIUSC/04_features/FTS05.jpg",
+                            "mImage" : "../../images/model_view/MODEL_PRIUSC/04_features/m_FTS05.jpg"
+                            }
+			    ]
+                    }
+                ]}
+            ]
+        }
+    ],
+    "gallery" : [
+        {"dataList" : [{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/m_GLY01.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/GLY01.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/m_GLY02.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/GLY02.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/m_GLY03.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/GLY03.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/m_GLY04.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/GLY04.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/m_GLY05.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/GLY05.jpg",
+        "link" : "#"
+    },{
+        "title" : "",
+        "m_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/m_GLY06.jpg",
+        "pc_img" : "../../images/model_view/MODEL_PRIUSC/05_gallery/GLY06.jpg",
+        "link" : "#"
+    }
+     ]}
+    ],
+    "colors" : [
+        {
+            "colorName" : "오렌지 펄 크리스탈 샤인",
+            "colorCode" : "#e79700",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_1.jpg"
+        },
+        {
+            "colorName" : "옐로우",
+            "colorCode" : "#f6c800",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_2.jpg"
+        },
+        {
+            "colorName" : "옐로우 마이카 메탈릭",
+            "colorCode" : "#b8c800",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_3.jpg"
+        },
+        {
+            "colorName" : "클리어 에머랄드 펄 크리스탈 샤인",
+            "colorCode" : "#62c0c9",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_4.jpg"
+        },
+        {
+            "colorName" : "블루 마이카",
+            "colorCode" : "#2b5a99",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_5.jpg"
+        },
+        {
+            "colorName" : "수퍼 레드",
+            "colorCode" : "#c83b2e",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_6.jpg"
+        },
+        {
+            "colorName" : "베이지",
+            "colorCode" : "#d4c8b9",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_7.jpg"
+        },
+        {
+            "colorName" : "수퍼 화이트",
+            "colorCode" : "#fdfdfd",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_8.jpg"
+        },
+        {
+            "colorName" : "화이트 펄 크리스탈 샤인",
+            "colorCode" : "#f8f7f6",
+            "strokeOption" : true,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_9.jpg"
+        },
+        {
+            "colorName" : "실버 메탈릭",
+            "colorCode" : "#d9d9d9",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_10.jpg"
+        },
+        {
+            "colorName" : "그레이 메탈릭",
+            "colorCode" : "#838383",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_11.jpg"
+        },
+        {
+            "colorName" : "블랙 마이카",
+            "colorCode" : "#262624",
+            "strokeOption" : false,
+            "carImg" : "../../images/model_view/MODEL_PRIUSC/06_colors/color_12.jpg"
+        }
+    ],
+    "specsHtml" : [
+        {
+            "type" : "PRIUS C",
+            "specImg" : "../../images/model_view/MODEL_PRIUSC/07_specs/specA.jpg",
+            "modelPrice" : [
+                {"modelName" : "PRIUS C", "price" : "24,900,000 원"}
+            ]
+        },
+        "<div class=\"specs\"><div class=\"specs_inner\"><div class=\"specs_list\"><ul><li><h3>제원</h3><div class=\"spl_inner\"><dl><dt>전장x전폭x전고</dt><dd class=\"callValue\">4,050mm X 1,695mm X 1,445mm</dd></dl><dl><dt>축거</dt><dd class=\"callValue\">2,550</dd></dl><dl><dt>윤거 (전/후)</dt><dd class=\"callValue\">1,485 / 1,475</dd></dl><dl><dt>공차 중량</dt><dd class=\"callValue\">1,150kg</dd></dl><dl><dt>차량 총 중량</dt><dd class=\"callValue\">1,475kg</dd></dl></div></li><li><h3>엔진</h3><div class=\"spl_inner\"><dl><dt>명칭 / 형식</dt><dd class=\"callValue\">직렬 4기통 가솔린 엔진</dd></dl><dl><dt>배기량</dt><dd class=\"callValue\">1,497 cc</dd></dl><dl class=\"new_2depth\"><dt>최고 출력</dt><dd><dl class=\"spl_2depth\"><dt>엔진출력</dt><dd class=\"callValue\">72PS / 4,800rpm</dd></dl><dl class=\"spl_2depth\"><dt>전기모터출력</dt><dd class=\"callValue\">61PS / 3,500rpm</dd></dl><dl class=\"spl_2depth\"><dt>총 시스템 출력</dt><dd class=\"callValue\">101PS</dd></dl></dd></dl><dl><dt>최대 토크</dt><dd class=\"callValue\">11.3kg·m / 3,600~4,400rpm</dd></dl><dl class=\"new_2depth\"><dt>도심/고속도로/복합연비</dt><dd class=\"callValue depth_padding\">19.4km/ℓ , 17.7km/ℓ , 18.6km/ℓ(1등급) </dd></dl><dl><dt>CO<sub>2</sub> 배출량</dt><dd class=\"callValue\">84 g/km</dd></dl></div></li><li><h3>트랜스미션</h3><div class=\"spl_inner\"><dl><dt>트랜스미션</dt><dd class=\"callValue\">무단 자동 변속기(e-CVT)</dd></dl></div></li></ul><ul class=\"sec\"><li><h3>샤시</h3><div class=\"spl_inner\"><dl><dt>서스펜션 (전/후)</dt><dd class=\"callValue\">맥퍼슨 스트럿 / 토션빔</dd></dl><dl><dt>제동장치 (전/후)</dt><dd class=\"callValue\">벤틸레이티드 디스크 / 드럼브레이크</dd></dl><dl><dt>연료탱크용량</dt><dd class=\"callValue\">36ℓ</dd></dl><dl><dt>구동방식</dt><dd class=\"callValue\">전륜구동</dd></dl><dl><dt>타이어</dt><dd class=\"callValue\">175 / 65R15</dd></dl><dl><dt>승차 정원</dt><dd class=\"callValue\">5명</dd></dl></div></li><li class=\"no_margin\"><h3>타이어 효율 등급</h3><div class=\"spl_inner\"><dl><dt>타이어</dt><dd class=\"callValue\">175/65R15</dd></dl><dl><dt>타이어 제조사</dt><dd class=\"callValue\">Bridgestone</dd></dl><dl><dt>회전저항계수</dt><dd class=\"callValue\">4</dd></dl><dl><dt>젖은 노면 제동력 지수</dt><dd class=\"callValue\">4</dd></dl></div></li></ul><div class=\"specs_bottom\"><ul><li>* 회전 저항 등급 : 타이어에 걸리는 하중에 대한 회전저항의 비</li><li class=\"more_ma\">* 젖은 노면 제동력 등급 : 기준 타이어 대비 시험대상 타이어의 젖은 노면 제동성능 비율</li><li class=\"more_ma2\">* 본 홈페이지에 게재된 이미지는 고객의 이해를 돕기 위해 연출된 것으로 실제 판매 모델과 차이가 있을 수 있습니다.</li><li class=\"more_ma2\">* 본 홈페이지에 수록된 컬러, 제원 및 사양은 모델에 따라 다르게 적용되며 예고 없이 변경될 수 있습니다.</li><li class=\"more_ma2\">* 차량 가격 및 사양 품목은 가까운 토요타 전시장을 통해서 반드시 확인하시기 바랍니다.</li><li class=\"more_ma2\">* 위 연비는 표준모드에 의한 연비로서 도로상태, 운전방법, 차량적재, 정비상태 및 외기온도에 따라 실 주행연비와 차이가 있습니다</li></ul></div></div></div></div>"]
+    }]}
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=750, user-scalable=no">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="transparent"> -->
+	<meta name="description" content="사이트설명">
+	<meta name="keywords" content="사이트검색키워드">
+	<meta name="author" content="Newriver">
+	<meta property="og:title" content="공유제목">
+	<meta property="og:description" content="공유설명">
+	<meta property="og:image" content="공유이미지 800x400">
+	<title>TITLE</title>
+	<!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
+	<link rel="stylesheet" href="../../common/css/font.css">
+	<link rel="stylesheet" href="../../common/css/reset.css">
+	<link rel="stylesheet" href="../../common/css/slick.css">
+	<link rel="stylesheet" href="../../common/css/common.css">
+	<script src="../../common/js/jquery-3.2.1.min.js"></script>
+	<script src="../../common/js/jquery.cookie.js"></script>
+	<script src="../../common/js/mobile-detect.min.js"></script>
+	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/common.js"></script>
+</head>
+<body>
+<div id="app" class="type2 background-bk">
+
+	<header id="header" class="sub opacity-bg">
+		<a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+		<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+	</header>
+
+	<button type="button" id="trgAside" class="trg_aside">
+		<span class="bar1"></span>
+		<span class="bar2"></span>
+		<span class="bar3"></span>
+	</button>
+
+	<div id="gnb">
+		<div class="member">
+			<div class="login">
+				<div class="txt">
+					<p><span class="name">홍길동</span>님</p>
+					<p class="ft">MILEAGE <span class="mileage">30,000</span> <small>p</small></p>
+				</div>
+				<a href="../alert/alert_view.html" class="btn_alert on"></a>
+				<a href="../setting/setting_ios.html" class="btn_setting"></a>
+			</div>
+			<!--				 <div class="logout">-->
+			<!--					<div class="btn_wrap">-->
+			<!--						<a href="../member/login.html" class="login-btn c1" >로그인</a>-->
+			<!--						<a href="../member/join_chk.html" class="member-btn c1" >회원가입</a>-->
+			<!--					</div>-->
+			<!--					<a href="../setting/setting.html" class="btn_setting"></a>-->
+			<!--				</div>-->
+		</div>
+		<ul>
+			<li>
+				<a href="#self">TOYOTA</a>
+				<ul class="depth2">
+					<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+
+
+					<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Contents</a>
+				<ul class="depth2">
+					<li><a href="">트래블로그</a></li>
+					<li><a href="">라이프 스타일</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Models</a>
+				<ul class="depth2">
+					<li><a href="../models/model_list.html">차량 정보</a></li>
+					<li><a href="../models/drive_guide.html">시승 신청</a></li>
+					<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+					<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+				</ul>
+			</li>
+			<!-- 실서버 -->
+			<li>
+				<a href="javascript:void(0);">Service</a>
+				<ul class="depth2">
+					<li><a href="/service/center/list.do">서비스센터 예약</a></li>
+					<li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
+					<li><a href="/service/product/category.do">서비스 상품</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Support</a>
+				<ul class="depth2">
+					<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+					<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+					<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Event / Coupon</a>
+				<ul class="depth2">
+					<li><a href="../event/event_list.html">이벤트</a></li>
+					<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">My Car</a>
+				<ul class="depth2">
+					<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+					<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+					<li><a href="../mycar/saving_history.html">차계부</a></li>
+					<!-- 실서버 -->
+					<li class="appArea"><a href="/auth/sign.do?returnUrl=/drivinglog">운행 일지</a></li>
+					<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">My shopping</a>
+				<ul class="depth2">
+					<li><a href="#self">#1</a></li>
+					<li><a href="#self">#2</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self" class="ft-red">Mileage</a>
+				<ul class="depth2">
+					<li><a href="#self">#1</a></li>
+					<li><a href="#self">#2</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!--
+        <div class="utils">
+            <ul>
+                <li>
+                    <a href="../sample/find_parkinglot.html">주차장 찾기</a>
+                </li>
+                <li>
+                    <a href="../sample/find_gasstation.html">주유소 찾기</a>
+                </li>
+            </ul>
+        </div>-->
+	</div>
+	<div class="bottom">
+		<div class="btn_wrap">
+			<a href="#self" class="btn_guide">이용안내</a>
+			<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="content" class="myshopping_wrap purchase_wrap">
+			<div class="intro">
+				<h2 class="tit_page">구매내역</h2>
+			</div>
+			<div class="myshopping_list_area">
+				<ul class="product_list">
+					<li>
+						<div class="product_img">
+							<img src="../../images/new/engine-flush.png" alt="엔진 플러시 첨가제">
+						</div>
+						<div>
+							<p class="product_title">엔진 플러시 첨가제 <span class="product_title_en">(Engine Flush Additive)..</span></p>
+							<p class="product_desc">토요타 순정 엔진 필러시 첨가제 (400ml) | 1개</p>
+						</div>
+					</li>
+				</ul>
+				<div class="info1">
+					<div class="purchase_title sp_between">
+						<p>거래정보</p>
+						<span>결제완료</span>
+					</div>
+					<div class="purchase_detail">
+						<p class="sp_between"><span>주문번호</span><span>toyota2021092744502</span></p>
+						<p class="sp_between"><span>결제방법</span><span>신용/체크카드</span></p>
+						<p class="sp_between"><span>상품금액</span><span>33,000</span></p>
+						<p class="sp_between"><span>마일리지 사용금액</span><span>8,000</span></p>
+					</div>
+					<div class="purchase_price">
+						<p class="sp_between"><span>결제금액</span><span>25,000</span></p>
+					</div>
+				</div>
+				<div class="info2">
+					<div class="purchase_title">
+						<p>주문정보</p>
+					</div>
+					<div class="purchase_detail">
+						<p class="sp_between"><span>성함</span><span>윤예빈</span></p>
+						<p class="sp_between"><span>차대번호</span><span>toyota2021092744502</span></p>
+						<p class="sp_between"><span>연락처</span><span>010-9951-8185</span></p>
+					</div>
+					<div class="purchase_request">
+						<p>요청사항</p>
+						<p class="request_desc"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- id : container -->
+
+</div><!-- id : wrap -->
+</body>
+</html>
