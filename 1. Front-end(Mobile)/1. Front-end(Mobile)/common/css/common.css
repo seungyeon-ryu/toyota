@@ -2408,7 +2408,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #app.background-bk .tit_page{font-size: 40px; letter-spacing: -1px;}
 
 /* inquiry_type_v2 */
-#app.background-bk{background:#101010;}
+#app.background-bk{background:#101010; font-family: NanumSquare, sans-serif; }
 #header.opacity-bg{background:rgba(0,0,0,0.6);}
 #container.onetoone_v2 .intro {padding: 0 60px;}
 #container.onetoone_v2 .tab_area ul li button {width: unset; margin:0 auto; font-size: 30px; line-height: 60px; color: #ffffff; text-align: center; font-weight:700; }
@@ -2416,11 +2416,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #container.onetoone_v2 .tab_area ul li {border-bottom: none;}
 #container.onetoone_v2 .tab_area ul li.on button{border-bottom: 5px solid #fff; color:#fff;}
 #container.onetoone_v2 .tab_area ul li button{border-bottom: 5px solid transparent;}
-#container.onetoone_v2 .onetoone{
-    background:url(../../images/new/topCar_toyota.png), #101010;
-    background-size: contain; background-position: top right;
-    background-repeat: no-repeat;
-    padding: 220px 0 0;}
+#container.onetoone_v2 .onetoone{ background:url(../../images/new/topCar_toyota.png), #101010; background-size: contain; background-position: top right; background-repeat: no-repeat; padding: 220px 0 0;}
 #container.onetoone_v2 .onetoone_type .desc {background:rgba(88,80,93,0.5); color:#fff; padding: 30px 60px; font-weight:700; margin-top:50px; font-size: 32px;}
 #container.onetoone_v2 .onetoone_type .choose_type{background:#101010;  padding: 30px 30px 88px;}
 #container.onetoone_v2 .onetoone_type .choose_type > ul > li{border-radius: 0px;}
@@ -2741,3 +2737,84 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .order_confirm_wrap input[id="sms"] + label {display: inline-block; width: 30px; height: 30px; border: 1px solid #fff; background: transparent; padding-left: 0; margin-right: 27px;}
 .order_confirm_wrap input[id="sms"]:checked + label {background: url(../../images/new/check.png) center center no-repeat;}
 .order_confirm_wrap .sms_check{font-size: 30px; display:flex; align-items: center; padding: 60px 30px;}
+
+/* mileage_main */
+
+.login.mileage{color: #fff;}
+.mileage_login{padding: 190px 30px 80px;}
+.mileage_login .mileage_info{overflow: auto;}
+.mileage_login .mileage_info li{width: 290px; height: 200px; float: left; padding: 38px 29px 0; box-sizing: border-box; border-radius: 6px;}
+.mileage_login .mileage_info li:first-child{margin-right: 20px; background: rgba(51,51,51,0.3);}
+.mileage_login .mileage_info li:last-child{background: url('../../images/new/mile-red.png');}
+
+
+/* event_list_v2 */
+#app.background-bk .event_list_wrap{font-family: NanumSqare; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
+#app.background-bk .event_list_wrap .board_thumb_list.type2 {padding: 220px 30px 100px;}
+#app.background-bk .event_list_wrap .tab_area ul li{text-align: center;}
+#app.background-bk .event_list_wrap .tab_area ul li.on {border-bottom: none;}
+#app.background-bk .event_list_wrap .tab_area ul li {display: table-cell; border-bottom: none;}
+#app.background-bk .event_list_wrap .tab_area ul li a{display: inline-block; font-size: 28px; line-height: 60px; border-bottom: 5px solid transparent; color: #ffffff; text-align: center; font-weight: 700;}
+#app.background-bk .event_list_wrap .tab_area ul li.on a{border-bottom: 5px solid #fff;}
+#app.background-bk .event_list_wrap .board_thumb_list .list li {margin: 30px 0 0;}
+#app.background-bk .event_list_wrap .board_thumb_list .list li a{color: #fff;}
+#app.background-bk .event_list_wrap .board_thumb_list .list li .box {width: 690px; height: 590px; display: block; position: relative;  padding: 0;}
+#app.background-bk .event_list_wrap .txtbox{font-family: 'Open Sans', sans-serif; position: relative; z-index: 1; padding: 45px 30px; color: #fff; font-weight: 700; font-size: 40px; letter-spacing: -1px; line-height: 50px;}
+#app.background-bk .event_list_wrap .txtbox .type{display: inline-block; border-radius: 116px; width: 116px; height: 116px; line-height: 116px; text-align: center; margin-top: -16px; font-weight: 700; padding: 0;}
+#app.background-bk .event_list_wrap .txtbox .type.ing {background: #ed4c3a;}
+#app.background-bk .event_list_wrap .txtbox .type.end {background: #58505d;}
+#app.background-bk .event_list_wrap .box:after {display: none;}
+#app.background-bk .event_list_wrap .box .txtbox .tit:after {display: none;}
+/* event_list_none_v2 */
+
+#app.background-bk .event_list_wrap .board_thumb_list .list li.none {border-radius: 0px; padding: 285px 0 280px; background: none;}
+#app.background-bk .event_list_wrap.none {background: url(../../images/new/event-none-bg.png); background-repeat: no-repeat; background-position: left bottom;}
+#app.background-bk .event_list_wrap.none li.none img {width: 80px; height: 80px;}
+#app.background-bk .event_list_wrap.none li.none p {margin-top: 50px; font-size: 32px; font-weight: 700;}
+#app.background-bk .event_list_wrap .board_thumb_view .box{padding: 203px 0 0;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .event_img{width:100%;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .event_img img{width: 100%;}
+#app.background-bk .event_list_wrap .board_thumb_view .txtbox .tit {margin: 0; padding: 0; letter-spacing: -0.75px; background: none; font-family: NanumSquare, sans-serif; font-weight: 400; font-size: 30px;line-height: 30px; color: #ffffff; text-align: left;}
+#app.background-bk .event_list_wrap .board_thumb_view .txtbox .tit .date{padding-top: 30px; font-size: 25px; color: #beafde;}
+#app.background-bk .event_list_wrap .board_thumb_view .txtbox .sp_between{margin: 30px 0 20px;}
+/*.board_thumb_view .box .txtbox .type {*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*    z-index: 10;*/
+/*    border-radius: 19px;*/
+/*    padding: 0px;*/
+/*    font-weight: 700;*/
+/*    font-size: 24px;*/
+/*    line-height: 38px;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*}*/
+#app.background-bk .event_list_wrap .board_thumb_view  .txtbox .type {margin-top: -19px;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .contbox {border-top: 1px solid rgba(190,190,190,0.2); padding: 20px 0 70px; background: none;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .contbox .desc {margin: 0 0 0;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .down_file {margin: 50px 0 0; background: none;}
+.board_thumb_view .box .txtbox .down_file dl dt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 191px;
+    font-size: 28px;
+    line-height: 61px;
+    color: #ffffff;
+    text-align: left;
+    text-indent: 30px;
+}
+.board_thumb_view .box .txtbox .down_file dl dt button{background: #ff462d; width: 191px; height: 61px; border-radius: 10px;}
+
+
+.board_thumb_view .box .txtbox .down_file dl dd {
+    overflow: hidden;
+    padding: 0 80px 0 140px;
+    background: url(../../images/common/download.png) right 30px center no-repeat;
+    font-size: 26px;
+    line-height: 76px;
+    color: #90929e;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
