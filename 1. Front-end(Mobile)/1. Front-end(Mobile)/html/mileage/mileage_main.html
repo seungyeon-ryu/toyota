@@ -21,220 +21,407 @@
 	<script src="../../common/js/jquery.cookie.js"></script>
 	<script src="../../common/js/mobile-detect.min.js"></script>
 	<script src="../../common/js/slick.js"></script>
+	<script src="../../common/js/velocity.js"></script>
 	<script src="../../common/js/common.js"></script>
 </head>
 <body>
-	<div id="app" class="type2 background-bk">
+<div id="app" class="fix">
 
-		<header id="header" class="sub">
-            <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
-			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
-		</header>
+	<header id="header">
+		<h1 class="logo"><a href="./index_before.html"><img src="../../images/common/logo.png" alt=""></a></h1>
+		<a href="./index_after.html" class="after"></a><!-- 삭제 -->
+	</header>
 
-		<button type="button" id="trgAside" class="trg_aside">
-			<span class="bar1"></span>
-			<span class="bar2"></span>
-			<span class="bar3"></span>
-		</button>
+	<button type="button" id="trgAside" class="trg_aside">
+		<span class="bar1"></span>
+		<span class="bar2"></span>
+		<span class="bar3"></span>
+	</button>
 
-		<div id="gnb">
-			<div class="member">
-				<div class="login">
-					<div class="txt">
-						<p><span class="name">홍길동</span>님</p>
-						<p class="ft">MILEAGE <span class="mileage">30,000</span> <small>p</small></p>
-					</div>
-					<a href="../alert/alert_view.html" class="btn_alert on"></a>
-					<a href="../setting/setting_ios.html" class="btn_setting"></a>
+	<div id="gnb">
+		<div class="member">
+			<div class="login">
+				<div class="txt">
+					<p><span class="name">홍길동</span>님</p>
+					<p class="ft">MILEAGE <span class="mileage">30,000</span> <small>p</small></p>
 				</div>
-<!--				 <div class="logout">-->
-<!--					<div class="btn_wrap">-->
-<!--						<a href="../member/login.html" class="login-btn c1" >로그인</a>-->
-<!--						<a href="../member/join_chk.html" class="member-btn c1" >회원가입</a>-->
-<!--					</div>-->
-<!--					<a href="../setting/setting.html" class="btn_setting"></a>-->
-<!--				</div>-->
+				<a href="../alert/alert_view.html" class="btn_alert on"></a>
+				<a href="../setting/setting_ios.html" class="btn_setting"></a>
 			</div>
-			<ul>
-				<li>
-					<a href="#self">TOYOTA</a>
-					<ul class="depth2">
-						<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
+			<!--				 <div class="logout">-->
+			<!--					<div class="btn_wrap">-->
+			<!--						<a href="../member/login.html" class="login-btn c1" >로그인</a>-->
+			<!--						<a href="../member/join_chk.html" class="member-btn c1" >회원가입</a>-->
+			<!--					</div>-->
+			<!--					<a href="../setting/setting.html" class="btn_setting"></a>-->
+			<!--				</div>-->
+		</div>
+		<ul>
+			<li>
+				<a href="#self">TOYOTA</a>
+				<ul class="depth2">
+					<li><a href="../toyota/showroom_list.html">전시장 안내</a></li>
 
 
-						<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
-					</ul>
+					<li><a href="../toyota/notice_list.html">공지/뉴스</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Contents</a>
+				<ul class="depth2">
+					<li><a href="">트래블로그</a></li>
+					<li><a href="">라이프 스타일</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Models</a>
+				<ul class="depth2">
+					<li><a href="../models/model_list.html">차량 정보</a></li>
+					<li><a href="../models/drive_guide.html">시승 신청</a></li>
+					<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
+					<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
+				</ul>
+			</li>
+			<!-- 실서버 -->
+			<li>
+				<a href="javascript:void(0);">Service</a>
+				<ul class="depth2">
+					<li><a href="/service/center/list.do">서비스센터 예약</a></li>
+					<li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
+					<li><a href="/service/product/category.do">서비스 상품</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Support</a>
+				<ul class="depth2">
+					<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
+					<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
+					<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">Event / Coupon</a>
+				<ul class="depth2">
+					<li><a href="../event/event_list.html">이벤트</a></li>
+					<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">My Car</a>
+				<ul class="depth2">
+					<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
+					<li><a href="../mycar/tune_list.html">정비 관리</a></li>
+					<li><a href="../mycar/saving_history.html">차계부</a></li>
+					<!-- 실서버 -->
+					<li class="appArea"><a href="/auth/sign.do?returnUrl=/drivinglog">운행 일지</a></li>
+					<li><a href="../mycar/mysc.html">나만의 SC</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self">My shopping</a>
+				<ul class="depth2">
+					<li><a href="#self">#1</a></li>
+					<li><a href="#self">#2</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#self" class="ft-red">Mileage</a>
+				<ul class="depth2">
+					<li><a href="#self">#1</a></li>
+					<li><a href="#self">#2</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!--
+        <div class="utils">
+            <ul>
+                <li>
+                    <a href="../sample/find_parkinglot.html">주차장 찾기</a>
+                </li>
+                <li>
+                    <a href="../sample/find_gasstation.html">주유소 찾기</a>
+                </li>
+            </ul>
+        </div>-->
+	</div>
+	<div class="bottom">
+		<div class="btn_wrap">
+			<a href="#self" class="btn_guide">이용안내</a>
+			<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
+		</div>
+	</div>
+
+	<div id="main" class="login mileage">
+		<div class="mileage_login">
+			<ul class="mileage_info">
+				<li>
+					<p>TOYOTA 86 <span class=""></span></p>
+					<h3>71,200<small>km</small></h3>
+					<p>Update 2018-11-12<span class="reload"></span></p>
 				</li>
 				<li>
-					<a href="#self">Contents</a>
-					<ul class="depth2">
-						<li><a href="">트래블로그</a></li>
-						<li><a href="">라이프 스타일</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#self">Models</a>
-					<ul class="depth2">
-						<li><a href="../models/model_list.html">차량 정보</a></li>
-						<li><a href="../models/drive_guide.html">시승 신청</a></li>
-						<li><a href="../models/promo_view.html">이 달의 금융프로모션</a></li>
-						<li><a href="uniwebview://message?action=0">AR/VR 메뉴얼</a></li>
-					</ul>
-				</li>
-				<!-- 실서버 -->
-				<li>
-					<a href="javascript:void(0);">Service</a>
-					<ul class="depth2">
-						<li><a href="/service/center/list.do">서비스센터 예약</a></li>
-						<li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
-						<li><a href="/service/product/category.do">서비스 상품</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#self">Support</a>
-					<ul class="depth2">
-						<li><a href="../support/sos.html">SOS 긴급 출동</a></li>
-						<li><a href="../support/inquiry_type.html">1:1 문의</a></li>
-						<li><a href="../support/inquiry_member.html">문의/개선 요청</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#self">Event / Coupon</a>
-					<ul class="depth2">
-						<li><a href="../event/event_list.html">이벤트</a></li>
-						<li><a href="../event/coupon_list.html">쿠폰 정보</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#self">My Car</a>
-					<ul class="depth2">
-						<li><a href="../mycar/mycar_reserved.html">내 차 정보</a></li>
-						<li><a href="../mycar/tune_list.html">정비 관리</a></li>
-						<li><a href="../mycar/saving_history.html">차계부</a></li>
-						<!-- 실서버 -->
-						<li class="appArea"><a href="/auth/sign.do?returnUrl=/drivinglog">운행 일지</a></li>
-						<li><a href="../mycar/mysc.html">나만의 SC</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#self">My shopping</a>
-					<ul class="depth2">
-						<li><a href="#self">#1</a></li>
-						<li><a href="#self">#2</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#self" class="ft-red">Mileage</a>
-					<ul class="depth2">
-						<li><a href="#self">#1</a></li>
-						<li><a href="#self">#2</a></li>
-					</ul>
+					<p>MILEAGE</p>
+					<h3>300,000</h3>
 				</li>
 			</ul>
-			<!--
-			<div class="utils">
-				<ul>
-					<li>
-						<a href="../sample/find_parkinglot.html">주차장 찾기</a>
-					</li>
-					<li>
-						<a href="../sample/find_gasstation.html">주유소 찾기</a>
-					</li>
+			<div class="mycar_checklist">
+				<h3>MY CAR CHECKLIST</h3>
+				<p>미사용 쿠폰이 1개 있습니다.<br/>
+					마지막 점검은 2018년 11월 2일 입니다.</p>
+				<ul class="btn_list">
+					<li><button type="button">내 쿠폰</button></li>
+					<li><button type="button">정비 점검</button></li>
+					<li><button type="button">차계부</button></li>
+					<li><button type="button">마일리지 내역</button></li>
 				</ul>
-			</div>-->
-		</div>
-		<div class="bottom">
-			<div class="btn_wrap">
-				<a href="#self" class="btn_guide">이용안내</a>
-				<a href="../support/sos.html" class="btn_sos">SOS 긴급출동</a>
 			</div>
 		</div>
-
-		<div id="container">
-			<div id="content" class="mileage_wrap">
-                <div class="intro">
-                    <h2 class="tit_page">마일리지 현황</h2>
-                    <div class="hgroup2">
-                        <h3 class="tit">윤예빈 고객님 현황</h3>
-						<div class="mileage_state">
-							<div class="bg">
-								<p class="type">보유 마일리지</p>
-								<p class="point">30,000  <small>p</small></p>
-							</div>
-							<div class="bg-image">
-								<p class="type">소멸예정 마일리지</p>
-								<p class="point">0  <small>p</small></p>
-							</div>
-						</div>
-                    </div>
-                </div>
-                <div class="mileage_list_area">
-					<div class="filter">
-						<div class="title">마일리지 내역</div>
-						<div class="btn_box">
-							<button class="active" type="button" value="1week">1주일</button>
-							<button type="button" value="1month">1개월</button>
-							<button type="button" value="3month">3개월</button>
-							<button type="button" value="date">기간설정</button>
-						</div>
-						<div class="datepick_box">
-							<input class="input-mr" type="date" value="startDate">&nbsp;<div>~</div>&nbsp;
-							<input type="date" value="endDate">
-							<button type="button" >조회</button>
+		<div class="cont_wrap">
+			<section class="location">
+				<div class="position">
+					<div class="weather n-motion n-bottom n-delay1">
+						<span><img src="../../images/new/sun.png" alt="날씨"></span>
+						<span class="hit">23</span>
+						<span class="dust">미세먼지 <b>매우 나쁨</b></span>
+					</div>
+					<div class="address n-motion n-bottom"><span>서울시 강남구</span><button type="button" class="btn_refresh"></button></div>
+				</div>
+				<div class="service n-motion n-bottom n-delay6">
+					<div class="type sp_between"><p>대표 서비스 센터<p></p><button type="button">MORE</button></div>
+					<div class="txtbox">
+						<div class="tit">강남 서비스센터</div>
+						<div class="time">09:00 ~ 18:00</div>
+					</div>
+					<div class="btn_wrap mt50">
+						<div class="fl_c">
+							<a href="../servicecenter/reserve_step1.html">예약하기</a>
+							<a href="tel:010-6541-1552">전화문의</a>
+							<a href="tel:010-6541-1552">나만의 SC</a>
 						</div>
 					</div>
-                    <div class="mileage_list">
-						<div class="mileage_list_title">
-							<p class="count">총 <span>0</span> 건</p>
-							<p class="date">2021.09.02~ 2021.09.09</p>
+				</div>
+				<div class="mysc n-motion n-bottom" style="background-image: url(../../images/main/bg_mysc.jpg);">
+					<div class="txtbox">
+						<div class="img"><img src="../../images/main/mysc.png" alt="박지훈 SC"></div>
+						<div class="sort">토요타 강남</div>
+						<div class="name">박지훈 SC</div>
+						<div class="msg">최고의 컨설팅으로 최선을 다하겠습니다.</div>
+					</div>
+					<div class="btn_wrap mt50">
+						<div class="fl_c">
+							<a href="#self" class="btn70 c1" style="width: 188px;">메세지</a>
+							<a href="tel:010-6541-1552" class="btn70 c1 ml50" style="width: 188px;">전화</a>
 						</div>
-						<ul class="mileage_list_desc">
-							<li>
-								<p>
-									<span class="desc">오일 패키지 구매</span>
-									<span class="point plus">+200</span>
-								</p>
-								<p>
-									<span class="date">2021.09.17</span>
-									<span class="point-desc">적립</span>
-								</p>
-							</li>
-							<li>
-								<p>
-									<span class="desc">오일 패키지 구매</span>
-									<span class="point minus">-4500</span>
-								</p>
-								<p>
-									<span>2021.09.17</span>
-									<span class="point-desc">사용</span>
-								</p>
-							</li>
-							<li>
-								<p>
-									<span class="desc">오일 패키지 구매</span>
-									<span class="point plus">+200</span>
-								</p>
-								<p>
-									<span class="date">2021.09.17</span>
-									<span class="point-desc">적립</span>
-								</p>
-							</li>
-							<li>
-								<p>
-									<span class="desc">오일 패키지 구매</span>
-									<span class="point plus">+200</span>
-								</p>
-								<p>
-									<span class="date">2021.09.17</span>
-									<span class="point-desc">적립</span>
-								</p>
-							</li>
-						</ul>
-                    </div>
-                </div>
-            </div>
-        </div><!-- id : container -->
+					</div>
+				</div>
+			</section>
+			<section class="life_area"><!-- [D] 컨텐츠 하나일 시 .single 추가 -->
+				<div class="life">
+					<div class="sectit n-motion n-bottom">LIFE STYLE</div>
+					<div class="life_slider n-motion n-bottom n-delay2">
+						<a href="../toyota/contents_view01.html">
+							<img src="../../images/main/life_slider01.jpg" alt="">
+							<div class="txtbox">
+								<div class="tit">
+									<div class="n-motion n-bottom n-delay1">어서 와,</div>
+									<div class="n-motion n-bottom n-delay3">송리단길은 처음이지?</div>
+								</div>
+								<div class="date n-motion n-bottom n-delay5">2019.02.22</div>
+							</div>
+						</a>
+						<a href="../toyota/contents_view03.html">
+							<img src="../../images/main/life_slider02.jpg" alt="">
+							<div class="txtbox">
+								<div class="tit">
+									<div class="n-motion n-bottom n-delay1">내안에 너있다</div>
+									<div class="n-motion n-bottom n-delay3">KIDULT</div>
+								</div>
+								<div class="date n-motion n-bottom n-delay5">2019.02.22</div>
+							</div>
+						</a>
+						<a href="../toyota/contents_view01.html">
+							<img src="../../images/temp/magazine/young_forty/mian_life-style_01_thum.jpg" alt="">
+							<div class="txtbox">
+								<div class="tit">
+									<div class="n-motion n-bottom n-delay1">어서 와,</div>
+									<div class="n-motion n-bottom n-delay3">송리단길은 처음이지?</div>
+								</div>
+								<div class="date n-motion n-bottom n-delay5">2019.02.22</div>
+							</div>
+						</a>
+						<!-- <a href="#self">
+                            <img src="../../images/main/life_slider03.jpg" alt="">
+                            <div class="txtbox">
+                                <div class="tit">
+                                    <div class="n-motion n-bottom n-delay1">문화적 만족감을 높여주는</div>
+                                    <div class="n-motion n-bottom n-delay3">LIFE STYLE SHOP</div>
+                                </div>
+                                <div class="date n-motion n-bottom n-delay5">2019.01.08</div>
+                            </div>
+                        </a> -->
+					</div>
+				</div>
+			</section>
+			<section class="large_area arvr n-motion n-bottom">
+				<a href="uniwebview://message?action=0">
+					<img src="../../images/main/arvr.jpg" alt="">
+					<div class="txtbox">
+						<div class="subtit n-motion n-bottom n-delay2">ENJOY YOUR STYLE</div>
+						<div class="tit">
+							<div class="n-motion n-bottom n-delay2">AR / VR</div>
+						</div>
+					</div>
+				</a>
+			</section>
+			<section class="inner">
+				<a class="event n-motion n-bottom" href="../event/event_view.html" style="background-image: url(../../images/main/main_event.jpg)">
+					<div class="txtbox">
+						<div class="type n-motion n-bottom n-delay1">EVENT</div>
+						<div class="tit n-motion n-bottom n-delay2">
+							<div>TOYOTA TIRE SPECIAL EVENT</div>
+						</div>
+						<div class="date n-motion n-bottom n-delay3">2018.11.21</div>
+					</div>
+				</a>
+				<a class="news n-motion n-bottom" href="../toyota/notice_view.html">
+					<div class="txtbox">
+						<div class="type n-motion n-bottom n-delay1">NEWS</div>
+						<div class="tit">
+							<div class="n-motion n-bottom n-delay2">MAKE YOUR PRIME TIME</div>
+							<div class="n-motion n-bottom n-delay3">in Jeju 당첨자 발표</div>
+						</div>
+						<div class="date n-motion n-bottom n-delay4">2018.11.21</div>
+					</div>
+				</a>
+			</section>
+			<section class="large_area n-motion n-bottom">
+				<a href="../models/model_list.html">
+					<img src="../../images/main/models.jpg" alt="">
+					<div class="txtbox">
+						<div class="subtit n-motion n-bottom">EXPLORE YOUR TOYOTA</div>
+						<div class="tit">
+							<div class="n-motion n-bottom">MODELS</div>
+						</div>
+					</div>
+				</a>
+			</section>
+			<section class="customer">
+				<div class="sectit n-motion n-bottom">CUSTOMER CENTER</div>
+				<ul>
+					<li class="n-motion n-bottom n-delay1"><a href="../servicecenter/reserve_step1.html">서비스센터 예약</a></li>
+					<li class="n-motion n-bottom n-delay2"><a href="../mycar/mysc.html">나만의 SC</a></li>
+					<li class="n-motion n-bottom n-delay3"><a href="../support/sos.html">SOS 긴급출동</a></li>
+				</ul>
+			</section>
+		</div>
 
-	</div><!-- id : wrap -->
+		<div class="visual_wrap">
+			<div id="mainVisual" class="visual">
+				<div class="mycar">
+					<div class="img"><img src="../../images/main/myvisual.jpg" alt="나의 차"></div>
+					<div class="txtbox">
+						<div class="weather">
+							<span class="hit m-motion n-left n-delay10">13</span>
+							<span class="dust m-motion n-left n-delay15">미세먼지 농도 : 나쁨</span>
+						</div>
+						<div class="tit m-motion n-left">CAMRY HYBRID</div>
+						<div class="mileage m-motion n-left"><span class="num">7,200</span>km<button type="button" class="btnCircle modify" onclick="newriver.ajaxpopup.open('../@popup/mileage.html');">수정</button></div>
+					</div>
+					<div class="info">
+						<dl class="check m-motion n-bottom">
+							<dt class="m-motion n-bottom">My Checklist</dt>
+							<dd class="m-motion n-bottom">미사용 쿠폰이 <a href="#self" class="link">1개</a> 있습니다.</dd>
+							<dd class="m-motion n-bottom">최근 점검은 2018년 11월 2일 입니다.</dd>
+						</dl>
+						<ul class="quick">
+							<li><a href="../mycar/mysc.html" class="btn90 c1 m-motion n-bottom" style="width: 190px;">나만의 SC</a></li>
+							<li><a href="../mycar/tune_list.html" class="btn90 c1 m-motion n-bottom" style="width: 190px;">정비관리</a></li>
+							<li><a href="../support/sos.html" class="btn90 c2 m-motion n-bottom" style="width: 190px;">긴급출동</a></li>
+						</ul>
+					</div>
+					<div class="indicator first m-motion n-bottom">
+						<button type="button" class="slick_prev"></button>
+						<div class="slider-progress">
+							<span class="progress"></span>
+						</div>
+						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+						<button type="button" class="slick_next"></button>
+					</div>
+				</div>
+				<div class="promo">
+					<img class="img" src="../../images/main/mainvisual01.jpg" alt="">
+					<div class="txtbox">
+						<h2 class="tit">
+							<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+							<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+						</h2>
+						<div class="desc">
+							<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+							<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+						</div>
+						<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+					</div>
+					<div class="indicator">
+						<button type="button" class="slick_prev"></button>
+						<div class="slider-progress">
+							<span class="progress"></span>
+						</div>
+						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+						<button type="button" class="slick_next"></button>
+					</div>
+				</div>
+				<div class="promo">
+					<img class="img" src="../../images/main/mainvisual02.jpg" alt="">
+					<div class="txtbox">
+						<h2 class="tit">
+							<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+							<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+						</h2>
+						<div class="desc">
+							<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+							<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+						</div>
+						<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+					</div>
+					<div class="indicator last">
+						<button type="button" class="slick_prev"></button>
+						<div class="slider-progress">
+							<span class="progress"></span>
+						</div>
+						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+						<button type="button" class="slick_next"></button>
+					</div>
+				</div>
+			</div>
+			<div id="baitDown" class="bait on">
+				<img class="arr" src="../../images/main/bait.png" alt="스크롤다운">
+			</div>
+		</div>
+	</div><!-- id : main -->
+
+	<script>
+		var $bar = $('#main .slider-progress .progress');
+		newriver.slider.mainVisual();
+		newriver.slider.lifeSlider();
+
+		$(document).ready(function(){
+			$('#mainVisual .slick-current').addClass('mv-start');
+			$('.mv-start .m-motion').each(function(index, item){
+				setTimeout(function(){
+					$(item).addClass('m-active');
+				}, index * 120);
+			});
+
+			$bar.velocity({
+				width : '100%'
+			}, {
+				duration : 15000,
+				easing: 'linear'
+			});
+		});
+
+	</script>
+
+</div><!-- id : wrap -->
 </body>
 </html>
