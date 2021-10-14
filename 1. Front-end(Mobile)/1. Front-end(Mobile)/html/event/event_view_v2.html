@@ -16,16 +16,19 @@
 	<link rel="stylesheet" href="../../common/css/font.css">
 	<link rel="stylesheet" href="../../common/css/reset.css">
 	<link rel="stylesheet" href="../../common/css/slick.css">
+	<!-- TODO IDEV syryu 10.14 swiper add -->
+	<link rel="stylesheet" href="../../common/css/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="../../common/css/common.css">
 	<script src="../../common/js/jquery-3.2.1.min.js"></script>
 	<script src="../../common/js/jquery.cookie.js"></script>
 	<script src="../../common/js/mobile-detect.min.js"></script>
 	<script src="../../common/js/slick.js"></script>
+	<!-- TODO IDEV syryu 10.14 swiper add -->
+	<script src="../../common/js/swiper-bundle.min.js"></script>
 	<script src="../../common/js/common.js"></script>
 </head>
 <body>
 	<div id="app" class="background-bk">
-
 		<header id="header" class="sub opacity-bg">
             <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
 			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
@@ -174,43 +177,59 @@
 								<div class="desc mt30 n-motion n-bottom n-delay10">
 									<img src="../../images/new/event5.jpg" alt="">
 								</div>
-								<a href="#self" class="down_file n-motion n-bottom">
-									<dl>
-										<dt><button type="button">DOWNLOAD</button></dt>
-										<dd>다운로드 파일명.jpg</dd>
-									</dl>
-								</a>
+								<div class="down_file n-motion n-bottom">
+									<button type="button">DOWNLOAD</button>
+									<span class="file_name">다운로드 파일명.jpg</span>
+								</div>
 							</div>
 						</div>
                     </div>
-                    <div class="others n-motion n-bottom">
-                        <div class="tit">진행중인 다른 이벤트</div>
-                        <div class="other_events">
-                            <a href="#self" class="slide" style="background-image: url(../../images/event/event_other01.jpg);">
+                    <div class="others n-motion n-bottom swiper mySwiper">
+						<div class="tit">진행중인 <span class="fw-eb">다른 이벤트</span></div>
+                        <div class="swiper-wrapper">
+                            <a href="#self" class="swiper-slide">
+								<img src="../../images/new/event6.jpg" alt="">
                                 <div class="txt">
-                                    2018 TOYOTA HAPPY WINTER<br>
-                                    토요타 겨울 서비스 캠페인
+									2021 TOYOTA TIRE<br/>
+									SPECIAL EVENT
                                 </div>
                             </a>
-                            <a href="#self" class="slide" style="background-image: url(../../images/event/event_list03.jpg);">
+                            <a href="#self" class="swiper-slide">
+								<img src="../../images/new/event7.jpg" alt="">
                                 <div class="txt">
-                                    2018 TOYOTA HAPPY WINTER<br>
-                                    토요타 겨울 서비스 캠페인
+									MAKE YOUR PRIME<br/>
+									TIME in jeju
                                 </div>
                             </a>
-                            <a href="#self" class="slide" style="background-image: url(../../images/event/event_list01.jpg);">
-                                <div class="txt">
-                                    2018 TOYOTA HAPPY WINTER<br>
-                                    토요타 겨울 서비스 캠페인
-                                </div>
-                            </a>
+							<a href="#self" class="swiper-slide">
+								<img src="../../images/new/event6.jpg" alt="">
+								<div class="txt">
+									2021 TOYOTA TIRE<br/>
+									SPECIAL EVENT
+								</div>
+							</a>
                         </div>
                     </div>
 				</div>
 			</div>
         </div><!-- id : container -->
         <script>
-            newriver.slider.eventSlider();
+            // newriver.slider.eventSlider();
+			$(function(){
+				var swiper = new Swiper(".mySwiper", {
+					slidesPerView: "auto",
+					spaceBetween: 14,
+					loop: true,
+					autoplay: true,
+					autoplaySpeed: 400,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+					},
+				});
+
+			})
+
         </script>
     </div><!-- id : wrap -->
 </body>

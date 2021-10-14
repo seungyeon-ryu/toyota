@@ -2765,6 +2765,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #app.background-bk .event_list_wrap .txtbox .type.end {background: #58505d;}
 #app.background-bk .event_list_wrap .box:after {display: none;}
 #app.background-bk .event_list_wrap .box .txtbox .tit:after {display: none;}
+
 /* event_list_none_v2 */
 
 #app.background-bk .event_list_wrap .board_thumb_list .list li.none {border-radius: 0px; padding: 285px 0 280px; background: none;}
@@ -2774,47 +2775,19 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #app.background-bk .event_list_wrap .board_thumb_view .box{padding: 203px 0 0;}
 #app.background-bk .event_list_wrap .board_thumb_view .box .event_img{width:100%;}
 #app.background-bk .event_list_wrap .board_thumb_view .box .event_img img{width: 100%;}
-#app.background-bk .event_list_wrap .board_thumb_view .txtbox .tit {margin: 0; padding: 0; letter-spacing: -0.75px; background: none; font-family: NanumSquare, sans-serif; font-weight: 400; font-size: 30px;line-height: 30px; color: #ffffff; text-align: left;}
+#app.background-bk .event_list_wrap .board_thumb_view .txtbox .tit {margin: 0; padding: 0; letter-spacing: -0.75px; background: none; font-family: NanumSquare, sans-serif; font-weight: 400; font-size: 30px; line-height: 30px; color: #ffffff; text-align: left;}
 #app.background-bk .event_list_wrap .board_thumb_view .txtbox .tit .date{padding-top: 30px; font-size: 25px; color: #beafde;}
 #app.background-bk .event_list_wrap .board_thumb_view .txtbox .sp_between{margin: 30px 0 20px;}
-/*.board_thumb_view .box .txtbox .type {*/
-/*    display: inline-block;*/
-/*    position: relative;*/
-/*    z-index: 10;*/
-/*    border-radius: 19px;*/
-/*    padding: 0px;*/
-/*    font-weight: 700;*/
-/*    font-size: 24px;*/
-/*    line-height: 38px;*/
-/*    color: #ffffff;*/
-/*    text-align: center;*/
-/*}*/
+
 #app.background-bk .event_list_wrap .board_thumb_view  .txtbox .type {margin-top: -19px;}
-#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .contbox {border-top: 1px solid rgba(190,190,190,0.2); padding: 20px 0 70px; background: none;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .contbox {border-top: 1px solid rgba(190,190,190,0.2); padding: 20px 0 0; background: none;}
 #app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .contbox .desc {margin: 0 0 0;}
-#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .down_file {margin: 50px 0 0; background: none;}
-.board_thumb_view .box .txtbox .down_file dl dt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 191px;
-    font-size: 28px;
-    line-height: 61px;
-    color: #ffffff;
-    text-align: left;
-    text-indent: 30px;
-}
-.board_thumb_view .box .txtbox .down_file dl dt button{background: #ff462d; width: 191px; height: 61px; border-radius: 10px;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .down_file {margin: 50px 17px 6px; background: none;line-height: 61px; font-size: 25px; text-align: left;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .down_file button{background: #ff462d; width: 191px; height: 61px; border-radius: 10px; font-size: 22px; font-weight: 700;}
+#app.background-bk .event_list_wrap .board_thumb_view .box .txtbox .down_file .file_name{padding-left: 37px; font-weight: 400; color: #58505d;}
 
-
-.board_thumb_view .box .txtbox .down_file dl dd {
-    overflow: hidden;
-    padding: 0 80px 0 140px;
-    background: url(../../images/common/download.png) right 30px center no-repeat;
-    font-size: 26px;
-    line-height: 76px;
-    color: #90929e;
-    text-align: left;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+#app.background-bk .event_list_wrap .board_thumb_view .others{margin: 0 0 0 30px; padding: 0 0 100px; background: none;}
+#app.background-bk .event_list_wrap .board_thumb_view .tit{border-top: 1px solid rgba(190,190,190,0.2); margin: 0 30px 0 0; padding: 30px 0; text-align: left; font-size: 30px;}
+#app.background-bk .event_list_wrap .board_thumb_view .board_thumb_view .others .other_events .slide:after {display:none;}
+.others .swiper-slide {width: 332px; height: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; flex-direction: column; color: #fff !important; font-size: 26px; font-family: 'Open Sans', sans-serif; line-height: 30px; letter-spacing: -0.65px; font-weight: 700;}
+.others .swiper-slide img {display: block; width: 332px; height: 332px; margin-bottom: 40px;}
