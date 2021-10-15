@@ -2740,15 +2740,47 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 
 /* mileage_main */
 
-.login.mileage{color: #fff;}
+#main.mileage{font-family: NanumSquare, sans-serif}
+.login.mileage{color: #fff;;}
 .mileage_login{padding: 190px 30px 80px;}
-.mileage_login .mileage_info{overflow: auto;}
-.mileage_login .mileage_info li{width: 290px; height: 200px; float: left; padding: 38px 29px 0; box-sizing: border-box; border-radius: 6px;}
+.mileage_login .mileage_info{overflow: auto; position: relative;}
+.mileage_login .mileage_info li{width: 290px; height: 200px; float: left; padding: 36px 29px 17px 29px; box-sizing: border-box; border-radius: 6px; overflow: hidden;}
 .mileage_login .mileage_info li:first-child{margin-right: 20px; background: rgba(51,51,51,0.3);}
 .mileage_login .mileage_info li:last-child{background: url('../../images/new/mile-red.png');}
+.mileage_login .mileage_info li{font-family: OpenSans, sans-serif; font-weight: 700;}
+.mileage_login .mileage_info li p:first-child{font-size: 30px; letter-spacing: -0.75px;}
+.mileage_login .mileage_info li:first-child h3{color: #ff462d;}
+.mileage_login .mileage_info li .edit{width: 60px; height: 60px; display: inline-block; background: url(../../images/new/name.png) 0 0 no-repeat; background-size: 60px 60px; margin-top: -8px; cursor: pointer;}
+.mileage_login .mileage_info li h3{font-size: 52px; letter-spacing: -1.3px; line-height: 48px; margin-top: 6px;}
+.mileage_login .mileage_info li h3 small{font-size: 28px; margin-left: 16px;}
+.mileage_login .mileage_info li p.reload{font-family: NanumSquare, sans-serif; font-size: 22px; color: #afafaf; margin-top: 10px;}
+.mileage_login .mileage_info li p.reload span{width: 16px; height: 16px; display: inline-block; background: url(../../images/new/loading.png) 0 0 no-repeat; margin: 6px 0 0 9px; background-size: 16px 16px; cursor: pointer;}
+.mileage_login img{position: absolute; right:0; top: 350px;}
+.mileage_login .mycar_checklist{font-size: 26px; padding-top: 360px; position: absolute; bottom: 12%;}
+.mileage_login .mycar_checklist h3{font-family: OpenSans, sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -1px;}
+.mileage_login .mycar_checklist p{color: #ccc9ff; padding: 50px 0 54px;}
+.mileage_login .mycar_checklist .btn_list li{float: left; margin-right: 19px;}
+.mileage_login .mycar_checklist .btn_list li:last-child{margin-right: 0px;}
+.mileage_login .mycar_checklist .btn_list li button{width: 148px; height: 70px; line-height: 70px; background: #58505d; border-radius: 10px;}
+.mileage_login .mycar_checklist .btn_list li:last-child button{width: 188px;}
+.mileage_login .mycar_checklist .btn_list li.active button{background: #ff462d;}
+#main.mileage .visual .indicator{bottom: 5%;}
+#main.mileage .cont_wrap .position{display: flex; align-items: center; font-size: 24px; font-family: NanumSquare, sans-serif; letter-spacing: -0.7px;}
+#main.mileage .cont_wrap .position .weather{display: flex; align-items: center; justify-content: center;  color: #fff; padding-right: 0px;}
+#main.mileage .cont_wrap .position .weather .hit{color: #fff; font-size: 48px; font-family: NanumSquare, sans-serif; margin-left: -16px;}
+#main.mileage .cont_wrap .position .weather .dust{color: #ccc9ff; font-size: 24px; margin-left:0;}
+#main.mileage .cont_wrap .position .weather .dust b{color: #fff; font-size: 30px; padding-left: 38px;}
+#main.mileage .cont_wrap .location .position .weather .hit:after {width: 8px; height: 8px; border: 2px solid #fff;}
+#main.mileage .cont_wrap .position .address{display: flex; font-size: 22px; text-align: left; padding-left: 10px;}
+#main.mileage .cont_wrap .service{padding: 70px 0 40px;}
+#main.mileage .cont_wrap .service .btn_wrap {overflow: hidden; width: 100%; display: flex;  text-align: left; padding-top: 50px;}
+#main.mileage .cont_wrap .service .btn_wrap .txtbox{border-bottom: 0; padding:0; margin: 0 10px 0;}
+#main.mileage .cont_wrap .location .service .type p{font-size: 34px; font-weight: 700;}
+#main.mileage .cont_wrap .location .service .more_btn{width: 88px; height: 40px; font-size: 16px; border-radius: 10px; border: 1px solid #444; }
+#main.mileage .cont_wrap .location .service .txtbox .tit {margin: 0; font-weight: 700; font-size: 34px; color: #ff462d; text-align: left;}
+#main.mileage .cont_wrap .location .service .txtbox .time {margin: 0; font-family: unset; font-size: 24px; color: #ccc9ff; font-weight: 700; text-align: left;}
 
-
-/* event_list_v2 */
+    /* event_list_v2 */
 #app.background-bk .event_list_wrap{font-family: NanumSqare; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
 #app.background-bk .event_list_wrap .board_thumb_list.type2 {padding: 220px 30px 100px;}
 #app.background-bk .event_list_wrap .tab_area ul li{text-align: center;}

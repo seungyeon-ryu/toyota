@@ -152,49 +152,113 @@
 	</div>
 
 	<div id="main" class="login mileage">
-		<div class="mileage_login">
-			<ul class="mileage_info">
-				<li>
-					<p>TOYOTA 86 <span class=""></span></p>
-					<h3>71,200<small>km</small></h3>
-					<p>Update 2018-11-12<span class="reload"></span></p>
-				</li>
-				<li>
-					<p>MILEAGE</p>
-					<h3>300,000</h3>
-				</li>
-			</ul>
-			<div class="mycar_checklist">
-				<h3>MY CAR CHECKLIST</h3>
-				<p>미사용 쿠폰이 1개 있습니다.<br/>
-					마지막 점검은 2018년 11월 2일 입니다.</p>
-				<ul class="btn_list">
-					<li><button type="button">내 쿠폰</button></li>
-					<li><button type="button">정비 점검</button></li>
-					<li><button type="button">차계부</button></li>
-					<li><button type="button">마일리지 내역</button></li>
-				</ul>
+		<div class="visual_wrap">
+			<div id="mainVisual" class="visual">
+				<div class="mileage_login">
+					<ul class="mileage_info">
+						<li>
+							<p>TOYOTA 86 <span class="edit"></span></p>
+							<h3>71,200<small>km</small></h3>
+							<p class="reload">Update 2018-11-12<span></span></p>
+						</li>
+						<li>
+							<p>MILEAGE</p>
+							<h3>300,000<small>p</small></h3>
+						</li>
+					</ul>
+					<img src="../../images/new/86_bg.png" alt="토요타">
+					<div class="mycar_checklist">
+						<h3>MY CAR CHECKLIST</h3>
+						<p>미사용 쿠폰이 1개 있습니다.<br/>
+							마지막 점검은 2018년 11월 2일 입니다.</p>
+						<ul class="btn_list">
+							<li class="active"><button type="button">내 쿠폰</button></li>
+							<li><button type="button">정비 점검</button></li>
+							<li><button type="button">차계부</button></li>
+							<li><button type="button">마일리지 내역</button></li>
+						</ul>
+					</div>
+					<div class="indicator first m-motion n-bottom">
+						<button type="button" class="slick_prev"></button>
+						<div class="slider-progress">
+							<span class="progress"></span>
+						</div>
+						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+						<button type="button" class="slick_next"></button>
+					</div>
+				</div>
+				<div class="promo">
+					<img class="img" src="../../images/main/mainvisual01.jpg" alt="">
+					<div class="txtbox">
+						<h2 class="tit">
+							<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+							<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+						</h2>
+						<div class="desc">
+							<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+							<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+						</div>
+						<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+					</div>
+					<div class="indicator">
+						<button type="button" class="slick_prev"></button>
+						<div class="slider-progress">
+							<span class="progress"></span>
+						</div>
+						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+						<button type="button" class="slick_next"></button>
+					</div>
+				</div>
+				<div class="promo">
+					<img class="img" src="../../images/main/mainvisual02.jpg" alt="">
+					<div class="txtbox">
+						<h2 class="tit">
+							<div class="m-motion n-bottom n-delay1">ALL NEW</div>
+							<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
+						</h2>
+						<div class="desc">
+							<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
+							<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
+						</div>
+						<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
+					</div>
+					<div class="indicator last">
+						<button type="button" class="slick_prev"></button>
+						<div class="slider-progress">
+							<span class="progress"></span>
+						</div>
+						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
+						<button type="button" class="slick_next"></button>
+					</div>
+				</div>
 			</div>
 		</div>
+
 		<div class="cont_wrap">
 			<section class="location">
-				<div class="position">
-					<div class="weather n-motion n-bottom n-delay1">
+				<div class="position n-motion n-bottom n-delay1">
+					<div class="weather">
 						<span><img src="../../images/new/sun.png" alt="날씨"></span>
 						<span class="hit">23</span>
-						<span class="dust">미세먼지 <b>매우 나쁨</b></span>
+						<span class="dust">미세먼지 <b>매우나쁨</b></span>
 					</div>
-					<div class="address n-motion n-bottom"><span>서울시 강남구</span><button type="button" class="btn_refresh"></button></div>
+					<div class="address">
+						<div><p>현재위치</p><p class="fc-v">서울시 강남구</p></div>
+						<button type="button" class="btn_refresh"></button>
+					</div>
 				</div>
 				<div class="service n-motion n-bottom n-delay6">
-					<div class="type sp_between"><p>대표 서비스 센터<p></p><button type="button">MORE</button></div>
-					<div class="txtbox">
-						<div class="tit">강남 서비스센터</div>
-						<div class="time">09:00 ~ 18:00</div>
-					</div>
-					<div class="btn_wrap mt50">
+					<div class="type sp_between"><p>대표 서비스 센터<p></p><button class="more_btn" type="button">MORE</button></div>
+					<div class="btn_wrap">
+						<div class="txtbox">
+							<div class="tit">강남 서비스센터</div>
+							<div class="time">09:00 ~ 18:00</div>
+						</div>
+
 						<div class="fl_c">
-							<a href="../servicecenter/reserve_step1.html">예약하기</a>
+							<a href="../servicecenter/reserve_step1.html">
+								<p>예약하기</p>
+							</a>
 							<a href="tel:010-6541-1552">전화문의</a>
 							<a href="tel:010-6541-1552">나만의 SC</a>
 						</div>
@@ -315,88 +379,6 @@
 			</section>
 		</div>
 
-		<div class="visual_wrap">
-			<div id="mainVisual" class="visual">
-				<div class="mycar">
-					<div class="img"><img src="../../images/main/myvisual.jpg" alt="나의 차"></div>
-					<div class="txtbox">
-						<div class="weather">
-							<span class="hit m-motion n-left n-delay10">13</span>
-							<span class="dust m-motion n-left n-delay15">미세먼지 농도 : 나쁨</span>
-						</div>
-						<div class="tit m-motion n-left">CAMRY HYBRID</div>
-						<div class="mileage m-motion n-left"><span class="num">7,200</span>km<button type="button" class="btnCircle modify" onclick="newriver.ajaxpopup.open('../@popup/mileage.html');">수정</button></div>
-					</div>
-					<div class="info">
-						<dl class="check m-motion n-bottom">
-							<dt class="m-motion n-bottom">My Checklist</dt>
-							<dd class="m-motion n-bottom">미사용 쿠폰이 <a href="#self" class="link">1개</a> 있습니다.</dd>
-							<dd class="m-motion n-bottom">최근 점검은 2018년 11월 2일 입니다.</dd>
-						</dl>
-						<ul class="quick">
-							<li><a href="../mycar/mysc.html" class="btn90 c1 m-motion n-bottom" style="width: 190px;">나만의 SC</a></li>
-							<li><a href="../mycar/tune_list.html" class="btn90 c1 m-motion n-bottom" style="width: 190px;">정비관리</a></li>
-							<li><a href="../support/sos.html" class="btn90 c2 m-motion n-bottom" style="width: 190px;">긴급출동</a></li>
-						</ul>
-					</div>
-					<div class="indicator first m-motion n-bottom">
-						<button type="button" class="slick_prev"></button>
-						<div class="slider-progress">
-							<span class="progress"></span>
-						</div>
-						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
-						<button type="button" class="slick_next"></button>
-					</div>
-				</div>
-				<div class="promo">
-					<img class="img" src="../../images/main/mainvisual01.jpg" alt="">
-					<div class="txtbox">
-						<h2 class="tit">
-							<div class="m-motion n-bottom n-delay1">ALL NEW</div>
-							<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
-						</h2>
-						<div class="desc">
-							<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
-							<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
-						</div>
-						<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
-					</div>
-					<div class="indicator">
-						<button type="button" class="slick_prev"></button>
-						<div class="slider-progress">
-							<span class="progress"></span>
-						</div>
-						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
-						<button type="button" class="slick_next"></button>
-					</div>
-				</div>
-				<div class="promo">
-					<img class="img" src="../../images/main/mainvisual02.jpg" alt="">
-					<div class="txtbox">
-						<h2 class="tit">
-							<div class="m-motion n-bottom n-delay1">ALL NEW</div>
-							<div class="m-motion n-bottom n-delay1">AVALON HYBRID</div>
-						</h2>
-						<div class="desc">
-							<div class="m-motion n-bottom n-delay1">변화로 완성된 하이브리드의 품격</div>
-							<div class="m-motion n-bottom n-delay1">과감한 본능을 깨우다</div>
-						</div>
-						<a href="#self" class="btn80 c1 mt70 m-motion n-bottom n-delay1" style="width: 248px;">EXPLORE</a>
-					</div>
-					<div class="indicator last">
-						<button type="button" class="slick_prev"></button>
-						<div class="slider-progress">
-							<span class="progress"></span>
-						</div>
-						<div class="page_num"><span class="current"></span><span> / </span><span class="total"></span></div>
-						<button type="button" class="slick_next"></button>
-					</div>
-				</div>
-			</div>
-			<div id="baitDown" class="bait on">
-				<img class="arr" src="../../images/main/bait.png" alt="스크롤다운">
-			</div>
-		</div>
 	</div><!-- id : main -->
 
 	<script>
