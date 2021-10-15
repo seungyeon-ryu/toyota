@@ -2765,22 +2765,42 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .mileage_login .mycar_checklist .btn_list li:last-child button{width: 188px;}
 .mileage_login .mycar_checklist .btn_list li.active button{background: #ff462d;}
 #main.mileage .visual .indicator{bottom: 5%;}
-#main.mileage .cont_wrap .position{display: flex; align-items: center; font-size: 24px; font-family: NanumSquare, sans-serif; letter-spacing: -0.7px;}
+#main.mileage .cont_wrap .position{height: 180px; display: flex; align-items: center; justify-content: space-between; background: #000; font-size: 24px; font-family: NanumSquare, sans-serif; letter-spacing: -0.7px; padding: 0 30px;}
 #main.mileage .cont_wrap .position .weather{display: flex; align-items: center; justify-content: center;  color: #fff; padding-right: 0px;}
 #main.mileage .cont_wrap .position .weather .hit{color: #fff; font-size: 48px; font-family: NanumSquare, sans-serif; margin-left: -16px;}
 #main.mileage .cont_wrap .position .weather .dust{color: #ccc9ff; font-size: 24px; margin-left:0;}
 #main.mileage .cont_wrap .position .weather .dust b{color: #fff; font-size: 30px; padding-left: 38px;}
 #main.mileage .cont_wrap .location .position .weather .hit:after {width: 8px; height: 8px; border: 2px solid #fff;}
 #main.mileage .cont_wrap .position .address{display: flex; font-size: 22px; text-align: left; padding-left: 10px;}
-#main.mileage .cont_wrap .service{padding: 70px 0 40px;}
-#main.mileage .cont_wrap .service .btn_wrap {overflow: hidden; width: 100%; display: flex;  text-align: left; padding-top: 50px;}
+#main.mileage .cont_wrap .service{padding: 10px 30px 40px;}
+#main.mileage .cont_wrap .service .btn_wrap {text-align: left; padding-top: 50px;}
 #main.mileage .cont_wrap .service .btn_wrap .txtbox{border-bottom: 0; padding:0; margin: 0 10px 0;}
+#main.mileage .cont_wrap .location {bakcground: #000; padding: 50px 0px 42px;}
 #main.mileage .cont_wrap .location .service .type p{font-size: 34px; font-weight: 700;}
 #main.mileage .cont_wrap .location .service .more_btn{width: 88px; height: 40px; font-size: 16px; border-radius: 10px; border: 1px solid #444; }
 #main.mileage .cont_wrap .location .service .txtbox .tit {margin: 0; font-weight: 700; font-size: 34px; color: #ff462d; text-align: left;}
 #main.mileage .cont_wrap .location .service .txtbox .time {margin: 0; font-family: unset; font-size: 24px; color: #ccc9ff; font-weight: 700; text-align: left;}
+#main.mileage .cont_wrap .location .service .btn_wrap .fl_c a {text-align: center;}
+#main.mileage .cont_wrap .inner {padding: 0px 30px 34px;}
+#main.mileage .cont_wrap .inner .event .txtbox { padding: 355px 0 0;}
+#main.mileage .cont_wrap .inner .txtbox {font-family: OpenSans, sans-serif ; letter-spacing: -0.1px;}
+#main.mileage .cont_wrap .inner .txtbox .type {font-size: 32px; color: #ff462d;}
+#main.mileage .cont_wrap .inner .txtbox .tit div {margin: 0; padding: 0 40px; font-size: 40px;}
+#main.mileage .cont_wrap .inner .txtbox .date {margin: 40px 0 0; font-size: 28px; color: #ccc9ff;}
+#main.mileage .cont_wrap .inner .news {margin: 75px 0 0; padding: 60px 94px 110px; box-sizing: border-box; background: #2a282b; background-repeat: no-repeat;}
+#main.mileage .cont_wrap .inner .news .txtbox .tit div:nth-child(1){padding-bottom: 100px;}
+#main.mileage .cont_wrap .inner .news .txtbox .tit div:nth-child(2){font-family: NanumSquare, sans-serif;}
+#main.mileage .cont_wrap .inner .news .txtbox .tit div:nth-child(3){font-family: NanumSquare, sans-serif;}
+#main.mileage .cont_wrap .inner .news .date{padding: 58px 0 0; border-top: 1px solid rgba(255,255,255,0.3);}
+#main.mileage .cont_wrap .large_area .txtbox .subtit {font-family: NanumSquare, sans-serif; font-size: 40px; font-weight: 800; color: #fff;}
+#main.mileage .cont_wrap .large_area .txtbox .tit {margin: 49px 0 0; font-family: NanumSquare, sans-serif; font-weight: 400; font-size: 34px; line-height: 48px;}
+#main.mileage .cont_wrap .large_area .txtbox .tit .tel_number{color: #ff462d; font-weight: 700; font-size: 40px; letter-spacing: -0.1px;}
+#main.mileage .cont_wrap .large_area.arvr {margin: 0;}
+#main.mileage .cont_wrap .large_area .txtbox>a{width: 248px; height: 80px; margin: 0 auto; border-radius: 10px; border: 1px solid #444; background: #000; line-height: 80px; margin-top: 70px;}
 
-    /* event_list_v2 */
+
+
+/* event_list_v2 */
 #app.background-bk .event_list_wrap{font-family: NanumSqare; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
 #app.background-bk .event_list_wrap .board_thumb_list.type2 {padding: 220px 30px 100px;}
 #app.background-bk .event_list_wrap .tab_area ul li{text-align: center;}
