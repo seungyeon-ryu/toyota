@@ -145,7 +145,7 @@
                     <div class="user_info">
                         <div class="type">구분</div>
                         <div class="box">
-                            <input class="input-disable" type="text" value="앱 사용 관련 문의" readonly>
+                            <input class="input-disable" type="text" value="마일리지/쇼핑 관련 문의" readonly>
                         </div>
                     </div>
                     <div class="user_info">
@@ -153,10 +153,11 @@
                         <div class="box custom-select">
                             <select>
                                 <option value="문의 분류를 선택하세요." selected disabled>문의 분류를 선택하세요.</option>
-                                <option value="불편 및 오류관련 문의">불편 및 오류관련 문의</option>
-                                <option value="차대번호 인증">차대번호 인증</option>
-                                <option value="회원가입 관련">회원가입 관련</option>
-                                <option value="기타 문의">기타 문의</option>
+                                <option value="마일리지 관련 문의">마일리지 관련 문의</option>
+                                <option value="주문/결제 문의">주문/결제 문의</option>
+                                <option value="배송문의">배송문의</option>
+								<option value="반품/취소 문의">반품/취소 문의</option>
+								<option value="기타 문의">기타 문의</option>
                             </select>
                             <button type="button" class="btn_del">삭제</button>
                         </div>
@@ -229,14 +230,7 @@
 									<div style="background-image: url(../../images/main/arvr.jpg);"></div>
                                     <a href="#self" class="del"></a>
                                 </li>
-								<li>
-									<div style="background-image: url(../../images/main/arvr.jpg);"></div>
-									<a href="#self" class="del"></a>
-								</li>
-								<li>
-									<div style="background-image: url(../../images/main/arvr.jpg);"></div>
-									<a href="#self" class="del"></a>
-								</li>
+
                             </ul>
                         </div>
                     </div>
@@ -247,15 +241,15 @@
             </div>
 			<!-- <a href="#self" class="btn120 c4">문의하기</a>[D] 필수항목 입력 시 c4 -> c5로 변경 -->
         </div><!-- id : container -->
-        <script>
-            newriver.loginAction();
+		<script>
+			newriver.loginAction();
 
 			// [D] 시연용
 			$(document).ready(function(){
-                $('textarea').on('keydown', function(){
+				$('textarea').on('keydown', function(){
 					$('.btn120').removeClass('c4').addClass('c5');
-                });
-            });
+				});
+			});
 
 			var x, i, j, l, ll, selElmnt, a, b, c;
 			/*look for any elements with the class "custom-select":*/
@@ -335,7 +329,7 @@
 			/*if the user clicks anywhere outside the select box,
             then close all select boxes:*/
 			document.addEventListener("click", closeAllSelect);
-        </script>
+		</script>
 
 	</div><!-- id : wrap -->
 </body>
