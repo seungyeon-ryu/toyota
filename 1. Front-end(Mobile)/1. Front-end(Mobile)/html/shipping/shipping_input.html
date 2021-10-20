@@ -22,6 +22,7 @@
 	<script src="../../common/js/mobile-detect.min.js"></script>
 	<script src="../../common/js/slick.js"></script>
 	<script src="../../common/js/common.js"></script>
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
 	<div id="app" class="type2 background-bk">
@@ -124,75 +125,94 @@
 			</div>
 		</div>
 
-		<div id="container" class="onetoone_v2">
-
-			<div id="content" class="onetoone" style="background-image:url(../../images/new/top1on1_toyota.png)">
-                <h2 class="tit_page">1:1 문의</h2>
-                <div class="intro">
-                    <div class="tab_area mb0">
-                        <ul>
-                            <li class="on"><button type="button" onclick="javascript:location='./inquiry_onetoone.html'">1:1 문의하기</button></li>
-                            <li><button type="button" onclick="javascript:location='./inquiry_list.html'">1:1 문의 내역</button></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="onetoone_type">
-                    <div class="desc">
-                        문의 구분을 선택하세요.
-                    </div>
-                    <div class="choose_type">
-                        <ul>
-                            <li class="type_app">
-                                <a href="./inquiry_onetoone_v2.html">
-                                    <div class="tit">
-										<img src="../../images/new/red_button.png" alt="앱 사용 관련 문의">
-										<p>앱 사용 관련 문의</p>
-									</div>
-                                    <div class="info">
-                                        <ul>
-                                            <li>앱 사용 관련한 일반적인 불편/오류 문의</li>
-                                            <li>회원 가입 및 차대번호 인증 등</li>
-											<li class="ft-red">마일리지 및 주문 내역 문의</li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="type_service">
-                                <a href="./inquiry_onetoone_v2.html">
-                                    <div class="tit">
-										<img src="../../images/new/red_button.png" alt="차량 서비스 관련 문의">
-										<p>차량/서비스 관련 문의</p>
-									</div>
-                                    <div class="info">
-                                        <ul>
-                                            <li>차량 구입 문의 / 각종 이벤트 안내</li>
-                                            <li>사고 차량 지원 서비스 / 서비스 불편사항</li>
-                                            <li>차량 운행 시 불편사항 등</li>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </li>
-							<li class="type_mileage">
-								<a href="./inquiry_onetoone_v2.html">
-									<div class="tit">
-										<img src="../../images/new/red_button.png" alt="차량 서비스 관련 문의">
-										<p>마일리지/쇼핑 관련 문의</p>
-									</div>
-									<div class="info">
-										<ul>
-											<li>마일리지 안내</li>
-											<li>주문/결제/배송/반품/취소 문의</li>
-										</ul>
-									</div>
-								</a>
-							</li>
-
-						</ul>
-                    </div>
-                </div>
-            </div>
+		<div id="container">
+			<div id="content" class="shipping_wrap pb90">
+                <h2 class="tit_page">배송지 입력</h2>
+				<div class="input_area">
+					<div class="input_box">
+						<label>배송지명</label>
+						<input type="text" placeholder="배송지명을 입력 해주세요.">
+					</div>
+					<div class="input_box">
+						<label>받는분 이름</label>
+						<input type="text" placeholder="이름을 입력 해주세요.">
+					</div>
+					<div class="input_box">
+						<label>받는분 휴대폰번호</label>
+						<input type="number" placeholder="휴대폰 번호를 입력 해주세요.">
+					</div>
+					<div class="input_box">
+						<label>주소</label>
+						<input type="text" placeholder="주소검색" id="btnPostCode" onclick="javascript:daumPostCode();">
+					</div>
+					<input type="checkbox" id="save" name="check"><label for="save">기본배송지로 저장</label>
+				</div>
+			</div>
+			 <a href="#self" class="btn120 c4">확인</a>[D] 필수항목 입력 시 c4 -> c5로 변경
         </div><!-- id : container -->
+        <script>
+            newriver.loginAction();
 
+			// [D] 시연용
+			$(document).ready(function(){
+                $('textarea').on('keydown', function(){
+					$('.btn120').removeClass('c4').addClass('c5');
+                });
+			});
+        </script>
+		<script>
+			function daumPostCode() {
+				var width   = 500;
+				var height  = 600;
+
+				new daum.Postcode({
+					oncomplete: function(data) {
+						// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+						// 각 주소의 노출 규칙에 따라 주소를 조합한다.
+						// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+						var addr = ''; // 주소 변수
+						var extraAddr = ''; // 참고항목 변수
+
+						//사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+						if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+							addr = data.roadAddress;
+						} else { // 사용자가 지번 주소를 선택했을 경우(J)
+							addr = data.jibunAddress;
+						}
+
+						// 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+						if(data.userSelectedType === 'R'){
+							// 법정동명이 있을 경우 추가한다. (법정리는 제외)
+							// 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+							if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+								extraAddr += data.bname;
+							}
+							// 건물명이 있고, 공동주택일 경우 추가한다.
+							if(data.buildingName !== '' && data.apartment === 'Y'){
+								extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+							}
+							// 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+							if(extraAddr !== ''){
+								extraAddr = ' (' + extraAddr + ')';
+							}
+							// 조합된 참고항목을 해당 필드에 넣는다.
+							document.getElementById("sample6_extraAddress").value = extraAddr;
+
+						} else {
+							document.getElementById("sample6_extraAddress").value = '';
+						}
+
+						// 우편번호와 주소 정보를 해당 필드에 넣는다.
+						document.getElementById('sample6_postcode').value = data.zonecode;
+						document.getElementById("sample6_address").value = addr;
+						// 커서를 상세주소 필드로 이동한다.
+						document.getElementById("sample6_detailAddress").focus();
+
+					}
+				}).open({});
+			}
+		</script>
 	</div><!-- id : wrap -->
 </body>
 </html>

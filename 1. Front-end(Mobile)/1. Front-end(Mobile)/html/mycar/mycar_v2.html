@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv=“content-language” content=“ko”>
+		<meta name="viewport" content="width=750, user-scalable=no, viewport-fit=cover"/>
+		<title>TOYOTA</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../../common/css/font.css">
+		<link rel="stylesheet" href="../../common/css/reset.css">
+		<link rel="stylesheet" href="../../common/css/slick.css">
+		<link rel="stylesheet" href="../../common/css/common.css">
+		<link rel="stylesheet" href="../../common/css/jquery-ui.structure.css">
+		<link rel="stylesheet" id="iosCss">
+
+		<script>
+			var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+			var ratio = window.devicePixelRatio || 1;
+			var screen = {
+				width : window.screen.width * ratio,
+				height : window.screen.height * ratio
+			};
+			var iosCss;
+			if (iOS && screen.width == 1125 && screen.height === 2436 || iOS && screen.width == 828 && screen.height === 1792 || iOS && screen.width == 1242 && screen.height === 2688) {
+				iosCss = '../../common/css/ios-header.css?201910112';
+				document.getElementById('iosCss').setAttribute('href', iosCss);
+			}
+
+			var appVersion 	= '1.6.6';
+			var uagent 		= navigator.userAgent.toLowerCase();
+			var platform 	= navigator.platform.toLowerCase();
+			var isIOS 	  	= false;
+			var isAndroid 	= false;
+			var isPC 	  	= false;
+			var osType		= '';
+
+			if (navigator.platform) {
+				if (!/(win16|win32|win64|mac)/.test(platform)) {
+					isPC = false;
+
+					if(/(iphone|ipad|ipod)/.test(uagent) > 0) {
+						appVersion = '1.6.6';
+						osType = 'I';
+						isIOS = true;
+						isAndroid = false;
+					}
+
+					else {
+						appVersion = '1.6.6';
+						osType = 'A';
+						isIOS = false;
+						isAndroid = true;
+					}
+
+				} else {
+					isPC = true;
+					isIOS = false;
+					isAndroid = false;
+				}
+			}
+
+			var interval = null;
+		</script>
+
+		<!-- public -->
+
+		<script src="../../common/js/jquery-3.2.1.min.js"></script>
+		<script src="../../common/js/jquery.cookie.js"></script>
+		<script src="../../common/js/mobile-detect.min.js"></script>
+		<script src="../../common/js/slick.js"></script>
+		<script src="../../common/js/bootstrap.bundle.min.js"></script>
+		<script src="../../common/js/common.js"></script>
+		<script src="../../common/js/jquery-ui.js"></script>
+		<script src="../../common/js/bodyScrollLock.js"></script>
+		<!-- dev -->
+		<script src="../../common/js/wScratchPad.js"></script>
+		<script src="../../common/js/dcommon.js?201910281"></script>
+		<script src="../../common/js/front.js?2019041201"></script>
+
+		<!-- favicon -->
+		<link rel="shorcut icon" type="image/x-icon" href="../../common/images/icons/toyota_16.ico">
+		<!-- loader -->
+		<script type="text/javascript">
+			const appValid = uagent.indexOf('uniwebview') > -1 ? true : false;
+			const newAppVersion = $.cookie('appVersion');
+			newriver.loaderAction();
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135932530-2"></script>
+		<script type="text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-135932530-2');
+		</script>
+	</head>
+	<body>
+	<div id="app">
+		<header id="header" class="sub">
+			<a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
+			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
+		</header>
+
+		<button type="button" id="trgAside" class="trg_aside">
+			<span class="bar1"></span>
+			<span class="bar2"></span>
+			<span class="bar3"></span>
+		</button>
+
+	<div id="gnb">
+		<div class="member">
+			<div class="login">
+						<div class="txt">
+							<span class="name">손병희</span> 님<br>
+							즐거운 하루 되세요!
+						</div>
+						<a href="/alert/list.do" class="btn_alert "></a>
+						<a href="/formal/setting.do" class="btn_setting"></a>
+					</div>
+				</div>
+		<ul>
+			<li>
+				<a href="javascript:void(0);">TOYOTA</a>
+				<ul class="depth2">
+					<li><a href="/toyota/place/list.do">전시장 안내</a></li>
+					<!-- <li><a href="/toyota/campaign/list.do">캠페인</a></li> -->
+					<li><a href="/toyota/news/list.do">공지/뉴스</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Contents</a>
+				<ul class="depth2">
+					<li><a href="/toyota/travelog/list.do">트래블로그</a></li>
+					<li><a href="/toyota/life/list.do">라이프 스타일</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Models</a>
+				<ul class="depth2">
+					<li><a href="/models/model/list.do">차량 정보</a></li>
+					<li><a href="/models/manual/list.do">사용자 매뉴얼</a></li>
+					<li><a href="/models/demo/info.do">시승 신청</a></li>
+					<!-- <li><a href="/models/promo/info.do">이 달의 금융 프로모션</a></li> -->
+					<li class="appArea"><a href="uniwebview://message?action=0">VR/AR 매뉴얼</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Service</a>
+				<ul class="depth2">
+					<li><a href="/service/center/list.do">서비스센터 예약</a></li>
+					<li><a href="/service/bodyAndPaint/view.do">판금·도장 서비스</a></li>
+					<li><a href="/service/product/category.do">서비스 상품</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Support</a>
+				<ul class="depth2">
+					<li><a href="/support/sos/info.do">SOS 긴급 출동</a></li>
+					<li><a href="/support/contact/info.do">1:1 문의</a></li>
+					<li><a href="/support/improve/info.do">개선요청</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Event / Coupon</a>
+				<ul class="depth2">
+					<li><a href="/evncou/event/list.do">이벤트</a></li>
+					<li><a href="/evncou/coupon/list.do">쿠폰 정보</a></li>
+					<!-- <li><a href="/evncou/superracing/ticketApply.do">슈퍼레이스 티켓 교환코드 등록</a></li> -->
+					<!-- <li><a href="/evncou/superracing/ticketStorege.do">슈퍼레이스 티켓 보관함</a></li> -->
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);">My Car</a>
+				<ul class="depth2">
+					<li><a href="/mycar/info/info.do">내 차 정보</a></li>
+					<li><a href="/mycar/tune/info.do">정비 관리</a></li>
+					<li><a href="/mycar/account/info.do">차계부</a></li>
+
+					<li class="appArea"><a href="/drivinglog">운행 일지</a></li>
+						<li><a href="/mycar/sc/info.do">나만의 SC</a></li>
+				</ul>
+			</li>
+		</ul>
+		<!--
+		<div class="utils appArea">
+			<ul>
+				<li>
+					<a href="/findparkinglot">주차장 찾기</a>
+				</li>
+				<li>
+					<a href="/findgasstation">주유소 찾기</a>
+				</li>
+			</ul>
+		</div>
+		-->
+	</div>
+	<div class="bottom">
+		<div class="btn_wrap">
+			<!-- <a href="tel:080-525-8255" class="btn_guide">고객센터</a> -->
+			<a href="/mycar/sc/info.do" class="btn_guide">나만의SC</a>
+			<a href="/support/sos/info.do" class="btn_sos">SOS 긴급출동</a>
+		</div>
+	</div><!-- 대표차량 -->
+	<div id="container">
+		<div id="content" class="mycar_wrap">
+			<h2 class="tit_page">내 차 정보</h2>
+			<div class="intro" style="background-image: url('../../images/new/AVALON_AXXH50L-AEXGBA_2019.jpg'), url('../../images/new/noconcept.jpg');">
+				<button class="popup n-motion n-bottom" type="button"></button>
+				<a href="javascript:newriver.ajaxpopup.open('/mycar/car/list.do');" class="btn_set n-motion n-bottom" ></a>
+				<div class="name n-motion n-bottom">AVALON HYBRID ( HEV )&ensp;2019</div>
+				<div class="mileage_box n-motion n-bottom">
+					<div class="mileage">
+						<span class="num">5,594</span>km<button type="button" class="btn_modify btnCircle"></button>
+					</div>
+					<div class="date">
+						<span>Update</span><span>2021-09-15</span><button type="button" class="btn_refresh"></button>
+					</div>
+				</div>
+				<div class="info_box n-motion n-bottom">
+					<dl>
+						<dt>출고/구매일자</dt>
+						<dd>2018-10-24</dd>
+					</dl>
+					<dl>
+						<dt>차량 번호</dt>
+						<dd>47주 4834<a href="/mycar/info/update.do" class="btn_modify"></a></dd>
+							</dl>
+					<dl>
+						<dt>차량 애칭</dt>
+						<dd class="yet">내 차의 애칭을 입력하세요.<a href="/mycar/info/update.do" class="btn_modify"></a></dd>
+							</dl>
+				</div>
+			</div>
+			<div class="checklist n-motion n-bottom">
+				<div class="sec_tit">My Car Checklist</div>
+				<ul>
+					<li>
+						<div class="info">
+							<div class="tit">쿠폰 현황</div>
+							<div class="desc"><span class="red1">0</span>/10개</div>
+						</div>
+						<a href="/evncou/coupon/list.do" class="btn60 c1" style="width: 170px;">현황보기</a>
+					</li>
+					<li>
+						<div class="info">
+							<div class="tit">서비스 점검</div>
+							</div>
+						<a href="/service/center/list.do" class="btn60 c1" style="width: 170px;">예약하기</a>
+							</li>
+					<li>
+						<div class="info">
+							<div class="tit">차계부</div>
+						</div>
+						<a href="/mycar/account/info.do" class="btn60 c1" style="width: 170px;">작성하기</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="modal-popup" id="pop">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h3 class="title">중고차 매입, 명의 변경인 경우</h3>
+					<p>자동차 등록증을 지참하여 가까운 서비스센터를<br/>
+						방문 해주세요. 서비스센터에서 정보 업데이트 후<br/>
+						‘내 차 정보’ 에서 차량 등록을 하실 수 있습니다.<br/>
+						<br/>
+						*기존에 정보 업데이트를 하셨어도 앱 이용을 위해<br/>
+						서비스센터를 방문하여 추가 등록하셔야<br/>
+						차량 등록이 가능합니다.
+					</p>
+					<button type="button" class="search">가까운 서비스센터 찾기</button>
+				</div>
+				<button class="close"></button>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="../../common/js/dev/mycar.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		$('.btnCircle').on('click', function () {
+			newriver.ajaxpopup.open('/mycar/info/odometer.do', {openCallback : function () {
+				newriver.odometer.init();
+			}});
+		});
+		
+		$('.btn_refresh').on('click', function () {
+			$('#nForm').basic_post('/mycar/info/autoOdometer.do', '', 'json').done(function (data) {
+				newriver.ajaxpopup.open('/agree/modal/alert.do', { backgroundClose : false }, 
+						{ 'cont' : data.msg, 'action1' : data.code, 'action2' : 'location.reload();' });
+				
+			}).fail(function(){
+				console.log(arguments[1]);
+			});
+		})
+	});
+	</script>
+		<div id="loaderDim" style="display:none;">
+			<div id="loader">
+				<img class="on" src="../../images/common/loading_01.png">
+				<img src="../../images/common/loading_02.png">
+				<img src="../../images/common/loading_03.png">
+				<img src="../../images/common/loading_04.png">
+				<img src="../../images/common/loading_05.png">
+				<img src="../../images/common/loading_06.png">
+				<img src="../../images/common/loading_07.png">
+			</div>
+		</div>
+		</div>
+
+		<script type="text/javascript">
+			var referrerPage = document.referrer;
+			if(referrerPage.indexOf('/auth/sign.do') > -1) {
+				$('#header .back').attr('href', '/main.do');
+			}
+
+			if(!appValid) {
+				$('.appArea').remove();
+			}
+		</script>
+		<script>
+			$(function () {
+				$(".popup").click(function () {    // [임시 팝업 띄우기 위한 소스 개발 붙이실때 삭제 하셔용 ~ ]
+					$(".modal-popup").fadeIn(700);
+				});
+
+				$(".close").click(function () {   // [모달 팝업 닫기 ]
+					$(".modal-popup").fadeOut(300);
+				});
+			});
+
+		</script>
+	</body>
+</html>
