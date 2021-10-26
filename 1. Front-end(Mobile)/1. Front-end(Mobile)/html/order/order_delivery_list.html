@@ -174,7 +174,7 @@
                             <div class="list_box">
                                 <div>
                                     <p class="name">윤예빈<span class="shipping_badge">기본배송지</span></p>
-                                    <p class="tell fc-v">010-1234-5687</p>
+                                    <p class="number fc-v">010-1234-5687</p>
                                     <p class="address">경기도 하남시 미사강변한강로 155<br/>
                                         SKV1센터, 사무동 210호</p>
                                 </div>
@@ -186,7 +186,7 @@
                             <div class="list_box">
                                 <div>
                                     <p class="name">윤예빈<span class="shipping_badge recent">최근배송지</span></p>
-                                    <p class="tell fc-v">010-1234-5687</p>
+                                    <p class="number fc-v">010-1234-5687</p>
                                     <p class="address">경기도 하남시 미사강변한강로 155<br/>
                                         SKV1센터, 사무동 210호</p>
                                 </div>
@@ -204,14 +204,16 @@
                                 <input type="text" placeholder="직접 입력 해주세요.">
                             </div>
                             <div class="input_box">
-                                <label>수령인</label>
+                                <label>수령인<span class="important"></span></label>
                                 <input type="text" placeholder="50자 이내로 입력하세요.">
                             </div>
                             <div class="input_box">
-                                <label>연락처1</label>
+                                <label>연락처1<span class="important"></span></label>
                                 <div class="call_box">
                                     <input type="number">
+                                    <span>~</span>
                                     <input type="number">
+                                    <span>~</span>
                                     <input type="number">
                                 </div>
                             </div>
@@ -219,16 +221,18 @@
                                 <label>연락처2</label>
                                 <div class="call_box">
                                     <input type="number">
+                                    <span>~</span>
                                     <input type="number">
+                                    <span>~</span>
                                     <input type="number">
                                 </div>
                             </div>
                             <div class="input_box">
-                                <label>주소</label>
-                                <div>
-                                    <div><input type="text" id="btnPostCode" onclick="javascript:daumPostCode();"><button type="button">주소검색</button></div>
-                                    <input type="text" disabled>
-                                    <input type="text">
+                                <label>배송지<span class="important"></span></label>
+                                <div class="address_input">
+                                    <div class="in_btn"><input type="text" id="postcode" placeholder="우편번호"><button type="button" onclick="javascript:daumPostCode();">주소검색</button></div>
+                                    <input type="text" id="detailAddress" disabled placeholder="주소">
+                                    <input type="text" id="extraAddress" placeholder="상세주소">
                                 </div>
                             </div>
                         </div>
@@ -240,14 +244,52 @@
 
 </div><!-- id : wrap -->
 </body>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
-    function selectAll(selectAll) {
-        const checkboxes
-            = document.getElementsByName('check');
+    function daumPostCode() {
+        var width   = 500;
+        var height  = 600;
 
-        checkboxes.forEach((checkbox) => {
-            checkbox.checked = selectAll.checked;
-        })
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                $("#postcode").val(data.zonecode);
+                $("#detailAddress").val(addr);
+                $("#extraAddress").focus();
+
+
+            }
+        }).open({
+            left: (window.screen.width / 2) - (width / 2),
+            top: (window.screen.height / 2) - (height / 2)
+        });
     }
 </script>
 </html>
