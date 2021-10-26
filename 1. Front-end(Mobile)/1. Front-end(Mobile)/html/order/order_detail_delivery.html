@@ -153,37 +153,48 @@
     </div>
 
     <div id="container">
-        <div id="content" class="myshopping_wrap order_wrap">
+        <div id="content" class="myshopping_wrap order_wrap" style="background: url(../../images/new/bg-car3.png) right 172px no-repeat;">
             <div class="intro">
                 <h2 class="tit_page">주문/결제</h2>
             </div>
-            <div class="myshopping_list_are cart_list">
-                <ul class="product_list">
-                    <li>
-                        <div class="product_img">
-                            <img src="../../images/new/engine-flush.png" alt="엔진 플러시 첨가제">
-                        </div>
-                        <div>
-                            <p class="product_title">엔진 플러시 첨가제 <span class="product_title_en">(Engine Flush Additive)..</span></p>
-                            <p class="product_desc">토요타 순정 엔진 필러시 첨가제 (400ml) | 1개 </p>
-                            <p class="product_price">9,900원</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="info1">
-                    <div class="purchase_price">
-                        <p class="sp_between"><span>상품금액</span><span>33,000원</span></p>
-                    </div>
-                    <div class="purchase_title sp_between">
-                        <p>합계</p>
-                        <span>33,000원</span>
+            <div class="cart_list">
+                <div class="cell_info">
+                    <div class="sp_between"><p>주문자</p><button type="button">변경</button></div>
+                    <div class="cell_info_detail">
+                        <p class="name">윤예빈</p>
+                        <p class="tell fc-v">010-1234-5687</p>
+                        <p class="address">경기도 하남시 미사강변한강로 155<br/>
+                            SKV1센터, 사무동 210호</p>
+                        <input type="text" placeholder="배송메모를 작성 해주세요.">
                     </div>
                 </div>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion" id="accordionOrder">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                주문상품
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+                            <ul class="product_list accordion-body">
+                                <li>
+                                    <div class="product_img">
+                                        <img src="../../images/new/engine-flush.png" alt="엔진 플러시 첨가제">
+                                    </div>
+                                    <div>
+                                        <p class="product_desc">토요타 굿즈</p>
+                                        <p class="product_title">앰블럼 로고 키링</p>
+                                        <p class="product_count">주문수량 : 1개</p>
+                                        <p class="product_price">33,000원</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                               마일리지
+                                마일리지
                             </button>
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -206,7 +217,6 @@
                                 <p class="sp_between"><span class="fc-v"><img src="../../images/new/m-icon.png" alt="총 적립에정 마일리지">총 적립예정 마일리지</span><span class="fc-or fw-eb">299마일</span></p>
                                 <p class="sp_between"><span></span><span>(기본마일리지 299마일)</span></p>
                             </div>
-                            <p class="sp_between total_price"><span>총 주문금액</span><span class="fw-eb fc-or">25,000원</span></p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -224,22 +234,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                            <div class="accordion-button" >
-                                <input id="sms" type="checkbox" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour"><label for="sms"></label>
-                                <p>주문/배송안내 SMS수신</p>
-                            </div>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                            <div class="accordion-body">
-                                <p>요청사항</p>
-                                <textarea placeholder="차가 막혀서 조금 늦을 수도 있어요."></textarea>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+
                 <div class="order_detail">
+                    <div class="inputbox checkbox">
+                        <input id="sms" type="checkbox" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour"><label for="sms"></label>
+                        <p>주문/배송안내 SMS수신</p>
+                    </div>
+                    <div class="inputbox">
+                        <p>요청사항</p>
+                        <textarea placeholder="차가 막혀서 조금 늦을 수도 있어요."></textarea>
+                    </div>
                     <p class="order_title">결제금액</p>
                     <div class="order_desc">
                         <p class="sp_between"><span>상품 금액</span><span class="fc-v">33,000원</span></p>

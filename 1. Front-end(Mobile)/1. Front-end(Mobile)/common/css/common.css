@@ -2408,7 +2408,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #app.background-bk .tit_page{font-size: 40px; letter-spacing: -1px;}
 
 /* inquiry_type_v2 */
-#app.background-bk{background:#101010; font-family: NanumSquare, sans-serif; }
+#app.background-bk{background:#101010; font-family: NanumSquare, sans-serif; letter-spacing: -0.63px;}
 #header.opacity-bg{background:rgba(0,0,0,0.6);}
 #container.onetoone_v2 .intro {padding: 0 60px;}
 #container.onetoone_v2 .tab_area ul li button {width: unset; margin:0 auto; font-size: 30px; line-height: 60px; color: #ffffff; text-align: center; font-weight:700; }
@@ -2596,7 +2596,6 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .myshopping_wrap .info_card .card_label{margin-right: 28px;}
 .myshopping_wrap .info_card .card_desc{font-weight: 700;}
 .myshopping_wrap .info_car{position: absolute; right: -10px; top: 270px;}
-.myshopping_wrap .myshopping_list_area{padding: 0 0 83px;}
 .myshopping_wrap .list_title{background: rgba(78,70,82,0.3); font-size: 32px; letter-spacing: -0.8px; padding: 30px 60px;}
 .myshopping_wrap .product_list li{padding: 38px 0; margin: 0 32px; display: flex; align-items: center; border-bottom: 1px solid rgba(190,190,190,0.2);}
 .myshopping_wrap .product_list li:last-child{border-bottom: none;}
@@ -2745,6 +2744,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .order_wrap .agree_checkbox input[id="agree1"] + label {line-height: 36px; background-position: left top;}
 .order_wrap .agree_checkbox>li>ul{padding: 20px 70px 0 69px;}
 .order_wrap .agree_checkbox ul>li input[type="checkbox"] + label{background: url(../../images/new/off-check-button.png) left/40px no-repeat; padding-left: 59px;}
+.order_wrap .agree_checkbox ul>li input[type="checkbox"]:checked + label {background: url(../../images/new/red-check.png) left/40px no-repeat;}
 .order_wrap .agree_checkbox>li>ul>li button{width: 140px; height: 40px; background: rgba(204,201,255,0.4); font-size: 20px; letter-spacing: -0.5px; border-radius: 10px;  color: #fff;}
 .order_wrap .agree_checkbox .sp_between{align-items: center;}
 .order_wrap + .btn120 {position: fixed; bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px; color: #fff; font-size: 28px;}
@@ -2882,6 +2882,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .modal-popup h3.title{font-size: 32px; letter-spacing: -0.8px; text-align: center; margin-bottom: 45px;}
 .modal-popup .modal-content button.search{width: 246px; height: 60px; margin: 70px 0 0 67px; border-radius: 10px; background: #ff462d;}
 .modal-popup .modal-content button.close{width: 20px; height: 20px; background-image:url('../../images/new/close_toyota.png'); background-repeat: no-repeat; position: absolute; top: 30px; right: 30px;}
+.popup-open{display: block;}
 
 /* shipping_input */
 .shipping_wrap{color: #fff; letter-spacing: -0.63px;}
@@ -2896,3 +2897,63 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .shipping_wrap input[type="checkbox"]:checked + label {background: url(../../images/new/red-check.png) left/48px no-repeat;}
 .shipping_wrap input[type="checkbox"] {display: none;}
 .shipping_wrap + .btn120 {position: fixed; bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px;color: #fff; font-size: 28px;}
+
+/* shipping_list */
+.shipping_wrap .shipping_list_area{padding: 190px 30px; font-size: 25px;}
+.list_box{background: rgba(181,179,225,0.2); padding: 30px; line-height: 30px; margin-bottom: 20px; display: flex; align-items: start; justify-content: space-between;}
+.list_box button{background: #ccc9ff; border-radius: 10px; width: 106px; height: 61px; color: #26262b; font-size: 22px; font-weight: 700;}
+.cell_info .name{font-size: 30px; font-weight: 700;}
+.cell_info p{margin-bottom: 21px;}
+.shipping_wrap .shipping_list_area .more_btn{width: 100%; height: 61px; background: #35353c; border: 2px solid #76797e; border-radius: 10px; color: #ccc9ff;}
+.shipping_badge{display: inline-block; width: 134px; height: 31px;  margin: 0 0 2px 21px; text-align: center; border-radius: 10px; font-weight: 400; font-size: 23px; background: #ff462d;}
+
+
+/* order_detail_delivery */
+
+.order_wrap .cell_info {padding: 30px; line-height: 30px;}
+.order_wrap .cell_info button{background: #ccc9ff; border-radius: 10px; width: 124px; height: 61px; color: #26262b; font-size: 22px; font-weight: 700;}
+.order_wrap .cell_info div.sp_between{padding-bottom: 20px; border-bottom: 1px solid #474747; align-items: center;}
+.order_wrap .cell_info div.sp_between p{margin-bottom: 0;}
+.order_wrap .cell_info .cell_info_detail{padding: 45px 0 20px 0;  border-bottom: 1px solid #474747;}
+.order_wrap .cell_info .cell_info_detail input{width: 100%; height: 61px; padding: 18px 30px; font-size: 26px; color: #ccc9ff; background: #35353c; border: 2px solid #76797e; border-radius: 10px; color: #ccc9ff;}
+.order_wrap .cell_info .cell_info_detail input::placeholder{color: #ccc9ff;}
+#accordionOrder .accordion-item{background: rgba(181,179,225,0.2); margin-bottom: 25px; border-bottom: none;}
+#accordionOrder .accordion-button {padding: 23px 28px;}
+#accordionOrder .accordion-header {border-bottom: 1px solid #474747;}
+#accordionOrder .product_list li {align-items: start;}
+#accordionOrder .product_list{padding: 0;}
+#accordionOrder .product_list:last-child {margin-bottom: 0; border-bottom: none;}
+#accordionOrder .product_list li {padding: 19px 0 26px;}
+#accordionOrder .product_list .product_desc {margin: 0 0 43px 0; font-size: 24px;}
+#accordionOrder .product_list .product_title {font-size: 30px;}
+#accordionOrder .product_list .product_count{font-size: 18px;}
+#accordionOrder .product_list .product_price{font-size: 30px; font-weight: 800;}
+
+.delivery_list_wrap{color: #fff; font-size: 25px; letter-spacing: -0.63px;}
+.delivery_list_wrap .intro {position: relative; padding: 188px 0px 0px;}
+.delivery_list_wrap .cell_info>p{padding: 0 37px 0 60px ;}
+.delivery_list_wrap .nav-tabs {border-bottom: 0; border-top: 1px solid #474747; }
+.delivery_list_wrap .nav-tabs li{width: 50%; text-align: center;}
+.delivery_list_wrap .nav-tabs .nav-link {margin-bottom: 0; font-size: 30px; background: 0 0; border: 0; padding: 21px 0;  border-top-left-radius: 0; border-top-right-radius: 0rem; color : #fff;}
+.delivery_list_wrap .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {color: #fff; background-color: rgba(181,179,225,0.2); border-color: unset;}
+.delivery_list_wrap .tab-content{background-color: rgba(181,179,225,0.2); padding: 40px 30px;}
+.delivery_list_wrap .tab-content .list_box {background: none; padding: 0 0 30px; margin-bottom: 0;}
+.delivery_list_wrap .tab-content .list_box .right {text-align: right; margin-top: 20px; }
+.delivery_list_wrap .tab-content .list_box button {background: none; border-radius: 0; width: unset; color: #b5b3e1; font-size: 25px; font-weight: 400;}
+.shipping_badge.recent{background: #9f9fa8;}
+.delivery_list_wrap .tab-content .list_box .btn-group{width: 127px; position: relative;}
+.delivery_list_wrap .tab-content .list_box .btn-group:before{content:''; display: block; width: 1px; height: 25px; background: #b5b3e1; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.delivery_list_wrap .tab-content .list_box div p{margin-bottom: 12px;}
+.delivery_list_wrap input[type="radio"] + label {display: inline-block; cursor: pointer; font-size: 0; padding-left: 48px; line-height: 48px; background: url(../../images/new/off-check-button.png) left/48px no-repeat;}
+.delivery_list_wrap input[type="radio"]:checked + label {background: url(../../images/new/red-check.png) left/48px no-repeat;}
+.delivery_list_wrap input[type="radio"]{display:none;}
+.delivery_list_wrap .list-btn{text-align: right; padding-bottom: 40px;}
+.delivery_list_wrap .list-btn button{width: 205px; height: 64px; background: #58505d; font-size: 22px;}
+.delivery_list_wrap .more_btn {width: 100%; height: 61px; background: #54545b; border: 2px solid #76797e; border-radius: 10px; color: #ccc9ff;}
+
+
+.delivery_list_wrap .input_box input{width: 572px; height: 61px; background: rgba(118,121,126,0.4); font-size: 25px; padding: 18px 30px; border: 1px solid #bebebe; border-radius: 10px;}
+.delivery_list_wrap .input_box{display: flex;}
+.delivery_list_wrap .input_box label{width: 110px; margin-right: 17px; font-size: 30px; letter-spacing: -0.75px; font-weight: 700;}
+.delivery_list_wrap .input_box .call_box input{width: 170px; float: left; margin-right: 24px;}
+.delivery_list_wrap .input_box .call_box input:last-child{margin-right: 0;}

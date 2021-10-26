@@ -26,7 +26,6 @@
 </head>
 <body>
 	<div id="app" class="type2 background-bk">
-
 		<header id="header" class="sub opacity-bg">
             <a href="javascript:;" class="back" onClick="history.back();">뒤로가기</a>
 			<h1 class="logo"><a href="../main/index_after.html"><img src="../../images/common/logo2.png" alt=""></a></h1>
@@ -129,29 +128,39 @@
 		<div id="container">
 			<div id="content" class="shipping_wrap">
 				<div class="intro">
-					<h2 class="tit_page">배송지 입력</h2>
+					<h2 class="tit_page">배송지 목록</h2>
 				</div>
-				<div class="input_area">
-					<div class="input_box">
-						<label>배송지명</label>
-						<input type="text" placeholder="배송지명을 입력 해주세요.">
+				<div class="shipping_list_area">
+					<div class="list_box">
+						<div class="cell_info">
+							<p class="name">윤예빈<span class="shipping_badge">기본배송지</span></p>
+							<p class="tell fc-v">010-1234-5687</p>
+							<p class="address">경기도 하남시 미사강변한강로 155<br/>
+								SKV1센터, 사무동 210호</p>
+						</div>
+						<button type="button">선택</button>
 					</div>
-					<div class="input_box">
-						<label>받는분 이름</label>
-						<input type="text" placeholder="이름을 입력 해주세요.">
+					<div class="list_box">
+						<div class="cell_info">
+							<p class="name">윤예빈</p>
+							<p class="tell fc-v">010-1234-5687</p>
+							<p class="address">경기도 하남시 미사강변한강로 155<br/>
+								SKV1센터, 사무동 210호</p>
+						</div>
+						<button type="button">선택</button>
 					</div>
-					<div class="input_box">
-						<label>받는분 휴대폰번호</label>
-						<input type="number" placeholder="휴대폰 번호를 입력 해주세요.">
+					<div class="list_box">
+						<div class="cell_info">
+							<p class="name">윤예빈</p>
+							<p class="tell fc-v">010-1234-5687</p>
+							<p class="address">경기도 하남시 미사강변한강로 155<br/>
+								SKV1센터, 사무동 210호</p>
+						</div>
+						<button type="button">선택</button>
 					</div>
-					<div class="input_box">
-						<label>주소</label>
-						<input type="text" placeholder="주소검색" id="btnPostCode" onclick="javascript:daumPostCode();">
-					</div>
-					<input type="checkbox" id="save" name="check"><label for="save">기본배송지로 저장</label>
+					<button class="more_btn" type="button">더보기 +</button>
 				</div>
 			</div>
-			 <a href="#self" class="btn120 c4">확인</a>[D] 필수항목 입력 시 c4 -> c5로 변경
         </div><!-- id : container -->
         <script>
             newriver.loginAction();
