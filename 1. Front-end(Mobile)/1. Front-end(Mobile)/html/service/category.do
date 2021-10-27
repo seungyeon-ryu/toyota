@@ -36,7 +36,7 @@
 			var isPC 	  	= false;
 			var osType		= '';
 
-			if (navigator.platform) {
+			if (navigator.platform)
 				if (!/(win16|win32|win64|mac)/.test(platform)) {
 					isPC = false;
 
