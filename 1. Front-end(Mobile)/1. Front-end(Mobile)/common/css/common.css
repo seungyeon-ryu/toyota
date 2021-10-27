@@ -2440,8 +2440,8 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #container.onetoone_v2 input.has_data {border-color: none !important;}
 #container.onetoone_v2 input[type=text], #container.onetoone_v2 input[type=number],
 #container.onetoone_v2 input[type=email], #container.onetoone_v2 input[type=date],
-#container.onetoone_v2 input[type=password], #container.onetoone_v2 input[type=tel],
-/*#container.onetoone_v2 select{border-bottom: none; font-size: 25px; height:82px; padding:0 32px; background-color: #433d46}*/
+#container.onetoone_v2 input[type=password], #container.onetoone_v2 input[type=tel]
+{border-bottom: none; font-size: 25px; height:82px; padding:0 32px; background-color: #433d46}
 /*#container.onetoone_v2 option {padding:0px; background-color: #58505d; font-size: 1rem; margin: 0px;}*/
 #container.onetoone_v2 textarea {padding: 29px 32px; border: none; background: #433d46; font-size: 25px; line-height: 30px;}
 #container.onetoone_v2 input.title{margin-top: -20px; background: none; border-bottom: 2px solid #433d46;}
@@ -2719,7 +2719,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .accordion-button:not(.collapsed)::after {color: #fff; background-image: url(../../images/new/downArrow.png);transform: rotate(-180deg);}
 .accordion-button:focus{box-shadow: none; border-color: none;}
 .accordion-body{font-size: 25px; line-height: 61px; padding: 0 30px 60px; }
-.accordion-body input[type=text]{width:224px; height: 61px; padding: 0 16px; text-align: right; font-size: 26px; color: #ccc9ff; border:2px solid #76797e; background: #3c3c3c; border-radius: 10px;}
+.accordion-body input[type=text],.accordion-body input[type=number]{width:224px; height: 61px; padding: 0 16px; text-align: right; font-size: 26px; color: #ccc9ff; border:2px solid #76797e; background: #3c3c3c; border-radius: 10px;}
 .accordion-body button{width: 191px; height: 61px; background: #ff462d; border-radius: 10px; font-size: 22px; margin-left: 9px;}
 .accordion-body p img{margin: 12px 10px 0 0;}
 #panelsStayOpen-collapseTwo p{color: #bebebe;}
