@@ -2783,7 +2783,10 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 
 #main.mileage{font-family: NanumSquare, sans-serif}
 .login.mileage{color: #fff;;}
-.mileage_login{padding: 190px 30px 80px;}
+/* TODO 20220107 add */
+/*.mileage_login{padding: 190px 30px 80px;}*/
+.mileage_login{padding: 190px 30px 80px; box-sizing: border-box;}
+
 .mileage_login .mileage_info{overflow: auto; position: relative;}
 .mileage_login .mileage_info li{width: 290px; height: 200px; float: left; padding: 36px 29px 17px 29px; box-sizing: border-box; border-radius: 6px; overflow: hidden;}
 .mileage_login .mileage_info li:first-child{margin-right: 20px; background: rgba(51,51,51,0.3);}
@@ -2796,8 +2799,16 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mileage_login .mileage_info li h3 small{font-size: 28px; margin-left: 16px;}
 .mileage_login .mileage_info li p.reload{font-family: NanumSquare, sans-serif; font-size: 22px; color: #afafaf; margin-top: 10px;}
 .mileage_login .mileage_info li p.reload span{width: 16px; height: 16px; display: inline-block; background: url(../../images/new/loading.png) 0 0 no-repeat; margin: 6px 0 0 9px; background-size: 16px 16px; cursor: pointer;}
-.mileage_login img{position: absolute; right:0; top: 350px;}
+/* TODO 20220107 add */
+.mileage_login .mileage_img{width: 100%; height: 380px; padding: 20px 0 0;}
+
+/* TODO 20220107 add */
+/*.mileage_login img{position: absolute; right:0; top: 350px;}*/
+.mileage_login img{width: 100%; height: 100%; object-fit: contain;}
+
+/* TODO 20220107 edit */
 .mileage_login .mycar_checklist{font-size: 26px; padding-top: 360px; position: absolute; bottom: 12%;}
+
 .mileage_login .mycar_checklist h3{font-family: OpenSans, sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -1px;}
 .mileage_login .mycar_checklist p{color: #ccc9ff; padding: 50px 0 54px;}
 .mileage_login .mycar_checklist .btn_list li{float: left; margin-right: 19px;}
