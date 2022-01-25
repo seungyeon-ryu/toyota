@@ -154,32 +154,83 @@
 			<div id="content" class="mileage_grade_wrap">
                 <div class="intro">
                     <h2 class="tit_page">마일리지</h2>
+					<div id="tabArea" class="tab_area">
+						<ul>
+							<li class="on"><a href="#Platinum">Platinum</a></li>
+							<li><a href="#Gold">Gold</a></li>
+							<li><a href="#Silver">Silver</a></li>
+							<li><a href="#Bronze">Bronze</a></li>
+							<li><a href="#Family">Family</a></li>
+						</ul>
+					</div>
                 </div>
-				<div class="grade_desc">
-					<h5 class="tit">모닝캄 클럽</h5>
-					<img src="../../images/new/card-1.png" alt="엘리트">
-					<h4>엘리트</h4>
-					<ul>
-						<li>
-							<p>다음의 어느 한 조건을 충족할 경우</p>
-							<p>1) 대한항공 <span class="fc-v">5만 마일</span> 이상 탑승</p>
-							<p>2) 대한항공 탑승횟수 <span class="fc-v">40회 이상</span> (*)</p>
-							<p>3) 대한항공 3만마일 이상이며 <span class="fc-v">제휴사 실적을 합산해 5만마일 이상 적립</span></p>
-							<p></p>
-						</li>
-						<li class="end-date"><span class="fc-v">자격 취득 월로부터 2년간 유효</span></li>
-						<li>
-							<p>자격기간 중 다음의 어느 한 조건을 충족할 경우 연장</p>
-							<p>1) 대한항공 <span class="fc-v">3만 마일</span> 이상 탑승</p>
-							<p>2) 대한항공 <span class="fc-v">20회 이상 탑승</span></p>
-							<p>3) 대한항공 탑승실적이 2만마일 또는 15회 이상이면서 제휴사 이용실적과 합하여 <span class="fc-v">3만마일 이상을 적립</span>(**)</p>
-						</li>
-					</ul>
+				<div class="grade_desc tab_cont">
+					<div>
+						<img src="../../images/new/card_bronze.png" alt="platinum">
+						<h4>선정기준</h4>
+						<p>・ 50만 마일리지 이상 적립</p>
+						<table class="benefit-table">
+							<caption>혜택</caption>
+							<colgroup>
+								<col>
+								<col>
+								<col>
+								<col>
+							</colgroup>
+							<thead>
+							<tr>
+								<th>서비스<br>입고 횟수</th>
+								<th>기준년도<br>1회차</th>
+								<th>기준년도<br>2회차</th>
+								<th>기준년도<br>3회차</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td class="table-bg" rowspan="5">누적<br>마일리지</td>
+								<td>195,000</td>
+								<td>260,000</td>
+								<td>325,000</td>
+							</tr>
+							<tr>
+								<td>39,000</td>
+								<td>52,000</td>
+								<td>65,000</td>
+							</tr>
+							<tr>
+								<td>11,700</td>
+								<td>15,600</td>
+								<td>19,500</td>
+							</tr>
+							<tr>
+								<td>3,900</td>
+								<td>5,200</td>
+								<td>6,500</td>
+							</tr>
+							<tr>
+								<td>1,300</td>
+								<td>2,600</td>
+								<td>3,900</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+
 				</div>
             </div>
 			<a href="#self" class="btn120 c5">확인</a>
 		</div><!-- id : container -->
-
+		<script>
+			$(document).ready(function() {
+				$(".tab_area li").click(function() {
+					var idx = $(this).index();
+					$(".tab_area li").removeClass("on");
+					$(".tab_area li").eq(idx).addClass("on");
+					$(".tab_cont > div").hide();
+					$(".tab_cont > div").eq(idx).show();
+				})
+			});
+		</script>
 	</div><!-- id : wrap -->
 </body>
 </html>

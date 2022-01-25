@@ -93,18 +93,17 @@
 </head>
 <body>
 <div id="app" class="type2 background-bk">
-  <header id="header" class="sub">
+  <header id="header" class="sub ">
     <a href="javascript:history.back();" class="back">뒤로가기</a>
-    <h1 class="logo"><a href="/main.do"><img src="/resources/web/images/common/logo2.png" alt=""></a></h1>
+    <div class="right-menu">
+      <a href="javascript:void(0)" class="sub-search"></a>
+      <a href="javascript:void(0)" class="cart"></a>
+    </div>
   </header>
 
   <form id="retForm" name="retForm" method="post">
     <input type="hidden" id="returnUrl" name="returnUrl" value="">
-  </form><button type="button" id="trgAside" class="trg_aside">
-  <span class="bar1"></span>
-  <span class="bar2"></span>
-  <span class="bar3"></span>
-</button>
+  </form>
 
   <div id="gnb">
     <div class="member">
@@ -221,11 +220,11 @@
   </div>
   <div id="container">
   <div id="content" class="service">
-    <h2 class="tit_page">서비스상품</h2>
+    <h2 class="tit_page"><b>Tire</b></h2>
 
     <div class="lnb_wrap">
       <div class="lnb_title">
-        <h3>Tire</h3>
+<!--        <h3>Tire</h3>-->
 <!--        <ul>-->
 <!--        <li><a href="/service/product/list.do">All(전체)</a></li>-->
 <!--        <li ><a href="/service/product/list.do?srchProduct_type=13801">SMS 패키지(Smart Maintenance Service Package)</a></li>-->
@@ -272,7 +271,15 @@
           </div>
         </div>
       </div>
-
+      <div class="center_select">
+        <span>서비스 센터 선택 : </span>
+        <select>
+          <option value="" selected disabled>선택</option>
+          <option value="">용산</option>
+          <option value="">강동</option>
+          <option value="">강남</option>
+        </select>
+      </div>
       <!-- 추천상품 -->
     </div>
   </div>
@@ -285,15 +292,15 @@
       $lnb_title.find('h3').on('click', function () {
         $lnb_title.toggleClass('lnb_open');
       });
-
-      var tabOffset = $('.lnb_wrap').offset();
-      $(window).scroll( function() {
-        if ( $(window).scrollTop() > tabOffset.top ) {
-          $('.lnb_wrap').addClass('fix');
-        } else {
-          $('.lnb_wrap').removeClass('fix');
-        }
-      });
+      // TODO 20220125 류승연 삭제
+      // var tabOffset = $('.lnb_wrap').offset();
+      // $(window).scroll( function() {
+      //   if ( $(window).scrollTop() > tabOffset.top ) {
+      //     $('.lnb_wrap').addClass('fix');
+      //   } else {
+      //     $('.lnb_wrap').removeClass('fix');
+      //   }
+      // });
 
       $('.slider-views').slick({
         infinite: true,
