@@ -3038,7 +3038,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .background-bk .center_select select{width: calc(100% - 247px); height: 82px; padding: 0 30px; border: none; border-radius: 10px; background: url(../../images/new/down.png) right 30px center no-repeat; background-color: rgba(70,70,82,0.5);}
 
 /* mypage_main */
-.mypage_main_wrap{color: #fff; padding: 143px 30px 78px; background-image: url('../../images/new/bg-mainpage1.png'),url('../../images/new/bg-mypage.png'); background-size: 100% auto; background-position: 0 0, 0 780px; background-repeat:no-repeat}
+.mypage_main_wrap{color: #fff; padding: 143px 30px 78px; background-image: url('../../images/new/bg-mainpage1.png'); background-size: 100% auto; background-position: right -10px top 530px; background-repeat:no-repeat}
 .mypage_main_wrap .mypage_area .user_info{padding: 60px 0 50px; display: flex; align-items: center;}
 .mypage_main_wrap .mypage_area .user_info .photo{width: 160px; height: 160px; border-radius: 50%; position: relative; background: #fff;}
 .mypage_main_wrap .mypage_area .user_info .photo>img{width: 100%; height: 100%; object-fit: cover;}
@@ -3047,11 +3047,21 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mypage_main_wrap .mypage_area .user_info .info p{font-size: 42px;}
 .mypage_main_wrap .mypage_area .user_info .info .fw-eb{font-family: 'Open Sans', sans-serif; font-size: 33px;}
 .mypage_main_wrap .mypage_area .user_info .info p b{font-weight: bold;}
-.mypage_main_wrap .mypage_area .mileage_state{display: flex; padding: 30px; justify-content: space-between; background: rgba(78,70,82,0.5); border-radius: 10px;}
-.mypage_main_wrap .mypage_area .mileage_state p b{font-size: 30px; font-weight: bold;}
-.mypage_main_wrap .mypage_area .mypage_list{padding: 42px 0; display: flex; justify-content: space-between; text-align: center;}
-.mypage_main_wrap .mypage_area .mypage_list li .image{width: 75px; height: 75px; margin: 0 auto; border-radius: 50%; background: rgba(204, 201, 255,0.2); display: flex; align-items: center; justify-content: center;}
-.mypage_main_wrap .mypage_area .mypage_list li p{margin-top: 26px;}
+.mypage_main_wrap .mypage_area .mileage_state{padding: 30px; background: #000; border-radius: 15px;}
+.mypage_main_wrap .mypage_area .mileage_state>div{display: flex; align-items: center; justify-content: space-between; padding-bottom: 30px; border-bottom: 1px solid rgba(190,190,190,0.2);}
+.mypage_main_wrap .mypage_area .mileage_state>div ~ div{padding-top: 30px;}
+.mypage_main_wrap .mypage_area .mileage_state div p{font-weight: 700; font-size: 28px; line-height: 100%;}
+.mypage_main_wrap .mypage_area .mileage_state div p span{font-weight: 400; padding-left: 47px; font-size: 26px;}
+.mypage_main_wrap .mypage_area .mileage_state div p b{font-size: 36px; font-weight: 800; color: #ff462d; line-height: 100%;}
+.mypage_main_wrap .mypage_area .mileage_state div p small{font-size: 26px; font-weight: 700; color: #ff462d; padding-left: 14px;}
+.mypage_main_wrap .mypage_area .mileage_state .total_mileage{display: flex; align-items: flex-end;}
+.mypage_area .mileage_state button{font-size: 28px; font-weight: 700;}
+.mypage_area .text_box{padding: 160px 0; text-align: center;}
+.mypage_area .text_box p:last-child{font-size: 40px; COLOR: #ff452d;}
+.mypage_area .text_box p .fw-eb{font-family: Open Sans, sans-serif; padding-top: 10px;}
+.mypage_main_wrap .mypage_area .mypage_list{padding: 20px 0 0; display: flex; justify-content: space-between; text-align: center;}
+.mypage_main_wrap .mypage_area .mypage_list li .image{width: 75px; height: 75px; margin: 0 auto; border-radius: 50%; background: rgba(51, 51, 51,0.5); display: flex; align-items: center; justify-content: center;}
+.mypage_main_wrap .mypage_area .mypage_list li p{margin-top: 20px;}
 .mypage_main_wrap .mypage_area .order_list{ padding: 27px 0;}
 .mypage_main_wrap .mypage_area .order_list h3{font-size: 28px; font-weight: bold; padding-bottom: 18px; border-bottom: 1px dashed rgba(255,255,255,0.2);}
 .mypage_main_wrap .mypage_area .order_list ul{display: flex; justify-content: space-between; text-align: center; padding-top: 35px;}
@@ -3064,7 +3074,6 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mypage_main_wrap .mypage_area .refund_list li a{display: flex; justify-content: center;}
 .mypage_main_wrap .mypage_area .refund_list li ~ li:after{content:''; display: block; width: 1px; height: 50px; background: #524f5f; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .mypage_main_wrap .mypage_area .refund_list li a p{padding-right: 37px;}
-.mypage_main_wrap .mypage_area .qna_list {margin-top: 20px;}
 .mypage_main_wrap .mypage_area .qna_list li{padding: 36px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); background: url('../../images/new/arrow-right.png') right center no-repeat;}
 
 /* goods_list */
