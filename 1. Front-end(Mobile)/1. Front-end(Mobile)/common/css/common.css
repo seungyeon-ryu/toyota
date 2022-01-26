@@ -2579,14 +2579,16 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .mileage_wrap .mileage_list_desc li.none .txt{font-size: 34px; letter-spacing: -0.85px; text-align: center;}
 
 /* mileage_grade */
-.mileage_grade_wrap { letter-spacing: -0.63px; color: #fff; font-size: 25px;}
+.mileage_grade_wrap {background: url(../../images/new/bg-mileage.png) right -90px bottom 10px no-repeat; letter-spacing: -0.63px; color: #fff; font-size: 25px; padding-bottom: 218px;}
 .mileage_grade_wrap .intro {padding: 190px 30px 0;}
 .mileage_grade_wrap .tab_area ul li.on a{color: #d7022c; font-weight: bold;}
 .mileage_grade_wrap .tab_area ul li.on{border: none;}
 .mileage_grade_wrap .tab_area ul li.on:after{content:''; display: block; width: 100%; height: 10px; background: #d7022c; border-radius: 5px;}
+.mileage_grade_wrap .tab_cont div{display: none;}
+.mileage_grade_wrap .tab_cont div.on{display: block;}
 .mileage_grade_wrap .grade_desc{margin: 0 30px; text-align: center;}
 .mileage_grade_wrap .grade_desc h5{font-size: 25px; text-align: center; font-weight: 700; padding-bottom: 35px; border-bottom: 1px solid rgba(71,71,71);}
-.mileage_grade_wrap .grade_desc img{margin: 50px auto 0;}
+.mileage_grade_wrap .grade_desc img{margin: 20px auto 0;}
 .mileage_grade_wrap .grade_desc h4{padding: 74px 0 10px; font-size: 30px; font-weight: 700; background:url(../../images/new/card-3-bg.png) center 0 no-repeat;}
 .mileage_grade_wrap .grade_desc ul{text-align: left; width: 434px; margin: 0 auto; font-size: 20px;}
 .mileage_grade_wrap .grade_desc ul li{padding-bottom: 30px;}
@@ -2868,7 +2870,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 
 
 /* event_list_v2 */
-#app.background-bk .event_list_wrap{font-family: NanumSqare; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
+#app.background-bk .event_list_wrap{font-family: NanumSquare, sans-serif; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
 #app.background-bk .event_list_wrap .board_thumb_list.type2 {padding: 220px 30px 100px;}
 #app.background-bk .event_list_wrap .tab_area ul li{text-align: center;}
 #app.background-bk .event_list_wrap .tab_area ul li.on {border-bottom: none;}
@@ -2908,8 +2910,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 #app.background-bk .event_list_wrap .board_thumb_view .others{margin: 0 0 0 30px; padding: 0 0 100px; background: none;}
 #app.background-bk .event_list_wrap .board_thumb_view .tit{border-top: 1px solid rgba(190,190,190,0.2); margin: 0 30px 0 0; padding: 30px 0; text-align: left; font-size: 30px;}
 #app.background-bk .event_list_wrap .board_thumb_view .board_thumb_view .others .other_events .slide:after {display:none;}
-.others .swiper-slide {width: 332px; height: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; flex-direction: column; color: #fff !important; font-size: 26px; font-family: 'Open Sans', sans-serif; line-height: 30px; letter-spacing: -0.65px; font-weight: 700;}
-.others .swiper-slide img {display: block; width: 332px; height: 332px; margin-bottom: 40px;}
+#app.background-bk .others .swiper-slide {width: 332px; height: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; flex-direction: column; color: #fff !important; font-size: 26px; font-family: 'Open Sans', sans-serif; line-height: 30px; letter-spacing: -0.65px; font-weight: 700;}
+#app.background-bk .others .swiper-slide img {display: block; width: 332px; height: 332px; margin-bottom: 40px;}
 
 /*  mycar popup 추가 */
 #container{position: relative;}
@@ -3065,3 +3067,38 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mypage_main_wrap .mypage_area .qna_list {margin-top: 20px;}
 .mypage_main_wrap .mypage_area .qna_list li{padding: 36px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); background: url('../../images/new/arrow-right.png') right center no-repeat;}
 
+/* goods_list */
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list{padding: 0 30px;}
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list .goods_img{width: 100%; height: 340px; border-radius: 20px; overflow: hidden;}
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list ~ .goods_list{padding-top: 63px;}
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list:last-child .txtbox{border-bottom: none;}
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list .goods_img img{width: 100%; height: 100%; object-fit: cover;}
+#app.background-bk .event_list_wrap .goods_list .txtbox{padding: 50px 0 100px; border-bottom: 1px solid rgba(190, 190, 190, 0.2);}
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list .txtbox .title{font-size: 50px; font-weight: 800; margin-bottom: 40px;}
+#app.background-bk .event_list_wrap .board_thumb_view .goods_list .txtbox .price{font-weight: 400; color: #ed4c3a; font-size: 60px;}
+
+/* goods_view */
+.goods_thumb{border-bottom: 1px solid rgba(190, 190, 190, 0.2); padding-bottom: 40px;}
+.goods_thumb .swiper-wrapper{width: 100%; height: 383px; background:pink;}
+.goods_thumb .swiper-slide img{width: 100%; height: 100%; object-fit: cover;}
+.goods_thumb .swiper-pagination{position: static; margin-top: 25px;}
+.goods_thumb .swiper-pagination-bullet {width: 20px; height: 20px; display: inline-block; border-radius: 50%; background: transparent; opacity: 1; border: 1px solid #fff;}
+.goods_thumb .swiper-pagination-bullet-active{border: 1px solid #ccc9ff; background: #ccc9ff;}
+.goods_thumb .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.goods_thumb .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 10px;}
+#app.background-bk .event_list_wrap .goods_list .goods_detail{color: #fff;}
+.goods_list .goods_detail{text-align: left; font-size: 32px; padding: 50px 0; font-weight: bold; line-height: 100%;}
+.goods_list .goods_detail .goods_title{padding-bottom: 56px;}
+.goods_list .goods_detail .goods_price{padding-right: 56px;}
+.goods_list .goods_detail .sp_between{align-items: center; }
+.background-bk .goods_list .quantity{display: flex; color: #fff; align-items: center; flex: 1;}
+.background-bk .goods_list .quantity span{display: block; width: 75px; margin-right: 20px; letter-spacing: -0.8px;}
+.background-bk .goods_list .quantity select{width: calc(100% - 95px); height: 82px; font-size: 25px; padding: 0 30px; border: none; border-radius: 10px; background: url(../../images/new/down.png) right 30px center no-repeat; background-color: rgba(70,70,82,0.5);}
+#app.background-bk .rocomm{margin: 0 0 0 30px; padding: 0 0 187px; background: none;}
+#app.background-bk .rocomm .tit{ color: #fff; font-size: 30px; font-weight: 700; border-top: 1px solid rgba(190,190,190,0.2); margin: 0 30px 0 0; padding: 30px 0; text-align: left;}
+#app.background-bk .rocomm .txt{text-align: center; font-size: 32px; font-family: NanumSquare, sans-serif; font-weight: 700;}
+#app.background-bk .board_thumb_view .rocomm .slide:after {display:none;}
+#app.background-bk .rocomm .swiper-slide {width: 318px; height: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; flex-direction: column; color: #fff !important; font-size: 26px; font-family: 'Open Sans', sans-serif; line-height: 30px; letter-spacing: -0.65px; font-weight: 700;}
+#app.background-bk .rocomm .swiper-slide .recomm_thumb{width: 318px; height: 318px; overflow: hidden; margin-bottom: 30px; background: #4e4652;}
+#app.background-bk .rocomm .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.background-bk .event_list_wrap + .btn120{position: fixed; bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px; color: #fff; font-size: 28px;}
