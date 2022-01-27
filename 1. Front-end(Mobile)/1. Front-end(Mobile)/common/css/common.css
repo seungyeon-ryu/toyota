@@ -447,7 +447,7 @@ label.chk input:checked + .svg_commchk .ico_chk {animation: svgChk .5s forwards;
 .hideHeader .trg_aside {top: -140px; opacity: 0;}
 .hideHeader .tit_page {top: -140px; opacity: 0;}
 
-#gnb {overflow-y: auto; position: fixed; top: 0; bottom: 0; left: 100%; z-index: 205; height: 100vh; box-sizing: border-box; width: 750px; min-height: 100%; padding: 130px 60px 210px; background: url(../../images/common/bg_gnb.png) 0 0 no-repeat; background-size: cover; transition: all .3s; opacity: 0; -webkit-overflow-scrolling: touch;}
+#gnb {overflow-y: auto; position: fixed; top: 0; bottom: 0; left: 100%; z-index: 205; height: 100vh; height: var(--vh, 1vh) * 100; box-sizing: border-box; width: 750px; min-height: 100%; padding: 130px 60px 210px; background: url(../../images/common/bg_gnb.png) 0 0 no-repeat; background-size: cover; transition: all .3s; opacity: 0; -webkit-overflow-scrolling: touch;}
 
 #gnb .member .login {position: relative; margin: 0 0 50px;}
 #gnb .member .login .txt {font-size: 44px; line-height: 60px; color: #acacb2;}
