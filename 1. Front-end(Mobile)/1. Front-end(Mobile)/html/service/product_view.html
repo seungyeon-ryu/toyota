@@ -276,17 +276,65 @@
           </div>
         </div>
       </div>
-      <!-- TODO 류승연 20220126 select 추가 -->
+      <!-- TODO 류승연 20220321 select 수정 -->
       <div class="center_select">
-        <span>서비스 센터 선택 : </span>
-        <select>
-          <option value="" selected disabled>선택</option>
-          <option value="">용산</option>
-          <option value="">강동</option>
-          <option value="">강남</option>
-        </select>
+        <button type="button" onclick="selectLayer('select')">서비스센터를 선택하세요</button>
+        <div class="select_val">
+          <label>선택된 서비스 센터</label>
+          <p>효성토요타 서초 서비스센터</p>
+        </div>
       </div>
-      <!-- TODO 류승연 20220126 select 추가 끝 -->
+      <div class="select-layer select">
+        <dl>
+          <dt><p><span>TOYOTA</span> 서비스센터 선택</p><button class="close" onclick="closeSelect('select')"></button></dt>
+          <!-- 선택된 서비스센터는 버튼에 class active 추가 -->
+          <dd>
+            <ul>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+              <li>
+                <p>엘엔티 토요타 구리 서비스센터</p>
+                <p class="fc-v">구리시 교문동</p>
+                <button type="button">선택</button>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <!-- TODO 류승연 20220321 select 수정 끝 -->
       <!-- 추천상품 -->
     </div>
   </div>
@@ -332,6 +380,13 @@
       });
 
     });
+    function selectLayer(number){
+      $('.select-layer' + '.' + number).addClass('active');
+      return false;
+    }
+    function closeSelect(e){
+      $('.select-layer').removeClass('active');
+    }
   </script>
   <div id="loaderDim" style="display:none;">
     <div id="loader">

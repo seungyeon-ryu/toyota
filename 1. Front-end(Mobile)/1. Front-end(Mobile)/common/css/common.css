@@ -2524,7 +2524,13 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .model_v2 .model_list ul li .new {margin: 30px 0 0; border-radius: 40px; padding: 8px 20px; background: #e4022e; font-family: 'Open Sans',sans-serif;
     font-weight: 600; font-size: 20px; line-height: 24px; letter-spacing: -0.5px;}
 .model_v2 .model_list ul li a {height: 482px;}
-.model_list ul li .img {position: absolute; right: 0; top: 66%; transform: translateY(-66%); bottom: unset; z-index: 1; width: 540px; height: 250px;}
+/* TODO 류승연 20220321 수정 */
+.model_list ul li .img {position: absolute; right: 0; top: 139px; bottom: unset; z-index: 1; width: 540px; height: 250px;}
+.model_list .model_year{padding: 30px 0 10px; background: #1c1a1d; color: #fff;}
+.model_list .model_year dd{margin: 0 0 10px; width: 100%; height: 84px;}
+.model_list .model_year dd button{width: 100%; height: 100%; text-align: left; padding: 0 30px; background: rgba(38, 35, 39, 0.6);}
+.model_list .model_year dd button:active{background: rgba(204, 201, 255, 0.2); color: #ccc9ff;}
+/* TODO 류승연 20220321 수정 완료 */
 
 /* category_v2 */
 .background-bk .oil_list {padding: 143px 0 0;}
@@ -3036,9 +3042,29 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .background-bk .service_con_sect2 .bx {padding: 0; background: none;  border-radius:0; color: #fff; font-size: 25px; line-height: 36px; text-align: center;}
 .background-bk .service_con_sect2 .bx>div{margin-top: 60px;}
 .background-bk .service_con_sect2 .bx .bx_title{margin-top: 40px; font-size: 36px; font-weight: 700; color: #ef1539;}
-.background-bk .center_select{display: flex; padding: 64px 60px; color: #fff; align-items: center;}
+/* TODO 류승연 20220321 수정 */
+/*.background-bk .center_select{display: flex; padding: 64px 60px; color: #fff; align-items: center;}
 .background-bk .center_select span{font-size: 32px; display: block; width: 247px; letter-spacing: -0.8px;}
 .background-bk .center_select select{width: calc(100% - 247px); height: 82px; padding: 0 30px; border: none; border-radius: 10px; background: url(../../images/new/down.png) right 30px center no-repeat; background-color: rgba(70,70,82,0.5);}
+*/
+.background-bk .center_select{color: #fff; text-align: center; padding: 64px 68px;}
+.background-bk .center_select button{width: 435px; height: 82px; background: rgba(78, 70, 82, 0.5); border-radius: 10px;}
+.background-bk .center_select .select_val{display: flex; flex-direction: column; align-items: center; padding: 30px 0 0;}
+.background-bk .center_select .select_val p{font-weight: 700; font-size: 32px; color: #ccc9ff; margin-top: 12px;}
+.select-layer{position: fixed; left: 0; top: 0; width: 100%; height: 100%; display: flex; align-items: flex-end; z-index: 30; transition: all 0.2s ease; transform: translateY(100%); color: #fff;}
+.select-layer.active{transform: translateY(0);}
+.select-layer dl{background-color: rgb(37, 34, 38, 0.95); width: 100%; border-top-left-radius: 30px; border-top-right-radius: 30px; padding: 0 30px; overflow: hidden;}
+.select-layer dl dt{ position: relative; font-size: 32px; padding: 63px 0 40px; border-bottom: 1px solid rgba(255,255,255, 0.2); display: flex; justify-content: space-between; align-items: center;}
+.select-layer dl dt button.close {width: 40px;height: 40px;background-image: url(../../images/new/close_toyota.png); background-repeat: no-repeat; background-size: 30px 30px;}
+.select-layer dl dt span{font-family: OpenSans; font-weight:700;}
+.select-layer dl dt button.close-layer{position: absolute; right: 18px; top: 50%; transform: translateY(-50%);}
+.select-layer dl dd{ max-height: calc(80vh - 300px); overflow-y: auto;
+}
+.select-layer dl dd ul li{position: relative; height: 180px; padding: 0 110px 0 0; display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255,255,255, 0.2);}
+.select-layer dl dd ul li button{width: 75px; height: 75px; border-radius: 50%; background: rgba(204, 201, 255, 0.2); position: absolute; top: 50%; transform: translateY(-50%); right: 2px; }
+.select-layer dl dd ul li button:active{background: #ee1539;}
+.select-layer dl dd ul li button.active{background: #ee1539;}
+/* TODO 류승연 20220321 수정 완료 */
 
 /* mypage_main */
 .mypage_main_wrap{color: #fff; padding: 143px 30px 78px; background-image: url('../../images/new/bg-mainpage1.png'); background-size: 100% auto; background-position: right -10px top 530px; background-repeat:no-repeat}
