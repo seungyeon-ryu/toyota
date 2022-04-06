@@ -428,12 +428,9 @@ label.chk input:checked + .svg_commchk .ico_chk {animation: svgChk .5s forwards;
 .trg_aside span.bar2 {display: block; position: absolute; top: 48px; left: 30px; width: 38px; height: 5px; background: #ffffff; transition: all .5s;}
 .trg_aside span.bar3 {display: block; position: absolute; top: 64px; left: 30px; width: 38px; height: 5px; background: #ffffff; transition: all .5s;}
 
-#header.sub .back {display: block; position: absolute; top: 40px; left: 0; width: 77px; height: 100px; background: url(../../images/new/left-arrow.png) center center no-repeat; font-size: 0; text-indent: -9999px; transition: all .55s;}
+#header.sub .back {display: block; position: absolute; top: 40px; left: 0; width: 85px; height: 100px; background: url(../../images/common/back.png) center center no-repeat; font-size: 0; text-indent: -9999px; transition: all .55s;}
 #header.sub .logo {right: 98px; left: unset; left: auto;}
 #header.sub .logo a {padding: 26px 10px 25px;}
-#header.sub .right-menu{position: absolute; top: 40px; right: 0; width: 161px; height: 100px; display: flex;}
-#header.sub .right-menu .sub-search{display: block; width: 60px; height: 100px; background: url(../../images/new/loupe.png) center center no-repeat; transition: all .55s; margin-right: 23px;}
-#header.sub .right-menu .cart{display: block; width: 60px; height: 100px; background: url(../../images/new/shopping-cart.png) center center no-repeat; transition: all .55s; margin-right: 18px;}
 
 .asideOpen {overflow: hidden;}
 .asideOpen .trg_aside span.bar1 {width: 46px; height: 4px; transform: translate3d(-3px, 16px, 0) rotate(45deg);}
@@ -447,7 +444,7 @@ label.chk input:checked + .svg_commchk .ico_chk {animation: svgChk .5s forwards;
 .hideHeader .trg_aside {top: -140px; opacity: 0;}
 .hideHeader .tit_page {top: -140px; opacity: 0;}
 
-#gnb {overflow-y: auto; position: fixed; top: 0; bottom: 0; left: 100%; z-index: 205; height: 100vh; height: var(--vh, 1vh) * 100; box-sizing: border-box; width: 750px; min-height: 100%; padding: 130px 60px 210px; background: url(../../images/common/bg_gnb.png) 0 0 no-repeat; background-size: cover; transition: all .3s; opacity: 0; -webkit-overflow-scrolling: touch;}
+#gnb {overflow-y: auto; position: fixed; top: 0; bottom: 0; left: 100%; z-index: 200; height: 100vh; box-sizing: border-box; width: 750px; min-height: 100%; padding: 130px 60px 210px; background: url(../../images/common/bg_gnb.png) 0 0 no-repeat; background-size: cover; transition: all .3s; opacity: 0; -webkit-overflow-scrolling: touch;}
 
 #gnb .member .login {position: relative; margin: 0 0 50px;}
 #gnb .member .login .txt {font-size: 44px; line-height: 60px; color: #acacb2;}
@@ -654,7 +651,7 @@ label.chk input:checked + .svg_commchk .ico_chk {animation: svgChk .5s forwards;
 #container {min-height: 100%;}
 #content {min-height: 100%;}
 
-.tit_page {position: fixed; top: 0; left: 50%; z-index: 200; width: 380px; margin: 40px 0 0 -190px; font-size: 34px; line-height: 100px; color: #ffffff; text-align: center; transition: top .55s;}
+.tit_page {position: fixed; top: 0; left: 50%; z-index: 150; width: 380px; margin: 40px 0 0 -190px; font-size: 34px; line-height: 100px; color: #ffffff; text-align: center; transition: top .55s;}
 
 .hgroup .tit_ko {padding: 0 0 30px; font-weight: 700; font-size: 36px; line-height: 1; color: #ffffff;}
 .hgroup .tit_en {padding: 0 0 35px 10px; font-size: 42px; line-height: 1; color: #ffffff;}
@@ -2179,7 +2176,7 @@ body.hideHeader .slt_con.fixed {top: 0;}
 .srv_item h4 span{display:block;color:#fff}
 .srv_item h4 .tt{font-size:28px;font-weight:700}
 .srv_item h4 .ts{font-size:24px;font-weight:400}
-.srv_item img{position:absolute;right:0;bottom:0}
+.srv_item img{position:absolute;right:0;bottom:0;width:216px;height:216px;object-fit:contain;}
 .slider-views .slick-slide{background:#58505d;border-radius:10px}
 .slider-views .slick-dots{display:flex;justify-content:center;margin:55px 0}
 .slider-views .slick-dots li{margin:0 7px}
@@ -2374,7 +2371,9 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .user-manual-noresult .no-result{padding-top:160px;background:url(/resources/web/images/manual/ico-nor.png) no-repeat 50% 0;text-align:center}
 .user-manual-noresult .no-result .t1{font-size:30px;font-weight:400;color:#fff}
 .user-manual-noresult .no-result .t2{margin-top:20px;font-size:26px;font-weight:400;line-height:1.365em;color:#acacb2}
-/**/
+
+
+/* 20220104 CSS add*/
 .mgt_agree_bx_ln1 label.chk span{color:#000}
 .mgt_agree_bx_ln2{margin-top:20px}
 .chk_n{display:inline-block;min-height:48px}
@@ -2384,13 +2383,13 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .chk_n input:checked + label:before{background:url(/resources/web/images/temp/event/event202108/chk-n-on.png) no-repeat 50% 50%}
 .chk_n + .chk_n{margin-left:30px}
 
-
 /* TODO SYRYU 2021.10 new css */
 /* bootstrap reset */
 *{box-sizing: unset;}
 
 /* gnb */
-#app.background-bk #gnb{padding: 66px 60px 210px; background: #010101;}
+/* TODO 20220406 */
+#app.background-bk #gnb{padding: 66px 60px 210px; background: #010101; height: calc((var(--vh, 1vh) * 100))}
 #app.background-bk #gnb li a{text-transform: uppercase;}
 #app.background-bk #gnb .ft-red{color: #ff462d;}
 #app.background-bk #gnb .member .logout .btn_wrap { margin:  0; font-size: 34px; color: #acacb2;}
@@ -2412,6 +2411,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 
 /* inquiry_type_v2 */
 #app.background-bk{background:#101010; font-family: NanumSquare, sans-serif; letter-spacing: -0.63px;}
+input[type=password]{font-family: NotoSans, sans-serif;}
 #header.opacity-bg{background:rgba(0,0,0,0.6);}
 #container.onetoone_v2 .intro {padding: 0 60px;}
 #container.onetoone_v2 .tab_area ul li button {width: unset; margin:0 auto; font-size: 30px; line-height: 60px; color: #ffffff; text-align: center; font-weight:700; }
@@ -2419,14 +2419,14 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #container.onetoone_v2 .tab_area ul li {border-bottom: none;}
 #container.onetoone_v2 .tab_area ul li.on button{border-bottom: 5px solid #fff; color:#fff;}
 #container.onetoone_v2 .tab_area ul li button{border-bottom: 5px solid transparent;}
-#container.onetoone_v2 .onetoone{ background:url(../../images/new/topCar_toyota.png), #101010; background-size: contain; background-position: top right; background-repeat: no-repeat; padding: 220px 0 0;}
+#container.onetoone_v2 .onetoone{ background:url(/resources/web/images/toyota/topCar_toyota.png), #101010; background-size: contain; background-position: top right; background-repeat: no-repeat; padding: 220px 0 0;}
 #container.onetoone_v2 .onetoone_type .desc {background:rgba(88,80,93,0.5); color:#fff; padding: 30px 60px; font-weight:700; margin-top:50px; font-size: 32px;}
 #container.onetoone_v2 .onetoone_type .choose_type{background:#101010;  padding: 30px 30px 88px;}
 #container.onetoone_v2 .onetoone_type .choose_type > ul > li{border-radius: 0px;}
 #container.onetoone_v2 .onetoone_type .choose_type > ul > li > a {padding: 74px 0 164px;}
-#container.onetoone_v2 .onetoone_type .choose_type > ul > li.type_app > a {background: url(../../images/new/bg-car1.png) 100% 100% no-repeat;}
-#container.onetoone_v2 .onetoone_type .choose_type > ul > li.type_service > a { background: url(../../images/new/bg-car2.png) 100% 100% no-repeat;}
-#container.onetoone_v2 .onetoone_type .choose_type > ul > li.type_mileage > a { background: url(../../images/new/bg-car4.png) 100% 100% no-repeat;}
+#container.onetoone_v2 .onetoone_type .choose_type > ul > li.type_app > a {background: url(/resources/web/images/toyota/bg-car1.png) 100% 100% no-repeat;}
+#container.onetoone_v2 .onetoone_type .choose_type > ul > li.type_service > a { background: url(/resources/web/images/toyota/bg-car2.png) 100% 100% no-repeat;}
+#container.onetoone_v2 .onetoone_type .choose_type > ul > li.type_mileage > a { background: url(/resources/web/images/toyota/bg-car4.png) 100% 100% no-repeat;}
 #container.onetoone_v2 .onetoone_type .choose_type > ul > li > a .tit {background: none; padding: 0 0 40px; border-bottom: none; text-align: center; color: #ef1539;}
 #container.onetoone_v2 .onetoone_type .choose_type > ul > li > a .tit img{padding-bottom: 59px;}
 #container.onetoone_v2 .onetoone_type .choose_type > ul > li > a .info {margin: 0; padding-left:133px;}
@@ -2465,14 +2465,14 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 #container.onetoone_v2 .input .user_info .upload_file ul li{width: 187px; height: 187px; position: relative; background: #c4c4c4; cursor: pointer;}
 #container.onetoone_v2 .input .user_info .upload_file ul li div{display: block; width:100%; height:100%; background-position: center center;
     background-size: cover;  background-repeat: no-repeat; font-size: 0; text-indent: -9999px; cursor: pointer;}
-#container.onetoone_v2 .input .user_info .upload_file ul li .plus {background: url(../../images/new/plus_toyota.png), #433d46;
+#container.onetoone_v2 .input .user_info .upload_file ul li .plus {background: url(/resources/web/images/toyota/plus_toyota.png), #433d46;
     background-repeat: no-repeat; background-position: center;}
-#container.onetoone_v2 .input .user_info .upload_file ul li .del {top: 10px;  right: 8px; width: 24px; height: 24px; background: url(../../images/new/close_toyota.png) 0 0 no-repeat;}
+#container.onetoone_v2 .input .user_info .upload_file ul li .del {top: 10px;  right: 8px; width: 24px; height: 24px; background: url(/resources/web/images/toyota/close_toyota.png) 0 0 no-repeat;}
 /* 셀렉트박스 커스터마이징 */
 .custom-select {position: relative;}
 .custom-select select {display: none;}
 .select-selected {background-color: #58505d; border-radius: 10px;}
-.select-selected{background-image: url(../../images/new/down.png); background-position: right 16px center; background-repeat: no-repeat;}
+.select-selected{background-image: url(../../images/toyota/down.png); background-position: right 16px center; background-repeat: no-repeat;}
 .select-items div,.select-selected {color: #ffffff; cursor: pointer; user-select: none; font-size: 25px; height:82px; line-height: 82px; padding: 0 32px;}
 .select-items div{background-color: rgba(88,80,93,0.5); margin: 30px; border-radius: 10px;}
 .select-items {position: absolute; background-color: #2d2a2f; top: 100%; left: 0; right: 0; z-index: 99; text-align: center;}
@@ -2524,6 +2524,8 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .model_v2 .model_list ul li .new {margin: 30px 0 0; border-radius: 40px; padding: 8px 20px; background: #e4022e; font-family: 'Open Sans',sans-serif;
     font-weight: 600; font-size: 20px; line-height: 24px; letter-spacing: -0.5px;}
 .model_v2 .model_list ul li a {height: 482px;}
+/*.model_list ul li .img {position: absolute; right: 0; top: 66%; transform: translateY(-66%); bottom: unset; z-index: 1; width: 540px; height: 250px;}*/
+
 /* TODO 류승연 20220321 수정 */
 .model_list ul li .img {position: absolute; right: 0; top: 139px; bottom: unset; z-index: 1; width: 540px; height: 250px;}
 .model_list .model_year{padding: 30px 0 10px; background: #1c1a1d; color: #fff;}
@@ -2585,33 +2587,18 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .mileage_wrap .mileage_list_desc li.none .txt{font-size: 34px; letter-spacing: -0.85px; text-align: center;}
 
 /* mileage_grade */
-.mileage_grade_wrap {background: url(../../images/new/bg-mileage.png) right -90px bottom 10px no-repeat; letter-spacing: -0.63px; color: #fff; font-size: 25px; padding-bottom: 218px;}
-.mileage_grade_wrap .intro {padding: 190px 30px 0;}
-.mileage_grade_wrap .tab_area ul{border-bottom: 1px solid #544d55; display: flex; justify-content: space-between;}
-.mileage_grade_wrap .tab_area ul li{text-align: center;}
-.mileage_grade_wrap .tab_area ul li.on a{color: #d7022c; font-weight: bold;}
-.mileage_grade_wrap .tab_area ul li a{display: inline-block;}
-.mileage_grade_wrap .tab_area ul li{border-bottom: transparent;}
-.mileage_grade_wrap .tab_area ul li.on a:after{content:''; display: block; width: 100%; height: 10px; background: #d7022c; border-radius: 5px;}
-.mileage_grade_wrap .tab_cont div{display: none;}
-.mileage_grade_wrap .tab_cont div.on{display: block;}
+.mileage_grade_wrap {background: url(../../images/new/card-bg.png) right 0 no-repeat; letter-spacing: -0.63px; color: #fff;}
+.mileage_grade_wrap .intro {padding: 190px 0 0;}
 .mileage_grade_wrap .grade_desc{margin: 0 30px; text-align: center;}
 .mileage_grade_wrap .grade_desc h5{font-size: 25px; text-align: center; font-weight: 700; padding-bottom: 35px; border-bottom: 1px solid rgba(71,71,71);}
-.mileage_grade_wrap .grade_desc img{margin: 20px auto 0;}
-.mileage_grade_wrap .grade_desc h4{padding: 74px 0 10px; font-size: 30px; font-weight: 700; background:url(../../images/new/card-3-bg.png) center 0 no-repeat;}
+.mileage_grade_wrap .grade_desc img{margin: 50px auto 0;}
+.mileage_grade_wrap .grade_desc h4{padding: 50px 0; font-size: 30px; font-weight: 700; background:url(../../images/new/card-3-bg.png) center 0 no-repeat;}
 .mileage_grade_wrap .grade_desc ul{text-align: left; width: 434px; margin: 0 auto; font-size: 20px;}
 .mileage_grade_wrap .grade_desc ul li{padding-bottom: 30px;}
 .mileage_grade_wrap .grade_desc ul li p{margin-left: 22px; text-indent: -22px; letter-spacing: -0.5px; word-break: keep-all;}
 .mileage_grade_wrap .grade_desc ul .end-date{font-size: 18px;}
 .mileage_grade_wrap .grade_desc ul .end-date:before{content:''; display: inline-block; background: #ccc9ff; width: 11px; height: 11px; border-radius: 11px; margin: 0 7px 0px 0;}
 .mileage_grade_wrap + .btn120 {position: fixed; bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px;color: #fff; font-size: 28px;}
-.benefit-table {border-collapse:collapse;border-spacing:0; font-size: 20px; margin-top: 60px;}
-.benefit-table caption{visibility: visible; width: revert;height: revert; font-size: 30px; font-weight: bold; line-height: 100%; position: static; opacity: 1; padding: 0 0 32px;}
-.benefit-table td{border-color:transparent;border-style:solid;border-width:4px;
-    overflow:hidden; padding:32px 5px;word-break:normal; background: rgba(78,78,78,0.3);}
-.benefit-table th{border-color:transparent;border-style:solid;border-width:4px;
-    font-weight:normal;overflow:hidden;padding:20px 5px;word-break:normal; background: rgba(78,78,78,0.5);}
-.benefit-table .table-bg{background: rgba(78,78,78,0.5);text-align:center;vertical-align:middle}
 
 /* myshopping */
 .myshopping_wrap {background: url(../../images/new/myshopping-main-bg.png) 0 0 no-repeat; color: #fff; overflow: hidden;}
@@ -2652,9 +2639,13 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .cart_list .product_list .product_desc{width: 400px; margin: 22px 0;}
 .cart_list .product_list .product_badge{padding-bottom: 30px; color: #ff462d;}
 .price_info{padding: 50px 0 58px; background: rgba(178,175,222,0.2);}
-.price_info p{display: flex; justify-content: space-between; padding: 0 30px 29px 30px;}
+.price_info p{display: flex; align-items: center; justify-content: space-between; padding: 0 30px 29px 30px;}
 .price_info p:nth-child(2){ border-bottom: 1px solid rgba(190,190,190,0.2); padding-bottom: 48px;}
-.price_info p:last-child{padding: 48px 30px 0 30px;}
+/* TODO 20220406 */
+.price_info p:nth-child(3){padding: 48px 30px 0 30px;}
+/* TODO 20220406 */
+.price_info p:last-child{padding: 30px 30px 0 ;}
+.price_info p input[type=number]{max-width: 150px; font-size: 25px; text-align: right; padding: 0 20px 10px 10px;  }
 .price_info .ft_red{font-weight: 800; color: #ff462d;}
 .total_price{background: none; padding: 0 0 230px 0; margin:0 30px; font-size: 32px; letter-spacing: -0.8px; border-top: 1px solid rgba(190,190,190,0.2);}
 .total_price .ft_red{color: #fff;}
@@ -2689,7 +2680,7 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .mypage_wrap .product_list li {padding: 60px 0; margin: 0 30px;}
 .mypage_wrap .product_list li button{width: 191px; height: 61px; border-radius: 10px; background: #ff462d; margin-top: 60px;}
 .mypage_wrap .product_list li.complete .product_img{position: relative;}
-.mypage_wrap .product_list li.complete .product_img:after{content:'예약완료'; font-size: 25px; letter-spacing: -0.65px; text-align: center; line-height: 318px; position: absolute; top: 0; left: 0; width: 318px; height: 318px; background-image: url(../../images/new/complete-bg.png); background-size: 100% 100%; background-repeat: no-repeat;}
+.mypage_wrap .product_list li.complete .product_img:after{content:'결제완료'; font-size: 25px; letter-spacing: -0.65px; text-align: center; line-height: 318px; position: absolute; top: 0; left: 0; width: 318px; height: 318px; background-image: url(../../images/new/complete-bg.png); background-size: 100% 100%; background-repeat: no-repeat;}
 .btn_bar{width: 100%; padding: 27px 30px 34px; box-sizing: border-box; overflow: auto; background: rgba(0,0,0,0.9);
     position: fixed; bottom: 0;  left: 50%;  z-index: 10;  width: 750px;  margin: 0 0 0 -375px;}
 .btn_bar li{width: 20%; float:left; text-align: center; color: #fff; }
@@ -2698,21 +2689,19 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 
 /* purchase_detail */
 
-.purchase_wrap{background: url(../../images/new/purchase-bg.png) 0 0 no-repeat; padding-bottom: 186px;}
+.purchase_wrap{background: url(../../images/new/purchase-bg.png) 0 0 no-repeat;}
 .purchase_wrap .intro {padding: 143px 0px 0px;}
 .purchase_wrap .product_list{margin-bottom: 34px;}
 .purchase_wrap .product_list li {padding: 60px 0; margin: 0 30px;}
 .purchase_wrap .product_list .product_img{width: 222px; height: 222px;}
 .purchase_wrap .product_list .product_img img {width: 222px; height: 222px;}
 .purchase_wrap .product_list .product_desc{width:310px; letter-spacing: -0.65px; color: #bebebe;}
-.purchase_wrap .info1, .purchase_wrap .info2, .purchase_wrap .info3{padding: 60px 0 0; margin: 0 30px;  border-top: 1px solid rgba(190,190,190,0.2);}
-.purchase_wrap .purchase_title{background: rgba(204,201,255,0.1); padding: 30px; font-size: 32px; font-weight: 700; letter-spacing: -0.8px;}
+.purchase_wrap .info1, .purchase_wrap .info2{padding: 60px 30px 0;  border-top: 1px solid rgba(190,190,190,0.2);}
+.purchase_wrap .purchase_title{background: rgba(204,201,255,0.1); padding: 30px 30px 30px 32px; font-size: 32px; font-weight: 700; letter-spacing: -0.8px;}
 .purchase_wrap .purchase_title span{color: #ff462d;}
 .sp_between{display: flex; justify-content: space-between;}
-.purchase_wrap .purchase_detail{padding: 50px 30px; font-size: 25px; border-bottom: 1px solid rgba(190,190,190,0.2);}
-.purchase_wrap .info3 .purchase_detail{ border-bottom: none;}
+.purchase_wrap .purchase_detail{padding: 50px 30px 59px 32px ; font-size: 25px; border-bottom: 1px solid rgba(190,190,190,0.2);}
 .purchase_wrap .purchase_detail p{padding-bottom: 32px;}
-.purchase_wrap .purchase_detail p:last-child{padding-bottom: 0;}
 .purchase_wrap .purchase_detail p span:first-child{color: #bebebe;}
 .purchase_wrap .purchase_detail p span:last-child{color: #ccc9ff;}
 .purchase_wrap .purchase_price{padding: 30px; font-size: 32px;}
@@ -2720,7 +2709,6 @@ a.btn-noti{width:255px;height:30px;padding:1px 15px 0 40px;background:#ff462d ur
 .purchase_wrap .purchase_request{padding: 50px 30px 59px 32px ;}
 .purchase_wrap .purchase_request p{color: #bebebe;}
 .purchase_wrap .purchase_request p.request_desc{color: #fff; margin-top: 16px;}
-.purchase_wrap + .btn120 {position: fixed;  bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px; color: #fff; font-size: 28px;}
 
 /* order_detail */
 .fc-v{color: #ccc9ff;}
@@ -2810,6 +2798,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 
 #main.mileage{font-family: NanumSquare, sans-serif}
 .login.mileage{color: #fff;;}
+
 /* TODO 20220107 add */
 /*.mileage_login{padding: 190px 30px 80px;}*/
 .mileage_login{padding: 190px 30px 80px; box-sizing: border-box;}
@@ -2817,7 +2806,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mileage_login .mileage_info{overflow: auto; position: relative;}
 .mileage_login .mileage_info li{width: 290px; height: 200px; float: left; padding: 36px 29px 17px 29px; box-sizing: border-box; border-radius: 6px; overflow: hidden;}
 .mileage_login .mileage_info li:first-child{margin-right: 20px; background: rgba(51,51,51,0.3);}
-.mileage_login .mileage_info li:last-child{background: url('../../images/new/mile-red.png');}
+.mileage_login .mileage_info li:last-child{background: url('/resources/web/images/main/mile-red.png');}
 .mileage_login .mileage_info li{font-family: OpenSans, sans-serif; font-weight: 700;}
 .mileage_login .mileage_info li p:first-child{font-size: 30px; letter-spacing: -0.75px;}
 .mileage_login .mileage_info li:first-child h3{color: #ff462d;}
@@ -2826,6 +2815,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mileage_login .mileage_info li h3 small{font-size: 28px; margin-left: 16px;}
 .mileage_login .mileage_info li p.reload{font-family: NanumSquare, sans-serif; font-size: 22px; color: #afafaf; margin-top: 10px;}
 .mileage_login .mileage_info li p.reload span{width: 16px; height: 16px; display: inline-block; background: url(../../images/new/loading.png) 0 0 no-repeat; margin: 6px 0 0 9px; background-size: 16px 16px; cursor: pointer;}
+
 /* TODO 20220107 add */
 .mileage_login .mileage_img{width: 100%; height: 380px; padding: 20px 0 0;}
 
@@ -2879,7 +2869,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 
 
 /* event_list_v2 */
-#app.background-bk .event_list_wrap{font-family: NanumSquare, sans-serif; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
+#app.background-bk .event_list_wrap{font-family: NanumSqare; background: url(../../images/new/event-bg.png); background-position: 269px -170px; background-repeat: no-repeat; padding: 0;}
 #app.background-bk .event_list_wrap .board_thumb_list.type2 {padding: 220px 30px 100px;}
 #app.background-bk .event_list_wrap .tab_area ul li{text-align: center;}
 #app.background-bk .event_list_wrap .tab_area ul li.on {border-bottom: none;}
@@ -2919,8 +2909,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 #app.background-bk .event_list_wrap .board_thumb_view .others{margin: 0 0 0 30px; padding: 0 0 100px; background: none;}
 #app.background-bk .event_list_wrap .board_thumb_view .tit{border-top: 1px solid rgba(190,190,190,0.2); margin: 0 30px 0 0; padding: 30px 0; text-align: left; font-size: 30px;}
 #app.background-bk .event_list_wrap .board_thumb_view .board_thumb_view .others .other_events .slide:after {display:none;}
-#app.background-bk .others .swiper-slide {width: 332px; height: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; flex-direction: column; color: #fff !important; font-size: 26px; font-family: 'Open Sans', sans-serif; line-height: 30px; letter-spacing: -0.65px; font-weight: 700;}
-#app.background-bk .others .swiper-slide img {display: block; width: 332px; height: 332px; margin-bottom: 40px;}
+.others .swiper-slide {width: 332px; height: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; flex-direction: column; color: #fff !important; font-size: 26px; font-family: 'Open Sans', sans-serif; line-height: 30px; letter-spacing: -0.65px; font-weight: 700;}
+.others .swiper-slide img {display: block; width: 332px; height: 332px; margin-bottom: 40px;}
 
 /*  mycar popup 추가 */
 #container{position: relative;}
@@ -2929,7 +2919,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .modal-popup .modal-content{padding: 100px 100px 86px; letter-spacing: -0.5px; position: relative;}
 .modal-popup h3.title{font-size: 32px; letter-spacing: -0.8px; text-align: center; margin-bottom: 45px;}
 .modal-popup .modal-content button.search{width: 246px; height: 60px; margin: 70px 0 0 67px; border-radius: 10px; background: #ff462d;}
-.modal-popup .modal-content button.close{width: 20px; height: 20px; background-image:url('../../images/new/close_toyota.png'); background-repeat: no-repeat; position: absolute; top: 30px; right: 30px;}
+.modal-popup .modal-content button.close{width: 20px; height: 20px; background-image:url('../../images/toyota/close_toyota.png'); background-repeat: no-repeat; position: absolute; top: 30px; right: 30px;}
 .popup-open{display: block;}
 
 /* shipping_input */
@@ -2985,11 +2975,11 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .delivery_list_wrap{color: #fff; font-size: 25px; letter-spacing: -0.63px;}
 .delivery_list_wrap .intro {position: relative; padding: 188px 0px 0px;}
 .delivery_list_wrap .cell_info>p{padding: 0 37px 0 60px ;}
-.delivery_list_wrap .nav-tabs {border-bottom: 0; border-top: 1px solid #474747; font-weight: 700;}
+.delivery_list_wrap .nav-tabs {border-bottom: 0; /* border-top: 1px solid #474747; */ font-weight: 700;}
 .delivery_list_wrap .nav-tabs li{width: 50%; text-align: center;}
 .delivery_list_wrap .nav-tabs .nav-link {margin-bottom: 0; font-size: 30px; background: 0 0; border: 0; padding: 21px 0;  border-top-left-radius: 0; border-top-right-radius: 0rem; color : #fff;}
 .delivery_list_wrap .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {color: #fff; background-color: rgba(181,179,225,0.2); border-color: unset;}
-.delivery_list_wrap .tab-content{background-color: rgba(181,179,225,0.2); padding: 40px 30px;}
+.delivery_list_wrap .tab-content{width: 100%; box-sizing: border-box;background-color: rgba(181,179,225,0.2); padding: 40px 30px;}
 .delivery_list_wrap .tab-content .list_box {background: none; padding: 0 0 50px; margin-bottom: 0;}
 .delivery_list_wrap .tab-content .list_box .right {text-align: right; margin-top: 20px; }
 .delivery_list_wrap .tab-content .list_box button {background: none; border-radius: 0; width: unset; color: #b5b3e1; font-size: 25px; font-weight: 400;}
@@ -3011,7 +3001,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .delivery_list_wrap .input_box>input{width: calc(100% - 127px);}
 .delivery_list_wrap .input_box>div{width: calc(100% - 127px);}
 .delivery_list_wrap .input_box .call_box{display: flex; align-items: center;}
-.delivery_list_wrap .input_box .call_box input{width: 30%; min-width: 170px;}
+.delivery_list_wrap .input_box .call_box input{width: 30%;}
 .delivery_list_wrap .input_box .call_box span{width: 5%; font-size: 30px; text-align: center; font-weight: 700;}
 .delivery_list_wrap .input_box .address_input input{margin-bottom: 20px;}
 .delivery_list_wrap .input_box .in_btn{display: flex; }
@@ -3106,6 +3096,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .mypage_main_wrap .mypage_area .qna_list{font-size: 32px;}
 .mypage_main_wrap .mypage_area .qna_list li{padding: 36px 0; border-bottom: 1px dashed rgba(255,255,255,0.2); background: url('../../images/new/arrow-right.png') right center no-repeat;}
 .mypage_main_wrap .mypage_area .qna_list li:last-child{border-bottom: transparent;}
+
 /* goods_list */
 #app.background-bk .event_list_wrap .board_thumb_view .goods_list{padding: 0 30px;}
 #app.background-bk .event_list_wrap .board_thumb_view .goods_list .goods_img{width: 100%; height: 340px; border-radius: 20px; overflow: hidden;}
@@ -3118,7 +3109,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 
 /* goods_view */
 .goods_thumb{border-bottom: 1px solid rgba(190, 190, 190, 0.2); padding-bottom: 40px;}
-.goods_thumb .swiper-wrapper{width: 100%; height: 383px; background:pink;}
+.goods_thumb .swiper-wrapper{width: 100%; height: 383px;}
+.goods_thumb .swiper-slide{width: 100%; height: 100%;}
 .goods_thumb .swiper-slide img{width: 100%; height: 100%; object-fit: cover;}
 .goods_thumb .swiper-pagination{position: static; margin-top: 25px;}
 .goods_thumb .swiper-pagination-bullet {width: 20px; height: 20px; display: inline-block; border-radius: 50%; background: transparent; opacity: 1; border: 1px solid #fff;}
@@ -3141,3 +3133,86 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 #app.background-bk .rocomm .swiper-slide .recomm_thumb{width: 318px; height: 318px; overflow: hidden; margin-bottom: 30px; background: #4e4652;}
 #app.background-bk .rocomm .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 .background-bk .event_list_wrap + .btn120{position: fixed; bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px; color: #fff; font-size: 28px;}
+
+
+/* mileage_list */
+.mileage_wrap {background: url(../../images/new/car5-bg.png) 0 0 no-repeat;}
+.mileage_wrap .intro {padding: 206px 70px 64px;}
+.mileage_wrap .hgroup2 .tit{letter-spacing: -1px; margin-bottom: 67px; font-family: NanumSquare, sans-serif; font-size: 40px; text-align: center;}
+
+.mileage_wrap .mileage_state{width:100%; overflow: auto;}
+.mileage_wrap .mileage_state>div{width: 292px; height: 189px; border-radius: 6px; padding: 38px 20px 44px; box-sizing: border-box;}
+.mileage_wrap .mileage_state .bg{background: url(../../images/new/mile-black.png); background-size: 100% 100%; background-repeat: no-repeat; float: left; margin-right: 20px;}
+.mileage_wrap .mileage_state .bg-image{background: url(../../images/new/mile-red.png); background-size: 100% 100%; background-repeat: no-repeat; float:left;}
+.mileage_wrap .mileage_state .type{font-size: 28px; letter-spacing: -0.7px; color: #fff;}
+.mileage_wrap .mileage_state .point{font-family: 'Open Sans',sans-serif; font-size: 52px; letter-spacing: -1.3px; color: #fff; font-weight:700; text-align: right;}
+.mileage_wrap .mileage_state .bg .point{color: #fd462d;}
+.mileage_wrap .filter { margin: 0; border-radius: 0; padding: 0 0 58px 0; background: none; font-size: 26px; color: #fff; border-bottom: 2px solid #333333;}
+.mileage_wrap .filter .title{font-size: 26px; color: #fff; font-weight: 700; margin-bottom: 24px;}
+.mileage_wrap .filter .btn_box{width:100%; display: flex; padding: 0 10px; box-sizing: border-box;}
+.mileage_wrap .filter .btn_box button{width:calc((100% - 18px) / 4); margin-right: 6px; height: 61px; border: 2px solid #76797e; border-radius: 10px;}
+.mileage_wrap .filter .btn_box button:last-child{margin-right: 0;}
+.mileage_wrap .filter .btn_box button.active{border-color: #ff462d; color: #ff462d;}
+
+.mileage_wrap .filter .datepick_box{display: flex; padding: 0 10px; box-sizing: border-box; margin-top: 12px;}
+.mileage_wrap .filter input[type=date]{width: 224px; height: 61px; font-size: 26px; border: 2px solid #76797e; border-radius: 10px; padding: 0; background: none; text-align: center;}
+.mileage_wrap .filter .datepick_box div{margin: 0 2px; line-height: 61px;}
+.mileage_wrap .filter input[type=date]::-webkit-calendar-picker-indicator {display: none;}
+.mileage_wrap .filter .datepick_box button {width: 190px; height: 61px; margin-left: 9px; background: #ff462d; font-size: 22px; border-radius: 10px; border-color: #ff462d; color: #fff;}
+
+.mileage_wrap .mileage_list_area{ padding: 29px 30px 40px; background: #101010; color: #fff;}
+.mileage_wrap .mileage_list{padding: 44px 0 110px;}
+.mileage_wrap .mileage_list .mileage_list_title{display: flex; justify-content: space-between; font-size: 26px; margin-bottom: 10px;}
+.mileage_wrap .mileage_list .mileage_list_title .count{font-weight: 800;}
+.mileage_wrap .mileage_list .mileage_list_title .count span{color: #8d2c1f;}
+.mileage_wrap .mileage_list_desc li{padding: 57px 30px 41px; border-bottom: 2px solid #333333;}
+.mileage_wrap .mileage_list_desc li p{display: flex; justify-content: space-between;}
+.mileage_wrap .mileage_list_desc li p .desc{font-size: 32px; font-weight: 700;}
+.mileage_wrap .mileage_list_desc li p .point{font-size: 30px; font-weight: 800;}
+.mileage_wrap .mileage_list_desc li p .point.plus{color: #2d81ff;}
+.mileage_wrap .mileage_list_desc li p .point.minus{color: #c13724;}
+.mileage_wrap .mileage_list_desc li p .date{font-size: 30px;}
+.mileage_wrap .mileage_list_desc li p .point-desc{font-size: 30px;}
+
+/* mileage_list_none */
+.mileage_wrap .mileage_list.none{padding-bottom: 0;}
+.mileage_wrap .mileage_list_desc li.none{background: #2f2f2f; padding: 340px 0;}
+.mileage_wrap .mileage_list_desc li.none .txt{font-size: 34px; letter-spacing: -0.85px; text-align: center;}
+
+/* mileage_grade */
+.mileage_grade_wrap {background: url(../../images/new/bg-mileage.png) right -90px bottom 10px no-repeat; letter-spacing: -0.63px; color: #fff; font-size: 25px; padding-bottom: 218px;}
+.mileage_grade_wrap .intro {padding: 190px 30px 0;}
+.mileage_grade_wrap .tab_area ul{border-bottom: 1px solid #544d55; display: flex; justify-content: space-between;}
+.mileage_grade_wrap .tab_area ul li{text-align: center;}
+.mileage_grade_wrap .tab_area ul li.on a{color: #d7022c; font-weight: bold;}
+.mileage_grade_wrap .tab_area ul li a{display: inline-block;}
+.mileage_grade_wrap .tab_area ul li{border-bottom: transparent;}
+.mileage_grade_wrap .tab_area ul li.on a:after{content:''; display: block; width: 100%; height: 10px; background: #d7022c; border-radius: 5px;}
+.mileage_grade_wrap .tab_cont div{display: none;}
+.mileage_grade_wrap .tab_cont div.on{display: block;}
+.mileage_grade_wrap .grade_desc{margin: 0 30px; text-align: center;}
+.mileage_grade_wrap .grade_desc h5{font-size: 25px; text-align: center; font-weight: 700; padding-bottom: 35px; border-bottom: 1px solid rgba(71,71,71);}
+.mileage_grade_wrap .grade_desc img{margin: 20px auto 0;}
+.mileage_grade_wrap .grade_desc h4{padding: 74px 0 10px; font-size: 30px; font-weight: 700; background:url(../../images/new/card-3-bg.png) center 0 no-repeat;}
+.mileage_grade_wrap .grade_desc ul{text-align: left; width: 434px; margin: 0 auto; font-size: 20px;}
+.mileage_grade_wrap .grade_desc ul li{padding-bottom: 30px;}
+.mileage_grade_wrap .grade_desc ul li p{margin-left: 22px; text-indent: -22px; letter-spacing: -0.5px; word-break: keep-all;}
+.mileage_grade_wrap .grade_desc ul .end-date{font-size: 18px;}
+.mileage_grade_wrap .grade_desc ul .end-date:before{content:''; display: inline-block; background: #ccc9ff; width: 11px; height: 11px; border-radius: 11px; margin: 0 7px 0px 0;}
+.mileage_grade_wrap + .btn120 {position: fixed; bottom: 0; left: 50%; z-index: 10; width: 750px; height: 98px; line-height: 98px; margin: 0 0 0 -375px;color: #fff; font-size: 28px;}
+.benefit-table {border-collapse:collapse;border-spacing:0; font-size: 20px; margin-top: 60px;}
+.benefit-table caption{visibility: visible; width: revert;height: revert; font-size: 30px; font-weight: bold; line-height: 100%; position: static; opacity: 1; padding: 0 0 32px;}
+.benefit-table td{border-color:transparent;border-style:solid;border-width:4px;
+    overflow:hidden; padding:32px 5px;word-break:normal; background: rgba(78,78,78,0.3);}
+.benefit-table th{border-color:transparent;border-style:solid;border-width:4px;
+    font-weight:normal;overflow:hidden;padding:20px 5px;word-break:normal; background: rgba(78,78,78,0.5);}
+.benefit-table .table-bg{background: rgba(78,78,78,0.5);text-align:center;vertical-align:middle}
+.order_confirm_wrap .intro .order_confirm_list.none{padding: 285px 0 280px; text-align: center;  margin: 35px 0 0; font-size: 30px; line-height: 40px; color: #ffffff; text-align: center;}
+.order_confirm_wrap .intro .order_confirm_list.none img{padding-bottom: 30px;}
+
+/*
+.modal-address { display: none; position: fixed; z-index: 20000; left: 25%; width: 50%; padding: 20px; border: 1px solid #333; background-color: white; border-radius: 20px; }
+.popup-wrap { border: 1px solid #333; }
+@media screen and (max-width: 767px) { .modal-address-mobile { left: 5%; width: 90%; } }
+
+ */
