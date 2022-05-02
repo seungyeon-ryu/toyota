@@ -385,7 +385,36 @@
 					}
 				});
 			},
+			mypageSlider : function(){
+				var $mypageSlider = $('#mypageSlider');
+				var pageNum = $('#mypageSlider .page_num2');
 
+				$mypageSlider.on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
+					var i = (nextSlide ? nextSlide : 0) + 1;
+					function twolength(n) {
+						return (n < 10 ? '0' : '') + n
+					}
+					pageNum.find('.total2').text(twolength(slick.slideCount));
+					pageNum.find('.current2').text(twolength(i));
+				});
+
+
+				$mypageSlider.slick({
+					fade : false,
+					arrows : false,
+					dots : false,
+					infinite : false,
+					slidesToShow : 1,
+					slidesToScroll : 1,
+					swipeToSlide : true,
+				});
+
+				$mypageSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+					if(!$(slick.$slides[nextSlide]).find('.m-motion').hasClass('m-active')){
+						$(slick.$slides[nextSlide]).find('.m-motion').addClass('m-active');
+					}
+				});
+			},
 			lifeSlider : function(){
 				var $lifeSlider = $('#main .life_slider');
 

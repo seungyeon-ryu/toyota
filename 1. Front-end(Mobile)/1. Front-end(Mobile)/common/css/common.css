@@ -2919,7 +2919,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 .modal-popup .modal-content{padding: 100px 100px 86px; letter-spacing: -0.5px; position: relative;}
 .modal-popup h3.title{font-size: 32px; letter-spacing: -0.8px; text-align: center; margin-bottom: 45px;}
 .modal-popup .modal-content button.search{width: 246px; height: 60px; margin: 70px 0 0 67px; border-radius: 10px; background: #ff462d;}
-.modal-popup .modal-content button.close{width: 20px; height: 20px; background-image:url('../../images/toyota/close_toyota.png'); background-repeat: no-repeat; position: absolute; top: 30px; right: 30px;}
+.modal-popup .modal-content button.close{width: 20px; height: 20px; background-image:url('../../images/new/close_toyota.png'); background-repeat: no-repeat; position: absolute; top: 30px; right: 30px;}
 .popup-open{display: block;}
 
 /* shipping_input */
@@ -3216,3 +3216,19 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 @media screen and (max-width: 767px) { .modal-address-mobile { left: 5%; width: 90%; } }
 
  */
+
+
+/*  20220502 류승연 css 추가 */
+.grclub-card {width: 343px; height: 214px; margin: 20px 0 0; background-image: url("../../images/new/card_gr.png"); background-repeat: no-repeat; background-size: 100%; background-position: center;
+}
+.grclub-card p{text-align: center; padding: 155px 0 0; font-size: 22px; color: #202020;}
+.mycar_wrap .intro .info_box {margin: 20px 0 0;}
+.mycar_wrap .intro .grclub-card {width: 343px; height: 214px; margin: 130px 0 0; background-image: url("../../images/new/card_gr.png"); background-repeat: no-repeat; background-size: 100%; background-position: center;
+}
+#mypageSlider{position: relative;}
+#mypageSlider .slick-slide a{position: relative;}
+#mypageSlider .gr-club:before{content:''; display: block; width: 219px; height:60px; background-image: url("../../images/new/badge_club.png"); background-position: center; background-size: contain; position: absolute; top: 0; left: 0;}
+#mypageSlider .txtbox{position: relative;}
+#mypageSlider .page_num2{position: absolute; right: 100px; bottom: 50px; font-size: 20px; display: inline-block; font-family: NotoSans; }
+#mypageSlider .page_num2 span{font-weight: 700;}
+#mypageSlider .page_num2 .total2{color: #969ba4;}
