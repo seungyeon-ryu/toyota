@@ -3219,6 +3219,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 
 
 /*  20220502 류승연 css 추가 */
+#header{z-index: 149;}
+
 .grclub-card {width: 343px; height: 214px; margin: 20px 0 0; background-image: url("../../images/new/card_gr.png"); background-repeat: no-repeat; background-size: 100%; background-position: center;
 }
 .grclub-card p{text-align: center; padding: 155px 0 0; font-size: 22px; color: #202020;}
@@ -3232,3 +3234,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;  marg
 #mypageSlider .page_num2{position: absolute; right: 100px; bottom: 50px; font-size: 20px; display: inline-block; font-family: NotoSans; }
 #mypageSlider .page_num2 span{font-weight: 700;}
 #mypageSlider .page_num2 .total2{color: #969ba4;}
+#container.onetoone_v2 .onetoone.pb60{padding: 200px 0 200px !important; height: 100%;}
+
+#container.onetoone_v2 .onetoone.pb60 textarea{height: 330px; border: 1px solid #58505d; background: transparent; border-radius: 15px; color: #fff;}
+
+.select-selected{background-image: url(../../images/new/down.png); background-position: right 16px center; background-repeat: no-repeat;}
